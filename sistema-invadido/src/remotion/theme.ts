@@ -1,0 +1,35 @@
+// Paleta e tipografia oficiais da série SISTEMA INVADIDO (manter entre episódios)
+export const C = {
+  bg: '#060912',
+  night: '#0a1020',
+  wall: '#17213a',
+  wallDark: '#0f172b',
+  wallLight: '#1f2b4a',
+  floor: '#0c1324',
+  floorLine: '#16203a',
+  wood: '#2a2440',
+  blue: '#3d8bff',
+  cyan: '#6fd3ff',
+  red: '#ff2d3d',
+  redDark: '#a3111d',
+  gray: '#8a94a8',
+  grayDark: '#3a4358',
+  white: '#f4f6fb',
+  yellow: '#ffd23f',
+  green: '#2fd27a',
+  // Bia
+  skin: '#e2a57e',
+  skinShade: '#c98a64',
+  hair: '#121216',
+  shirt: '#f2f4f8',
+  shirtShade: '#d3d8e2',
+  stripe: '#e3202f',
+  pants: '#15161c',
+  shoe: '#f5f5f5',
+};
+export const FONT = {
+  title: '"Montserrat Black", "Montserrat", sans-serif',
+  bold: '"Montserrat ExtraBold", "Montserrat", sans-serif',
+  semi: '"Montserrat SemiBold", "Montserrat", sans-serif',
+  mono: '"JetBrains Mono", monospace',
+};

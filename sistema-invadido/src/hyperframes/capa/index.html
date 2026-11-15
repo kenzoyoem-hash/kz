@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+html,body{margin:0;background:#05070d}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:radial-gradient(circle at 50% 40%,#16213e,#05070d 70%);font-family:'DejaVu Sans',sans-serif}
+.t{position:absolute;left:0;right:0;text-align:center;color:#fff;font-weight:900}
+#l1{top:700px;font-size:150px;letter-spacing:6px;opacity:0}
+#l2{top:870px;font-size:150px;color:#ff2d3d;letter-spacing:6px;opacity:0}
+#ep{top:1080px;font-size:56px;color:#9fb3d9;opacity:0}
+#bar{position:absolute;left:140px;top:1050px;height:8px;width:0;background:#ff2d3d}
+#rec{position:absolute;left:70px;top:90px;font-size:48px;color:#ff2d3d;font-weight:800;opacity:0}
+</style></head><body>
+<div id="root" data-composition-id="root" data-width="1080" data-height="1920" data-start="0" data-duration="3">
+  <div id="rec" class="t" style="text-align:left">● AO VIVO</div>
+  <div id="l1" class="t">SISTEMA</div>
+  <div id="l2" class="t">INVADIDO</div>
+  <div id="bar"></div>
+  <div id="ep" class="t">EP. 1 — VOCÊ ESTÁ AO VIVO</div>
+</div>
+<script src="gsap.min.js"></script>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo("#l1",{opacity:0,y:-60},{opacity:1,y:0,duration:0.4},0.1)
+  .fromTo("#l2",{opacity:0,x:-40},{opacity:1,x:0,duration:0.3},0.4)
+  .to("#l2",{x:12,duration:0.05,repeat:5,yoyo:true},0.8)
+  .to("#bar",{width:800,duration:0.6},0.9)
+  .to("#ep",{opacity:1,duration:0.4},1.3)
+  .to("#rec",{opacity:1,duration:0.2,repeat:5,yoyo:true},0.2);
+window.__timelines=window.__timelines||{};window.__timelines["root"]=tl;
+</script></body></html>

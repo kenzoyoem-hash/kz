@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "historyId": "f274e7c3-5886-4d0f-a6f0-93e8f63e6986",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "gsap.min.js": {
+      "hash": "28033e449a31ebcc396e5be8b13b63152bf03094288fb5867034321927bce087",
+      "content": "/root/.cache/hyperframes/history/f274e7c3-5886-4d0f-a6f0-93e8f63e6986/blobs/28/28033e449a31ebcc396e5be8b13b63152bf03094288fb5867034321927bce087"
+    },
+    "index.html": {
+      "hash": "e4856ae4d64339003093be021534c16be312ffc57a24177d34010d60ea6cca28",
+      "content": "/root/.cache/hyperframes/history/f274e7c3-5886-4d0f-a6f0-93e8f63e6986/blobs/e4/e4856ae4d64339003093be021534c16be312ffc57a24177d34010d60ea6cca28"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "c3a51dae-399b-4e11-8244-a57eca3d4b2e",
+      "completedAt": 1794782501557,
+      "output": "/home/user/kz/sistema-invadido/done/ep01_capa_animada.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

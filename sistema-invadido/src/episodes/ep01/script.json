@@ -1,0 +1,142 @@
+{
+  "episode": 1,
+  "title": "VOCÊ ESTÁ AO VIVO",
+  "fps": 30,
+  "voices": {
+    "NARRADOR": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "-4%",
+      "pitch": "-7Hz",
+      "fx": "narrator"
+    },
+    "BIA": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "-8%",
+      "pitch": "+0Hz",
+      "fx": "whisper"
+    },
+    "HACKER": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "-14%",
+      "pitch": "-12Hz",
+      "fx": "hacker"
+    }
+  },
+  "lines": [
+    {
+      "id": "n01",
+      "who": "NARRADOR",
+      "at": 0.35,
+      "text": "Você abre uma live... e descobre que estão filmando você."
+    },
+    {
+      "id": "n02",
+      "who": "NARRADOR",
+      "at": 4.0,
+      "text": "Dentro da sua própria casa."
+    },
+    {
+      "id": "n03",
+      "who": "NARRADOR",
+      "at": 6.6,
+      "text": "Você mora sozinha. Nunca instalou uma câmera."
+    },
+    {
+      "id": "n04",
+      "who": "NARRADOR",
+      "at": 10.2,
+      "text": "Mas milhares de pessoas estão assistindo... a cada movimento seu."
+    },
+    {
+      "id": "h01",
+      "who": "HACKER",
+      "at": 17.5,
+      "text": "Boa noite, moradores. Todas as saídas estão sob meu controle."
+    },
+    {
+      "id": "h02",
+      "who": "HACKER",
+      "at": 23.6,
+      "text": "E vocês têm dois minutos... para sobreviver."
+    },
+    {
+      "id": "n05",
+      "who": "NARRADOR",
+      "at": 27.3,
+      "text": "O hacker invadiu o prédio inteiro."
+    },
+    {
+      "id": "n06",
+      "who": "NARRADOR",
+      "at": 30.6,
+      "text": "E, aparentemente, transformou a fuga em uma votação."
+    },
+    {
+      "id": "h03",
+      "who": "HACKER",
+      "at": 36.6,
+      "text": "Uma das rotas leva à saída. A outra... não."
+    },
+    {
+      "id": "n07",
+      "who": "NARRADOR",
+      "at": 41.6,
+      "text": "Você está no sétimo andar. E precisa escolher."
+    },
+    {
+      "id": "b01",
+      "who": "BIA",
+      "at": 50.4,
+      "text": "Esse vídeo tá repetindo..."
+    },
+    {
+      "id": "n08",
+      "who": "NARRADOR",
+      "at": 53.0,
+      "text": "Se a câmera está mostrando uma gravação... o que realmente está acontecendo lá?"
+    },
+    {
+      "id": "n09",
+      "who": "NARRADOR",
+      "at": 60.4,
+      "text": "Você tem dez segundos. E alguém está se aproximando."
+    },
+    {
+      "id": "n10",
+      "who": "NARRADOR",
+      "at": 65.4,
+      "text": "Você arrisca as escadas... ou entra no elevador?"
+    },
+    {
+      "id": "n11",
+      "who": "NARRADOR",
+      "at": 69.2,
+      "text": "Comenta A ou B. A opção mais votada decide o que acontece."
+    }
+  ],
+  "highlight": [
+    "HACKER",
+    "DOIS",
+    "MINUTOS",
+    "SOBREVIVER",
+    "ESCOLHER",
+    "LIVE",
+    "FILMANDO",
+    "CASA",
+    "SOZINHA",
+    "MILHARES",
+    "CONTROLE",
+    "VOTAÇÃO",
+    "SAÍDA",
+    "NÃO",
+    "SÉTIMO",
+    "REPETINDO",
+    "GRAVAÇÃO",
+    "DEZ",
+    "SEGUNDOS",
+    "ESCADAS",
+    "ELEVADOR",
+    "A",
+    "B"
+  ]
+}

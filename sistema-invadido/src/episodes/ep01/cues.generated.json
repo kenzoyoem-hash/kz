@@ -1,0 +1,827 @@
+[
+  {
+    "id": "n01",
+    "who": "NARRADOR",
+    "at": 0.35,
+    "text": "Você abre uma live... e descobre que estão filmando você.",
+    "start": 0.35,
+    "dur": 3.549,
+    "end": 3.899,
+    "wav": "raw/voice/ep01/n01.wav",
+    "whisper": "Você abre uma live e descobre que estão filmando você.",
+    "words": [
+      {
+        "w": "Você",
+        "s": 0.35,
+        "e": 0.67
+      },
+      {
+        "w": "abre",
+        "s": 0.67,
+        "e": 0.95
+      },
+      {
+        "w": "uma",
+        "s": 0.95,
+        "e": 1.15
+      },
+      {
+        "w": "live...",
+        "s": 1.15,
+        "e": 1.53
+      },
+      {
+        "w": "e",
+        "s": 1.53,
+        "e": 2.01
+      },
+      {
+        "w": "descobre",
+        "s": 2.01,
+        "e": 2.61
+      },
+      {
+        "w": "que",
+        "s": 2.61,
+        "e": 2.73
+      },
+      {
+        "w": "estão",
+        "s": 2.73,
+        "e": 2.97
+      },
+      {
+        "w": "filmando",
+        "s": 2.97,
+        "e": 3.43
+      },
+      {
+        "w": "você.",
+        "s": 3.43,
+        "e": 3.75
+      }
+    ]
+  },
+  {
+    "id": "n02",
+    "who": "NARRADOR",
+    "at": 4.0,
+    "text": "Dentro da sua própria casa.",
+    "start": 4.019,
+    "dur": 1.529,
+    "end": 5.548,
+    "wav": "raw/voice/ep01/n02.wav",
+    "whisper": "dentro da sua própria casa.",
+    "words": [
+      {
+        "w": "Dentro",
+        "s": 4.019,
+        "e": 4.299
+      },
+      {
+        "w": "da",
+        "s": 4.299,
+        "e": 4.499
+      },
+      {
+        "w": "sua",
+        "s": 4.499,
+        "e": 4.699
+      },
+      {
+        "w": "própria",
+        "s": 4.699,
+        "e": 5.079
+      },
+      {
+        "w": "casa.",
+        "s": 5.079,
+        "e": 5.359
+      }
+    ]
+  },
+  {
+    "id": "n03",
+    "who": "NARRADOR",
+    "at": 6.6,
+    "text": "Você mora sozinha. Nunca instalou uma câmera.",
+    "start": 6.6,
+    "dur": 3.7,
+    "end": 10.3,
+    "wav": "raw/voice/ep01/n03.wav",
+    "whisper": "você mora sozinha. Nunca instalou uma câmera.",
+    "words": [
+      {
+        "w": "Você",
+        "s": 6.6,
+        "e": 6.9
+      },
+      {
+        "w": "mora",
+        "s": 6.9,
+        "e": 7.26
+      },
+      {
+        "w": "sozinha.",
+        "s": 7.26,
+        "e": 7.82
+      },
+      {
+        "w": "Nunca",
+        "s": 8.46,
+        "e": 9.18
+      },
+      {
+        "w": "instalou",
+        "s": 9.18,
+        "e": 9.62
+      },
+      {
+        "w": "uma",
+        "s": 9.62,
+        "e": 9.82
+      },
+      {
+        "w": "câmera.",
+        "s": 9.82,
+        "e": 10.1
+      }
+    ]
+  },
+  {
+    "id": "n04",
+    "who": "NARRADOR",
+    "at": 10.2,
+    "text": "Mas milhares de pessoas estão assistindo... a cada movimento seu.",
+    "start": 10.42,
+    "dur": 3.829,
+    "end": 14.249,
+    "wav": "raw/voice/ep01/n04.wav",
+    "whisper": "mais milhares de pessoas estão assistindo a cada movimento seu.",
+    "words": [
+      {
+        "w": "Mas",
+        "s": 10.42,
+        "e": 10.62
+      },
+      {
+        "w": "milhares",
+        "s": 10.62,
+        "e": 11.16
+      },
+      {
+        "w": "de",
+        "s": 11.16,
+        "e": 11.24
+      },
+      {
+        "w": "pessoas",
+        "s": 11.24,
+        "e": 11.62
+      },
+      {
+        "w": "estão",
+        "s": 11.62,
+        "e": 12.02
+      },
+      {
+        "w": "assistindo...",
+        "s": 12.02,
+        "e": 12.72
+      },
+      {
+        "w": "a",
+        "s": 12.72,
+        "e": 13.04
+      },
+      {
+        "w": "cada",
+        "s": 13.04,
+        "e": 13.24
+      },
+      {
+        "w": "movimento",
+        "s": 13.24,
+        "e": 13.64
+      },
+      {
+        "w": "seu.",
+        "s": 13.64,
+        "e": 14.14
+      }
+    ]
+  },
+  {
+    "id": "h01",
+    "who": "HACKER",
+    "at": 17.5,
+    "text": "Boa noite, moradores. Todas as saídas estão sob meu controle.",
+    "start": 17.5,
+    "dur": 5.715,
+    "end": 23.215,
+    "wav": "raw/voice/ep01/h01.wav",
+    "whisper": "Boa noite, moradores. Todas as saídas estão sob meu controle.",
+    "words": [
+      {
+        "w": "Boa",
+        "s": 17.5,
+        "e": 17.86
+      },
+      {
+        "w": "noite,",
+        "s": 17.86,
+        "e": 18.28
+      },
+      {
+        "w": "moradores.",
+        "s": 18.64,
+        "e": 19.22
+      },
+      {
+        "w": "Todas",
+        "s": 20.4,
+        "e": 20.92
+      },
+      {
+        "w": "as",
+        "s": 20.92,
+        "e": 21.1
+      },
+      {
+        "w": "saídas",
+        "s": 21.1,
+        "e": 21.58
+      },
+      {
+        "w": "estão",
+        "s": 21.58,
+        "e": 21.94
+      },
+      {
+        "w": "sob",
+        "s": 21.94,
+        "e": 22.26
+      },
+      {
+        "w": "meu",
+        "s": 22.26,
+        "e": 22.48
+      },
+      {
+        "w": "controle.",
+        "s": 22.48,
+        "e": 22.9
+      }
+    ]
+  },
+  {
+    "id": "h02",
+    "who": "HACKER",
+    "at": 23.6,
+    "text": "E vocês têm dois minutos... para sobreviver.",
+    "start": 23.6,
+    "dur": 3.238,
+    "end": 26.838,
+    "wav": "raw/voice/ep01/h02.wav",
+    "whisper": "E você tem dois minutos para sobreviver.",
+    "words": [
+      {
+        "w": "E",
+        "s": 23.6,
+        "e": 23.68
+      },
+      {
+        "w": "vocês",
+        "s": 23.68,
+        "e": 23.96
+      },
+      {
+        "w": "têm",
+        "s": 23.96,
+        "e": 24.34
+      },
+      {
+        "w": "dois",
+        "s": 24.34,
+        "e": 24.64
+      },
+      {
+        "w": "minutos...",
+        "s": 24.64,
+        "e": 25.26
+      },
+      {
+        "w": "para",
+        "s": 25.26,
+        "e": 25.86
+      },
+      {
+        "w": "sobreviver.",
+        "s": 25.86,
+        "e": 26.66
+      }
+    ]
+  },
+  {
+    "id": "n05",
+    "who": "NARRADOR",
+    "at": 27.3,
+    "text": "O hacker invadiu o prédio inteiro.",
+    "start": 27.3,
+    "dur": 1.961,
+    "end": 29.261,
+    "wav": "raw/voice/ep01/n05.wav",
+    "whisper": "o hacker invadiu o prédio inteiro.",
+    "words": [
+      {
+        "w": "O",
+        "s": 27.3,
+        "e": 27.4
+      },
+      {
+        "w": "hacker",
+        "s": 27.4,
+        "e": 27.68
+      },
+      {
+        "w": "invadiu",
+        "s": 27.68,
+        "e": 28.36
+      },
+      {
+        "w": "o",
+        "s": 28.36,
+        "e": 28.42
+      },
+      {
+        "w": "prédio",
+        "s": 28.42,
+        "e": 28.82
+      },
+      {
+        "w": "inteiro.",
+        "s": 28.82,
+        "e": 29.08
+      }
+    ]
+  },
+  {
+    "id": "n06",
+    "who": "NARRADOR",
+    "at": 30.6,
+    "text": "E, aparentemente, transformou a fuga em uma votação.",
+    "start": 30.6,
+    "dur": 3.562,
+    "end": 34.162,
+    "wav": "raw/voice/ep01/n06.wav",
+    "whisper": "e, aparentemente, transformou a fuga em uma votação.",
+    "words": [
+      {
+        "w": "E,",
+        "s": 30.6,
+        "e": 30.84
+      },
+      {
+        "w": "aparentemente,",
+        "s": 30.98,
+        "e": 31.96
+      },
+      {
+        "w": "transformou",
+        "s": 32.18,
+        "e": 32.8
+      },
+      {
+        "w": "a",
+        "s": 32.8,
+        "e": 32.92
+      },
+      {
+        "w": "fuga",
+        "s": 32.92,
+        "e": 33.22
+      },
+      {
+        "w": "em",
+        "s": 33.22,
+        "e": 33.36
+      },
+      {
+        "w": "uma",
+        "s": 33.36,
+        "e": 33.54
+      },
+      {
+        "w": "votação.",
+        "s": 33.54,
+        "e": 34.06
+      }
+    ]
+  },
+  {
+    "id": "h03",
+    "who": "HACKER",
+    "at": 36.6,
+    "text": "Uma das rotas leva à saída. A outra... não.",
+    "start": 36.6,
+    "dur": 4.197,
+    "end": 40.797,
+    "wav": "raw/voice/ep01/h03.wav",
+    "whisper": "Uma das rotas leva a saída. A outra, não.",
+    "words": [
+      {
+        "w": "Uma",
+        "s": 36.6,
+        "e": 36.8
+      },
+      {
+        "w": "das",
+        "s": 36.8,
+        "e": 37.02
+      },
+      {
+        "w": "rotas",
+        "s": 37.02,
+        "e": 37.5
+      },
+      {
+        "w": "leva",
+        "s": 37.5,
+        "e": 37.74
+      },
+      {
+        "w": "à",
+        "s": 37.74,
+        "e": 37.9
+      },
+      {
+        "w": "saída.",
+        "s": 37.9,
+        "e": 38.42
+      },
+      {
+        "w": "A",
+        "s": 39.2,
+        "e": 39.64
+      },
+      {
+        "w": "outra...",
+        "s": 39.64,
+        "e": 40.04
+      },
+      {
+        "w": "não.",
+        "s": 40.46,
+        "e": 40.62
+      }
+    ]
+  },
+  {
+    "id": "n07",
+    "who": "NARRADOR",
+    "at": 41.6,
+    "text": "Você está no sétimo andar. E precisa escolher.",
+    "start": 41.6,
+    "dur": 3.623,
+    "end": 45.223,
+    "wav": "raw/voice/ep01/n07.wav",
+    "whisper": "Você está no 7Mandar e precisa escolher.",
+    "words": [
+      {
+        "w": "Você",
+        "s": 41.6,
+        "e": 41.86
+      },
+      {
+        "w": "está",
+        "s": 41.86,
+        "e": 42.18
+      },
+      {
+        "w": "no",
+        "s": 42.18,
+        "e": 42.32
+      },
+      {
+        "w": "sétimo",
+        "s": 42.32,
+        "e": 42.77
+      },
+      {
+        "w": "andar.",
+        "s": 42.77,
+        "e": 43.22
+      },
+      {
+        "w": "E",
+        "s": 43.22,
+        "e": 44.16
+      },
+      {
+        "w": "precisa",
+        "s": 44.16,
+        "e": 44.58
+      },
+      {
+        "w": "escolher.",
+        "s": 44.58,
+        "e": 45.14
+      }
+    ]
+  },
+  {
+    "id": "b01",
+    "who": "BIA",
+    "at": 50.4,
+    "text": "Esse vídeo tá repetindo...",
+    "start": 50.4,
+    "dur": 1.607,
+    "end": 52.007,
+    "wav": "raw/voice/ep01/b01.wav",
+    "whisper": "Esse vídeo está repetindo.",
+    "words": [
+      {
+        "w": "Esse",
+        "s": 50.4,
+        "e": 50.6
+      },
+      {
+        "w": "vídeo",
+        "s": 50.6,
+        "e": 50.96
+      },
+      {
+        "w": "tá",
+        "s": 50.96,
+        "e": 51.18
+      },
+      {
+        "w": "repetindo...",
+        "s": 51.18,
+        "e": 51.9
+      }
+    ]
+  },
+  {
+    "id": "n08",
+    "who": "NARRADOR",
+    "at": 53.0,
+    "text": "Se a câmera está mostrando uma gravação... o que realmente está acontecendo lá?",
+    "start": 53.0,
+    "dur": 4.334,
+    "end": 57.334,
+    "wav": "raw/voice/ep01/n08.wav",
+    "whisper": "Se a câmera está mostrando uma gravação, o que realmente está acontecendo lá?",
+    "words": [
+      {
+        "w": "Se",
+        "s": 53.0,
+        "e": 53.16
+      },
+      {
+        "w": "a",
+        "s": 53.16,
+        "e": 53.28
+      },
+      {
+        "w": "câmera",
+        "s": 53.28,
+        "e": 53.56
+      },
+      {
+        "w": "está",
+        "s": 53.56,
+        "e": 53.82
+      },
+      {
+        "w": "mostrando",
+        "s": 53.82,
+        "e": 54.34
+      },
+      {
+        "w": "uma",
+        "s": 54.34,
+        "e": 54.5
+      },
+      {
+        "w": "gravação...",
+        "s": 54.5,
+        "e": 55.12
+      },
+      {
+        "w": "o",
+        "s": 55.46,
+        "e": 55.56
+      },
+      {
+        "w": "que",
+        "s": 55.56,
+        "e": 55.72
+      },
+      {
+        "w": "realmente",
+        "s": 55.72,
+        "e": 56.14
+      },
+      {
+        "w": "está",
+        "s": 56.14,
+        "e": 56.5
+      },
+      {
+        "w": "acontecendo",
+        "s": 56.5,
+        "e": 56.92
+      },
+      {
+        "w": "lá?",
+        "s": 56.92,
+        "e": 57.3
+      }
+    ]
+  },
+  {
+    "id": "n09",
+    "who": "NARRADOR",
+    "at": 60.4,
+    "text": "Você tem dez segundos. E alguém está se aproximando.",
+    "start": 60.4,
+    "dur": 4.141,
+    "end": 64.54,
+    "wav": "raw/voice/ep01/n09.wav",
+    "whisper": "Você tem 10 segundos e alguém está se aproximando.",
+    "words": [
+      {
+        "w": "Você",
+        "s": 60.4,
+        "e": 60.68
+      },
+      {
+        "w": "tem",
+        "s": 60.68,
+        "e": 60.92
+      },
+      {
+        "w": "dez",
+        "s": 60.92,
+        "e": 61.24
+      },
+      {
+        "w": "segundos.",
+        "s": 61.24,
+        "e": 61.72
+      },
+      {
+        "w": "E",
+        "s": 61.72,
+        "e": 63.0
+      },
+      {
+        "w": "alguém",
+        "s": 63.0,
+        "e": 63.28
+      },
+      {
+        "w": "está",
+        "s": 63.28,
+        "e": 63.64
+      },
+      {
+        "w": "se",
+        "s": 63.64,
+        "e": 63.8
+      },
+      {
+        "w": "aproximando.",
+        "s": 63.8,
+        "e": 64.46
+      }
+    ]
+  },
+  {
+    "id": "n10",
+    "who": "NARRADOR",
+    "at": 65.4,
+    "text": "Você arrisca as escadas... ou entra no elevador?",
+    "start": 65.4,
+    "dur": 2.997,
+    "end": 68.397,
+    "wav": "raw/voice/ep01/n10.wav",
+    "whisper": "Você arrisca as escadas ou entra no elevador.",
+    "words": [
+      {
+        "w": "Você",
+        "s": 65.4,
+        "e": 65.68
+      },
+      {
+        "w": "arrisca",
+        "s": 65.68,
+        "e": 66.22
+      },
+      {
+        "w": "as",
+        "s": 66.22,
+        "e": 66.32
+      },
+      {
+        "w": "escadas...",
+        "s": 66.32,
+        "e": 66.86
+      },
+      {
+        "w": "ou",
+        "s": 66.86,
+        "e": 67.38
+      },
+      {
+        "w": "entra",
+        "s": 67.38,
+        "e": 67.7
+      },
+      {
+        "w": "no",
+        "s": 67.7,
+        "e": 67.86
+      },
+      {
+        "w": "elevador?",
+        "s": 67.86,
+        "e": 68.3
+      }
+    ]
+  },
+  {
+    "id": "n11",
+    "who": "NARRADOR",
+    "at": 69.2,
+    "text": "Comenta A ou B. A opção mais votada decide o que acontece.",
+    "start": 69.2,
+    "dur": 4.672,
+    "end": 73.872,
+    "wav": "raw/voice/ep01/n11.wav",
+    "whisper": "Comenta ao B. A opção mais votada decide o que acontece.",
+    "words": [
+      {
+        "w": "Comenta",
+        "s": 69.2,
+        "e": 69.7
+      },
+      {
+        "w": "A",
+        "s": 69.7,
+        "e": 69.82
+      },
+      {
+        "w": "ou",
+        "s": 69.82,
+        "e": 69.94
+      },
+      {
+        "w": "B.",
+        "s": 69.94,
+        "e": 70.26
+      },
+      {
+        "w": "A",
+        "s": 70.92,
+        "e": 71.36
+      },
+      {
+        "w": "opção",
+        "s": 71.36,
+        "e": 71.8
+      },
+      {
+        "w": "mais",
+        "s": 71.8,
+        "e": 72.04
+      },
+      {
+        "w": "votada",
+        "s": 72.04,
+        "e": 72.54
+      },
+      {
+        "w": "decide",
+        "s": 72.54,
+        "e": 72.86
+      },
+      {
+        "w": "o",
+        "s": 72.86,
+        "e": 73.1
+      },
+      {
+        "w": "que",
+        "s": 73.1,
+        "e": 73.16
+      },
+      {
+        "w": "acontece.",
+        "s": 73.16,
+        "e": 73.58
+      }
+    ]
+  }
+]

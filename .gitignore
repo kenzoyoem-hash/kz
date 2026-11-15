@@ -1,0 +1,5 @@
+node_modules/
+.remotion/
+sistema-invadido/src/hyperframes/**/renders/
+*.log
+__pycache__/

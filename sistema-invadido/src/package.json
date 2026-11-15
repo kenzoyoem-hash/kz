@@ -1,0 +1,24 @@
+{
+  "name": "sistema-invadido",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SISTEMA INVADIDO - série animada interativa (Remotion)",
+  "scripts": {
+    "studio": "remotion studio",
+    "render:ep1": "remotion render src/index.ts EP01 ../done/ep01_video_raw.mp4"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.1.1",
+    "@fontsource/montserrat": "^5.1.0",
+    "@remotion/cli": "^4.0.543",
+    "@types/react": "^18.3.12",
+    "gsap": "^3.12.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.543",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "hyperframes": "^0.9.54"
+  }
+}
