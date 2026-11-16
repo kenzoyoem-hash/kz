@@ -78,18 +78,51 @@ export const ShortFlight: React.FC<{gate?: boolean; people?: React.ReactNode}> =
       {[0, 2, 4, 6].map((i) => (
         <line key={i} x1={stairX + i * stepW} y1={floorY + i * stepH - 230 + 2} x2={stairX + i * stepW} y2={floorY + i * stepH} stroke="#7d889b" strokeWidth={7} />
       ))}
-      {gate && (
-        <g>
-          {/* grade de segurança fechada, presa na parede e no corrimão */}
-          <rect x={stairX - 30} y={floorY - 330} width={330} height={340} fill="none" stroke="#9aa3b5" strokeWidth={12} />
-          {Array.from({length: 11}).map((_, i) => <line key={i} x1={stairX - 30 + i * 33} y1={floorY - 330} x2={stairX - 30 + i * 33} y2={floorY + 10} stroke="#8a93a6" strokeWidth={6} />)}
-          <line x1={stairX - 30} y1={floorY - 170} x2={stairX + 300} y2={floorY - 170} stroke="#9aa3b5" strokeWidth={8} />
-          <path d={`M${stairX + 110},${floorY - 190} q25,30 50,0`} stroke="#c9cfdb" strokeWidth={6} fill="none" />
-          <rect x={stairX + 115} y={floorY - 175} width={40} height={46} rx={6} fill="#d8b44a" />
-          <rect x={stairX + 60} y={floorY - 360} width={210} height={46} rx={6} fill={C.red} />
-          <text x={stairX + 165} y={floorY - 328} fontSize={26} textAnchor="middle" fontFamily={FONT.title} fill="#fff">BLOQUEADO</text>
-        </g>
-      )}
+      {gate && <SecurityGate />}
+    </g>
+  );
+};
+
+/** GRADE DE SEGURANÇA: presa num poste chumbado na parede (esquerda) e num poste apoiado no 5º degrau,
+ *  com a borda de baixo acompanhando os degraus — nada flutua. */
+export const SecurityGate: React.FC = () => {
+  const {stairX, stepW, stepH, floorY} = LS;
+  const x0 = stairX - 22, x1 = stairX + stepW * 5 - 8, top = floorY - 380;
+  const tread = (x: number) => (x < stairX ? floorY : floorY + Math.floor((x - stairX) / stepW) * stepH);
+  const bars = [] as React.ReactNode[];
+  for (let x = x0 + 26; x < x1; x += 26) bars.push(<line key={x} x1={x} y1={top} x2={x} y2={tread(x) - 6} stroke="#8d97aa" strokeWidth={7} />);
+  // borda inferior em degraus
+  let bottom = `M${x0},${floorY - 6}`;
+  for (let i = 0; i <= 4; i++) {
+    const xs = stairX + i * stepW, y = floorY + i * stepH - 6;
+    bottom += ` L${xs},${i === 0 ? floorY - 6 : floorY + (i - 1) * stepH - 6} L${xs},${y}`;
+  }
+  bottom += ` L${x1},${floorY + 4 * stepH - 6}`;
+  return (
+    <g>
+      {/* sombra da grade nos degraus */}
+      <path d={`M${x0 + 30},${floorY} L${x1 + 40},${floorY + 4 * stepH} L${x1 + 40},${floorY + 4 * stepH + 20} L${x0 + 30},${floorY + 20} Z`} fill="#000" opacity={0.25} />
+      {bars}
+      <rect x={x0} y={top} width={x1 - x0} height={14} fill="#a3adbf" />
+      <line x1={x0} y1={top + 170} x2={x1} y2={top + 170} stroke="#a3adbf" strokeWidth={9} />
+      <path d={bottom} stroke="#a3adbf" strokeWidth={10} fill="none" strokeLinejoin="round" />
+      <line x1={x0 + 10} y1={floorY - 10} x2={x1 - 10} y2={top + 20} stroke="#8d97aa" strokeWidth={6} />
+      {/* poste da parede com suportes chumbados */}
+      <rect x={x0 - 18} y={top - 30} width={24} height={floorY - top + 30} fill="#c3cad8" />
+      <rect x={x0 - 34} y={top + 30} width={36} height={22} rx={3} fill="#7d889b" />
+      <rect x={x0 - 34} y={floorY - 120} width={36} height={22} rx={3} fill="#7d889b" />
+      <rect x={x0 - 30} y={floorY - 8} width={48} height={10} rx={3} fill="#5d6779" />
+      {/* poste apoiado no degrau, com sapata parafusada */}
+      <rect x={x1 - 6} y={top - 30} width={24} height={tread(x1) - top + 30} fill="#c3cad8" />
+      <rect x={x1 - 20} y={tread(x1) - 10} width={52} height={12} rx={3} fill="#5d6779" />
+      {/* corrente + cadeado no poste do corrimão */}
+      <path d={`M${x1 + 6},${top + 150} q30,26 60,4 q20,-14 34,10`} stroke="#d0d5df" strokeWidth={6} fill="none" />
+      <rect x={x1 + 42} y={top + 170} width={38} height={44} rx={6} fill="#d8b44a" />
+      <path d={`M${x1 + 50},${top + 172} q11,-24 22,0`} stroke="#d0d5df" strokeWidth={5} fill="none" />
+      {/* faixa e placa */}
+      <rect x={x0 + 40} y={top - 70} width={200} height={50} rx={6} fill={C.red} />
+      <text x={x0 + 140} y={top - 35} fontSize={28} textAnchor="middle" fontFamily={FONT.title} fill="#fff">BLOQUEADO</text>
+      <line x1={x0 + 140} y1={top - 20} x2={x0 + 140} y2={top} stroke="#a3adbf" strokeWidth={4} />
     </g>
   );
 };

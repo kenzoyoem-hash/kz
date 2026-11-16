@@ -77,7 +77,7 @@ const CorridorStairDoor: React.FC<{children?: React.ReactNode; open?: number}> =
 export const S1: React.FC = () => {
   const t = useT();
   const T = t;
-  if (t < 3.0) {
+  if (t < 3.2) {
     return (
       <PhoneShot T={T}>
         <div style={{position: 'absolute', inset: 0, background: '#05070c', padding: '560px 30px 0', boxSizing: 'border-box', textAlign: 'center'}}>
@@ -88,18 +88,18 @@ export const S1: React.FC = () => {
       </PhoneShot>
     );
   }
-  if (t < 5.0) {
-    const unlocked = T > 3.6;
+  if (t < 5.6) {
+    const unlocked = T > 4.1;
     return (
       <AbsoluteFill style={{background: C.bg}}>
-        <SvgCamera cx={APT.lock.x} cy={APT.lock.y - 10} zoom={kf(t, [[3, 5.2], [5, 5.5, ease.linear]])}>
+        <SvgCamera cx={APT.lock.x} cy={APT.lock.y - 10} zoom={kf(t, [[3.2, 5.2], [5.6, 5.5, ease.linear]])}>
           <Apartment t={T} light={0.9} locked={!unlocked} />
         </SvgCamera>
         <Vignette strength={VIG} />
       </AbsoluteFill>
     );
   }
-  if (t < 6.6) {
+  if (t < 7.6) {
     // Bia de frente para a porta (de costas para a câmera), celular na mão, mão na maçaneta
     return (
       <AbsoluteFill style={{background: C.bg}}>
@@ -114,12 +114,12 @@ export const S1: React.FC = () => {
     );
   }
   // corte: lado do corredor — a porta abre e ela olha para o corredor
-  const open = tw(T, 6.6, 7.2, 0.35, 1, ease.out);
+  const open = tw(T, 7.6, 8.4, 0.35, 1, ease.out);
   return (
     <AbsoluteFill style={{background: C.bg}}>
       <SvgCamera cx={540} cy={1060} zoom={1.25}>
         <AptDoorFromHall t={T} open={open}>
-          <Bia t={T} x={540} y={1500} scale={0.95} phone="L" pose={POSES.phoneL} expr="worried" lookX={tw(T, 7.2, 7.5, 0, -0.8, ease.inOut)} />
+          <Bia t={T} x={540} y={1500} scale={0.95} phone="L" pose={POSES.phoneL} expr="worried" lookX={tw(T, 8.8, 9.2, 0, -0.8, ease.inOut)} />
         </AptDoorFromHall>
       </SvgCamera>
       <Vignette strength={VIG} />
@@ -131,7 +131,7 @@ export const S1: React.FC = () => {
 const AT_DOOR = {x: 700, y: 1470, s: 1.0};
 export const S2: React.FC = () => {
   const t = useT();
-  const T = 8 + t;
+  const T = 10 + t;
   const atDoor = (pose: Pose, expr: any, z: number, cx: number, cy: number, extra: Partial<React.ComponentProps<typeof Bia>> = {}) => (
     <AbsoluteFill style={{background: C.bg}}>
       <SvgCamera cx={cx} cy={cy} zoom={z}>
@@ -140,29 +140,29 @@ export const S2: React.FC = () => {
       <Vignette strength={VIG} />
     </AbsoluteFill>
   );
-  if (t < 0.8) return atDoor(POSES.phoneL, 'surprised', 1.15, 560, 1060, {phoneLit: true, lookY: 0.6});
-  if (t < 1.5) {
-    const k = t - 0.8;
+  if (t < 2.0) return atDoor(POSES.phoneL, t < 0.6 ? 'neutral' : 'surprised', kf(t, [[0, 1.15], [2, 1.22]]), 560, 1060, {phoneLit: t > 0.4, lookY: t > 0.6 ? 0.6 : 0, tremble: t > 0.4 ? 0.15 : 0});
+  if (t < 4.2) {
+    const k = t - 2.0;
     return (
-      <PhoneShot T={T} vib={k < 0.45}>
-        {k < 0.5 ? <IncomingCall t={T} name="VOCÊ" avatar={<BiaAvatar t={T} />} /> : <CallScreen t={T} name="VOCÊ" seconds={0} avatar={<BiaAvatar t={T} />} />}
-        <ThumbAnswer t={k} />
+      <PhoneShot T={T} vib={k < 1.1}>
+        {k < 1.2 ? <IncomingCall t={T} name="VOCÊ" avatar={<BiaAvatar t={T} />} /> : <CallScreen t={T} name="VOCÊ" seconds={0} avatar={<BiaAvatar t={T} />} />}
+        <ThumbAnswer t={(k - 0.7) * 0.8} />
       </PhoneShot>
     );
   }
-  if (t < 3.6) {
+  if (t < 7.4) {
     // leva o celular ao ouvido (um movimento) e fica parada
-    return atDoor(mixPose(POSES.phoneL, POSES.phoneEar, tw(T, 9.5, 9.95, 0, 1, ease.inOut)), 'surprised', 1.4, 640, 1000);
+    return atDoor(mixPose(POSES.phoneL, POSES.phoneEar, tw(T, 14.2, 14.7, 0, 1, ease.inOut)), 'surprised', kf(t, [[4.2, 1.4], [7.4, 1.5]]), 640, 1000);
   }
-  if (t < 6.0) {
+  if (t < 9.8) {
     // close: sobrancelhas franzidas, olhos arregalados — "Quem tá falando?"
-    return atDoor(POSES.phoneEar, 'fear', kf(t, [[3.6, 2.6], [6, 2.75]]), AT_DOOR.x, 770, {mouth: mouthOf('BIA', T, 1.2)});
+    return atDoor(POSES.phoneEar, 'fear', kf(t, [[7.4, 2.6], [9.8, 2.75]]), AT_DOOR.x, 770, {mouth: mouthOf('BIA', T, 1.2)});
   }
-  if (t < 7.2) {
+  if (t < 11.0) {
     return <PhoneShot T={T}><CallScreen t={T} name="VOCÊ" seconds={4} ended avatar={<BiaAvatar t={T} />} /></PhoneShot>;
   }
   // olha para a porta, hesita e coloca a mão na maçaneta (de costas, uma vez)
-  const reach = tw(T, 15.9, 16.4, 0, 1, ease.inOut);
+  const reach = tw(T, 21.6, 22.2, 0, 1, ease.inOut);
   const lever = {x: LS.door.x + LS.door.w - 70, y: LS.door.y + 421};
   const bx = 250;
   return (
@@ -180,11 +180,11 @@ export const S2: React.FC = () => {
 /* ───────── CENA 3 — AS CÂMERAS ESTÃO MENTINDO (17–27,4s) ───────── */
 export const S3: React.FC = () => {
   const t = useT();
-  const T = 17 + t;
-  if (t < 1.4) {
+  const T = 23 + t;
+  if (t < 2.0) {
     // abre a porta da escada (a porta abre para dentro da escada, longe da câmera)
     const lever = {x: LS.door.x + LS.door.w - 70, y: LS.door.y + 421};
-    const open = tw(T, 17.35, 18.2, 0, 0.9, ease.out);
+    const open = tw(T, 23.4, 24.4, 0, 0.9, ease.out);
     return (
       <AbsoluteFill style={{background: C.bg}}>
         <SvgCamera cx={330} cy={1060} zoom={1.45}>
@@ -202,8 +202,8 @@ export const S3: React.FC = () => {
       <Vignette strength={VIG} />
     </AbsoluteFill>
   );
-  if (t < 3.0) return real(kf(t, [[1.4, 1.0], [3.0, 1.03]]));
-  if (t < 6.6) {
+  if (t < 4.8) return real(kf(t, [[2.0, 1.0], [4.8, 1.04]]));
+  if (t < 8.6) {
     // no celular: CAM 07 — ESCADA, 22:46:57 congelado, três silhuetas descendo em loop
     return (
       <PhoneShot T={T}>
@@ -214,17 +214,17 @@ export const S3: React.FC = () => {
     );
   }
   // de volta ao MESMO enquadramento real: vazio
-  return real(kf(t, [[6.6, 1.0], [10.4, 1.1]]));
+  return real(kf(t, [[8.6, 1.0], [12.4, 1.1]]));
 };
 
 /* ───────── CENA 4 — O CAMINHO BLOQUEADO (27,4–37s) ───────── */
 export const S4: React.FC = () => {
   const t = useT();
-  const T = 27.4 + t;
-  if (t < 2.8) {
+  const T = 35.4 + t;
+  if (t < 3.4) {
     return (
       <AbsoluteFill style={{background: C.bg}}>
-        <SvgCamera cx={kf(t, [[0, 520], [2.8, 720]])} cy={kf(t, [[0, 900], [2.8, 1060]])} zoom={1.0}><FeetOnSteps t={t + 0.0} /></SvgCamera>
+        <SvgCamera cx={kf(t, [[0, 520], [3.4, 740]])} cy={kf(t, [[0, 900], [3.4, 1070]])} zoom={1.0}><FeetOnSteps t={t + 0.0} /></SvgCamera>
         <Vignette strength={VIG} />
       </AbsoluteFill>
     );
@@ -236,11 +236,11 @@ export const S4: React.FC = () => {
     </AbsoluteFill>
   );
   const B = (expr: any, extra: Partial<React.ComponentProps<typeof Bia>> = {}) => <Bia t={T} x={LS.bia.x} y={LS.bia.y} scale={LS.bia.s} phone="L" pose={POSES.phoneL} expr={expr} {...extra} />;
-  if (t < 5.6) return landing(620, 1050, kf(t, [[2.8, 1.0], [5.6, 1.06]]), B('worried', {lookX: -0.3}));
-  if (t < 7.6) {
+  if (t < 6.0) return landing(620, 1050, kf(t, [[3.4, 1.0], [6.0, 1.05]]), B('worried', {lookX: -0.3}));
+  if (t < 8.8) {
     // olha para baixo: só o lance seguinte, fechado pela grade
-    return landing(900, 1460, kf(t, [[5.6, 1.7], [7.6, 1.85]]), null);
+    return landing(880, 1380, kf(t, [[6.0, 1.55], [8.8, 1.7]]), null);
   }
   // close no rosto: "Não… não pode ser."
-  return landing(LS.bia.x, 790, kf(t, [[7.6, 2.6], [9.6, 2.8]]), B('fear', {lookY: 0.7, mouth: mouthOf('BIA', T, 1.3)}));
+  return landing(LS.bia.x, 790, kf(t, [[8.8, 2.6], [11.2, 2.8]]), B('fear', {lookY: 0.7, mouth: mouthOf('BIA', T, 1.3)}));
 };

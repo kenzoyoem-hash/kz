@@ -39,25 +39,25 @@
     {
       "id": "t01",
       "who": "BIA_TEL",
-      "at": 9.5,
+      "at": 14.6,
       "text": "Não desce! Volta pro elevador!"
     },
     {
       "id": "b01",
       "who": "BIA",
-      "at": 11.8,
+      "at": 17.8,
       "text": "Quem tá falando?"
     },
     {
       "id": "n02",
       "who": "NARRADOR",
-      "at": 22.2,
+      "at": 29.2,
       "text": "Na tela, pessoas descem. Na sua frente, não há ninguém."
     },
     {
       "id": "b02",
       "who": "BIA",
-      "at": 35.2,
+      "at": 44.6,
       "rate": "-12%",
       "volume": -25,
       "fx": "whisper",
@@ -66,47 +66,47 @@
     {
       "id": "n03",
       "who": "NARRADOR",
-      "at": 36.9,
+      "at": 46.9,
       "pitch": "-9Hz",
       "text": "A saída está bloqueada. A câmera mentiu."
     },
     {
       "id": "d01",
       "who": "DAVI",
-      "at": 40.7,
+      "at": 51.2,
       "text": "Ei! Sou Davi, da manutenção. A saída tá bloqueada, mas existe outro caminho."
     },
     {
       "id": "b03",
       "who": "BIA",
-      "at": 47.4,
+      "at": 58.2,
       "text": "Como eu sei que posso confiar em você?"
     },
     {
       "id": "n04",
       "who": "NARRADOR",
-      "at": 49.9,
+      "at": 62.6,
       "text": "O hacker manda não confiar nele. Mas foi o hacker que falsificou as câmeras."
     },
     {
       "id": "d02",
       "who": "DAVI",
-      "at": 56.0,
+      "at": 68.8,
       "rate": "+6%",
       "text": "Eu tenho a chave do acesso técnico. Vem!"
     },
     {
       "id": "n05",
       "who": "NARRADOR",
-      "at": 63.6,
+      "at": 79.0,
       "rate": "-8%",
       "volume": -10,
-      "text": "No celular, você já aparece entrando. Só que ainda está parada."
+      "text": "No celular, você já aparece entrando. Só que ainda está parada… e não está sozinha."
     },
     {
       "id": "n06",
       "who": "NARRADOR",
-      "at": 69.4,
+      "at": 86.8,
       "rate": "+2%",
       "text": "Você segue Davi ou fica na escada? Comenta A ou B!"
     }

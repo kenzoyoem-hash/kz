@@ -214,11 +214,19 @@ def blip():
         t = t_(0.05); s_ = np.sign(np.sin(2*np.pi*f*t)) * 0.25 * env(len(t), 0.002, 0.01); i = int(k * 0.07 * SR); out[i:i+len(s_)] += s_
     return norm(lp_fast(out, 6000), 0.4)
 def door_open():
-    """porta pesada abrindo (trinco + ar), sem rangido agudo"""
-    d = 1.2; t = t_(d)
-    latch = np.zeros(len(t)); L = int(0.08 * SR); latch[:L] = bp_fast(noise(0.08), 800, 5000) * np.linspace(1, 0, L)
-    air = lp_fast(noise(d), 400) * np.sin(np.pi * t / d) ** 2 * 0.6
-    return norm(latch + air + np.sin(2*np.pi*70*t) * np.exp(-t * 6) * 0.3, 0.6)
+    """porta corta-fogo abrindo: estalo do trinco + rangido grave curto + batida abafada (sem ruído de ar)"""
+    d = 1.3; n = int(d * SR); out = np.zeros(n)
+    t = t_(0.06); clk = bp_fast(noise(0.06), 1200, 6000) * expdec(len(t), 80); out[:len(t)] += clk
+    t2 = t_(0.12); out[int(0.07*SR):int(0.07*SR)+len(t2)] += bp_fast(noise(0.12), 600, 3000) * expdec(len(t2), 50) * 0.6
+    tc = t_(0.7); f = 95 + 25 * np.sin(2*np.pi*1.2*tc) + 6 * np.sin(2*np.pi*17*tc)
+    creak = np.sin(2*np.pi*np.cumsum(f)/SR) * (0.5 + 0.5*np.sin(2*np.pi*9*tc)) * np.sin(np.pi*tc/0.7) * 0.35
+    i = int(0.2*SR); out[i:i+len(tc)] += lp_fast(creak, 900)
+    tt = t_(0.35); thud = np.sin(2*np.pi*58*tt) * expdec(len(tt), 16) * 0.5
+    j = int(0.9*SR); out[j:j+len(tt)] += thud[:n-j]
+    return norm(out, 0.7)
+def pulse():
+    """batida grave única (substitui o whoosh)"""
+    t = t_(0.8); return norm(np.sin(2*np.pi*48*t) * expdec(len(t), 7) + np.sin(2*np.pi*96*t) * expdec(len(t), 14) * 0.3, 0.9)
 def door_close():
     """porta fechando + bipe de trava"""
     out = np.zeros(int(1.0 * SR)); t = t_(0.5)
@@ -243,7 +251,7 @@ def footstep1():
 LIB = {k: v for k, v in globals().items() if callable(v) and k in (
     "notif message impact braam whoosh riser glitch static tv_on flicker lock handle bang heartbeat "
     "alarm ticks ding door_slide steps steps_run rewind vibrate ring breath metal_steps call_drop answer unlock "
-    "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1").split()}
+    "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1 pulse").split()}
 
 def music(duration, automation):
     """Trilha de suspense: drone em Lá menor, pulso grave e notas agudas esparsas.
