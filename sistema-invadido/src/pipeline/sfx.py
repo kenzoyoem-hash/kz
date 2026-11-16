@@ -170,7 +170,7 @@ def breath(n_=4, period=1.7):
         for off, d, g in [(0, 0.8, 1.0), (0.85, 0.7, 0.8)]:
             L = int(d * SR); tt = np.arange(L) / SR
             e = np.sin(np.pi * tt / d) ** 2
-            s_ = bp_fast(rng.uniform(-1, 1, L), 300 if off else 500, 1800 if off else 2600) * e * g
+            s_ = bp_fast(rng.uniform(-1, 1, L), 180 if off else 250, 900 if off else 1200) * e * g
             i = int((k * period + off) * SR); out[i:i+L] += s_[:max(0, n-i)]
     return norm(out, 0.8)
 def metal_steps(count=6, gap=0.42):
@@ -180,10 +180,7 @@ def metal_steps(count=6, gap=0.42):
         t = t_(0.5); s_ = (np.sin(2*np.pi*95*t) * expdec(len(t), 18) + bp_fast(noise(0.5), 1500, 6000) * expdec(len(t), 60) * 0.5
               + np.sin(2*np.pi*1730*t) * expdec(len(t), 30) * 0.12)
         i = int(k * gap * SR); out[i:i+len(s_)] += s_
-    rev = np.zeros_like(out)
-    for dl, g in [(0.09, 0.4), (0.21, 0.25), (0.37, 0.15)]:
-        j = int(dl * SR); rev[j:] += out[:-j] * g
-    return norm(out + rev, 0.8)
+    return norm(lp_fast(out, 2500), 0.8)
 def call_drop():
     out = np.zeros(int(1.3 * SR))
     for k in range(3):

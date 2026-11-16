@@ -19,8 +19,8 @@ export const Ep02a: React.FC = () => {
         const from = Math.round(s.start * fps);
         return <Sequence key={s.id} from={from} durationInFrames={Math.round(s.end * fps) - from} name={s.id}><C /></Sequence>;
       })}
-      <Vignette strength={0.45} />
-      <Grain opacity={0.06} />
+      <Vignette strength={0.25} />
+      <Grain opacity={0.04} />
     </AbsoluteFill>
   );
 };

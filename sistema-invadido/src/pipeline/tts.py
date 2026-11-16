@@ -11,20 +11,19 @@ import edge_tts
 from common import *
 
 FX = {
-    "narrator": "highpass=f=70,equalizer=f=140:t=q:w=1:g=3,equalizer=f=3500:t=q:w=1.5:g=2,"
-                "acompressor=threshold=-20dB:ratio=3:attack=5:release=80",
-    "whisper":  "highpass=f=160,equalizer=f=6500:t=q:w=1:g=4,acompressor=threshold=-24dB:ratio=4,aecho=0.8:0.5:22:0.12,volume=0.8",
-    "bia":      "highpass=f=110,equalizer=f=4000:t=q:w=1.2:g=2,acompressor=threshold=-20dB:ratio=3,aecho=0.8:0.4:30:0.10",
-    # voz idêntica à da Bia saindo do celular: banda de telefone, leve saturação e um eco estranho
-    "phone":    "highpass=f=380,lowpass=f=3400,equalizer=f=1500:t=q:w=1:g=5,acrusher=bits=12:mix=0.15,"
-                "aecho=0.6:0.5:120:0.18,acompressor=threshold=-22dB:ratio=5,volume=1.2",
+    # vozes LIMPAS: só limpeza de graves, leve presença e compressão suave (sem eco/reverb)
+    "narrator": "highpass=f=70,equalizer=f=150:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.5:g=1.5,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80",
+    "bia":      "highpass=f=100,equalizer=f=3800:t=q:w=1.2:g=1.5,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80",
+    "whisper":  "highpass=f=140,equalizer=f=6000:t=q:w=1:g=3,acompressor=threshold=-24dB:ratio=3,volume=0.85",
+    "man":      "highpass=f=80,equalizer=f=3000:t=q:w=1.2:g=1.5,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80",
+    # voz saindo do celular: só faixa de telefone (sem eco, sem distorção)
+    "phone":    "highpass=f=300,lowpass=f=3600,equalizer=f=1600:t=q:w=1:g=3,acompressor=threshold=-22dB:ratio=3,volume=1.15",
+    # voz vindo de longe: mais abafada e mais baixa (sem eco)
+    "far":      "highpass=f=180,lowpass=f=3800,acompressor=threshold=-22dB:ratio=3,volume=0.8",
     "hacker":   "rubberband=pitch=0.80:formant=shifted,highpass=f=90,lowpass=f=7000,acrusher=bits=10:mix=0.25:mode=log:aa=1,"
                 "flanger=delay=2:depth=2:speed=0.3:width=60,aecho=0.8:0.6:45|90:0.25|0.12,equalizer=f=250:t=q:w=1:g=4,"
                 "acompressor=threshold=-18dB:ratio=4,volume=1.1",
-    # escada de emergência: reverberação de concreto
-    "stair":    "highpass=f=100,aecho=0.8:0.7:60|140|260:0.30|0.20|0.12,acompressor=threshold=-20dB:ratio=3",
-    # voz ecoando vários andares abaixo
-    "far":      "highpass=f=200,lowpass=f=4200,aecho=0.8:0.8:110|260|480:0.30|0.18|0.10,volume=0.85",
+    "stair":    "highpass=f=80,acompressor=threshold=-20dB:ratio=2.5",
 }
 TAGS = {
     "lento": dict(rate=-16), "rapido": dict(rate=+14), "grave": dict(pitch=-9), "agudo": dict(pitch=+10),
@@ -72,7 +71,8 @@ def main(ep):
     cues, prev_end = [], 0.0
     for ln in script["lines"]:
         v = script["voices"][ln["who"]]
-        segs = parse(ln["text"])
+        # padrão: a fala inteira numa única síntese (as marcações viram só pausas de pontuação)
+        segs = parse(ln["text"]) if ln.get("segmented") else [("say", "normal", clean(ln["text"]))]
         pieces = []
         for i, sg in enumerate(segs):
             if sg[0] == "pause":
@@ -80,7 +80,7 @@ def main(ep):
             _, tag, txt = sg
             t = TAGS[tag]
             # micro-variação automática entre trechos (evita monotonia)
-            wob = [0, 3, -2, 2][i % 4] if len(segs) > 1 else 0
+            wob = 0
             rate = num(v["rate"]) + t.get("rate", 0); pitch = num(v["pitch"]) + t.get("pitch", 0) + wob
             vol = t.get("volume", 0)
             mp3 = vdir / f"{ln['id']}_{i}_raw.mp3"

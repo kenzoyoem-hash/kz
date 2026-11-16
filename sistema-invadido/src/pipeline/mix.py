@@ -35,13 +35,13 @@ def main(ep):
         place(fx, sfx.LIB[e["s"]](), e["t"], e["g"])
     mus = sfx.music(dur, tl["music"])
     vad = np.clip(smooth_env(voice, 0.03, 0.35) / 0.08, 0, 1)
-    mus *= 1 - 0.7 * vad
-    fx *= 1 - 0.3 * vad
+    mus *= 1 - 0.8 * vad   # trilha some sob a voz
+    fx *= 1 - 0.5 * vad
     # estéreo: trilha com efeito Haas, vozes e efeitos centralizados
     hz = int(0.012 * SR)
     musL, musR = mus, np.concatenate([np.zeros(hz), mus[:-hz]])
-    L = voice + fx * 0.8 + musL * 0.55
-    R = voice + fx * 0.8 + musR * 0.55
+    L = voice + fx * tl.get('fxGain', 0.8) + musL * tl.get('musicGain', 0.55)
+    R = voice + fx * tl.get('fxGain', 0.8) + musR * tl.get('musicGain', 0.55)
     cut = int(tl["hardCut"] * SR); L[cut:] = 0; R[cut:] = 0
     peak = max(np.abs(L).max(), np.abs(R).max()); L, R = L / peak * 0.89, R / peak * 0.89
     mixdir = RAW / "mix"; mixdir.mkdir(exist_ok=True)
