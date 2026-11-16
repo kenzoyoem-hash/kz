@@ -13,7 +13,7 @@ def norm_w(w):
 def load16k(p):
     b = subprocess.run(["ffmpeg", "-v", "error", "-i", str(p), "-f", "f32le", "-ac", "1", "-ar", "16000", "-"],
                        capture_output=True).stdout
-    return np.frombuffer(b, np.float32)
+    return np.concatenate([np.zeros(4800, np.float32), np.frombuffer(b, np.float32)])  # 0,3 s de silêncio antes (o Whisper não perde o começo)
 
 def align(script_words, wh):
     """wh: lista (palavra, ini, fim) do whisper. Retorna tempos para cada palavra do roteiro."""
@@ -52,7 +52,7 @@ def main(ep):
     words_all = []
     for c in cues:
         segs, _ = model.transcribe(load16k(ROOT / c["wav"]), language="pt", word_timestamps=True, vad_filter=False)
-        wh = [(w.word.strip(), w.start, w.end) for s in segs for w in s.words]
+        wh = [(w.word.strip(), max(0.0, w.start - 0.3), max(0.0, w.end - 0.3)) for s in segs for w in s.words]
         sw = c["text"].split()
         if len(wh) < max(2, len(sw) // 3):   # whisper falhou: distribui pelo tamanho das palavras
             print(f"  aviso: {c['id']} sem palavras suficientes do whisper, usando distribuição proporcional")
@@ -95,7 +95,7 @@ def main(ep):
         start = ws[0]["s"] - 0.05
         nxt = chunks[k+1][1][0]["s"] - 0.05 if k + 1 < len(chunks) else 1e9
         end = min(ws[-1]["e"] + 0.35, nxt)
-        style = {"HACKER": "Hacker", "BIA": "Bia", "BIA_CLONE": "Clone", "BIA_TEL": "Clone", "HOMEM": "Homem", "HOMEM_LONGE": "Homem", "DAVI": "Homem"}.get(c["who"], "Narr")
+        style = {"HACKER": "Hacker", "BIA": "Bia", "BIA_CLONE": "Clone", "BIA_TEL": "Clone", "HOMEM": "Homem", "HOMEM_LONGE": "Homem", "DAVI": "Homem", "VOZ": "Homem", "INTERFONE": "Hacker"}.get(c["who"], "Narr")
         y = cap_y(start)
         # um evento por palavra ativa (palavra falada em destaque)
         for j, w in enumerate(ws):
@@ -141,7 +141,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     (DONE / f"{eid(ep)}_legendas.ass").write_text(header + "\n".join(ev) + "\n", encoding="utf-8")
     srt = []
     for i, c in enumerate(cues, 1):
-        who = {"NARRADOR": "", "BIA_CLONE": "[VOZ DA BIA NO CELULAR] ", "BIA_TEL": "[VOZ DA BIA NO TELEFONE] ", "HOMEM_LONGE": "[HOMEM] "}.get(c["who"], f"[{c['who']}] ")
+        who = {"NARRADOR": "", "BIA_CLONE": "[VOZ DA BIA NO CELULAR] ", "BIA_TEL": "[VOZ DA BIA NO TELEFONE] ", "HOMEM_LONGE": "[HOMEM] ", "VOZ": "[VOZ LÁ FORA] ", "INTERFONE": "[INTERFONE] "}.get(c["who"], f"[{c['who']}] ")
         srt.append(f"{i}\n{srt_time(c['words'][0]['s'])} --> {srt_time(c['words'][-1]['e'] + 0.3)}\n{who}{c['text']}\n")
     (DONE / f"{eid(ep)}_legendas.srt").write_text("\n".join(srt), encoding="utf-8")
     print(f"{len(ev)} eventos ASS, {len(cues)} legendas SRT")

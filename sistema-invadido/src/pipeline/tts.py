@@ -24,6 +24,10 @@ FX = {
                 "flanger=delay=2:depth=2:speed=0.3:width=60,aecho=0.8:0.6:45|90:0.25|0.12,equalizer=f=250:t=q:w=1:g=4,"
                 "acompressor=threshold=-18dB:ratio=4,volume=1.1",
     "stair":    "highpass=f=80,acompressor=threshold=-20dB:ratio=2.5",
+    # interfone do elevador: faixa estreita de alto-falante pequeno (sem eco)
+    "intercom": "highpass=f=420,lowpass=f=3200,equalizer=f=1800:t=q:w=1:g=4,acompressor=threshold=-22dB:ratio=4,volume=1.15",
+    # voz do outro lado da porta de metal: abafada (sem eco)
+    "muffled":  "highpass=f=120,lowpass=f=2000,equalizer=f=500:t=q:w=1:g=2,acompressor=threshold=-22dB:ratio=3,volume=1.1",
 }
 TAGS = {
     "lento": dict(rate=-16), "rapido": dict(rate=+14), "grave": dict(pitch=-9), "agudo": dict(pitch=+10),

@@ -67,6 +67,18 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - Nova votação: **A** = seguir Davi; **B** = continuar sozinha (na escada, perto da grade).
 - Posições fixas no patamar do 6º: porta técnica à esquerda, Davi em frente/ao lado dela, Bia junto à grade (`LS` em `sets/Landings.tsx`).
 
+## Continuidade do EP. 2B — "O ELEVADOR NÃO VAI PARA O TÉRREO" (Rota B)
+- Votação: "ELEVADOR ESCOLHIDO". O elevador de serviço chega ao 7º, a Bia entra e aperta "T".
+- A mochila VERMELHA do EP. 1 está no canto da cabine, com a etiqueta "DAVI — MANUTENÇÃO". Hacker: "NÃO TOQUE NA MOCHILA."
+- O elevador desce 7 → 6 e para; as luzes piscam. Hacker: "VOCÊ JÁ CHEGOU AO TÉRREO."
+- CAM 04 — PORTARIA ("AO VIVO") mostra uma imagem fabricada da Bia saindo na portaria.
+- Dentro da mochila: crachá do DAVI (manutenção), uma chave física e um caderno: "SE O SISTEMA FOR INVADIDO, NÃO CONFIE NO PAINEL DIGITAL." O desenho aponta "6º ANDAR — ACESSO TÉCNICO".
+- O interfone (que diz ser a "central de segurança") sabe o nome dela e manda "Permaneça na cabine… Não abra essa porta… Não responda."
+- Uma voz de fora bate na porta: "Sou da manutenção! O elevador parou no sexto!" (voz do Davi, abafada). Último grito: "BIA! NÃO ESCUTA ESSE INTERFONE!"
+- Votação: **A** = confiar na voz do lado de fora; **B** = obedecer à central de segurança.
+- Voz do interfone: pt-BR-AntonioNeural, mais grave, com filtro `intercom` (difere do narrador pelo timbre e pelo filtro).
+- Os dois ramos convergem no ACESSO TÉCNICO do 6º andar (2A: a porta do Davi; 2B: o desenho do caderno).
+
 ## Ramificações para o EP. 2
 - **A — Escadas**: a Bia desce pela Escada B e descobre que a câmera exibia uma gravação. A escada real mostra por que o loop foi montado (e quem não queria que se visse o que acontece lá).
 - **B — Elevador**: a Bia entra no elevador e precisa descobrir quem deixou a mochila vermelha. O celular que toca dentro dela está ligado ao número dela.

@@ -1,0 +1,163 @@
+{
+  "episode": "2b",
+  "title": "O ELEVADOR NÃO VAI PARA O TÉRREO",
+  "fps": 30,
+  "voices": {
+    "NARRADOR": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "-4%",
+      "pitch": "-6Hz",
+      "fx": "narrator"
+    },
+    "BIA": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "fx": "bia"
+    },
+    "INTERFONE": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "-6%",
+      "pitch": "-15Hz",
+      "fx": "intercom"
+    },
+    "VOZ": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+6%",
+      "pitch": "+0Hz",
+      "fx": "muffled"
+    }
+  },
+  "lines": [
+    {
+      "id": "b01",
+      "who": "BIA",
+      "at": 5.8,
+      "rate": "+4%",
+      "text": "Tá. É só descer, sair pela portaria e acabou."
+    },
+    {
+      "id": "b02",
+      "who": "BIA",
+      "at": 13.2,
+      "rate": "-6%",
+      "text": "Ué… de quem é isso?"
+    },
+    {
+      "id": "b03",
+      "who": "BIA",
+      "at": 24.2,
+      "rate": "+10%",
+      "text": "Não, não, não! Agora não!"
+    },
+    {
+      "id": "b04",
+      "who": "BIA",
+      "at": 29.8,
+      "text": "Como assim? Eu tô no sexto!"
+    },
+    {
+      "id": "b05",
+      "who": "BIA",
+      "at": 36.2,
+      "rate": "-4%",
+      "text": "Essa sou eu… mas eu nem saí daqui!"
+    },
+    {
+      "id": "n01",
+      "who": "NARRADOR",
+      "at": 39.4,
+      "text": "Alguém está fabricando imagens dela. E transmitindo tudo como se fosse real."
+    },
+    {
+      "id": "b06",
+      "who": "BIA",
+      "at": 53.6,
+      "rate": "-6%",
+      "volume": -10,
+      "text": "Então alguém já sabia que isso podia acontecer…"
+    },
+    {
+      "id": "i01",
+      "who": "INTERFONE",
+      "at": 57.0,
+      "text": "Bia, aqui é da central de segurança. Estamos corrigindo a falha. Permaneça na cabine."
+    },
+    {
+      "id": "b07",
+      "who": "BIA",
+      "at": 64.8,
+      "text": "Como você sabe meu nome?"
+    },
+    {
+      "id": "i02",
+      "who": "INTERFONE",
+      "at": 67.8,
+      "rate": "-12%",
+      "text": "Não abra essa porta."
+    },
+    {
+      "id": "v01",
+      "who": "VOZ",
+      "at": 72.0,
+      "text": "Tem alguém aí dentro?!"
+    },
+    {
+      "id": "b08",
+      "who": "BIA",
+      "at": 73.8,
+      "rate": "+6%",
+      "text": "Tem! Quem é você?"
+    },
+    {
+      "id": "v02",
+      "who": "VOZ",
+      "at": 75.6,
+      "text": "Sou da manutenção! O elevador parou no sexto!"
+    },
+    {
+      "id": "i03",
+      "who": "INTERFONE",
+      "at": 78.7,
+      "text": "Não responda.",
+      "overlap": true
+    },
+    {
+      "id": "n02",
+      "who": "NARRADOR",
+      "at": 82.0,
+      "rate": "+2%",
+      "text": "Uma voz manda Bia continuar no elevador. Outra diz que pode tirá-la dali. Mas em quem ela deve confiar?"
+    },
+    {
+      "id": "v03",
+      "who": "VOZ",
+      "at": 90.9,
+      "rate": "+10%",
+      "volume": 10,
+      "text": "Bia! Não escuta esse interfone!"
+    }
+  ],
+  "highlight": [
+    "DESCER",
+    "PORTARIA",
+    "QUEM",
+    "AGORA",
+    "SEXTO",
+    "EU",
+    "FABRICANDO",
+    "REAL",
+    "SABIA",
+    "SEGURANÇA",
+    "PERMANEÇA",
+    "NOME",
+    "PORTA",
+    "ALGUÉM",
+    "MANUTENÇÃO",
+    "RESPONDA",
+    "CONFIAR",
+    "INTERFONE",
+    "A",
+    "B"
+  ]
+}

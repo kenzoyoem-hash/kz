@@ -248,10 +248,54 @@ def key_jingle():
 def footstep1():
     return norm(footstep(1.0), 0.7)
 
+def elev_doors():
+    """portas de elevador: motor + roletes (mecânico, sem ruído de ar)"""
+    d = 1.8; t = t_(d)
+    motor = (np.sin(2*np.pi*110*t) + 0.5*np.sin(2*np.pi*220*t)) * np.sin(np.pi*t/d) ** 0.6 * 0.25
+    rollers = np.zeros(len(t))
+    for k in range(9):
+        L = int(0.03*SR); i = int((0.15 + k*0.17) * SR)
+        rollers[i:i+L] += bp_fast(noise(0.03), 900, 3500) * np.linspace(1, 0, L) * 0.5
+    tt = t_(0.25); end = np.sin(2*np.pi*80*tt) * expdec(len(tt), 20) * 0.4
+    out = motor + rollers; j = len(t) - len(tt); out[j:] += end
+    return norm(out, 0.6)
+def button():
+    t = t_(0.12); return norm(np.sin(2*np.pi*1650*t) * env(len(t), 0.002, 0.04), 0.4)
+def elev_motor():
+    """descida: zumbido grave do motor"""
+    d = 3.0; t = t_(d)
+    s_ = (np.sin(2*np.pi*(62 + 4*t/d)*t) + 0.4*np.sin(2*np.pi*124*t) + 0.15*np.sin(2*np.pi*248*t)) * np.minimum(1, t/0.4) * np.minimum(1, (d-t)/0.2)
+    return norm(s_, 0.5)
+def jolt():
+    """parada brusca: pancada metálica"""
+    t = t_(1.0); s_ = np.sin(2*np.pi*55*t) * expdec(len(t), 8) + np.sin(2*np.pi*730*t) * expdec(len(t), 12) * 0.25 + np.sin(2*np.pi*1190*t) * expdec(len(t), 16) * 0.15
+    return norm(s_, 0.9)
+def zipper():
+    out = np.zeros(int(1.2 * SR))
+    for k in range(40):
+        L = int(0.006*SR); i = int((k * 0.026 + rng.uniform(0, 0.004)) * SR)
+        out[i:i+L] += bp_fast(noise(0.006), 1500, 7000)[:L] * 0.7
+    return norm(out, 0.45)
+def paper():
+    t = t_(0.5); s_ = bp_fast(noise(0.5), 2000, 7000) * (0.4 + 0.6*np.abs(np.sin(2*np.pi*7*t))) * np.sin(np.pi*t/0.5)
+    return norm(s_, 0.3)
+def intercom_on():
+    out = np.zeros(int(0.5 * SR)); t = t_(0.04); out[:len(t)] = bp_fast(noise(0.04), 500, 4000) * expdec(len(t), 60)
+    tb = t_(0.15); b = np.sin(2*np.pi*900*tb) * 0.3 * env(len(tb), 0.003, 0.03); out[int(0.08*SR):int(0.08*SR)+len(b)] += b
+    return norm(out, 0.5)
+def knock():
+    """batidas fortes na porta de metal (vistas de dentro)"""
+    out = np.zeros(int(1.4 * SR))
+    for st in [0, 0.28, 0.56, 0.95]:
+        t = t_(0.4); s_ = np.sin(2*np.pi*90*t) * expdec(len(t), 12) + np.sin(2*np.pi*410*t) * expdec(len(t), 18) * 0.35
+        i = int(st*SR); out[i:i+len(s_)] += s_
+    return norm(lp_fast(out, 2500), 0.85)
+
 LIB = {k: v for k, v in globals().items() if callable(v) and k in (
     "notif message impact braam whoosh riser glitch static tv_on flicker lock handle bang heartbeat "
     "alarm ticks ding door_slide steps steps_run rewind vibrate ring breath metal_steps call_drop answer unlock "
-    "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1 pulse").split()}
+    "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1 pulse elev_doors button "
+    "elev_motor jolt zipper paper intercom_on knock").split()}
 
 def music(duration, automation):
     """Trilha de suspense: drone em Lá menor, pulso grave e notas agudas esparsas.

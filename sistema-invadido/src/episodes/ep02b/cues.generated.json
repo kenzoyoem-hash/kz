@@ -1,0 +1,828 @@
+[
+  {
+    "id": "b01",
+    "who": "BIA",
+    "at": 5.8,
+    "rate": "+4%",
+    "text": "Tá. É só descer, sair pela portaria e acabou.",
+    "marked": "Tá. É só descer, sair pela portaria e acabou.",
+    "start": 5.8,
+    "dur": 3.487,
+    "end": 9.287,
+    "wav": "raw/voice/ep02b/b01.wav",
+    "whisper": "Tá. É só descer, sair pela portaria e acabou.",
+    "words": [
+      {
+        "w": "Tá.",
+        "s": 5.8,
+        "e": 5.96
+      },
+      {
+        "w": "É",
+        "s": 6.38,
+        "e": 6.46
+      },
+      {
+        "w": "só",
+        "s": 6.46,
+        "e": 6.64
+      },
+      {
+        "w": "descer,",
+        "s": 6.64,
+        "e": 7.08
+      },
+      {
+        "w": "sair",
+        "s": 7.22,
+        "e": 7.54
+      },
+      {
+        "w": "pela",
+        "s": 7.54,
+        "e": 7.76
+      },
+      {
+        "w": "portaria",
+        "s": 7.76,
+        "e": 8.32
+      },
+      {
+        "w": "e",
+        "s": 8.32,
+        "e": 8.52
+      },
+      {
+        "w": "acabou.",
+        "s": 8.52,
+        "e": 8.74
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "who": "BIA",
+    "at": 13.2,
+    "rate": "-6%",
+    "text": "Ué… de quem é isso?",
+    "marked": "Ué… de quem é isso?",
+    "start": 13.2,
+    "dur": 1.494,
+    "end": 14.694,
+    "wav": "raw/voice/ep02b/b02.wav",
+    "whisper": "Ué, de quem é isso?",
+    "words": [
+      {
+        "w": "Ué…",
+        "s": 13.2,
+        "e": 13.48
+      },
+      {
+        "w": "de",
+        "s": 13.58,
+        "e": 13.66
+      },
+      {
+        "w": "quem",
+        "s": 13.66,
+        "e": 13.86
+      },
+      {
+        "w": "é",
+        "s": 13.86,
+        "e": 14.04
+      },
+      {
+        "w": "isso?",
+        "s": 14.04,
+        "e": 14.32
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "who": "BIA",
+    "at": 24.2,
+    "rate": "+10%",
+    "text": "Não, não, não! Agora não!",
+    "marked": "Não, não, não! Agora não!",
+    "start": 24.2,
+    "dur": 2.168,
+    "end": 26.368,
+    "wav": "raw/voice/ep02b/b03.wav",
+    "whisper": "Não, não, não. Agora não.",
+    "words": [
+      {
+        "w": "Não,",
+        "s": 24.2,
+        "e": 24.46
+      },
+      {
+        "w": "não,",
+        "s": 24.56,
+        "e": 24.7
+      },
+      {
+        "w": "não!",
+        "s": 24.82,
+        "e": 24.98
+      },
+      {
+        "w": "Agora",
+        "s": 25.32,
+        "e": 25.66
+      },
+      {
+        "w": "não!",
+        "s": 25.66,
+        "e": 25.96
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "who": "BIA",
+    "at": 29.8,
+    "text": "Como assim? Eu tô no sexto!",
+    "marked": "Como assim? Eu tô no sexto!",
+    "start": 29.8,
+    "dur": 2.079,
+    "end": 31.879,
+    "wav": "raw/voice/ep02b/b04.wav",
+    "whisper": "Como assim? Eu estou no sexto.",
+    "words": [
+      {
+        "w": "Como",
+        "s": 29.8,
+        "e": 29.96
+      },
+      {
+        "w": "assim?",
+        "s": 29.96,
+        "e": 30.26
+      },
+      {
+        "w": "Eu",
+        "s": 30.66,
+        "e": 30.78
+      },
+      {
+        "w": "tô",
+        "s": 30.78,
+        "e": 30.94
+      },
+      {
+        "w": "no",
+        "s": 30.94,
+        "e": 31.04
+      },
+      {
+        "w": "sexto!",
+        "s": 31.04,
+        "e": 31.56
+      }
+    ]
+  },
+  {
+    "id": "b05",
+    "who": "BIA",
+    "at": 36.2,
+    "rate": "-4%",
+    "text": "Essa sou eu… mas eu nem saí daqui!",
+    "marked": "Essa sou eu… mas eu nem saí daqui!",
+    "start": 36.2,
+    "dur": 2.3,
+    "end": 38.5,
+    "wav": "raw/voice/ep02b/b05.wav",
+    "whisper": "Essa sou eu, mas eu nem saí daqui.",
+    "words": [
+      {
+        "w": "Essa",
+        "s": 36.2,
+        "e": 36.4
+      },
+      {
+        "w": "sou",
+        "s": 36.4,
+        "e": 36.64
+      },
+      {
+        "w": "eu…",
+        "s": 36.64,
+        "e": 36.88
+      },
+      {
+        "w": "mas",
+        "s": 37.02,
+        "e": 37.16
+      },
+      {
+        "w": "eu",
+        "s": 37.16,
+        "e": 37.3
+      },
+      {
+        "w": "nem",
+        "s": 37.3,
+        "e": 37.48
+      },
+      {
+        "w": "saí",
+        "s": 37.48,
+        "e": 37.82
+      },
+      {
+        "w": "daqui!",
+        "s": 37.82,
+        "e": 38.02
+      }
+    ]
+  },
+  {
+    "id": "n01",
+    "who": "NARRADOR",
+    "at": 39.4,
+    "text": "Alguém está fabricando imagens dela. E transmitindo tudo como se fosse real.",
+    "marked": "Alguém está fabricando imagens dela. E transmitindo tudo como se fosse real.",
+    "start": 39.4,
+    "dur": 5.756,
+    "end": 45.156,
+    "wav": "raw/voice/ep02b/n01.wav",
+    "whisper": "Alguém está fabricando imagens dela. E transmitindo tudo como se fosse real.",
+    "words": [
+      {
+        "w": "Alguém",
+        "s": 39.4,
+        "e": 39.78
+      },
+      {
+        "w": "está",
+        "s": 39.78,
+        "e": 39.98
+      },
+      {
+        "w": "fabricando",
+        "s": 39.98,
+        "e": 40.64
+      },
+      {
+        "w": "imagens",
+        "s": 40.64,
+        "e": 41.26
+      },
+      {
+        "w": "dela.",
+        "s": 41.26,
+        "e": 41.5
+      },
+      {
+        "w": "E",
+        "s": 42.28,
+        "e": 42.6
+      },
+      {
+        "w": "transmitindo",
+        "s": 42.6,
+        "e": 43.32
+      },
+      {
+        "w": "tudo",
+        "s": 43.32,
+        "e": 43.58
+      },
+      {
+        "w": "como",
+        "s": 43.58,
+        "e": 43.92
+      },
+      {
+        "w": "se",
+        "s": 43.92,
+        "e": 44.14
+      },
+      {
+        "w": "fosse",
+        "s": 44.14,
+        "e": 44.38
+      },
+      {
+        "w": "real.",
+        "s": 44.38,
+        "e": 44.74
+      }
+    ]
+  },
+  {
+    "id": "b06",
+    "who": "BIA",
+    "at": 53.6,
+    "rate": "-6%",
+    "volume": -10,
+    "text": "Então alguém já sabia que isso podia acontecer…",
+    "marked": "Então alguém já sabia que isso podia acontecer…",
+    "start": 53.6,
+    "dur": 2.854,
+    "end": 56.454,
+    "wav": "raw/voice/ep02b/b06.wav",
+    "whisper": "Então, alguém já sabia que isso podia acontecer.",
+    "words": [
+      {
+        "w": "Então",
+        "s": 53.6,
+        "e": 53.84
+      },
+      {
+        "w": "alguém",
+        "s": 53.94,
+        "e": 54.16
+      },
+      {
+        "w": "já",
+        "s": 54.16,
+        "e": 54.34
+      },
+      {
+        "w": "sabia",
+        "s": 54.34,
+        "e": 54.7
+      },
+      {
+        "w": "que",
+        "s": 54.7,
+        "e": 54.92
+      },
+      {
+        "w": "isso",
+        "s": 54.92,
+        "e": 55.12
+      },
+      {
+        "w": "podia",
+        "s": 55.12,
+        "e": 55.46
+      },
+      {
+        "w": "acontecer…",
+        "s": 55.46,
+        "e": 55.98
+      }
+    ]
+  },
+  {
+    "id": "i01",
+    "who": "INTERFONE",
+    "at": 57.0,
+    "text": "Bia, aqui é da central de segurança. Estamos corrigindo a falha. Permaneça na cabine.",
+    "marked": "Bia, aqui é da central de segurança. Estamos corrigindo a falha. Permaneça na cabine.",
+    "start": 57.0,
+    "dur": 7.449,
+    "end": 64.449,
+    "wav": "raw/voice/ep02b/i01.wav",
+    "whisper": "Pia, aqui é da Central de Segurança. Estamos corrigindo a faria. Permaneça na cabine.",
+    "words": [
+      {
+        "w": "Bia,",
+        "s": 57.0,
+        "e": 57.28
+      },
+      {
+        "w": "aqui",
+        "s": 57.54,
+        "e": 57.82
+      },
+      {
+        "w": "é",
+        "s": 57.82,
+        "e": 57.92
+      },
+      {
+        "w": "da",
+        "s": 57.92,
+        "e": 58.0
+      },
+      {
+        "w": "central",
+        "s": 58.0,
+        "e": 58.38
+      },
+      {
+        "w": "de",
+        "s": 58.38,
+        "e": 58.62
+      },
+      {
+        "w": "segurança.",
+        "s": 58.62,
+        "e": 59.24
+      },
+      {
+        "w": "Estamos",
+        "s": 59.92,
+        "e": 60.58
+      },
+      {
+        "w": "corrigindo",
+        "s": 60.58,
+        "e": 61.34
+      },
+      {
+        "w": "a",
+        "s": 61.34,
+        "e": 61.46
+      },
+      {
+        "w": "falha.",
+        "s": 61.46,
+        "e": 61.86
+      },
+      {
+        "w": "Permaneça",
+        "s": 62.76,
+        "e": 63.5
+      },
+      {
+        "w": "na",
+        "s": 63.5,
+        "e": 63.64
+      },
+      {
+        "w": "cabine.",
+        "s": 63.64,
+        "e": 64.08
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "who": "BIA",
+    "at": 64.8,
+    "text": "Como você sabe meu nome?",
+    "marked": "Como você sabe meu nome?",
+    "start": 64.8,
+    "dur": 1.701,
+    "end": 66.501,
+    "wav": "raw/voice/ep02b/b07.wav",
+    "whisper": "Como você sabe meu nome?",
+    "words": [
+      {
+        "w": "Como",
+        "s": 64.8,
+        "e": 64.96
+      },
+      {
+        "w": "você",
+        "s": 64.96,
+        "e": 65.24
+      },
+      {
+        "w": "sabe",
+        "s": 65.24,
+        "e": 65.54
+      },
+      {
+        "w": "meu",
+        "s": 65.54,
+        "e": 65.76
+      },
+      {
+        "w": "nome?",
+        "s": 65.76,
+        "e": 66.08
+      }
+    ]
+  },
+  {
+    "id": "i02",
+    "who": "INTERFONE",
+    "at": 67.8,
+    "rate": "-12%",
+    "text": "Não abra essa porta.",
+    "marked": "Não abra essa porta.",
+    "start": 67.8,
+    "dur": 1.564,
+    "end": 69.364,
+    "wav": "raw/voice/ep02b/i02.wav",
+    "whisper": "Não abra essa porta.",
+    "words": [
+      {
+        "w": "Não",
+        "s": 67.8,
+        "e": 67.98
+      },
+      {
+        "w": "abra",
+        "s": 67.98,
+        "e": 68.34
+      },
+      {
+        "w": "essa",
+        "s": 68.34,
+        "e": 68.58
+      },
+      {
+        "w": "porta.",
+        "s": 68.58,
+        "e": 68.88
+      }
+    ]
+  },
+  {
+    "id": "v01",
+    "who": "VOZ",
+    "at": 72.0,
+    "text": "Tem alguém aí dentro?!",
+    "marked": "Tem alguém aí dentro?!",
+    "start": 72.0,
+    "dur": 1.444,
+    "end": 73.444,
+    "wav": "raw/voice/ep02b/v01.wav",
+    "whisper": "Tem alguém aí dentro.",
+    "words": [
+      {
+        "w": "Tem",
+        "s": 72.0,
+        "e": 72.06
+      },
+      {
+        "w": "alguém",
+        "s": 72.06,
+        "e": 72.44
+      },
+      {
+        "w": "aí",
+        "s": 72.44,
+        "e": 72.68
+      },
+      {
+        "w": "dentro?!",
+        "s": 72.68,
+        "e": 73.02
+      }
+    ]
+  },
+  {
+    "id": "b08",
+    "who": "BIA",
+    "at": 73.8,
+    "rate": "+6%",
+    "text": "Tem! Quem é você?",
+    "marked": "Tem! Quem é você?",
+    "start": 73.8,
+    "dur": 1.586,
+    "end": 75.386,
+    "wav": "raw/voice/ep02b/b08.wav",
+    "whisper": "Tem. Quem é você?",
+    "words": [
+      {
+        "w": "Tem!",
+        "s": 73.8,
+        "e": 73.96
+      },
+      {
+        "w": "Quem",
+        "s": 74.36,
+        "e": 74.52
+      },
+      {
+        "w": "é",
+        "s": 74.52,
+        "e": 74.66
+      },
+      {
+        "w": "você?",
+        "s": 74.66,
+        "e": 74.9
+      }
+    ]
+  },
+  {
+    "id": "v02",
+    "who": "VOZ",
+    "at": 75.6,
+    "text": "Sou da manutenção! O elevador parou no sexto!",
+    "marked": "Sou da manutenção! O elevador parou no sexto!",
+    "start": 75.6,
+    "dur": 3.48,
+    "end": 79.08,
+    "wav": "raw/voice/ep02b/v02.wav",
+    "whisper": "Sou da manutenção. O elevador parou no sexto.",
+    "words": [
+      {
+        "w": "Sou",
+        "s": 75.6,
+        "e": 75.72
+      },
+      {
+        "w": "da",
+        "s": 75.72,
+        "e": 75.86
+      },
+      {
+        "w": "manutenção!",
+        "s": 75.86,
+        "e": 76.62
+      },
+      {
+        "w": "O",
+        "s": 77.06,
+        "e": 77.16
+      },
+      {
+        "w": "elevador",
+        "s": 77.16,
+        "e": 77.7
+      },
+      {
+        "w": "parou",
+        "s": 77.7,
+        "e": 78.16
+      },
+      {
+        "w": "no",
+        "s": 78.16,
+        "e": 78.26
+      },
+      {
+        "w": "sexto!",
+        "s": 78.26,
+        "e": 78.78
+      }
+    ]
+  },
+  {
+    "id": "i03",
+    "who": "INTERFONE",
+    "at": 78.7,
+    "text": "Não responda.",
+    "overlap": true,
+    "marked": "Não responda.",
+    "start": 78.7,
+    "dur": 1.233,
+    "end": 79.933,
+    "wav": "raw/voice/ep02b/i03.wav",
+    "whisper": "Não responda.",
+    "words": [
+      {
+        "w": "Não",
+        "s": 78.7,
+        "e": 78.9
+      },
+      {
+        "w": "responda.",
+        "s": 78.9,
+        "e": 79.6
+      }
+    ]
+  },
+  {
+    "id": "n02",
+    "who": "NARRADOR",
+    "at": 82.0,
+    "rate": "+2%",
+    "text": "Uma voz manda Bia continuar no elevador. Outra diz que pode tirá-la dali. Mas em quem ela deve confiar?",
+    "marked": "Uma voz manda Bia continuar no elevador. Outra diz que pode tirá-la dali. Mas em quem ela deve confiar?",
+    "start": 82.0,
+    "dur": 8.231,
+    "end": 90.231,
+    "wav": "raw/voice/ep02b/n02.wav",
+    "whisper": "Uma voz manda a Bia continuar na elevador, outra diz que pode tirá -la dali. Mas em quem ela deve confiar?",
+    "words": [
+      {
+        "w": "Uma",
+        "s": 82.0,
+        "e": 82.16
+      },
+      {
+        "w": "voz",
+        "s": 82.16,
+        "e": 82.52
+      },
+      {
+        "w": "manda",
+        "s": 82.52,
+        "e": 82.94
+      },
+      {
+        "w": "Bia",
+        "s": 82.94,
+        "e": 83.2
+      },
+      {
+        "w": "continuar",
+        "s": 83.2,
+        "e": 83.68
+      },
+      {
+        "w": "no",
+        "s": 83.68,
+        "e": 83.96
+      },
+      {
+        "w": "elevador.",
+        "s": 83.96,
+        "e": 84.46
+      },
+      {
+        "w": "Outra",
+        "s": 85.0,
+        "e": 85.68
+      },
+      {
+        "w": "diz",
+        "s": 85.68,
+        "e": 86.0
+      },
+      {
+        "w": "que",
+        "s": 86.0,
+        "e": 86.14
+      },
+      {
+        "w": "pode",
+        "s": 86.14,
+        "e": 86.38
+      },
+      {
+        "w": "tirá-la",
+        "s": 86.38,
+        "e": 86.86
+      },
+      {
+        "w": "dali.",
+        "s": 86.86,
+        "e": 87.18
+      },
+      {
+        "w": "Mas",
+        "s": 88.12,
+        "e": 88.4
+      },
+      {
+        "w": "em",
+        "s": 88.4,
+        "e": 88.6
+      },
+      {
+        "w": "quem",
+        "s": 88.6,
+        "e": 88.78
+      },
+      {
+        "w": "ela",
+        "s": 88.78,
+        "e": 89.02
+      },
+      {
+        "w": "deve",
+        "s": 89.02,
+        "e": 89.28
+      },
+      {
+        "w": "confiar?",
+        "s": 89.28,
+        "e": 89.82
+      }
+    ]
+  },
+  {
+    "id": "v03",
+    "who": "VOZ",
+    "at": 90.9,
+    "rate": "+10%",
+    "volume": 10,
+    "text": "Bia! Não escuta esse interfone!",
+    "marked": "Bia! Não escuta esse interfone!",
+    "start": 90.9,
+    "dur": 2.764,
+    "end": 93.664,
+    "wav": "raw/voice/ep02b/v03.wav",
+    "whisper": "B, não escuta esse interfone.",
+    "words": [
+      {
+        "w": "Bia!",
+        "s": 90.9,
+        "e": 91.04
+      },
+      {
+        "w": "Não",
+        "s": 91.24,
+        "e": 91.66
+      },
+      {
+        "w": "escuta",
+        "s": 91.66,
+        "e": 92.18
+      },
+      {
+        "w": "esse",
+        "s": 92.18,
+        "e": 92.5
+      },
+      {
+        "w": "interfone!",
+        "s": 92.5,
+        "e": 93.3
+      }
+    ]
+  }
+]
