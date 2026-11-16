@@ -50,7 +50,7 @@ def main(ep):
     write_wav(mixdir / f"{eid(ep)}_stem_voz.wav", voice / (np.abs(voice).max() or 1) * 0.9)
     master = mixdir / f"{eid(ep)}_master.wav"
     run(["ffmpeg", "-y", "-v", "error", "-i", pre, "-af",
-         "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000", "-ar", "48000", master])
+         "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,alimiter=limit=0.82:level=disabled", "-ar", "48000", master])
     # envelopes por frame para animação
     nf = int(dur * fps); envs = {}
     for k, sig in per_speaker.items():
