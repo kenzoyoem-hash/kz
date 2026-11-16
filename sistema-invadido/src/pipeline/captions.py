@@ -87,7 +87,7 @@ def main(ep):
         start = ws[0]["s"] - 0.05
         nxt = chunks[k+1][1][0]["s"] - 0.05 if k + 1 < len(chunks) else 1e9
         end = min(ws[-1]["e"] + 0.35, nxt)
-        style = {"HACKER": "Hacker", "BIA": "Bia"}.get(c["who"], "Narr")
+        style = {"HACKER": "Hacker", "BIA": "Bia", "BIA_CLONE": "Clone", "HOMEM": "Homem", "HOMEM_LONGE": "Homem"}.get(c["who"], "Narr")
         y = cap_y(start)
         # um evento por palavra ativa (palavra falada em destaque)
         for j, w in enumerate(ws):
@@ -107,7 +107,7 @@ def main(ep):
             jit = "\\frz-1.5" if style == "Hacker" else ""
             ev.append(f"Dialogue: 0,{ass_time(s0)},{ass_time(e0)},{style},,0,0,0,,{{\\an5\\pos(540,{y}){pop}{jit}}}" + " ".join(parts))
     header = f"""[Script Info]
-Title: SISTEMA INVADIDO EP{ep:02d}
+Title: SISTEMA INVADIDO {eid(ep).upper()}
 ScriptType: v4.00+
 PlayResX: 1080
 PlayResY: 1920
@@ -119,18 +119,20 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Narr,Montserrat Thin Black,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,8,4,5,60,60,0,1
 Style: Hacker,JetBrains Mono,88,&H00FFFFFF,&H00FFFFFF,&H00100090,&H960000A0,-1,0,0,0,100,100,0,0,1,8,6,5,60,60,0,1
 Style: Bia,Montserrat Thin Black,90,&H00FFFFFF,&H00FFFFFF,&H00703010,&H96000000,0,1,0,0,100,100,1,0,1,8,4,5,60,60,0,1
+Style: Clone,Montserrat Thin Black,90,&H00FFFFFF,&H00FFFFFF,&H00800060,&H96000000,0,1,0,0,100,100,1,0,1,9,5,5,60,60,0,1
+Style: Homem,Montserrat Thin Black,92,&H00FFFFFF,&H00FFFFFF,&H00A05010,&H96000000,0,0,0,0,100,100,1,0,1,8,4,5,60,60,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     DONE.mkdir(exist_ok=True)
-    (DONE / f"ep{ep:02d}_legendas.ass").write_text(header + "\n".join(ev) + "\n", encoding="utf-8")
+    (DONE / f"{eid(ep)}_legendas.ass").write_text(header + "\n".join(ev) + "\n", encoding="utf-8")
     srt = []
     for i, c in enumerate(cues, 1):
-        who = "" if c["who"] == "NARRADOR" else f"[{c['who']}] "
+        who = {"NARRADOR": "", "BIA_CLONE": "[VOZ DA BIA NO CELULAR] ", "HOMEM_LONGE": "[HOMEM] "}.get(c["who"], f"[{c['who']}] ")
         srt.append(f"{i}\n{srt_time(c['words'][0]['s'])} --> {srt_time(c['words'][-1]['e'] + 0.3)}\n{who}{c['text']}\n")
-    (DONE / f"ep{ep:02d}_legendas.srt").write_text("\n".join(srt), encoding="utf-8")
+    (DONE / f"{eid(ep)}_legendas.srt").write_text("\n".join(srt), encoding="utf-8")
     print(f"{len(ev)} eventos ASS, {len(cues)} legendas SRT")
 
 if __name__ == "__main__":
-    main(int(sys.argv[1]) if len(sys.argv) > 1 else 1)
+    main(sys.argv[1] if len(sys.argv) > 1 else "1")

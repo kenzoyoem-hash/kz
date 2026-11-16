@@ -8,8 +8,14 @@ RAW = ROOT / "raw"
 DONE = ROOT / "done"
 SR = 48000
 
-def ep_dir(ep: int) -> pathlib.Path:
-    return SRC / "episodes" / f"ep{ep:02d}"
+def eid(ep) -> str:
+    """'1' -> 'ep01', '2a' -> 'ep02a', 'ep02a' -> 'ep02a'"""
+    s = str(ep).lower().removeprefix("ep")
+    num = "".join(c for c in s if c.isdigit()); suf = s[len(num):]
+    return f"ep{int(num):02d}{suf}"
+
+def ep_dir(ep) -> pathlib.Path:
+    return SRC / "episodes" / eid(ep)
 
 def load_json(p):
     return json.loads(pathlib.Path(p).read_text(encoding="utf-8"))

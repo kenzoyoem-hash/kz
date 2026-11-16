@@ -163,9 +163,57 @@ def ring():
     s = s * np.minimum(1, t / 0.02)
     return norm(s, 0.55)
 
+def breath(n_=4, period=1.7):
+    """respiração pesada atrás de alguém"""
+    n = int(n_ * period * SR); out = np.zeros(n)
+    for k in range(n_):
+        for off, d, g in [(0, 0.8, 1.0), (0.85, 0.7, 0.8)]:
+            L = int(d * SR); tt = np.arange(L) / SR
+            e = np.sin(np.pi * tt / d) ** 2
+            s_ = bp_fast(rng.uniform(-1, 1, L), 300 if off else 500, 1800 if off else 2600) * e * g
+            i = int((k * period + off) * SR); out[i:i+L] += s_[:max(0, n-i)]
+    return norm(out, 0.8)
+def metal_steps(count=6, gap=0.42):
+    """passos em escada de metal/concreto com reverberação"""
+    n = int((count * gap + 1.2) * SR); out = np.zeros(n)
+    for k in range(count):
+        t = t_(0.5); s_ = (np.sin(2*np.pi*95*t) * expdec(len(t), 18) + bp_fast(noise(0.5), 1500, 6000) * expdec(len(t), 60) * 0.5
+              + np.sin(2*np.pi*1730*t) * expdec(len(t), 30) * 0.12)
+        i = int(k * gap * SR); out[i:i+len(s_)] += s_
+    rev = np.zeros_like(out)
+    for dl, g in [(0.09, 0.4), (0.21, 0.25), (0.37, 0.15)]:
+        j = int(dl * SR); rev[j:] += out[:-j] * g
+    return norm(out + rev, 0.8)
+def call_drop():
+    out = np.zeros(int(1.3 * SR))
+    for k in range(3):
+        t = t_(0.22); s_ = np.sin(2*np.pi*480*t) * 0.6 * env(len(t), 0.005, 0.02); i = int(k * 0.4 * SR); out[i:i+len(s_)] += s_
+    return norm(out, 0.5)
+def answer():
+    t = t_(0.15); return norm(np.sin(2*np.pi*1200*t) * expdec(len(t), 40) + np.sin(2*np.pi*1800*t) * expdec(len(t), 50) * 0.5, 0.5)
+def unlock():
+    out = np.zeros(int(0.9 * SR))
+    for f, st in [(1000, 0), (1500, 0.12)]:
+        t = t_(0.1); s_ = np.sin(2*np.pi*f*t) * 0.4 * env(len(t), 0.002, 0.02); i = int(st*SR); out[i:i+len(s_)] += s_
+    t = t_(0.3); clk = lp_fast(noise(0.3), 3500) * expdec(len(t), 50) + np.sin(2*np.pi*140*t) * expdec(len(t), 25) * 0.6
+    i = int(0.32 * SR); out[i:i+len(clk)] += clk
+    return norm(out, 0.8)
+def door_creak():
+    d = 1.6; t = t_(d); f = 380 + 120 * np.sin(2*np.pi*0.7*t) + 40 * np.sin(2*np.pi*11*t)
+    s_ = np.sign(np.sin(2*np.pi*np.cumsum(f)/SR)) * (0.5 + 0.5*np.sin(2*np.pi*23*t))
+    return norm(bp_fast(s_, 300, 2500) * np.sin(np.pi * t / d) ** 1.5, 0.45)
+def push_bar():
+    t = t_(0.8); s_ = np.sin(2*np.pi*75*t) * expdec(len(t), 10) + bp_fast(noise(0.8), 500, 4000) * expdec(len(t), 30) * 0.7
+    s_ += np.sin(2*np.pi*2400*t) * expdec(len(t), 20) * 0.08
+    return norm(s_, 0.9)
+def drone_hit():
+    d = 2.5; t = t_(d); s_ = (np.sin(2*np.pi*41*t) + 0.5*np.sin(2*np.pi*61.5*t)) * np.minimum(1, t / 0.02) * np.exp(-t * 1.1)
+    return norm(lp_fast(s_ + bp_fast(noise(d), 60, 400) * np.exp(-t * 3) * 0.5, 600), 0.95)
+
 LIB = {k: v for k, v in globals().items() if callable(v) and k in (
     "notif message impact braam whoosh riser glitch static tv_on flicker lock handle bang heartbeat "
-    "alarm ticks ding door_slide steps steps_run rewind vibrate ring").split()}
+    "alarm ticks ding door_slide steps steps_run rewind vibrate ring breath metal_steps call_drop answer unlock "
+    "door_creak push_bar drone_hit").split()}
 
 def music(duration, automation):
     """Trilha de suspense: drone em Lá menor, pulso grave e notas agudas esparsas.

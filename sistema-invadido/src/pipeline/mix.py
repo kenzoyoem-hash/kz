@@ -26,10 +26,10 @@ def main(ep):
     d = ep_dir(ep); tl = load_json(d / "timeline.json"); cues = load_json(d / "cues.generated.json")
     dur = tl["duration"]; N = int(dur * SR); fps = tl["fps"]
     voice = np.zeros(N); fx = np.zeros(N)
-    per_speaker = {"HACKER": np.zeros(N), "BIA": np.zeros(N), "NARRADOR": np.zeros(N)}
+    per_speaker = {k: np.zeros(N) for k in ["HACKER", "BIA", "NARRADOR"] + [c["who"] for c in cues]}
     for c in cues:
         w = read_wav(ROOT / c["wav"])
-        g = {"NARRADOR": 1.0, "HACKER": 0.95, "BIA": 1.0}[c["who"]]
+        g = {"NARRADOR": 1.0, "HACKER": 0.95, "BIA": 1.0, "HOMEM_LONGE": 0.8}.get(c["who"], 1.0) * c.get("gain", 1.0)
         place(voice, w, c["start"], g); place(per_speaker[c["who"]], w, c["start"], g)
     for e in tl["sfx"]:
         place(fx, sfx.LIB[e["s"]](), e["t"], e["g"])
@@ -45,10 +45,10 @@ def main(ep):
     cut = int(tl["hardCut"] * SR); L[cut:] = 0; R[cut:] = 0
     peak = max(np.abs(L).max(), np.abs(R).max()); L, R = L / peak * 0.89, R / peak * 0.89
     mixdir = RAW / "mix"; mixdir.mkdir(exist_ok=True)
-    pre = mixdir / f"ep{ep:02d}_premaster.wav"
+    pre = mixdir / f"{eid(ep)}_premaster.wav"
     write_wav(pre, np.stack([L, R], 1).reshape(-1), stereo=True)
-    write_wav(mixdir / f"ep{ep:02d}_stem_voz.wav", voice / (np.abs(voice).max() or 1) * 0.9)
-    master = mixdir / f"ep{ep:02d}_master.wav"
+    write_wav(mixdir / f"{eid(ep)}_stem_voz.wav", voice / (np.abs(voice).max() or 1) * 0.9)
+    master = mixdir / f"{eid(ep)}_master.wav"
     run(["ffmpeg", "-y", "-v", "error", "-i", pre, "-af",
          "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000", "-ar", "48000", master])
     # envelopes por frame para animação
@@ -61,4 +61,4 @@ def main(ep):
     print("mix ok ->", master)
 
 if __name__ == "__main__":
-    main(int(sys.argv[1]) if len(sys.argv) > 1 else 1)
+    main(sys.argv[1] if len(sys.argv) > 1 else "1")

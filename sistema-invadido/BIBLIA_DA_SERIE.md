@@ -28,6 +28,11 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - Símbolo: triângulo vermelho de alerta e barras de áudio que reagem à voz (`HackerTV`).
 - **Não revelar** rosto, identidade nem motivação antes do momento planejado.
 
+### HOMEM DE BLUSA AZUL
+- É o homem que aparece em loop na câmera da Escada B. Cabelo castanho curto, barba por fazer, blusa azul de manga comprida, calça cinza-escura.
+- Componente `characters/Man.tsx` (close de frente/lado) e `LOOKS.homemAzul` (figura das câmeras).
+- Voz: en-US-AndrewMultilingualNeural falando português, com reverberação de escada (`stair`) e a versão distante (`far`).
+
 ### MORADORES
 - Figuras simples, vistas de lado e só pelas câmeras: `homemAzul` (o homem de blusa azul da escada), `senhora`, `rapaz`, `moca`, `senhor`, `vizinho` (`src/remotion/characters/Resident.tsx`).
 
@@ -46,6 +51,17 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - O elevador de serviço estava parado e aberto no 7º andar, **vazio**. Ele voltou ao 7º andar ("DING") trazendo uma **mochila vermelha**.
 - Mensagem do hacker: "VOCÊ NÃO ESTÁ SOZINHA NO ANDAR." O hacker reduziu o cronômetro para 00:10. Passos se aproximam e a sombra de pés aparece na fresta da porta.
 - No fim, a mochila toca e o celular da Bia recebe uma chamada de **"VOCÊ"**. O cronômetro ficou congelado em 00:06 ("VOTAÇÃO ABERTA").
+
+## Continuidade do EP. 2A — "A ESCADA NÃO ESTÁ VAZIA" (venceu A, com 64% × 36%)
+- A rota liberada foi a ESCADA B. A porta 702 destravou (LED verde).
+- No corredor, o celular tocou de novo com a chamada "VOCÊ". A **voz idêntica à da Bia** disse: "Se alguém pedir ajuda na escada… não responde." A chamada durou 00:07.
+- A Bia desceu do 7º para o 6º andar. O homem de blusa azul gritou por ajuda de alguns andares abaixo (5º andar).
+- No celular ele continuava descendo em loop, mas na vida real estava parado olhando para ela: **a transmissão é falsa, o homem é real**.
+- Diálogo: "As câmeras não estão mostrando o que está acontecendo." Ele viu algo atrás dela e disse: "Não se vira."
+- Ouviu-se uma respiração pesada atrás da Bia. Mensagem do DESCONHECIDO: "VOCÊ NÃO DEVERIA TER ESCUTADO ELE."
+- Última imagem: uma **silhueta** parada no lance de cima, atrás da Bia (sem rosto; `sets/Stairs.tsx → Shadow`).
+- Nova votação: **A** = confiar no homem e descer; **B** = correr de volta ao 7º andar.
+- Pendências que o EP. 2A abriu: quem é a "Bia" do telefone? O aviso dela contradiz o homem. De quem é a silhueta? Como o hacker sabe que ela "escutou"?
 
 ## Ramificações para o EP. 2
 - **A — Escadas**: a Bia desce pela Escada B e descobre que a câmera exibia uma gravação. A escada real mostra por que o loop foi montado (e quem não queria que se visse o que acontece lá).

@@ -11,6 +11,7 @@ pronto e todo o pipeline editável para produzir os próximos episódios.
 | `ep01_legendas.ass` | Legendas estilizadas (palavra a palavra), usadas na queima via libass |
 | `ep01_legendas.srt` | Legendas simples, para enviar como legenda nas plataformas |
 | `ep01_capa_animada.mp4` | Capa/teaser da série (3 s), feita com HyperFrames + GSAP |
+| `sistema_invadido_ep02a.mp4` | **EP. 2A — A escada não está vazia** (caminho A), com legendas `ep02a_legendas.*` |
 
 ## Estrutura
 ```
@@ -44,7 +45,7 @@ sistema-invadido/
 cd src
 npm install
 pip install faster-whisper edge-tts numpy fonttools brotli
-./pipeline/build_ep.sh 1            # tudo: vozes → mix → legendas → render → MP4 final
+./pipeline/build_ep.sh 1            # (ou 2a, 2b…) tudo: vozes → mix → legendas → render → MP4 final
 SKIP_AUDIO=1 ./pipeline/build_ep.sh 1   # só o vídeo, quando apenas a animação mudou
 npx remotion studio remotion/index.ts   # editar e pré-visualizar no navegador
 ```
@@ -52,6 +53,26 @@ Observações:
 - O download do modelo do Whisper usa `huggingface.co` e o CDN `us.aws.cdn.hf.co`. Se o modo Xet falhar, use `HF_HUB_DISABLE_XET=1`.
 - As vozes usam `speech.platform.bing.com` (edge-tts).
 - Fora deste ambiente, defina `CHROME=` com o caminho do Chrome/Chromium, ou remova `--browser-executable` do script.
+
+## Entonação das vozes (marcações no roteiro)
+Escreva as marcações dentro do texto das falas em `script.json`. Cada uma vale até a próxima:
+
+| Marcação | Efeito |
+|---|---|
+| `[lento]` / `[rapido]` | velocidade −16 % / +14 % |
+| `[grave]` / `[agudo]` | tom −9 Hz / +10 Hz |
+| `[sussurro]` | mais baixo, mais lento e mais grave |
+| `[alto]` | grito/ênfase (mais volume e tom) |
+| `[tenso]` / `[misterioso]` | leve aceleração e tom acima / mais lento e grave |
+| `[pausa]` / `[pausa longa]` / `[respira]` | silêncio de 0,45 s / 0,9 s / 0,3 s |
+
+Exemplo: `"[lento] Você tem dez segundos… [pausa] [rapido] E alguém está se aproximando."`
+Cada trecho é sintetizado separadamente com sua própria velocidade e tom, e o pipeline acrescenta uma micro-variação automática para evitar monotonia.
+
+Tratamentos de voz disponíveis (`fx` em `voices`): `narrator`, `bia`, `whisper`, `phone` (voz saindo do celular), `hacker`, `stair` (eco de escada), `far` (voz vinda de longe).
+
+## Gestos disponíveis (Bia/Person)
+`idle`, `phoneL`, `phone="both"`, `phoneEar`, `stop`, `coverMouth`, `pointPhone`, `hugSelf`, `armsOut`, `push`, `raiseR`, `scared`, `handle`, `run`, além de vista lateral (`facing="side"` com `walk`, `nSh/nEl`) e IK livre (`rT`/`lT` + escorço `rFs`/`lFs`).
 
 ## Criar o EP. 2
 1. Copie `src/episodes/ep01` para `ep02` e reescreva `script.json` (falas e horários aproximados) e `timeline.json` (cenas, SFX, trilha).

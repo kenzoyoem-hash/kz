@@ -1,32 +1,35 @@
 import React from 'react';
 import {AbsoluteFill, useCurrentFrame, useVideoConfig} from 'remotion';
-import {Bia, POSES, Expr} from './characters/Bia';
-import {Resident, LOOKS} from './characters/Resident';
+import {Bia, POSES} from './characters/Bia';
+import {Man} from './characters/Man';
 import {C, FONT} from './theme';
 
-/** Folha de modelo dos personagens (referência de consistência para todos os episódios) */
+/** Folha de modelo: poses/gestos, vistas e personagens (referência de consistência) */
 export const CharacterSheet: React.FC = () => {
   const f = useCurrentFrame(); const {fps} = useVideoConfig(); const t = f / fps;
-  const exprs: Expr[] = ['neutral', 'surprised', 'shock', 'fear', 'suspicious', 'determined'];
+  const cells: [string, React.ReactNode][] = [
+    ['idle', <Bia t={t} />],
+    ['phone both', <Bia t={t} phone="both" phoneLit expr="surprised" />],
+    ['phoneEar', <Bia t={t} pose={POSES.phoneEar} phone="L" expr="confused" />],
+    ['stop', <Bia t={t} pose={POSES.stop} expr="determined" mouth={0.6} />],
+    ['coverMouth', <Bia t={t} pose={POSES.coverMouth} expr="fear" />],
+    ['pointPhone', <Bia t={t} pose={POSES.pointPhone} phone="L" expr="suspicious" />],
+    ['costas: empurrar', <Bia t={t} pose={POSES.push} facing="back" />],
+    ['lado: andando', <Bia t={t} facing="side" walk={1} />],
+    ['lado: corrimão', <Bia t={t} facing="side" dir={-1} pose={{rSh: 0, rEl: 0, lSh: 0, lEl: 0, nSh: 55, nEl: -10, nHand: 'grip', lean: 12}} expr="worried" lookY={0.8} />],
+    ['homem: implorando', <Man t={t} pose={{rSh: 0, rEl: 0, lSh: 0, lEl: 0, rT: {x: -90, y: -600}, lT: {x: 90, y: -600}, rFs: 0.7, lFs: 0.7, rHand: 'open', lHand: 'open', rHandRot: 170, lHandRot: -170}} expr="worried" mouth={0.5} lookY={-0.8} />],
+    ['homem: lado', <Man t={t} facing="side" dir={-1} walk={1} expr="fear" />],
+    ['hugSelf', <Bia t={t} pose={POSES.hugSelf} expr="fear" tremble={0.5} />],
+  ];
   return (
     <AbsoluteFill style={{background: C.night}}>
       <svg viewBox="0 0 1080 1920" width={1080} height={1920}>
-        <text x={540} y={110} fill={C.white} fontFamily={FONT.title} fontSize={64} textAnchor="middle">BIA — MODELO</text>
-        <Bia t={t} x={200} y={1000} scale={0.95} pose={POSES.idle} />
-        <Bia t={t} x={540} y={1000} scale={0.95} pose={POSES.phoneL} phone="L" phoneLit expr="surprised" />
-        <Bia t={t} x={880} y={1000} scale={0.95} pose={POSES.idle} facing="back" />
-        {exprs.map((e, i) => (
-          <g key={e} transform={`translate(${180 + (i % 3) * 360}, ${i < 3 ? 1260 : 1660})`}>
-            <clipPath id={`c${i}`}><rect x={-160} y={-170} width={320} height={330} rx={30} /></clipPath>
-            <rect x={-160} y={-170} width={320} height={330} rx={30} fill={C.wall} />
-            <g clipPath={`url(#c${i})`}><g transform="translate(0, 700)"><Bia t={t} expr={e} pose={POSES.idle} lookX={i === 4 ? 0.6 : 0} /></g></g>
-            <text x={0} y={210} fill={C.gray} fontFamily={FONT.mono} fontSize={30} textAnchor="middle">{e}</text>
+        {cells.map(([name, el], i) => (
+          <g key={name} transform={`translate(${180 + (i % 3) * 360}, ${i < 3 ? 480 : i < 6 ? 940 : i < 9 ? 1400 : 1860})`}>
+            <g transform="scale(0.5)">{el}</g>
+            <text x={0} y={-440} fill={C.gray} fontFamily={FONT.mono} fontSize={26} textAnchor="middle">{name}</text>
           </g>
         ))}
-      <Resident t={t} look={LOOKS.homemAzul} action="walk" x={200} y={1900} scale={0.55} />
-        <Resident t={t} look={LOOKS.senhora} action="bang" x={420} y={1900} scale={0.55} />
-        <Resident t={t} look={LOOKS.rapaz} action="run" x={640} y={1900} scale={0.55} dir={-1} />
-        <Resident t={t} look={LOOKS.moca} action="push" x={860} y={1900} scale={0.55} />
       </svg>
     </AbsoluteFill>
   );

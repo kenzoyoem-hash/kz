@@ -1,0 +1,28 @@
+{
+  "episode": "2a",
+  "title": "A ESCADA NÃO ESTÁ VAZIA",
+  "fps": 30,
+  "voices": {
+    "NARRADOR":    {"voice": "pt-BR-AntonioNeural",            "rate": "-4%", "pitch": "-7Hz", "fx": "narrator"},
+    "BIA":         {"voice": "pt-BR-FranciscaNeural",          "rate": "+0%", "pitch": "+0Hz", "fx": "stair"},
+    "BIA_CLONE":   {"voice": "pt-BR-FranciscaNeural",          "rate": "-6%", "pitch": "-2Hz", "fx": "phone"},
+    "HOMEM":       {"voice": "en-US-AndrewMultilingualNeural", "rate": "+0%", "pitch": "+0Hz", "fx": "stair"},
+    "HOMEM_LONGE": {"voice": "en-US-AndrewMultilingualNeural", "rate": "+0%", "pitch": "+0Hz", "fx": "far"}
+  },
+  "lines": [
+    {"id": "n01", "who": "NARRADOR",    "at": 0.4,  "text": "[tenso] Vocês escolheram as escadas. [pausa] Mas tem um problema: [pausa] [misterioso] a câmera estava mostrando uma gravação."},
+    {"id": "c01", "who": "BIA_CLONE",   "at": 9.3,  "text": "[lento] Escuta com atenção. [pausa] Se alguém pedir ajuda na escada… [pausa longa] [sussurro] não responde."},
+    {"id": "n02", "who": "NARRADOR",    "at": 17.0, "text": "Você decide continuar. [pausa] [grave] Afinal, a saída fica no térreo."},
+    {"id": "m01", "who": "HOMEM_LONGE", "at": 21.6, "text": "[alto] Ei! Tem alguém aí? [pausa] [alto] Me ajuda!"},
+    {"id": "n03", "who": "NARRADOR",    "at": 27.0, "text": "[lento] Você reconhece a roupa. [pausa] [misterioso] É o homem da gravação."},
+    {"id": "m02", "who": "HOMEM",       "at": 31.4, "text": "[alto] Por favor! [respira] Eu sei como sair daqui!"},
+    {"id": "n04", "who": "NARRADOR",    "at": 39.4, "text": "[grave] A transmissão é falsa. [pausa longa] [tenso] Mas o homem é real."},
+    {"id": "b01", "who": "BIA",         "at": 46.6, "text": "[alto] Para! [respira] Quem é você?"},
+    {"id": "m03", "who": "HOMEM",       "at": 48.6, "text": "[rapido] Não temos tempo. [tenso] As câmeras não estão mostrando o que está acontecendo."},
+    {"id": "b02", "who": "BIA",         "at": 52.6, "text": "[tenso] Então o que elas estão escondendo?"},
+    {"id": "m04", "who": "HOMEM",       "at": 55.4, "text": "[sussurro] Não se vira."},
+    {"id": "n05", "who": "NARRADOR",    "at": 59.8, "text": "[lento] Você confia no estranho… [pausa] [rapido] ou corre antes de descobrir o que está atrás de você?"},
+    {"id": "n06", "who": "NARRADOR",    "at": 65.8, "text": "Você desce com o estranho… [pausa] [tenso] ou foge? [pausa] [alto] Comenta A ou B."}
+  ],
+  "highlight": ["ESCADAS", "PROBLEMA", "GRAVAÇÃO", "ATENÇÃO", "AJUDA", "NÃO", "RESPONDE", "TÉRREO", "SOCORRO", "ROUPA", "HOMEM", "FAVOR", "SAIR", "FALSA", "REAL", "PARA", "TEMPO", "CÂMERAS", "ESCONDENDO", "VIRA", "ESTRANHO", "CORRE", "ATRÁS", "FOGE", "A", "B"]
+}

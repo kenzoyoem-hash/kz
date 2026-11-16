@@ -1,0 +1,52 @@
+{
+  "fps": 30,
+  "duration": 75.0,
+  "scenes": [
+    {"id": "s1_escolha",     "start": 0.0,  "end": 7.0},
+    {"id": "s2_ligacao",     "start": 7.0,  "end": 17.6},
+    {"id": "s3_descida",     "start": 17.6, "end": 26.4},
+    {"id": "s4_homem",       "start": 26.4, "end": 35.6},
+    {"id": "s5_contradicao", "start": 35.6, "end": 46.4},
+    {"id": "s6_aviso",       "start": 46.4, "end": 57.6},
+    {"id": "s7_perigo",      "start": 57.6, "end": 65.0},
+    {"id": "s8_votacao",     "start": 65.0, "end": 75.0}
+  ],
+  "captionY": [
+    {"from": 0,    "y": 1400},
+    {"from": 65.0, "y": 330},
+    {"from": 72.0, "y": 1400}
+  ],
+  "music": [
+    {"t": 0,    "level": 0.45, "pulse": 1},
+    {"t": 7.0,  "level": 0.38, "pulse": 0},
+    {"t": 17.6, "level": 0.5,  "pulse": 1},
+    {"t": 26.4, "level": 0.55, "pulse": 1},
+    {"t": 35.6, "level": 0.6,  "pulse": 2},
+    {"t": 46.4, "level": 0.55, "pulse": 1},
+    {"t": 57.6, "level": 0.3,  "pulse": 0},
+    {"t": 65.0, "level": 0.55, "pulse": 1},
+    {"t": 72.0, "level": 0.22, "pulse": 0},
+    {"t": 74.6, "level": 0.0,  "pulse": 0}
+  ],
+  "sfx": [
+    {"t": 0.00, "s": "notif", "g": 0.8}, {"t": 0.05, "s": "impact", "g": 0.6}, {"t": 1.55, "s": "braam", "g": 0.5},
+    {"t": 2.90, "s": "unlock", "g": 1.0}, {"t": 4.40, "s": "door_creak", "g": 0.6}, {"t": 5.80, "s": "rewind", "g": 0.6},
+    {"t": 5.85, "s": "glitch", "g": 0.6}, {"t": 6.80, "s": "whoosh", "g": 0.5},
+    {"t": 7.00, "s": "ring", "g": 0.8}, {"t": 7.00, "s": "vibrate", "g": 0.6}, {"t": 9.10, "s": "answer", "g": 0.8},
+    {"t": 12.20, "s": "whoosh", "g": 0.3}, {"t": 14.40, "s": "riser", "g": 0.4}, {"t": 16.25, "s": "call_drop", "g": 0.8},
+    {"t": 17.70, "s": "push_bar", "g": 1.0}, {"t": 17.90, "s": "door_creak", "g": 0.7}, {"t": 19.20, "s": "metal_steps", "g": 0.8},
+    {"t": 21.60, "s": "impact", "g": 0.7}, {"t": 23.40, "s": "heartbeat", "g": 0.6},
+    {"t": 26.40, "s": "whoosh", "g": 0.4}, {"t": 28.00, "s": "riser", "g": 0.3}, {"t": 28.80, "s": "rewind", "g": 0.5},
+    {"t": 28.85, "s": "glitch", "g": 0.4}, {"t": 29.60, "s": "whoosh", "g": 0.4}, {"t": 31.20, "s": "impact", "g": 0.6},
+    {"t": 35.70, "s": "answer", "g": 0.5}, {"t": 37.40, "s": "glitch", "g": 0.4}, {"t": 40.00, "s": "impact", "g": 0.8},
+    {"t": 42.20, "s": "impact", "g": 0.8}, {"t": 43.60, "s": "metal_steps", "g": 1.0}, {"t": 45.60, "s": "whoosh", "g": 0.4},
+    {"t": 46.40, "s": "impact", "g": 0.5}, {"t": 52.60, "s": "whoosh", "g": 0.3}, {"t": 55.00, "s": "riser", "g": 0.5},
+    {"t": 56.90, "s": "drone_hit", "g": 1.0},
+    {"t": 57.80, "s": "breath", "g": 0.9}, {"t": 58.90, "s": "vibrate", "g": 0.6}, {"t": 58.90, "s": "message", "g": 0.8},
+    {"t": 61.80, "s": "whoosh", "g": 0.3}, {"t": 64.40, "s": "riser", "g": 0.5},
+    {"t": 65.00, "s": "whoosh", "g": 0.6}, {"t": 65.10, "s": "braam", "g": 0.6},
+    {"t": 72.00, "s": "static", "g": 0.3}, {"t": 72.00, "s": "breath", "g": 0.7}, {"t": 73.20, "s": "drone_hit", "g": 1.0},
+    {"t": 74.40, "s": "glitch", "g": 0.5}
+  ],
+  "hardCut": 74.6
+}
