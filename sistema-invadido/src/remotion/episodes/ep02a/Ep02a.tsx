@@ -5,11 +5,8 @@ import {S5, S6, S7, S8} from './ScenesB';
 import {TL} from './shared';
 import {Grain, Vignette} from '../../fx/Fx';
 
-/** SISTEMA INVADIDO — EP. 2A "A ESCADA NÃO ESTÁ VAZIA" (venceu A: descer pelas escadas) */
-const SCENES: Record<string, React.FC> = {
-  s1_escolha: S1, s2_ligacao: S2, s3_descida: S3, s4_homem: S4,
-  s5_contradicao: S5, s6_aviso: S6, s7_perigo: S7, s8_votacao: S8,
-};
+/** SISTEMA INVADIDO — EP. 2A "A CÂMERA MENTIU" (venceu A: descer pelas escadas) */
+const SCENES: Record<string, React.FC> = {s1: S1, s2: S2, s3: S3, s4: S4, s5: S5, s6: S6, s7: S7, s8: S8};
 export const Ep02a: React.FC = () => {
   const {fps} = useVideoConfig();
   return (

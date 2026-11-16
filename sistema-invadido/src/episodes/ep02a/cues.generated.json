@@ -2,762 +2,702 @@
   {
     "id": "n01",
     "who": "NARRADOR",
-    "at": 0.4,
-    "text": "Vocês escolheram as escadas. Mas tem um problema: a câmera estava mostrando uma gravação.",
-    "marked": "Vocês escolheram as escadas. Mas tem um problema: a câmera estava mostrando uma gravação.",
-    "start": 0.4,
-    "dur": 6.588,
-    "end": 6.988,
+    "at": 1.0,
+    "rate": "-2%",
+    "text": "Vocês escolheram as escadas. Mas elas não estavam como na transmissão.",
+    "marked": "Vocês escolheram as escadas. Mas elas não estavam como na transmissão.",
+    "start": 1.0,
+    "dur": 5.662,
+    "end": 6.662,
     "wav": "raw/voice/ep02a/n01.wav",
-    "whisper": "e vocês escolheram as escadas. Mas tem um problema, a câmera estava mostrando uma gravação.",
+    "whisper": "Vocês escolheram as escadas, mas elas não estavam como na transmissão.",
     "words": [
       {
         "w": "Vocês",
-        "s": 0.76,
-        "e": 0.76
+        "s": 1.0,
+        "e": 1.34
       },
       {
         "w": "escolheram",
-        "s": 0.76,
-        "e": 1.48
+        "s": 1.34,
+        "e": 2.1
       },
       {
         "w": "as",
-        "s": 1.48,
-        "e": 1.62
+        "s": 2.1,
+        "e": 2.22
       },
       {
         "w": "escadas.",
-        "s": 1.62,
-        "e": 2.12
+        "s": 2.22,
+        "e": 2.74
       },
       {
         "w": "Mas",
-        "s": 3.08,
-        "e": 3.48
+        "s": 3.42,
+        "e": 4.08
       },
       {
-        "w": "tem",
-        "s": 3.48,
-        "e": 3.72
-      },
-      {
-        "w": "um",
-        "s": 3.72,
-        "e": 3.84
-      },
-      {
-        "w": "problema:",
-        "s": 3.84,
-        "e": 4.22
-      },
-      {
-        "w": "a",
-        "s": 4.62,
-        "e": 4.72
-      },
-      {
-        "w": "câmera",
-        "s": 4.72,
-        "e": 5.02
-      },
-      {
-        "w": "estava",
-        "s": 5.02,
-        "e": 5.34
-      },
-      {
-        "w": "mostrando",
-        "s": 5.34,
-        "e": 5.9
-      },
-      {
-        "w": "uma",
-        "s": 5.9,
-        "e": 6.04
-      },
-      {
-        "w": "gravação.",
-        "s": 6.04,
-        "e": 6.62
-      }
-    ]
-  },
-  {
-    "id": "c01",
-    "who": "BIA_CLONE",
-    "at": 9.6,
-    "text": "Escuta com atenção. Se alguém pedir ajuda na escada… não responde.",
-    "marked": "Escuta com atenção. Se alguém pedir ajuda na escada… não responde.",
-    "start": 9.6,
-    "dur": 5.029,
-    "end": 14.629,
-    "wav": "raw/voice/ep02a/c01.wav",
-    "whisper": "Escuta com atenção. Se alguém pedir ajuda na escada, não responde.",
-    "words": [
-      {
-        "w": "Escuta",
-        "s": 9.6,
-        "e": 10.12
-      },
-      {
-        "w": "com",
-        "s": 10.12,
-        "e": 10.24
-      },
-      {
-        "w": "atenção.",
-        "s": 10.24,
-        "e": 10.68
-      },
-      {
-        "w": "Se",
-        "s": 11.2,
-        "e": 11.42
-      },
-      {
-        "w": "alguém",
-        "s": 11.42,
-        "e": 11.72
-      },
-      {
-        "w": "pedir",
-        "s": 11.72,
-        "e": 12.02
-      },
-      {
-        "w": "ajuda",
-        "s": 12.02,
-        "e": 12.5
-      },
-      {
-        "w": "na",
-        "s": 12.5,
-        "e": 12.72
-      },
-      {
-        "w": "escada…",
-        "s": 12.72,
-        "e": 13.3
+        "w": "elas",
+        "s": 4.08,
+        "e": 4.46
       },
       {
         "w": "não",
-        "s": 13.46,
-        "e": 13.62
+        "s": 4.46,
+        "e": 4.72
       },
       {
-        "w": "responde.",
-        "s": 13.62,
-        "e": 14.32
-      }
-    ]
-  },
-  {
-    "id": "n02",
-    "who": "NARRADOR",
-    "at": 16.6,
-    "text": "Você decide continuar. Afinal, a saída fica no térreo.",
-    "marked": "Você decide continuar. Afinal, a saída fica no térreo.",
-    "start": 16.6,
-    "dur": 4.938,
-    "end": 21.538,
-    "wav": "raw/voice/ep02a/n02.wav",
-    "whisper": "você decide continuar. Afinal, a saída fica no térreo.",
-    "words": [
-      {
-        "w": "Você",
-        "s": 16.6,
-        "e": 16.84
-      },
-      {
-        "w": "decide",
-        "s": 16.84,
-        "e": 17.32
-      },
-      {
-        "w": "continuar.",
-        "s": 17.32,
-        "e": 17.92
-      },
-      {
-        "w": "Afinal,",
-        "s": 18.7,
-        "e": 19.44
-      },
-      {
-        "w": "a",
-        "s": 19.76,
-        "e": 19.9
-      },
-      {
-        "w": "saída",
-        "s": 19.9,
-        "e": 20.32
-      },
-      {
-        "w": "fica",
-        "s": 20.32,
-        "e": 20.6
-      },
-      {
-        "w": "no",
-        "s": 20.6,
-        "e": 20.8
-      },
-      {
-        "w": "térreo.",
-        "s": 20.8,
-        "e": 21.24
-      }
-    ]
-  },
-  {
-    "id": "m01",
-    "who": "HOMEM_LONGE",
-    "at": 22.0,
-    "text": "Ei! Tem alguém aí? Me ajuda!",
-    "marked": "Ei! Tem alguém aí? Me ajuda!",
-    "start": 22.0,
-    "dur": 3.776,
-    "end": 25.776,
-    "wav": "raw/voice/ep02a/m01.wav",
-    "whisper": "Ei! Tem alguém aí? Me ajuda!",
-    "words": [
-      {
-        "w": "Ei!",
-        "s": 22.0,
-        "e": 22.2
-      },
-      {
-        "w": "Tem",
-        "s": 23.0,
-        "e": 23.24
-      },
-      {
-        "w": "alguém",
-        "s": 23.24,
-        "e": 23.5
-      },
-      {
-        "w": "aí?",
-        "s": 23.5,
-        "e": 23.84
-      },
-      {
-        "w": "Me",
-        "s": 24.62,
-        "e": 24.92
-      },
-      {
-        "w": "ajuda!",
-        "s": 24.92,
-        "e": 25.28
-      }
-    ]
-  },
-  {
-    "id": "n03",
-    "who": "NARRADOR",
-    "at": 27.2,
-    "text": "Você reconhece a roupa. É o homem da gravação.",
-    "marked": "Você reconhece a roupa. É o homem da gravação.",
-    "start": 27.2,
-    "dur": 4.176,
-    "end": 31.376,
-    "wav": "raw/voice/ep02a/n03.wav",
-    "whisper": "Você reconhece a roupa. É o homem da gravação.",
-    "words": [
-      {
-        "w": "Você",
-        "s": 27.2,
-        "e": 27.52
-      },
-      {
-        "w": "reconhece",
-        "s": 27.52,
-        "e": 28.26
-      },
-      {
-        "w": "a",
-        "s": 28.26,
-        "e": 28.36
-      },
-      {
-        "w": "roupa.",
-        "s": 28.36,
-        "e": 29.18
-      },
-      {
-        "w": "É",
-        "s": 29.5,
-        "e": 29.78
-      },
-      {
-        "w": "o",
-        "s": 29.78,
-        "e": 29.96
-      },
-      {
-        "w": "homem",
-        "s": 29.96,
-        "e": 30.22
-      },
-      {
-        "w": "da",
-        "s": 30.22,
-        "e": 30.4
-      },
-      {
-        "w": "gravação.",
-        "s": 30.4,
-        "e": 31.02
-      }
-    ]
-  },
-  {
-    "id": "m02",
-    "who": "HOMEM",
-    "at": 31.8,
-    "text": "Por favor! Eu sei como sair daqui!",
-    "marked": "Por favor! Eu sei como sair daqui!",
-    "start": 31.8,
-    "dur": 3.217,
-    "end": 35.017,
-    "wav": "raw/voice/ep02a/m02.wav",
-    "whisper": "Por favor, eu sei como sair daqui.",
-    "words": [
-      {
-        "w": "Por",
-        "s": 31.8,
-        "e": 31.94
-      },
-      {
-        "w": "favor!",
-        "s": 31.94,
-        "e": 32.3
-      },
-      {
-        "w": "Eu",
-        "s": 32.98,
-        "e": 33.36
-      },
-      {
-        "w": "sei",
-        "s": 33.36,
-        "e": 33.62
+        "w": "estavam",
+        "s": 4.72,
+        "e": 5.08
       },
       {
         "w": "como",
-        "s": 33.62,
-        "e": 33.86
+        "s": 5.08,
+        "e": 5.48
       },
       {
-        "w": "sair",
-        "s": 33.86,
-        "e": 34.22
+        "w": "na",
+        "s": 5.48,
+        "e": 5.66
       },
       {
-        "w": "daqui!",
-        "s": 34.22,
-        "e": 34.52
+        "w": "transmissão.",
+        "s": 5.66,
+        "e": 6.3
       }
     ]
   },
   {
-    "id": "n04",
-    "who": "NARRADOR",
-    "at": 39.0,
-    "text": "A transmissão é falsa. Mas o homem é real.",
-    "marked": "A transmissão é falsa. Mas o homem é real.",
-    "start": 39.0,
-    "dur": 3.897,
-    "end": 42.897,
-    "wav": "raw/voice/ep02a/n04.wav",
-    "whisper": "A transmissão é falsa, mas o homem é real.",
+    "id": "t01",
+    "who": "BIA_TEL",
+    "at": 9.5,
+    "text": "Não desce! Volta pro elevador!",
+    "marked": "Não desce! Volta pro elevador!",
+    "start": 9.5,
+    "dur": 2.239,
+    "end": 11.739,
+    "wav": "raw/voice/ep02a/t01.wav",
+    "whisper": "Não desce. Volta para o elevador.",
     "words": [
       {
-        "w": "A",
-        "s": 39.0,
-        "e": 39.08
+        "w": "Não",
+        "s": 9.5,
+        "e": 9.66
       },
       {
-        "w": "transmissão",
-        "s": 39.08,
-        "e": 39.74
+        "w": "desce!",
+        "s": 9.66,
+        "e": 10.12
       },
       {
-        "w": "é",
-        "s": 39.74,
-        "e": 39.88
+        "w": "Volta",
+        "s": 10.34,
+        "e": 10.7
       },
       {
-        "w": "falsa.",
-        "s": 39.88,
-        "e": 40.52
+        "w": "pro",
+        "s": 10.7,
+        "e": 10.94
       },
       {
-        "w": "Mas",
-        "s": 40.98,
-        "e": 41.54
-      },
-      {
-        "w": "o",
-        "s": 41.54,
-        "e": 41.82
-      },
-      {
-        "w": "homem",
-        "s": 41.82,
-        "e": 42.04
-      },
-      {
-        "w": "é",
-        "s": 42.04,
-        "e": 42.24
-      },
-      {
-        "w": "real.",
-        "s": 42.24,
-        "e": 42.46
+        "w": "elevador!",
+        "s": 10.94,
+        "e": 11.34
       }
     ]
   },
   {
     "id": "b01",
     "who": "BIA",
-    "at": 46.4,
-    "text": "Para! Quem é você?",
-    "marked": "Para! Quem é você?",
-    "start": 46.4,
-    "dur": 1.645,
-    "end": 48.045,
+    "at": 11.8,
+    "text": "Quem tá falando?",
+    "marked": "Quem tá falando?",
+    "start": 11.859,
+    "dur": 1.183,
+    "end": 13.042,
     "wav": "raw/voice/ep02a/b01.wav",
-    "whisper": "Para! Quem é você?",
+    "whisper": "Quem tá falando?",
     "words": [
       {
-        "w": "Para!",
-        "s": 46.4,
-        "e": 46.68
-      },
-      {
         "w": "Quem",
-        "s": 47.02,
-        "e": 47.18
+        "s": 11.859,
+        "e": 11.979
       },
       {
-        "w": "é",
-        "s": 47.18,
-        "e": 47.32
+        "w": "tá",
+        "s": 11.979,
+        "e": 12.139
       },
       {
-        "w": "você?",
-        "s": 47.32,
-        "e": 47.58
+        "w": "falando?",
+        "s": 12.139,
+        "e": 12.519
       }
     ]
   },
   {
-    "id": "m03",
-    "who": "HOMEM",
-    "at": 48.4,
-    "text": "Não temos tempo. As câmeras não estão mostrando o que está acontecendo.",
-    "marked": "Não temos tempo. As câmeras não estão mostrando o que está acontecendo.",
-    "start": 48.4,
-    "dur": 4.548,
-    "end": 52.948,
-    "wav": "raw/voice/ep02a/m03.wav",
-    "whisper": "Não temos tempo. As câmeras não estão mostrando o que está acontecendo.",
+    "id": "n02",
+    "who": "NARRADOR",
+    "at": 22.2,
+    "text": "Na tela, pessoas descem. Na sua frente, não há ninguém.",
+    "marked": "Na tela, pessoas descem. Na sua frente, não há ninguém.",
+    "start": 22.2,
+    "dur": 5.222,
+    "end": 27.422,
+    "wav": "raw/voice/ep02a/n02.wav",
+    "whisper": "Na tela, pessoas descem. Na sua frente, não há ninguém.",
     "words": [
       {
-        "w": "Não",
-        "s": 48.4,
-        "e": 48.56
+        "w": "Na",
+        "s": 22.2,
+        "e": 22.34
       },
       {
-        "w": "temos",
-        "s": 48.56,
-        "e": 48.84
+        "w": "tela,",
+        "s": 22.34,
+        "e": 22.74
       },
       {
-        "w": "tempo.",
-        "s": 48.84,
-        "e": 49.28
+        "w": "pessoas",
+        "s": 23.1,
+        "e": 23.6
       },
       {
-        "w": "As",
-        "s": 50.04,
-        "e": 50.34
+        "w": "descem.",
+        "s": 23.6,
+        "e": 24.14
       },
       {
-        "w": "câmeras",
-        "s": 50.34,
-        "e": 50.8
+        "w": "Na",
+        "s": 24.98,
+        "e": 25.28
+      },
+      {
+        "w": "sua",
+        "s": 25.28,
+        "e": 25.52
+      },
+      {
+        "w": "frente,",
+        "s": 25.52,
+        "e": 25.96
       },
       {
         "w": "não",
-        "s": 50.8,
-        "e": 50.9
+        "s": 26.3,
+        "e": 26.5
       },
       {
-        "w": "estão",
-        "s": 50.9,
-        "e": 51.1
+        "w": "há",
+        "s": 26.5,
+        "e": 26.7
       },
       {
-        "w": "mostrando",
-        "s": 51.1,
-        "e": 51.64
-      },
-      {
-        "w": "o",
-        "s": 51.64,
-        "e": 51.74
-      },
-      {
-        "w": "que",
-        "s": 51.74,
-        "e": 51.76
-      },
-      {
-        "w": "está",
-        "s": 51.76,
-        "e": 51.98
-      },
-      {
-        "w": "acontecendo.",
-        "s": 51.98,
-        "e": 52.44
+        "w": "ninguém.",
+        "s": 26.7,
+        "e": 26.94
       }
     ]
   },
   {
     "id": "b02",
     "who": "BIA",
-    "at": 53.3,
-    "text": "Então o que elas estão escondendo?",
-    "marked": "Então o que elas estão escondendo?",
-    "start": 53.3,
-    "dur": 2.165,
-    "end": 55.465,
+    "at": 35.2,
+    "rate": "-12%",
+    "volume": -25,
+    "fx": "whisper",
+    "text": "Não… não pode ser.",
+    "marked": "Não… não pode ser.",
+    "start": 35.2,
+    "dur": 1.56,
+    "end": 36.76,
     "wav": "raw/voice/ep02a/b02.wav",
-    "whisper": "Então o que elas estão escondendo?",
+    "whisper": "Não, não pode ser.",
     "words": [
       {
-        "w": "Então",
-        "s": 53.3,
-        "e": 53.58
+        "w": "Não…",
+        "s": 35.2,
+        "e": 35.44
       },
       {
-        "w": "o",
-        "s": 53.58,
-        "e": 53.76
+        "w": "não",
+        "s": 35.62,
+        "e": 35.74
       },
       {
-        "w": "que",
-        "s": 53.76,
-        "e": 53.9
+        "w": "pode",
+        "s": 35.74,
+        "e": 36.0
       },
       {
-        "w": "elas",
-        "s": 53.9,
-        "e": 54.1
-      },
-      {
-        "w": "estão",
-        "s": 54.1,
-        "e": 54.44
-      },
-      {
-        "w": "escondendo?",
-        "s": 54.44,
-        "e": 55.08
+        "w": "ser.",
+        "s": 36.0,
+        "e": 36.36
       }
     ]
   },
   {
-    "id": "m04",
-    "who": "HOMEM",
-    "at": 55.9,
-    "text": "Não se vira.",
-    "marked": "Não se vira.",
-    "start": 55.9,
-    "dur": 1.054,
-    "end": 56.954,
-    "wav": "raw/voice/ep02a/m04.wav",
-    "whisper": "Não se vira!",
+    "id": "n03",
+    "who": "NARRADOR",
+    "at": 36.9,
+    "pitch": "-9Hz",
+    "text": "A saída está bloqueada. A câmera mentiu.",
+    "marked": "A saída está bloqueada. A câmera mentiu.",
+    "start": 36.9,
+    "dur": 3.879,
+    "end": 40.779,
+    "wav": "raw/voice/ep02a/n03.wav",
+    "whisper": "A saída está bloqueada. A câmera mentiu.",
     "words": [
       {
-        "w": "Não",
-        "s": 55.9,
-        "e": 56.08
+        "w": "A",
+        "s": 36.9,
+        "e": 37.04
       },
       {
-        "w": "se",
-        "s": 56.08,
+        "w": "saída",
+        "s": 37.04,
+        "e": 37.46
+      },
+      {
+        "w": "está",
+        "s": 37.46,
+        "e": 37.66
+      },
+      {
+        "w": "bloqueada.",
+        "s": 37.66,
+        "e": 38.42
+      },
+      {
+        "w": "A",
+        "s": 39.08,
+        "e": 39.46
+      },
+      {
+        "w": "câmera",
+        "s": 39.46,
+        "e": 39.84
+      },
+      {
+        "w": "mentiu.",
+        "s": 39.84,
+        "e": 40.44
+      }
+    ]
+  },
+  {
+    "id": "d01",
+    "who": "DAVI",
+    "at": 40.7,
+    "text": "Ei! Sou Davi, da manutenção. A saída tá bloqueada, mas existe outro caminho.",
+    "marked": "Ei! Sou Davi, da manutenção. A saída tá bloqueada, mas existe outro caminho.",
+    "start": 40.899,
+    "dur": 6.529,
+    "end": 47.428,
+    "wav": "raw/voice/ep02a/d01.wav",
+    "whisper": "Ei, sou o Davi da Manutenção, a saída está bloqueada, mas existe outro caminho.",
+    "words": [
+      {
+        "w": "Ei!",
+        "s": 40.899,
+        "e": 41.079
+      },
+      {
+        "w": "Sou",
+        "s": 41.499,
+        "e": 41.699
+      },
+      {
+        "w": "Davi,",
+        "s": 41.799,
+        "e": 42.119
+      },
+      {
+        "w": "da",
+        "s": 42.119,
+        "e": 42.639
+      },
+      {
+        "w": "manutenção.",
+        "s": 42.639,
+        "e": 43.379
+      },
+      {
+        "w": "A",
+        "s": 43.859,
+        "e": 43.939
+      },
+      {
+        "w": "saída",
+        "s": 43.939,
+        "e": 44.359
+      },
+      {
+        "w": "tá",
+        "s": 44.359,
+        "e": 44.519
+      },
+      {
+        "w": "bloqueada,",
+        "s": 44.519,
+        "e": 45.199
+      },
+      {
+        "w": "mas",
+        "s": 45.579,
+        "e": 45.779
+      },
+      {
+        "w": "existe",
+        "s": 45.779,
+        "e": 46.179
+      },
+      {
+        "w": "outro",
+        "s": 46.179,
+        "e": 46.599
+      },
+      {
+        "w": "caminho.",
+        "s": 46.599,
+        "e": 46.879
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "who": "BIA",
+    "at": 47.4,
+    "text": "Como eu sei que posso confiar em você?",
+    "marked": "Como eu sei que posso confiar em você?",
+    "start": 47.548,
+    "dur": 2.248,
+    "end": 49.795,
+    "wav": "raw/voice/ep02a/b03.wav",
+    "whisper": "como eu sei que posso confiar em você.",
+    "words": [
+      {
+        "w": "Como",
+        "s": 47.548,
+        "e": 47.708
+      },
+      {
+        "w": "eu",
+        "s": 47.708,
+        "e": 47.808
+      },
+      {
+        "w": "sei",
+        "s": 47.808,
+        "e": 48.008
+      },
+      {
+        "w": "que",
+        "s": 48.008,
+        "e": 48.168
+      },
+      {
+        "w": "posso",
+        "s": 48.168,
+        "e": 48.428
+      },
+      {
+        "w": "confiar",
+        "s": 48.428,
+        "e": 48.968
+      },
+      {
+        "w": "em",
+        "s": 48.968,
+        "e": 49.088
+      },
+      {
+        "w": "você?",
+        "s": 49.088,
+        "e": 49.348
+      }
+    ]
+  },
+  {
+    "id": "n04",
+    "who": "NARRADOR",
+    "at": 49.9,
+    "text": "O hacker manda não confiar nele. Mas foi o hacker que falsificou as câmeras.",
+    "marked": "O hacker manda não confiar nele. Mas foi o hacker que falsificou as câmeras.",
+    "start": 49.915,
+    "dur": 5.816,
+    "end": 55.732,
+    "wav": "raw/voice/ep02a/n04.wav",
+    "whisper": "o hacker manda não confiar nele. Mas foi o hacker que falsificou as câmeras.",
+    "words": [
+      {
+        "w": "O",
+        "s": 49.915,
+        "e": 50.015
+      },
+      {
+        "w": "hacker",
+        "s": 50.015,
+        "e": 50.275
+      },
+      {
+        "w": "manda",
+        "s": 50.275,
+        "e": 50.815
+      },
+      {
+        "w": "não",
+        "s": 50.815,
+        "e": 50.975
+      },
+      {
+        "w": "confiar",
+        "s": 50.975,
+        "e": 51.495
+      },
+      {
+        "w": "nele.",
+        "s": 51.495,
+        "e": 51.955
+      },
+      {
+        "w": "Mas",
+        "s": 52.815,
+        "e": 53.075
+      },
+      {
+        "w": "foi",
+        "s": 53.075,
+        "e": 53.355
+      },
+      {
+        "w": "o",
+        "s": 53.355,
+        "e": 53.475
+      },
+      {
+        "w": "hacker",
+        "s": 53.475,
+        "e": 53.795
+      },
+      {
+        "w": "que",
+        "s": 53.795,
+        "e": 54.015
+      },
+      {
+        "w": "falsificou",
+        "s": 54.015,
+        "e": 54.655
+      },
+      {
+        "w": "as",
+        "s": 54.655,
+        "e": 54.835
+      },
+      {
+        "w": "câmeras.",
+        "s": 54.835,
+        "e": 55.375
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "who": "DAVI",
+    "at": 56.0,
+    "rate": "+6%",
+    "text": "Eu tenho a chave do acesso técnico. Vem!",
+    "marked": "Eu tenho a chave do acesso técnico. Vem!",
+    "start": 56.0,
+    "dur": 3.062,
+    "end": 59.062,
+    "wav": "raw/voice/ep02a/d02.wav",
+    "whisper": "Eu tenho a chave do acesso técnico. Vem!",
+    "words": [
+      {
+        "w": "Eu",
+        "s": 56.0,
+        "e": 56.1
+      },
+      {
+        "w": "tenho",
+        "s": 56.1,
         "e": 56.28
       },
       {
-        "w": "vira.",
+        "w": "a",
         "s": 56.28,
-        "e": 56.62
+        "e": 56.42
+      },
+      {
+        "w": "chave",
+        "s": 56.42,
+        "e": 56.82
+      },
+      {
+        "w": "do",
+        "s": 56.82,
+        "e": 56.94
+      },
+      {
+        "w": "acesso",
+        "s": 56.94,
+        "e": 57.34
+      },
+      {
+        "w": "técnico.",
+        "s": 57.34,
+        "e": 58.08
+      },
+      {
+        "w": "Vem!",
+        "s": 58.36,
+        "e": 58.72
       }
     ]
   },
   {
     "id": "n05",
     "who": "NARRADOR",
-    "at": 59.6,
-    "text": "Você confia no estranho… ou corre antes de descobrir o que está atrás de você?",
-    "marked": "Você confia no estranho… ou corre antes de descobrir o que está atrás de você?",
-    "start": 59.6,
-    "dur": 4.871,
-    "end": 64.471,
+    "at": 63.6,
+    "rate": "-8%",
+    "volume": -10,
+    "text": "No celular, você já aparece entrando. Só que ainda está parada.",
+    "marked": "No celular, você já aparece entrando. Só que ainda está parada.",
+    "start": 63.6,
+    "dur": 5.283,
+    "end": 68.883,
     "wav": "raw/voice/ep02a/n05.wav",
-    "whisper": "Você confia no estranho ou corre antes de descobrir o que está atrás de você?",
+    "whisper": "no celular, você já aparece entrando. Só que ainda está parada.",
     "words": [
       {
-        "w": "Você",
-        "s": 59.6,
-        "e": 59.88
+        "w": "No",
+        "s": 63.6,
+        "e": 63.72
       },
       {
-        "w": "confia",
-        "s": 59.88,
-        "e": 60.44
+        "w": "celular,",
+        "s": 63.72,
+        "e": 64.22
       },
       {
-        "w": "no",
-        "s": 60.44,
-        "e": 60.52
+        "w": "você",
+        "s": 64.64,
+        "e": 64.86
       },
       {
-        "w": "estranho…",
-        "s": 60.52,
-        "e": 61.08
+        "w": "já",
+        "s": 64.86,
+        "e": 65.12
       },
       {
-        "w": "ou",
-        "s": 61.08,
-        "e": 61.42
+        "w": "aparece",
+        "s": 65.12,
+        "e": 65.46
       },
       {
-        "w": "corre",
-        "s": 61.42,
-        "e": 61.82
+        "w": "entrando.",
+        "s": 65.46,
+        "e": 66.08
       },
       {
-        "w": "antes",
-        "s": 61.82,
-        "e": 62.12
-      },
-      {
-        "w": "de",
-        "s": 62.12,
-        "e": 62.28
-      },
-      {
-        "w": "descobrir",
-        "s": 62.28,
-        "e": 62.72
-      },
-      {
-        "w": "o",
-        "s": 62.72,
-        "e": 62.94
+        "w": "Só",
+        "s": 66.78,
+        "e": 67.34
       },
       {
         "w": "que",
-        "s": 62.94,
-        "e": 63.06
+        "s": 67.34,
+        "e": 67.54
+      },
+      {
+        "w": "ainda",
+        "s": 67.54,
+        "e": 67.82
       },
       {
         "w": "está",
-        "s": 63.06,
-        "e": 63.24
+        "s": 67.82,
+        "e": 68.04
       },
       {
-        "w": "atrás",
-        "s": 63.24,
-        "e": 63.58
-      },
-      {
-        "w": "de",
-        "s": 63.58,
-        "e": 63.74
-      },
-      {
-        "w": "você?",
-        "s": 63.74,
-        "e": 64.02
+        "w": "parada.",
+        "s": 68.04,
+        "e": 68.54
       }
     ]
   },
   {
     "id": "n06",
     "who": "NARRADOR",
-    "at": 65.6,
-    "text": "Você desce com o estranho… ou foge? Comenta A ou B.",
-    "marked": "Você desce com o estranho… ou foge? Comenta A ou B.",
-    "start": 65.6,
-    "dur": 4.744,
-    "end": 70.344,
+    "at": 69.4,
+    "rate": "+2%",
+    "text": "Você segue Davi ou fica na escada? Comenta A ou B!",
+    "marked": "Você segue Davi ou fica na escada? Comenta A ou B!",
+    "start": 69.4,
+    "dur": 4.484,
+    "end": 73.884,
     "wav": "raw/voice/ep02a/n06.wav",
-    "whisper": "Você desce com o estranho ou foge? Comenta ao B.",
+    "whisper": "Você segue da via ou fica na escada? Comenta ao B.",
     "words": [
       {
         "w": "Você",
-        "s": 65.6,
-        "e": 65.86
+        "s": 69.4,
+        "e": 69.64
       },
       {
-        "w": "desce",
-        "s": 65.86,
-        "e": 66.26
+        "w": "segue",
+        "s": 69.64,
+        "e": 70.02
       },
       {
-        "w": "com",
-        "s": 66.26,
-        "e": 66.4
-      },
-      {
-        "w": "o",
-        "s": 66.4,
-        "e": 66.48
-      },
-      {
-        "w": "estranho…",
-        "s": 66.48,
-        "e": 67.04
+        "w": "Davi",
+        "s": 70.02,
+        "e": 70.46
       },
       {
         "w": "ou",
-        "s": 67.04,
-        "e": 67.42
+        "s": 70.46,
+        "e": 70.66
       },
       {
-        "w": "foge?",
-        "s": 67.42,
-        "e": 67.94
+        "w": "fica",
+        "s": 70.66,
+        "e": 70.9
+      },
+      {
+        "w": "na",
+        "s": 70.9,
+        "e": 71.08
+      },
+      {
+        "w": "escada?",
+        "s": 71.08,
+        "e": 71.5
       },
       {
         "w": "Comenta",
-        "s": 68.86,
-        "e": 69.42
+        "s": 72.54,
+        "e": 73.02
       },
       {
         "w": "A",
-        "s": 69.42,
-        "e": 69.55
+        "s": 73.02,
+        "e": 73.13
       },
       {
         "w": "ou",
-        "s": 69.55,
-        "e": 69.68
+        "s": 73.13,
+        "e": 73.24
       },
       {
-        "w": "B.",
-        "s": 69.68,
-        "e": 69.94
+        "w": "B!",
+        "s": 73.24,
+        "e": 73.48
       }
     ]
   }

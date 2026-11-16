@@ -28,10 +28,14 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - Símbolo: triângulo vermelho de alerta e barras de áudio que reagem à voz (`HackerTV`).
 - **Não revelar** rosto, identidade nem motivação antes do momento planejado.
 
-### HOMEM DE BLUSA AZUL
-- É o homem que aparece em loop na câmera da Escada B. Cabelo castanho curto, barba por fazer, blusa azul de manga comprida, calça cinza-escura.
-- Componente `characters/Man.tsx` (close de frente/lado) e `LOOKS.homemAzul` (figura das câmeras).
-- Voz: en-US-AndrewMultilingualNeural falando português, com reverberação de escada (`stair`) e a versão distante (`far`).
+### DAVI (manutenção, ~30 anos) — a partir do EP. 2A
+- Cabelo castanho curto, uniforme de manutenção cinza-azulado, crachá "DAVI" no peito e chaveiro metálico na mão direita.
+- Componente `characters/Davi.tsx` (`Keychain` preso à mão via `holdR`).
+- Voz: en-US-AndrewMultilingualNeural falando português, sem efeitos.
+- Fica sempre na porta da área técnica do 6º andar.
+
+### HOMEM DE BLUSA AZUL (versão anterior descartada do EP. 2A)
+- Ainda existe como figura das câmeras (`LOOKS.homemAzul`) e em `characters/Man.tsx`.
 
 ### MORADORES
 - Figuras simples, vistas de lado e só pelas câmeras: `homemAzul` (o homem de blusa azul da escada), `senhora`, `rapaz`, `moca`, `senhor`, `vizinho` (`src/remotion/characters/Resident.tsx`).
@@ -52,16 +56,16 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - Mensagem do hacker: "VOCÊ NÃO ESTÁ SOZINHA NO ANDAR." O hacker reduziu o cronômetro para 00:10. Passos se aproximam e a sombra de pés aparece na fresta da porta.
 - No fim, a mochila toca e o celular da Bia recebe uma chamada de **"VOCÊ"**. O cronômetro ficou congelado em 00:06 ("VOTAÇÃO ABERTA").
 
-## Continuidade do EP. 2A — "A ESCADA NÃO ESTÁ VAZIA" (venceu A, com 64% × 36%)
-- A rota liberada foi a ESCADA B. A porta 702 destravou (LED verde).
-- No corredor, o celular tocou de novo com a chamada "VOCÊ". A **voz idêntica à da Bia** disse: "Se alguém pedir ajuda na escada… não responde." A chamada durou 00:07.
-- A Bia desceu do 7º para o 6º andar. O homem de blusa azul gritou por ajuda de alguns andares abaixo (5º andar).
-- No celular ele continuava descendo em loop, mas na vida real estava parado olhando para ela: **a transmissão é falsa, o homem é real**.
-- Diálogo: "As câmeras não estão mostrando o que está acontecendo." Ele viu algo atrás dela e disse: "Não se vira."
-- Ouviu-se uma respiração pesada atrás da Bia. Mensagem do DESCONHECIDO: "VOCÊ NÃO DEVERIA TER ESCUTADO ELE."
-- Última imagem: uma **silhueta** parada no lance de cima, atrás da Bia (sem rosto; `sets/Stairs.tsx → Shadow`).
-- Nova votação: **A** = confiar no homem e descer; **B** = correr de volta ao 7º andar.
-- Pendências que o EP. 2A abriu: quem é a "Bia" do telefone? O aviso dela contradiz o homem. De quem é a silhueta? Como o hacker sabe que ela "escutou"?
+## Continuidade do EP. 2A — "A CÂMERA MENTIU" (venceu a Rota A)
+- No celular: "VOTAÇÃO ENCERRADA / ROTA A LIBERADA". A fechadura da porta 702 ficou verde.
+- Diante da porta da escada do 7º, chega uma chamada de "VOCÊ". A imitação digital da voz da Bia diz: "Não desce! Volta pro elevador!"
+- CAM 07 — ESCADA mostrava, às 22:46:57 (horário congelado), três silhuetas descendo em loop. O patamar real do 7º estava vazio.
+- A Bia desceu UM lance até o patamar do 6º. O lance seguinte está fechado por uma grade metálica de segurança com cadeado ("BLOQUEADO").
+- DAVI saiu pela porta corta-fogo de ACESSO TÉCNICO do 6º, que fecha e trava sozinha atrás dele. Ele a destranca com uma chave mecânica.
+- O hacker mandou: "ALERTA — NÃO CONFIE NO FUNCIONÁRIO."
+- A CAM 12 — CORREDOR TÉCNICO ("AO VIVO") mostra uma imagem fabricada da Bia já entrando atrás de Davi. A Bia real continua parada do lado de fora.
+- Nova votação: **A** = seguir Davi; **B** = continuar sozinha (na escada, perto da grade).
+- Posições fixas no patamar do 6º: porta técnica à esquerda, Davi em frente/ao lado dela, Bia junto à grade (`LS` em `sets/Landings.tsx`).
 
 ## Ramificações para o EP. 2
 - **A — Escadas**: a Bia desce pela Escada B e descobre que a câmera exibia uma gravação. A escada real mostra por que o loop foi montado (e quem não queria que se visse o que acontece lá).

@@ -1,51 +1,47 @@
 1
-00:00:00,760 --> 00:00:06,920
-Vocês escolheram as escadas. Mas tem um problema: a câmera estava mostrando uma gravação.
+00:00:01,000 --> 00:00:06,600
+Vocês escolheram as escadas. Mas elas não estavam como na transmissão.
 
 2
-00:00:09,600 --> 00:00:14,620
-[VOZ DA BIA NO CELULAR] Escuta com atenção. Se alguém pedir ajuda na escada… não responde.
+00:00:09,500 --> 00:00:11,640
+[VOZ DA BIA NO TELEFONE] Não desce! Volta pro elevador!
 
 3
-00:00:16,600 --> 00:00:21,540
-Você decide continuar. Afinal, a saída fica no térreo.
+00:00:11,859 --> 00:00:12,819
+[BIA] Quem tá falando?
 
 4
-00:00:22,000 --> 00:00:25,580
-[HOMEM] Ei! Tem alguém aí? Me ajuda!
+00:00:22,200 --> 00:00:27,240
+Na tela, pessoas descem. Na sua frente, não há ninguém.
 
 5
-00:00:27,200 --> 00:00:31,320
-Você reconhece a roupa. É o homem da gravação.
+00:00:35,200 --> 00:00:36,660
+[BIA] Não… não pode ser.
 
 6
-00:00:31,800 --> 00:00:34,820
-[HOMEM] Por favor! Eu sei como sair daqui!
+00:00:36,900 --> 00:00:40,740
+A saída está bloqueada. A câmera mentiu.
 
 7
-00:00:39,000 --> 00:00:42,760
-A transmissão é falsa. Mas o homem é real.
+00:00:40,899 --> 00:00:47,179
+[DAVI] Ei! Sou Davi, da manutenção. A saída tá bloqueada, mas existe outro caminho.
 
 8
-00:00:46,400 --> 00:00:47,880
-[BIA] Para! Quem é você?
+00:00:47,548 --> 00:00:49,648
+[BIA] Como eu sei que posso confiar em você?
 
 9
-00:00:48,400 --> 00:00:52,740
-[HOMEM] Não temos tempo. As câmeras não estão mostrando o que está acontecendo.
+00:00:49,915 --> 00:00:55,675
+O hacker manda não confiar nele. Mas foi o hacker que falsificou as câmeras.
 
 10
-00:00:53,300 --> 00:00:55,380
-[BIA] Então o que elas estão escondendo?
+00:00:56,000 --> 00:00:59,020
+[DAVI] Eu tenho a chave do acesso técnico. Vem!
 
 11
-00:00:55,900 --> 00:00:56,920
-[HOMEM] Não se vira.
+00:01:03,600 --> 00:01:08,840
+No celular, você já aparece entrando. Só que ainda está parada.
 
 12
-00:00:59,600 --> 00:01:04,320
-Você confia no estranho… ou corre antes de descobrir o que está atrás de você?
-
-13
-00:01:05,600 --> 00:01:10,240
-Você desce com o estranho… ou foge? Comenta A ou B.
+00:01:09,400 --> 00:01:13,780
+Você segue Davi ou fica na escada? Comenta A ou B!

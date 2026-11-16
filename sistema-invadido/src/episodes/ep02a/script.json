@@ -1,11 +1,11 @@
 {
   "episode": "2a",
-  "title": "A ESCADA NÃO ESTÁ VAZIA",
+  "title": "A CÂMERA MENTIU",
   "fps": 30,
   "voices": {
     "NARRADOR": {
       "voice": "pt-BR-AntonioNeural",
-      "rate": "-5%",
+      "rate": "-6%",
       "pitch": "-6Hz",
       "fx": "narrator"
     },
@@ -15,130 +15,121 @@
       "pitch": "+0Hz",
       "fx": "bia"
     },
-    "BIA_CLONE": {
+    "BIA_TEL": {
       "voice": "pt-BR-FranciscaNeural",
-      "rate": "-8%",
+      "rate": "+10%",
       "pitch": "+0Hz",
       "fx": "phone"
     },
-    "HOMEM": {
-      "voice": "pt-BR-AntonioNeural",
-      "rate": "+6%",
-      "pitch": "+6Hz",
+    "DAVI": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+2%",
+      "pitch": "+0Hz",
       "fx": "man"
-    },
-    "HOMEM_LONGE": {
-      "voice": "pt-BR-AntonioNeural",
-      "rate": "+6%",
-      "pitch": "+6Hz",
-      "fx": "far"
     }
   },
   "lines": [
     {
       "id": "n01",
       "who": "NARRADOR",
-      "at": 0.4,
-      "text": "Vocês escolheram as escadas. Mas tem um problema: a câmera estava mostrando uma gravação."
+      "at": 1.0,
+      "rate": "-2%",
+      "text": "Vocês escolheram as escadas. Mas elas não estavam como na transmissão."
     },
     {
-      "id": "c01",
-      "who": "BIA_CLONE",
-      "at": 9.6,
-      "text": "Escuta com atenção. Se alguém pedir ajuda na escada… não responde."
-    },
-    {
-      "id": "n02",
-      "who": "NARRADOR",
-      "at": 16.6,
-      "text": "Você decide continuar. Afinal, a saída fica no térreo."
-    },
-    {
-      "id": "m01",
-      "who": "HOMEM_LONGE",
-      "at": 22.0,
-      "text": "Ei! Tem alguém aí? Me ajuda!"
-    },
-    {
-      "id": "n03",
-      "who": "NARRADOR",
-      "at": 27.2,
-      "text": "Você reconhece a roupa. É o homem da gravação."
-    },
-    {
-      "id": "m02",
-      "who": "HOMEM",
-      "at": 31.8,
-      "text": "Por favor! Eu sei como sair daqui!"
-    },
-    {
-      "id": "n04",
-      "who": "NARRADOR",
-      "at": 39.0,
-      "text": "A transmissão é falsa. Mas o homem é real."
+      "id": "t01",
+      "who": "BIA_TEL",
+      "at": 9.5,
+      "text": "Não desce! Volta pro elevador!"
     },
     {
       "id": "b01",
       "who": "BIA",
-      "at": 46.4,
-      "text": "Para! Quem é você?"
+      "at": 11.8,
+      "text": "Quem tá falando?"
     },
     {
-      "id": "m03",
-      "who": "HOMEM",
-      "at": 48.4,
-      "text": "Não temos tempo. As câmeras não estão mostrando o que está acontecendo."
+      "id": "n02",
+      "who": "NARRADOR",
+      "at": 22.2,
+      "text": "Na tela, pessoas descem. Na sua frente, não há ninguém."
     },
     {
       "id": "b02",
       "who": "BIA",
-      "at": 53.3,
-      "text": "Então o que elas estão escondendo?"
+      "at": 35.2,
+      "rate": "-12%",
+      "volume": -25,
+      "fx": "whisper",
+      "text": "Não… não pode ser."
     },
     {
-      "id": "m04",
-      "who": "HOMEM",
-      "at": 55.9,
-      "text": "Não se vira."
+      "id": "n03",
+      "who": "NARRADOR",
+      "at": 36.9,
+      "pitch": "-9Hz",
+      "text": "A saída está bloqueada. A câmera mentiu."
+    },
+    {
+      "id": "d01",
+      "who": "DAVI",
+      "at": 40.7,
+      "text": "Ei! Sou Davi, da manutenção. A saída tá bloqueada, mas existe outro caminho."
+    },
+    {
+      "id": "b03",
+      "who": "BIA",
+      "at": 47.4,
+      "text": "Como eu sei que posso confiar em você?"
+    },
+    {
+      "id": "n04",
+      "who": "NARRADOR",
+      "at": 49.9,
+      "text": "O hacker manda não confiar nele. Mas foi o hacker que falsificou as câmeras."
+    },
+    {
+      "id": "d02",
+      "who": "DAVI",
+      "at": 56.0,
+      "rate": "+6%",
+      "text": "Eu tenho a chave do acesso técnico. Vem!"
     },
     {
       "id": "n05",
       "who": "NARRADOR",
-      "at": 59.6,
-      "text": "Você confia no estranho… ou corre antes de descobrir o que está atrás de você?"
+      "at": 63.6,
+      "rate": "-8%",
+      "volume": -10,
+      "text": "No celular, você já aparece entrando. Só que ainda está parada."
     },
     {
       "id": "n06",
       "who": "NARRADOR",
-      "at": 65.6,
-      "text": "Você desce com o estranho… ou foge? Comenta A ou B."
+      "at": 69.4,
+      "rate": "+2%",
+      "text": "Você segue Davi ou fica na escada? Comenta A ou B!"
     }
   ],
   "highlight": [
     "ESCADAS",
-    "PROBLEMA",
-    "GRAVAÇÃO",
-    "ATENÇÃO",
-    "AJUDA",
-    "NÃO",
-    "RESPONDE",
-    "TÉRREO",
-    "SOCORRO",
-    "ROUPA",
-    "HOMEM",
-    "FAVOR",
-    "SAIR",
-    "FALSA",
-    "REAL",
-    "PARA",
-    "TEMPO",
-    "CÂMERAS",
-    "ESCONDENDO",
-    "VIRA",
-    "ESTRANHO",
-    "CORRE",
-    "ATRÁS",
-    "FOGE",
+    "TRANSMISSÃO",
+    "DESCE",
+    "ELEVADOR",
+    "FALANDO",
+    "TELA",
+    "NINGUÉM",
+    "BLOQUEADA",
+    "MENTIU",
+    "DAVI",
+    "CAMINHO",
+    "CONFIAR",
+    "HACKER",
+    "FALSIFICOU",
+    "CHAVE",
+    "VEM",
+    "ENTRANDO",
+    "PARADA",
     "A",
     "B"
   ]

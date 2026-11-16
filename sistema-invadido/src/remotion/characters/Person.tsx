@@ -27,6 +27,7 @@ export type Look = {
   skin: string; skinShade: string; hair: string; hairStyle: 'ponytail' | 'short';
   shirt: string; shirtShade: string; stripe?: string; longSleeves?: boolean;
   pants: string; shoe: string; sole: string; brow?: number; stubble?: string;
+  badge?: string; // crachá no peito (texto)
 };
 
 const D2R = Math.PI / 180;
@@ -120,6 +121,7 @@ export type PersonProps = {
   facing?: 'front' | 'back' | 'side'; dir?: 1 | -1;
   phone?: 'none' | 'L' | 'R' | 'both'; phoneLit?: boolean; pupil?: number; tremble?: number;
   x?: number; y?: number; scale?: number; seed?: number;
+  holdR?: React.ReactNode; holdL?: React.ReactNode; // objeto preso à mão (chaveiro, chave…)
 };
 
 const EXPR: Record<Expr, {brow: number; browY: number; eye: number; pup: number}> = {
@@ -135,7 +137,7 @@ const EXPR: Record<Expr, {brow: number; browY: number; eye: number; pup: number}
 
 export const Person: React.FC<PersonProps> = (p) => {
   const {t, look, pose = {rSh: 8, rEl: 8, lSh: 8, lEl: 8}, expr = 'neutral', lookX = 0, lookY = 0, mouth = 0, run = 0,
-    facing = 'front', dir = 1, phone = 'none', phoneLit = false, pupil = 1, tremble = 0, x = 0, y = 0, scale = 1, seed = 2} = p;
+    facing = 'front', dir = 1, phone = 'none', phoneLit = false, pupil = 1, tremble = 0, x = 0, y = 0, scale = 1, seed = 2, holdR, holdL} = p;
   if (facing === 'side') return <PersonSide {...p} />;
   const back = facing === 'back';
   const breathe = Math.sin(t * 2.1) * 4;
@@ -159,15 +161,15 @@ export const Person: React.FC<PersonProps> = (p) => {
   const L = ps.lT ? armIK(1, ps.lT.x, ps.lT.y, ps.lFs ?? 1) : [ps.lSh, ps.lEl];
   const arms = (
     <>
-      <ArmFront side={-1} sh={R[0]} el={R[1]} look={look} hand={ps.rHand ?? (phone === 'R' ? 'grip' : 'relaxed')} handRot={ps.rHandRot} fs={ps.rFs} prop={phone === 'R' && !back ? <PhoneProp /> : undefined} dim={back} />
-      <ArmFront side={1} sh={L[0]} el={L[1]} look={look} hand={ps.lHand ?? (phone === 'L' ? 'grip' : 'relaxed')} handRot={ps.lHandRot} fs={ps.lFs} prop={phone === 'L' && !back ? <PhoneProp /> : undefined} dim={back} />
+      <ArmFront side={-1} sh={R[0]} el={R[1]} look={look} hand={ps.rHand ?? (phone === 'R' ? 'grip' : 'relaxed')} handRot={ps.rHandRot} fs={ps.rFs} prop={phone === 'R' && !back ? <PhoneProp /> : holdR} dim={back} />
+      <ArmFront side={1} sh={L[0]} el={L[1]} look={look} hand={ps.lHand ?? (phone === 'L' ? 'grip' : 'relaxed')} handRot={ps.lHandRot} fs={ps.lFs} prop={phone === 'L' && !back ? <PhoneProp /> : holdL} dim={back} />
     </>
   );
 
   const mouthEl = (() => {
     const mx = fx * 0.9, my = -664 + fy * 0.6;
     const ink = '#3a1418';
-    if (mouth > 0.08) return <g><ellipse cx={mx} cy={my} rx={11 + mouth * 7} ry={4 + mouth * 14} fill={ink} />{mouth > 0.5 && <rect x={mx - 8} y={my - 4 - mouth * 12} width={16} height={5} rx={2} fill="#fff" />}</g>;
+    if (mouth > 0.08) { const m = Math.min(0.55, mouth); return <ellipse cx={mx} cy={my} rx={12 + m * 5} ry={4 + m * 13} fill={ink} />; }
     switch (expr) {
       case 'surprised': return <ellipse cx={mx} cy={my} rx={11} ry={14} fill={ink} />;
       case 'shock': return <g><ellipse cx={mx} cy={my + 4} rx={16} ry={23} fill={ink} /><ellipse cx={mx} cy={my + 16} rx={9} ry={5} fill="#b5545c" /></g>;
@@ -198,6 +200,14 @@ export const Person: React.FC<PersonProps> = (p) => {
         <path d={`M-74,${-598 + breathe * 0.4} Q-84,-520 -66,-352 L66,-352 Q84,-520 74,${-598 + breathe * 0.4} Q0,${-616 + breathe * 0.4} -74,${-598 + breathe * 0.4} Z`} fill={look.shirt} />
         <path d="M18,-604 Q80,-590 78,-520 Q74,-430 66,-352 L40,-352 Q52,-480 18,-604 Z" fill={look.shirtShade} opacity={0.7} />
         {look.stripe && <rect x={-80} y={-505} width={160} height={30} fill={look.stripe} />}
+        {look.badge && !back && (
+          <g transform="translate(22,-560)">
+            <rect x={0} y={0} width={46} height={62} rx={5} fill="#f4f6fb" stroke="#9aa3b5" strokeWidth={2} />
+            <rect x={4} y={4} width={38} height={12} rx={2} fill="#2f6fd6" />
+            <circle cx={23} cy={30} r={8} fill="#c9cfdb" />
+            <text x={23} y={54} fontSize={11} textAnchor="middle" fontFamily="sans-serif" fontWeight={800} fill="#1a1f2e">{look.badge}</text>
+          </g>
+        )}
         <rect x={-68} y={-372} width={136} height={30} rx={10} fill={look.pants} />
         <rect x={-20} y={-632} width={40} height={40} rx={12} fill={back ? look.skinShade : look.skin} />
         {!back && <path d="M-26,-604 Q0,-588 26,-604" stroke={look.shirtShade} strokeWidth={6} fill="none" />}

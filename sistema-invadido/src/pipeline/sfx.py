@@ -207,10 +207,43 @@ def drone_hit():
     d = 2.5; t = t_(d); s_ = (np.sin(2*np.pi*41*t) + 0.5*np.sin(2*np.pi*61.5*t)) * np.minimum(1, t / 0.02) * np.exp(-t * 1.1)
     return norm(lp_fast(s_ + bp_fast(noise(d), 60, 400) * np.exp(-t * 3) * 0.5, 600), 0.95)
 
+def blip():
+    """texto digital aparecendo na tela"""
+    out = np.zeros(int(0.5 * SR))
+    for k, f in enumerate([1800, 2400, 1800, 3000]):
+        t = t_(0.05); s_ = np.sign(np.sin(2*np.pi*f*t)) * 0.25 * env(len(t), 0.002, 0.01); i = int(k * 0.07 * SR); out[i:i+len(s_)] += s_
+    return norm(lp_fast(out, 6000), 0.4)
+def door_open():
+    """porta pesada abrindo (trinco + ar), sem rangido agudo"""
+    d = 1.2; t = t_(d)
+    latch = np.zeros(len(t)); L = int(0.08 * SR); latch[:L] = bp_fast(noise(0.08), 800, 5000) * np.linspace(1, 0, L)
+    air = lp_fast(noise(d), 400) * np.sin(np.pi * t / d) ** 2 * 0.6
+    return norm(latch + air + np.sin(2*np.pi*70*t) * np.exp(-t * 6) * 0.3, 0.6)
+def door_close():
+    """porta fechando + bipe de trava"""
+    out = np.zeros(int(1.0 * SR)); t = t_(0.5)
+    out[:len(t)] += np.sin(2*np.pi*65*t) * expdec(len(t), 14) + lp_fast(noise(0.5), 1500) * expdec(len(t), 35) * 0.6
+    tb = t_(0.12); b = np.sin(2*np.pi*1400*tb) * 0.3 * env(len(tb), 0.003, 0.02); i = int(0.45 * SR); out[i:i+len(b)] += b
+    return norm(out, 0.8)
+def key_turn():
+    out = np.zeros(int(0.9 * SR))
+    for st, f in [(0.0, 3200), (0.18, 2600), (0.45, 2100), (0.5, 1500)]:
+        t = t_(0.06); s_ = bp_fast(noise(0.06), f * 0.6, f * 1.4) * expdec(len(t), 70); i = int(st * SR); out[i:i+len(s_)] += s_
+    t = t_(0.3); out[int(0.5*SR):int(0.5*SR)+len(t)] += np.sin(2*np.pi*180*t) * expdec(len(t), 30) * 0.5
+    return norm(out, 0.7)
+def key_jingle():
+    out = np.zeros(int(1.0 * SR))
+    for k in range(7):
+        t = t_(0.25); f = 3000 + rng.uniform(-600, 900)
+        s_ = (np.sin(2*np.pi*f*t) + 0.5*np.sin(2*np.pi*f*2.7*t)) * expdec(len(t), 25); i = int(rng.uniform(0, 0.7) * SR); out[i:i+len(s_)] += s_
+    return norm(out, 0.4)
+def footstep1():
+    return norm(footstep(1.0), 0.7)
+
 LIB = {k: v for k, v in globals().items() if callable(v) and k in (
     "notif message impact braam whoosh riser glitch static tv_on flicker lock handle bang heartbeat "
     "alarm ticks ding door_slide steps steps_run rewind vibrate ring breath metal_steps call_drop answer unlock "
-    "door_creak push_bar drone_hit").split()}
+    "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1").split()}
 
 def music(duration, automation):
     """Trilha de suspense: drone em Lá menor, pulso grave e notas agudas esparsas.

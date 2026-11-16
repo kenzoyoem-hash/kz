@@ -1,217 +1,213 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
-import {StairSection, STAIR, Landing, StairDoor, Shadow} from '../../sets/Stairs';
-import {Stairwell, LOOKS} from '../../sets/Building';
+import {LandingSet, KeyInLock, TechCorridor, LS} from '../../sets/Landings';
 import {Bia, POSES, mixPose, Pose} from '../../characters/Bia';
-import {Man} from '../../characters/Man';
-import {Phone, CCTV, MessageBubble, VoteCard} from '../../ui/UI';
-import {SvgCamera, Vignette} from '../../fx/Fx';
+import {Davi, Keychain} from '../../characters/Davi';
+import {Phone, CCTV, VoteCard} from '../../ui/UI';
+import {SvgCamera, Vignette, Glitch} from '../../fx/Fx';
 import {C, FONT} from '../../theme';
 import {kf, ease, tw, clamp} from '../../lib/anim';
-import {useT, scene, mouthOf} from './shared';
-import {VIG, Tag, biaPath, MAN_SPOT} from './ScenesA';
+import {useT, mouthOf} from './shared';
+import {VIG} from './ScenesA';
 
-const CLOCK0 = 23 * 3600 + 47 * 60 + 12;
-const BLUE_MAN = [{look: LOOKS.homemAzul, phase: 0}];
-const RAIL: Pose = {rSh: 0, rEl: 0, lSh: 0, lEl: 0, nSh: 48, nEl: -6, nHand: 'grip', fSh: 12, fEl: 20};
+const LIVE_CLOCK = 23 * 3600 + 49 * 60 + 2;
 const REST: Pose = {rSh: 8, rEl: 8, lSh: 8, lEl: 8};
-const MID = STAIR.flightB(1, 0); // patamar intermediário entre o 6º e o 5º (onde o homem para)
+const KEYS_DOWN: Pose = {...REST, rSh: 10, rEl: 12, rHand: 'grip'};
+const KEYS_UP: Pose = {rSh: 0, rEl: 0, lSh: 8, lEl: 8, rT: {x: -120, y: -660}, rFs: 0.8, rHand: 'grip'};
+const holdPhone = POSES.phoneL;
 
-/** homem subindo o lance B(1) de baixo para cima: 43,0s → 46,0s */
-const manPos = (T: number) => {
-  if (T < 43.0) return {...MAN_SPOT, walking: false};
-  if (T < 46.0) return {...STAIR.flightB(1, tw(T, 43.0, 46.0, 1, 0, ease.linear)), walking: true};
-  return {...MID, walking: false};
-};
-/** a Bia recua um degrau quando ele começa a subir */
-const biaBack = (T: number) => (T < 45.0 ? biaPath(T) : {x: tw(T, 45.0, 45.8, 250, 190, ease.inOut), y: STAIR.landingY(0) + 350, dir: 1 as const, walking: false});
+const PhoneShot: React.FC<{children: React.ReactNode; T: number; vib?: boolean; glow?: string}> = ({children, T, vib = false, glow}) => (
+  <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%, #141b2e, #020306 75%)'}}>
+    <Phone x={540 + (vib ? Math.sin(T * 70) * 4 : 0)} y={980} w={800} h={1560} glow={glow}>{children}</Phone>
+  </AbsoluteFill>
+);
 
-const Section: React.FC<{T: number; cx: number; cy: number; z: number; shadow?: number; manPose?: Pose}> = ({T, cx, cy, z, shadow = 0, manPose}) => {
-  const b = biaBack(T), m = manPos(T);
+/** imagem FALSIFICADA da CAM 12: um único quadro de Bia atravessando a porta atrás de Davi */
+const FakeFeed: React.FC<{T: number; glitch: number; drift: number}> = ({T, glitch, drift}) => (
+  <CCTV t={T} label="CAM 12 — CORREDOR TÉCNICO" clock={LIVE_CLOCK + Math.floor(T - 63)} tint="#4a7dff" glitch={glitch}>
+    <div style={{position: 'absolute', inset: 0, transform: `scale(${1 + drift * 0.05}) translateX(${drift * -14}px)`}}>
+      <svg viewBox="0 0 1080 1920" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" style={{position: 'absolute', inset: 0}}>
+        <TechCorridor>
+          <Davi t={0.4} x={520} y={1260} scale={0.5} facing="back" />
+          <Bia t={0.4} x={690} y={1720} scale={0.82} facing="back" />
+        </TechCorridor>
+      </svg>
+    </div>
+    <div style={{position: 'absolute', right: 24, top: 70, background: C.red, color: '#fff', fontFamily: FONT.mono, fontSize: 34, padding: '4px 14px', borderRadius: 8}}>● AO VIVO</div>
+  </CCTV>
+);
+
+/** patamar do 6º com Bia (posição fixa) e Davi (na porta / em frente / ao lado) */
+const Landing6: React.FC<{T: number; cx: number; cy: number; z: number; door?: number; davi?: 'inDoor' | 'front' | 'side' | 'none';
+  daviPose?: Pose; daviExpr?: any; daviLook?: number; biaPose?: Pose; biaExpr?: any; biaLookX?: number; biaLookY?: number; red?: number; blue?: number; phoneLit?: boolean; doorInside?: string}> =
+  ({T, cx, cy, z, door = 0, davi = 'front', daviPose = KEYS_DOWN, daviExpr = 'worried', daviLook = 0.6, biaPose = holdPhone, biaExpr = 'suspicious', biaLookX = -0.6, biaLookY = 0, red = 0, blue = 0, phoneLit = false, doorInside}) => {
+  const D = davi === 'side' ? LS.daviSide : LS.davi;
+  const daviEl = davi === 'none' ? null : (
+    <Davi t={T} x={D.x} y={D.y} scale={D.s} pose={daviPose} expr={daviExpr} lookX={daviLook} mouth={mouthOf('DAVI', T, 1.2)} holdR={<Keychain swing={Math.sin(T * 2) * 4} />} />
+  );
   return (
     <SvgCamera cx={cx} cy={cy} zoom={z}>
-      <StairSection t={T} floorTop={7} floors={3} light={1} front={shadow > 0 ? <Shadow t={T} x={860} y={STAIR.landingY(0) + 4} scale={0.6} opacity={shadow} /> : undefined}>
-        <Bia t={T} x={b.x} y={b.y} scale={0.62} facing="side" dir={1} pose={RAIL} expr="fear" lookY={0.8} />
-        <Man t={T} x={m.x} y={m.y} scale={0.62} facing={m.walking ? 'side' : 'front'} dir={-1} walk={m.walking ? 1 : 0} expr="worried" lookY={-1} pose={manPose ?? REST} />
-      </StairSection>
+      <LandingSet floor={6} gate doorOpen={door} redLight={red} blueLight={blue} doorInside={doorInside ?? '#0b0f17'} inDoor={davi === 'inDoor' ? daviEl : undefined}>
+        {davi !== 'inDoor' && daviEl}
+        <Bia t={T} x={LS.bia.x} y={LS.bia.y} scale={LS.bia.s} phone="L" pose={biaPose} expr={biaExpr} lookX={biaLookX} lookY={biaLookY} phoneLit={phoneLit} mouth={mouthOf('BIA', T, 1.2)} />
+      </LandingSet>
     </SvgCamera>
   );
 };
 
-/* ───────── CENA 5 — A CONTRADIÇÃO (35,6–46,2s) ───────── */
+/* ───────── CENA 5 — O FUNCIONÁRIO (37–49,6s) ───────── */
 export const S5: React.FC = () => {
   const t = useT();
-  const T = scene('s5_contradicao').start + t;
-  if (t < 1.6) {
-    // pega o celular e toca na tela (um toque)
-    const pose = mixPose(POSES.phoneL, POSES.pointPhone, tw(t, 0.1, 0.5, 0, 1, ease.inOut));
+  const T = 37 + t;
+  if (t < 3.6) {
+    // plano médio: a porta técnica abre devagar (Davi já está atrás dela)
+    const door = tw(T, 38.4, 40.4, 0, 0.85, ease.inOut);
     return (
       <AbsoluteFill style={{background: C.bg}}>
-        <SvgCamera cx={540} cy={1150} zoom={1.8}>
-          <Landing t={T} floor={6} light={1}><Bia t={T} x={540} y={1760} pose={pose} phone="L" phoneLit expr="suspicious" lookY={0.7} /></Landing>
-        </SvgCamera>
+        <Landing6 T={T} cx={kf(t, [[0, 520], [3.6, 470]])} cy={1080} z={kf(t, [[0, 1.0], [3.6, 1.08]])} door={door} davi="inDoor" daviPose={KEYS_DOWN} biaExpr="worried" biaLookX={tw(T, 38.2, 38.6, -0.2, -0.9)} />
         <Vignette strength={VIG} />
       </AbsoluteFill>
     );
   }
-  if (t < 5.0) {
-    // NO CELULAR: ele continua descendo (a gravação em loop)
-    const lt = (T - 37.2) % 3;
-    return (
-      <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 50%, #141b2e, #020306)'}}>
-        <Phone x={540} y={1000} w={820} h={1560}>
-          <CCTV t={T} label="CAM 07 · ESCADA B" clock={CLOCK0 + lt} tint={C.blue}><Stairwell t={lt} people={BLUE_MAN} loop={3} /></CCTV>
-        </Phone>
-        <Tag text="NO CELULAR: ELE ESTÁ DESCENDO" color={C.blue} y={110} />
-      </AbsoluteFill>
-    );
-  }
-  if (t < 7.4) {
-    // NA ESCADA: ele está parado, olhando para ela
+  if (t < 9.0) {
+    // Davi na abertura da porta, falando; um único gesto de mão em "outro caminho"
+    const gesture = tw(T, 45.0, 45.4, 0, 1, ease.inOut);
+    const pose = mixPose(KEYS_DOWN, {...KEYS_DOWN, lSh: 0, lEl: 0, lT: {x: 130, y: -560}, lFs: 0.8, lHand: 'open', lHandRot: -120}, gesture);
     return (
       <AbsoluteFill style={{background: C.bg}}>
-        <Section T={T} cx={720} cy={1180} z={1.0} />
-        <Tag text="NA ESCADA: ELE ESTÁ PARADO" color={C.yellow} y={250} />
+        <Landing6 T={T} cx={300} cy={kf(t, [[3.6, 1060], [9, 1020]])} z={kf(t, [[3.6, 1.75], [9, 1.85]])} door={0.85} davi="inDoor" daviPose={pose} daviLook={0.5} />
         <Vignette strength={VIG} />
       </AbsoluteFill>
     );
   }
-  // ele começa a subir; ela recua um degrau
+  // close em Bia, desconfiada; Davi espera em frente à porta (que se fecha e trava atrás dele)
+  const door = tw(T, 46.0, 46.5, 0.85, 0, ease.in);
   return (
     <AbsoluteFill style={{background: C.bg}}>
-      <Section T={T} cx={kf(t, [[7.4, 720], [10.6, 560]])} cy={kf(t, [[7.4, 1180], [10.6, 1000]])} z={kf(t, [[7.4, 1.0], [10.6, 1.3]])} />
+      <Landing6 T={T} cx={kf(t, [[9, 560], [12.6, 600]])} cy={820} z={kf(t, [[9, 1.75], [12.6, 1.9]])} door={door} davi="front" daviLook={0.5} biaExpr="suspicious" biaLookX={-0.7} />
       <Vignette strength={VIG} />
     </AbsoluteFill>
   );
 };
 
-/* ───────── CENA 6 — O AVISO (46,2–57,6s) ───────── */
+/* ───────── CENA 6 — O HACKER INTERFERE (49,6–60,4s) ───────── */
 export const S6: React.FC = () => {
   const t = useT();
-  const T = scene('s6_aviso').start + t;
-  const biaShot = (pose: Pose, expr: any, z: number, cy: number) => (
-    <AbsoluteFill style={{background: C.bg}}>
-      <SvgCamera cx={540} cy={cy} zoom={z}>
-        <Landing t={T} floor={6} light={1}><Bia t={T} x={540} y={1760} pose={pose} phone="L" expr={expr} mouth={mouthOf('BIA', T)} lookY={0.6} /></Landing>
-      </SvgCamera>
-      <Vignette strength={VIG} />
-    </AbsoluteFill>
-  );
-  const holdPhone: Pose = {...POSES.phoneL};
+  const T = 49.6 + t;
   if (t < 2.0) {
-    // "Para!": a mão sobe UMA vez e fica
-    const stop: Pose = {...POSES.stop, lT: {x: 40, y: -470}, lFs: 0.6, lHand: 'grip'};
-    return biaShot(mixPose(holdPhone, stop, tw(T, 46.4, 46.7, 0, 1, ease.out)), 'determined', 1.8, 1080);
+    return (
+      <PhoneShot T={T} vib={t < 0.8} glow={C.red}>
+        <div style={{position: 'absolute', inset: 0, background: '#12040a', textAlign: 'center', paddingTop: 520, boxSizing: 'border-box'}}>
+          <div style={{fontFamily: FONT.title, fontSize: 96, color: C.red, letterSpacing: 6, textShadow: `0 0 30px ${C.red}`}}>⚠ ALERTA</div>
+          <div style={{fontFamily: FONT.title, fontSize: 64, color: '#fff', marginTop: 50, padding: '0 50px', lineHeight: 1.15, opacity: clamp((t - 0.3) * 4)}}>NÃO CONFIE NO FUNCIONÁRIO.</div>
+        </div>
+      </PhoneShot>
+    );
   }
-  if (t < 7.0) {
-    // o homem explica: mãos abertas no peito; ao falar das câmeras, aponta para cima e mantém
-    const open: Pose = {rSh: 0, rEl: 0, lSh: 0, lEl: 0, rT: {x: -90, y: -540}, lT: {x: 90, y: -540}, rFs: 0.7, lFs: 0.7, rHand: 'open', lHand: 'open', rHandRot: 140, lHandRot: -140};
-    const point: Pose = {...open, lT: {x: 150, y: -720}, lFs: 0.9, lHand: 'point', lHandRot: -200};
-    const pose = mixPose(mixPose(REST, open, tw(T, 48.4, 48.8, 0, 1, ease.inOut)), point, tw(T, 50.3, 50.7, 0, 1, ease.inOut));
+  if (t < 6.0) {
+    // rosto de Bia com a luz vermelha do celular; os olhos vão do celular para Davi
+    const toDavi = T > 53.6;
     return (
       <AbsoluteFill style={{background: C.bg}}>
-        <SvgCamera cx={540} cy={1100} zoom={kf(t, [[2, 1.7], [7, 1.85]])}>
-          <Landing t={T} floor={5} light={1}><Man t={T} x={540} y={1800} pose={pose} expr="worried" lookY={-0.7} mouth={mouthOf('HOMEM', T, 1.8)} /></Landing>
-        </SvgCamera>
+        <Landing6 T={T} cx={LS.bia.x} cy={790} z={kf(t, [[2, 2.5], [6, 2.7]])} red={0.7} phoneLit biaExpr={toDavi ? 'suspicious' : 'worried'} biaLookX={toDavi ? -0.8 : 0.1} biaLookY={toDavi ? 0 : 0.7} />
         <Vignette strength={VIG} />
       </AbsoluteFill>
     );
   }
-  if (t < 9.6) {
-    return biaShot(holdPhone, 'suspicious', kf(t, [[7, 2.1], [9.6, 2.3]]), 1000);
+  if (t < 9.2) {
+    // Davi levanta devagar o chaveiro metálico
+    const up = tw(T, 55.9, 57.1, 0, 1, ease.inOut);
+    return (
+      <AbsoluteFill style={{background: C.bg}}>
+        <Landing6 T={T} cx={300} cy={kf(t, [[6, 1020], [9.2, 980]])} z={kf(t, [[6, 1.75], [9.2, 1.9]])} davi="front" daviPose={mixPose(KEYS_DOWN, KEYS_UP, up)} daviExpr="determined" daviLook={0.5} />
+        <Vignette strength={VIG} />
+      </AbsoluteFill>
+    );
   }
-  // close no homem: ele olha para algo ATRÁS dela. "Não se vira."
-  const sees = T > 55.7;
+  // Bia alterna o olhar: Davi → celular (sem mudar de posição)
+  const look = T < 59.5 ? {x: -0.8, y: 0} : {x: 0.1, y: 0.7};
   return (
     <AbsoluteFill style={{background: C.bg}}>
-      <SvgCamera cx={540} cy={1000} zoom={kf(t, [[9.6, 2.6], [11.4, 3.2]])}>
-        <Landing t={T} floor={5} light={1}>
-          <Man t={T} x={540} y={1800} expr={sees ? 'shock' : 'worried'} lookY={-1} lookX={sees ? -0.5 : 0} pupil={sees ? 0.6 : 1} mouth={mouthOf('HOMEM', T, 2.4)} pose={REST} />
-        </Landing>
-      </SvgCamera>
+      <Landing6 T={T} cx={LS.bia.x} cy={790} z={2.7} red={0.3} biaExpr="worried" biaLookX={look.x} biaLookY={look.y} davi="front" daviPose={KEYS_UP} />
       <Vignette strength={VIG} />
     </AbsoluteFill>
   );
 };
 
-/* ───────── CENA 7 — O PERIGO (57,6–65,2s) ───────── */
+/* ───────── CENA 7 — A IMAGEM IMPOSSÍVEL (60,4–67,6s) ───────── */
 export const S7: React.FC = () => {
   const t = useT();
-  const T = scene('s7_perigo').start + t;
-  const bubble = T > 58.6 && T < 63.4 ? <MessageBubble t={T - 58.6} from="DESCONHECIDO" text="VOCÊ NÃO DEVERIA TER ESCUTADO ELE." y={240} /> : null;
-  if (t < 4.0) {
+  const T = 60.4 + t;
+  if (t < 1.8) {
     return (
       <AbsoluteFill style={{background: C.bg}}>
-        <SvgCamera cx={540} cy={kf(t, [[0, 1020], [4, 980]])} zoom={kf(t, [[0, 2.0], [4, 2.2]])}>
-          <Landing t={T} floor={6} light={0.9}>
-            <Bia t={T} x={540} y={1760} pose={POSES.phoneL} phone="L" phoneLit={T > 58.6} expr="fear" lookX={0.8} lookY={0.1} pupil={0.65} />
-          </Landing>
+        <SvgCamera cx={560} cy={1000} zoom={kf(t, [[0, 1.0], [1.8, 1.05]])}>
+          <KeyInLock insert={tw(T, 60.5, 60.8, 0, 1, ease.out)} turn={tw(T, 60.9, 61.4, 0, 1, ease.inOut)} />
         </SvgCamera>
         <Vignette strength={VIG} />
-        {bubble}
       </AbsoluteFill>
     );
   }
-  // plano geral: o homem abaixo, a Bia no meio e uma silhueta no 7º andar, acima dela
-  return (
+  const medium = (
     <AbsoluteFill style={{background: C.bg}}>
-      <Section T={T} cx={640} cy={kf(t, [[4, 900], [7.6, 860]])} z={kf(t, [[4, 1.1], [7.6, 0.95]])} shadow={tw(t, 4.4, 6.0, 0, 0.8)}
-        manPose={{rSh: 0, rEl: 0, lSh: 8, lEl: 8, rT: {x: -120, y: -620}, rFs: 0.8, rHand: 'open', rHandRot: 170}} />
+      <Landing6 T={T} cx={480} cy={1080} z={1.05} door={0.85} doorInside="#2c3442" davi="side" daviPose={KEYS_DOWN} daviLook={0.6} biaExpr="worried" biaLookX={-0.6} />
       <Vignette strength={VIG} />
-      {bubble && <div style={{opacity: tw(T, 62.8, 63.4, 1, 0)}}>{bubble}</div>}
     </AbsoluteFill>
   );
+  if (t < 3.2) return medium;
+  if (t < 5.4) {
+    return <PhoneShot T={T} vib={t < 3.7}><FakeFeed T={T} glitch={t < 3.5 ? 0.25 : 0.05} drift={(t - 3.2) / 2.2} /></PhoneShot>;
+  }
+  // corte para a realidade: ela continua parada do lado de fora
+  return medium;
 };
 
-/* ───────── CENA 8 — NOVA VOTAÇÃO (65,2–75s) ───────── */
+/* ───────── CENA 8 — NOVA VOTAÇÃO (67,6–76s) ───────── */
 export const S8: React.FC = () => {
   const t = useT();
-  const T = scene('s8_votacao').start + t;
-  if (t < 6.8) {
+  const T = 67.6 + t;
+  if (t < 6.6) {
     const split = tw(t, 0, 0.4, 0, 1, ease.expo);
-    const kA = tw(T, 65.4, 65.75, 0, 1, ease.back), kB = tw(T, 65.6, 65.95, 0, 1, ease.back);
-    const aAct = T > 65.6 && T < 67.5 ? 1 : 0;
-    const bAct = T > 67.6 && T < 68.6 ? 1 : 0;
-    const cta = tw(T, 68.7, 69.05, 0, 1, ease.back);
+    const kA = tw(T, 67.8, 68.15, 0, 1, ease.back), kB = tw(T, 68.0, 68.35, 0, 1, ease.back);
+    const aAct = T > 69.4 && T < 70.4 ? 1 : 0, bAct = T > 70.6 && T < 71.6 ? 1 : 0;
+    const cta = tw(T, 71.8, 72.15, 0, 1, ease.back);
     return (
       <AbsoluteFill style={{background: '#000'}}>
         <div style={{position: 'absolute', left: 0, top: 0, width: 540, height: 1920, overflow: 'hidden', transform: `translateY(${(1 - split) * -1920}px)`}}>
-          <svg viewBox={`${MID.x - 270} ${MID.y - 1150} 540 1920`} width={540} height={1920} style={{position: 'absolute'}} preserveAspectRatio="xMidYMid slice">
-            <StairSection t={T} floorTop={7} floors={3} light={1}>
-              <Man t={T} x={MID.x} y={MID.y} scale={0.62} expr="worried" lookY={-1} pose={{rSh: 0, rEl: 0, lSh: 8, lEl: 8, rT: {x: -120, y: -620}, rFs: 0.8, rHand: 'open', rHandRot: 170}} />
-            </StairSection>
+          <svg viewBox="140 260 540 1920" width={540} height={1920} style={{position: 'absolute'}} preserveAspectRatio="xMidYMid slice">
+            <LandingSet floor={6} gate doorOpen={0.85} doorInside="#2c3442" blueLight={1}>
+              <Davi t={T} x={LS.daviSide.x - 40} y={LS.daviSide.y} scale={LS.daviSide.s} pose={KEYS_DOWN} expr="worried" lookX={0.4} holdR={<Keychain />} />
+            </LandingSet>
           </svg>
-          <div style={{position: 'absolute', inset: 0, background: C.blue, mixBlendMode: 'multiply', opacity: 0.4}} />
         </div>
         <div style={{position: 'absolute', left: 540, top: 0, width: 540, height: 1920, overflow: 'hidden', transform: `translateY(${(1 - split) * 1920}px)`}}>
-          <svg viewBox="270 300 540 1920" width={540} height={1920} style={{position: 'absolute'}} preserveAspectRatio="xMidYMid slice"><StairDoor t={T} open={0} /></svg>
-          <div style={{position: 'absolute', inset: 0, background: C.red, mixBlendMode: 'multiply', opacity: 0.35}} />
+          <svg viewBox="560 260 540 1920" width={540} height={1920} style={{position: 'absolute'}} preserveAspectRatio="xMidYMid slice">
+            <LandingSet floor={6} gate redLight={1}>
+              <Bia t={T} x={LS.bia.x} y={LS.bia.y} scale={LS.bia.s} phone="L" pose={holdPhone} expr="worried" lookX={0.3} lookY={0.4} />
+            </LandingSet>
+          </svg>
         </div>
         <div style={{position: 'absolute', left: 534, top: 0, width: 12, height: 1920, background: '#fff', boxShadow: '0 0 30px #fff', opacity: split}} />
-        <AbsoluteFill style={{background: 'linear-gradient(rgba(0,0,0,0.65), transparent 30%, transparent 62%, rgba(0,0,0,0.7))'}} />
-        <div style={{position: 'absolute', left: 0, right: 0, top: 560, textAlign: 'center', fontFamily: FONT.title, color: '#fff', fontSize: 46, letterSpacing: 3, opacity: split, textShadow: '0 3px 10px #000'}}>O QUE A BIA FAZ?</div>
-        <VoteCard letter="A" text="CONFIAR NO HOMEM E DESCER" color={C.blue} x={30} y={800} w={490} k={kA} active={aAct} />
-        <VoteCard letter="B" text="CORRER DE VOLTA AO 7º ANDAR" color={C.red} x={560} y={800} w={490} k={kB} active={bAct} />
-        <div style={{position: 'absolute', left: 0, right: 0, top: 1380, textAlign: 'center', transform: `scale(${cta})`, opacity: clamp(cta * 2)}}>
-          <div style={{display: 'inline-block', background: C.yellow, color: '#000', fontFamily: FONT.title, fontSize: 72, padding: '12px 40px', borderRadius: 24}}>
+        <AbsoluteFill style={{background: 'linear-gradient(rgba(0,0,0,0.6), transparent 28%, transparent 64%, rgba(0,0,0,0.7))'}} />
+        <VoteCard letter="A" text="SEGUIR DAVI" color={C.blue} x={30} y={1120} w={490} k={kA} active={aAct} />
+        <VoteCard letter="B" text="CONTINUAR SOZINHA" color={C.red} x={560} y={1120} w={490} k={kB} active={bAct} />
+        <div style={{position: 'absolute', left: 0, right: 0, top: 1610, textAlign: 'center', transform: `scale(${cta})`, opacity: clamp(cta * 2)}}>
+          <div style={{display: 'inline-block', background: C.yellow, color: '#000', fontFamily: FONT.title, fontSize: 64, padding: '10px 36px', borderRadius: 22}}>
             COMENTA <span style={{color: C.blue}}>A</span> OU <span style={{color: C.red}}>B</span>
           </div>
-          <div style={{fontFamily: FONT.bold, fontSize: 36, color: '#fff', marginTop: 16, textShadow: '0 2px 8px #000'}}>a mais votada decide o EP. 3</div>
         </div>
       </AbsoluteFill>
     );
   }
-  if (t < 9.4) {
-    // a sombra de alguém parado atrás da Bia
-    const k = t - 6.8;
+  if (t < 8.4) {
+    // close na transmissão falsa: Bia "já dentro"; breve interferência e corte seco
+    const k = t - 6.6;
     return (
-      <AbsoluteFill style={{background: C.bg}}>
-        <SvgCamera cx={kf(k, [[0, 560], [2.6, 680]])} cy={kf(k, [[0, 1080], [2.6, 860]])} zoom={kf(k, [[0, 1.5], [2.6, 1.9]])}>
-          <Landing t={T} floor={6} light={0.85} behind={<Shadow t={T} x={800} y={1270} scale={0.95} opacity={tw(k, 0.3, 1.4, 0, 1, ease.inOut)} />}>
-            <Bia t={T} x={500} y={1780} pose={POSES.phoneL} phone="L" phoneLit expr="worried" lookY={0.8} lookX={-0.2} />
-          </Landing>
-        </SvgCamera>
-        <Vignette strength={VIG} />
+      <AbsoluteFill style={{background: '#000'}}>
+        <AbsoluteFill style={{transform: `scale(${1.15 + k * 0.05})`}}>
+          <FakeFeed T={T} glitch={T > 75.4 ? 0.9 : 0.08} drift={k / 1.8} />
+        </AbsoluteFill>
+        <Glitch amount={T > 75.4 ? 0.8 : 0} seed={88} />
       </AbsoluteFill>
     );
   }

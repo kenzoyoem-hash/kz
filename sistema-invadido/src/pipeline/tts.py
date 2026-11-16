@@ -82,7 +82,7 @@ def main(ep):
             # micro-variação automática entre trechos (evita monotonia)
             wob = 0
             rate = num(v["rate"]) + t.get("rate", 0); pitch = num(v["pitch"]) + t.get("pitch", 0) + wob
-            vol = t.get("volume", 0)
+            vol = t.get("volume", 0) + int(ln.get("volume", 0))
             mp3 = vdir / f"{ln['id']}_{i}_raw.mp3"
             key = f"{v['voice']}|{rate}|{pitch}|{vol}|{txt}"
             keyf = mp3.with_suffix(".key")
