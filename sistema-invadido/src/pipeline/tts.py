@@ -27,6 +27,8 @@ FX = {
     # interfone do elevador: faixa estreita de alto-falante pequeno (sem eco)
     "intercom": "highpass=f=420,lowpass=f=3200,equalizer=f=1800:t=q:w=1:g=4,acompressor=threshold=-22dB:ratio=4,volume=1.15",
     # voz do outro lado da porta de metal: abafada (sem eco)
+    # gravação de câmera de segurança (lo-fi, sem eco)
+    "cctv":     "highpass=f=250,lowpass=f=3400,acrusher=bits=12:mix=0.12,acompressor=threshold=-22dB:ratio=4,volume=0.95",
     "muffled":  "highpass=f=120,lowpass=f=2000,equalizer=f=500:t=q:w=1:g=2,acompressor=threshold=-22dB:ratio=3,volume=1.1",
 }
 TAGS = {

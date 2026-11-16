@@ -79,6 +79,15 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - Voz do interfone: pt-BR-AntonioNeural, mais grave, com filtro `intercom` (difere do narrador pelo timbre e pelo filtro).
 - Os dois ramos convergem no ACESSO TÉCNICO do 6º andar (2A: a porta do Davi; 2B: o desenho do caderno).
 
+## Continuidade do EP. 3A — "NÃO CONFIE EM MIM" (após o 2B; venceu A, confiar na voz de fora)
+- Davi abre à força, com uma alavanca de manutenção, a porta do elevador parado no 6º. A Bia sai com a mochila e a entrega a ele, mas fica com o caderno e a chave.
+- Corredor do 6º (`sets/Hall6.tsx`): elevador à esquerda, porta de MANUTENÇÃO com leitor de crachá à direita.
+- Mensagem: "NÃO CONFIE NO FUNCIONÁRIO." Davi diz que alguém bloqueou o acesso dele; o leitor mostra "ACESSO NEGADO" duas vezes.
+- "CÂMERA 06 — GRAVAÇÃO" mostra Davi ao celular diante do elevador: "Ela já entrou?" É uma gravação FALSIFICADA (Davi está realmente assustado).
+- Final: "Bia, escuta. Isso não aconteceu." / "Como eu vou saber?" Votação: **A** = continuar com Davi; **B** = seguir sozinha.
+- Vozes a partir do EP. 3A: Davi = pt-BR-AntonioNeural (timbre natural); narrador = Antonio mais grave e mais lento (só na abertura e na votação).
+- Encerramento padrão: "● TRANSMISSÃO INTERROMPIDA / SISTEMA INVADIDO / CONTINUA…"
+
 ## Ramificações para o EP. 2
 - **A — Escadas**: a Bia desce pela Escada B e descobre que a câmera exibia uma gravação. A escada real mostra por que o loop foi montado (e quem não queria que se visse o que acontece lá).
 - **B — Elevador**: a Bia entra no elevador e precisa descobrir quem deixou a mochila vermelha. O celular que toca dentro dela está ligado ao número dela.

@@ -291,11 +291,28 @@ def knock():
         i = int(st*SR); out[i:i+len(s_)] += s_
     return norm(lp_fast(out, 2500), 0.85)
 
+def hum(d=12.0):
+    """zumbido elétrico baixo da cabine parada (sem ruído de ar)"""
+    t = t_(d); s_ = (np.sin(2*np.pi*60*t) + 0.5*np.sin(2*np.pi*120*t) + 0.2*np.sin(2*np.pi*180*t)) * (0.85 + 0.15*np.sin(2*np.pi*0.3*t))
+    return norm(s_ * np.minimum(1, t / 1.0) * np.minimum(1, (d - t) / 1.0), 0.25)
+def pry():
+    """alavanca forçando a porta: rangido metálico + tranco"""
+    d = 0.9; t = t_(d); f = 260 + 90*np.sin(2*np.pi*2.5*t)
+    sq = np.sin(2*np.pi*np.cumsum(f)/SR) * (0.5 + 0.5*np.sin(2*np.pi*31*t)) * np.sin(np.pi*t/d) * 0.35
+    th = np.zeros(len(t)); tt = t_(0.3); i = int(0.55*SR)
+    th[i:i+len(tt)] = np.sin(2*np.pi*75*tt) * expdec(len(tt), 15) + np.sin(2*np.pi*640*tt) * expdec(len(tt), 25) * 0.3
+    return norm(lp_fast(sq, 1800) + th, 0.8)
+def deny():
+    out = np.zeros(int(0.6 * SR))
+    for st in (0, 0.2):
+        t = t_(0.12); b = np.sign(np.sin(2*np.pi*520*t)) * 0.35 * env(len(t), 0.002, 0.01); i = int(st*SR); out[i:i+len(b)] += b
+    return norm(lp_fast(out, 3000), 0.55)
+
 LIB = {k: v for k, v in globals().items() if callable(v) and k in (
     "notif message impact braam whoosh riser glitch static tv_on flicker lock handle bang heartbeat "
     "alarm ticks ding door_slide steps steps_run rewind vibrate ring breath metal_steps call_drop answer unlock "
     "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1 pulse elev_doors button "
-    "elev_motor jolt zipper paper intercom_on knock").split()}
+    "elev_motor jolt zipper paper intercom_on knock hum pry deny").split()}
 
 def music(duration, automation):
     """Trilha de suspense: drone em Lá menor, pulso grave e notas agudas esparsas.

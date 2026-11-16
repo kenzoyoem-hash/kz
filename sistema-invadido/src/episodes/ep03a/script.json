@@ -1,0 +1,247 @@
+{
+  "episode": "3a",
+  "title": "NÃO CONFIE EM MIM",
+  "fps": 30,
+  "voices": {
+    "NARRADOR": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "-9%",
+      "pitch": "-13Hz",
+      "fx": "narrator"
+    },
+    "BIA": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "fx": "bia"
+    },
+    "DAVI": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "fx": "man"
+    },
+    "DAVI_FORA": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "+2%",
+      "pitch": "-2Hz",
+      "fx": "muffled"
+    },
+    "DAVI_REC": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "-4%",
+      "pitch": "-2Hz",
+      "fx": "cctv"
+    }
+  },
+  "lines": [
+    {
+      "id": "n01",
+      "who": "NARRADOR",
+      "at": 0.8,
+      "text": "Vocês escolheram confiar na voz do lado de fora… Mas quem está ali?"
+    },
+    {
+      "id": "b01",
+      "who": "BIA",
+      "at": 7.6,
+      "rate": "-12%",
+      "volume": -25,
+      "fx": "whisper",
+      "text": "Moço…? Você ainda tá aí?"
+    },
+    {
+      "id": "d01",
+      "who": "DAVI_FORA",
+      "at": 10.6,
+      "text": "Tô, sim! Se afasta da porta. Vou tentar abrir."
+    },
+    {
+      "id": "d02",
+      "who": "DAVI",
+      "at": 19.0,
+      "rate": "-6%",
+      "text": "Oi… sou o Davi, da manutenção. Você tá bem?"
+    },
+    {
+      "id": "b02",
+      "who": "BIA",
+      "at": 23.8,
+      "rate": "-10%",
+      "volume": -10,
+      "text": "Eu acho que sim… Só quero sair daqui."
+    },
+    {
+      "id": "d03",
+      "who": "DAVI",
+      "at": 27.2,
+      "rate": "-10%",
+      "text": "Vem. Devagar."
+    },
+    {
+      "id": "b03",
+      "who": "BIA",
+      "at": 32.0,
+      "text": "Essa mochila é sua, né?"
+    },
+    {
+      "id": "d04",
+      "who": "DAVI",
+      "at": 34.4,
+      "rate": "+4%",
+      "text": "É! Onde você achou?"
+    },
+    {
+      "id": "b04",
+      "who": "BIA",
+      "at": 37.4,
+      "text": "Tava lá dentro. E alguém me mandou não tocar nela."
+    },
+    {
+      "id": "d05",
+      "who": "DAVI",
+      "at": 41.4,
+      "rate": "-8%",
+      "volume": -10,
+      "text": "Alguém falou com você?"
+    },
+    {
+      "id": "b05",
+      "who": "BIA",
+      "at": 43.8,
+      "rate": "-4%",
+      "text": "Mandaram mensagem. E falaram comigo pelo interfone."
+    },
+    {
+      "id": "b06",
+      "who": "BIA",
+      "at": 53.0,
+      "rate": "-10%",
+      "volume": -20,
+      "fx": "whisper",
+      "text": "De novo…?"
+    },
+    {
+      "id": "d06",
+      "who": "DAVI",
+      "at": 54.8,
+      "text": "O que foi?"
+    },
+    {
+      "id": "b07",
+      "who": "BIA",
+      "at": 56.4,
+      "text": "Por que tão me mandando não confiar em você?"
+    },
+    {
+      "id": "d07",
+      "who": "DAVI",
+      "at": 60.0,
+      "rate": "-4%",
+      "text": "Eu não sei. Mas alguém bloqueou meu acesso ao prédio."
+    },
+    {
+      "id": "d08",
+      "who": "DAVI",
+      "at": 68.4,
+      "rate": "-6%",
+      "volume": -15,
+      "text": "Não… de novo, não."
+    },
+    {
+      "id": "b08",
+      "who": "BIA",
+      "at": 70.8,
+      "rate": "-4%",
+      "text": "Você não trabalha aqui?"
+    },
+    {
+      "id": "d09",
+      "who": "DAVI",
+      "at": 73.0,
+      "rate": "-4%",
+      "text": "Trabalho. Mas desde que isso começou, meu crachá não abre mais nada."
+    },
+    {
+      "id": "d10",
+      "who": "DAVI",
+      "at": 79.4,
+      "rate": "-8%",
+      "volume": -10,
+      "text": "Alguém tá controlando essas portas."
+    },
+    {
+      "id": "r01",
+      "who": "DAVI_REC",
+      "at": 86.0,
+      "text": "Ela já entrou?"
+    },
+    {
+      "id": "b09",
+      "who": "BIA",
+      "at": 89.0,
+      "rate": "-12%",
+      "volume": -20,
+      "fx": "whisper",
+      "text": "Davi… com quem você tava falando?"
+    },
+    {
+      "id": "d11",
+      "who": "DAVI",
+      "at": 92.2,
+      "rate": "-8%",
+      "text": "Eu… não falei isso."
+    },
+    {
+      "id": "b10",
+      "who": "BIA",
+      "at": 94.6,
+      "rate": "-2%",
+      "text": "Então por que aparece você?"
+    },
+    {
+      "id": "d12",
+      "who": "DAVI",
+      "at": 98.2,
+      "rate": "+2%",
+      "text": "Bia, escuta. Isso não aconteceu."
+    },
+    {
+      "id": "b11",
+      "who": "BIA",
+      "at": 102.6,
+      "rate": "-12%",
+      "volume": -12,
+      "text": "Como eu vou saber?"
+    },
+    {
+      "id": "n02",
+      "who": "NARRADOR",
+      "at": 106.0,
+      "text": "Você confiaria em Davi depois dessa gravação? Ou seguiria sozinha?"
+    }
+  ],
+  "highlight": [
+    "CONFIAR",
+    "QUEM",
+    "MOÇO",
+    "ABRIR",
+    "DAVI",
+    "SAIR",
+    "MOCHILA",
+    "TOCAR",
+    "INTERFONE",
+    "NOVO",
+    "CONFIAR",
+    "BLOQUEOU",
+    "TRABALHA",
+    "CRACHÁ",
+    "CONTROLANDO",
+    "ENTROU",
+    "FALANDO",
+    "VOCÊ",
+    "ACONTECEU",
+    "SABER",
+    "SOZINHA"
+  ]
+}

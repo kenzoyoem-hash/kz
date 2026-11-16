@@ -1,0 +1,1205 @@
+[
+  {
+    "id": "n01",
+    "who": "NARRADOR",
+    "at": 0.8,
+    "text": "Vocês escolheram confiar na voz do lado de fora… Mas quem está ali?",
+    "marked": "Vocês escolheram confiar na voz do lado de fora… Mas quem está ali?",
+    "start": 0.8,
+    "dur": 5.805,
+    "end": 6.605,
+    "wav": "raw/voice/ep03a/n01.wav",
+    "whisper": "Vocês escolheram confiar na voz do lado de fora. Mas quem está ali?",
+    "words": [
+      {
+        "w": "Vocês",
+        "s": 0.8,
+        "e": 1.18
+      },
+      {
+        "w": "escolheram",
+        "s": 1.18,
+        "e": 1.88
+      },
+      {
+        "w": "confiar",
+        "s": 1.88,
+        "e": 2.4
+      },
+      {
+        "w": "na",
+        "s": 2.4,
+        "e": 2.6
+      },
+      {
+        "w": "voz",
+        "s": 2.6,
+        "e": 2.88
+      },
+      {
+        "w": "do",
+        "s": 2.88,
+        "e": 3.1
+      },
+      {
+        "w": "lado",
+        "s": 3.1,
+        "e": 3.44
+      },
+      {
+        "w": "de",
+        "s": 3.44,
+        "e": 3.62
+      },
+      {
+        "w": "fora…",
+        "s": 3.62,
+        "e": 3.98
+      },
+      {
+        "w": "Mas",
+        "s": 4.8,
+        "e": 5.3
+      },
+      {
+        "w": "quem",
+        "s": 5.3,
+        "e": 5.58
+      },
+      {
+        "w": "está",
+        "s": 5.58,
+        "e": 5.94
+      },
+      {
+        "w": "ali?",
+        "s": 5.94,
+        "e": 6.2
+      }
+    ]
+  },
+  {
+    "id": "b01",
+    "who": "BIA",
+    "at": 7.6,
+    "rate": "-12%",
+    "volume": -25,
+    "fx": "whisper",
+    "text": "Moço…? Você ainda tá aí?",
+    "marked": "Moço…? Você ainda tá aí?",
+    "start": 7.6,
+    "dur": 2.23,
+    "end": 9.83,
+    "wav": "raw/voice/ep03a/b01.wav",
+    "whisper": "Moço, você ainda tá aí?",
+    "words": [
+      {
+        "w": "Moço…?",
+        "s": 7.6,
+        "e": 8.08
+      },
+      {
+        "w": "Você",
+        "s": 8.38,
+        "e": 8.66
+      },
+      {
+        "w": "ainda",
+        "s": 8.66,
+        "e": 8.94
+      },
+      {
+        "w": "tá",
+        "s": 8.94,
+        "e": 9.2
+      },
+      {
+        "w": "aí?",
+        "s": 9.2,
+        "e": 9.44
+      }
+    ]
+  },
+  {
+    "id": "d01",
+    "who": "DAVI_FORA",
+    "at": 10.6,
+    "text": "Tô, sim! Se afasta da porta. Vou tentar abrir.",
+    "marked": "Tô, sim! Se afasta da porta. Vou tentar abrir.",
+    "start": 10.6,
+    "dur": 5.036,
+    "end": 15.636,
+    "wav": "raw/voice/ep03a/d01.wav",
+    "whisper": "Tô, sim. Se afasta da porta. Vou tentar abrir.",
+    "words": [
+      {
+        "w": "Tô,",
+        "s": 10.6,
+        "e": 10.8
+      },
+      {
+        "w": "sim!",
+        "s": 11.12,
+        "e": 11.3
+      },
+      {
+        "w": "Se",
+        "s": 12.2,
+        "e": 12.44
+      },
+      {
+        "w": "afasta",
+        "s": 12.44,
+        "e": 12.88
+      },
+      {
+        "w": "da",
+        "s": 12.88,
+        "e": 13.04
+      },
+      {
+        "w": "porta.",
+        "s": 13.04,
+        "e": 13.38
+      },
+      {
+        "w": "Vou",
+        "s": 14.2,
+        "e": 14.54
+      },
+      {
+        "w": "tentar",
+        "s": 14.54,
+        "e": 14.82
+      },
+      {
+        "w": "abrir.",
+        "s": 14.82,
+        "e": 15.18
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "who": "DAVI",
+    "at": 19.0,
+    "rate": "-6%",
+    "text": "Oi… sou o Davi, da manutenção. Você tá bem?",
+    "marked": "Oi… sou o Davi, da manutenção. Você tá bem?",
+    "start": 19.0,
+    "dur": 4.342,
+    "end": 23.342,
+    "wav": "raw/voice/ep03a/d02.wav",
+    "whisper": "Oi, sou o Davi, da Manutenção. Você está bem?",
+    "words": [
+      {
+        "w": "Oi…",
+        "s": 19.0,
+        "e": 19.2
+      },
+      {
+        "w": "sou",
+        "s": 19.44,
+        "e": 19.72
+      },
+      {
+        "w": "o",
+        "s": 19.72,
+        "e": 19.82
+      },
+      {
+        "w": "Davi,",
+        "s": 19.82,
+        "e": 20.2
+      },
+      {
+        "w": "da",
+        "s": 20.48,
+        "e": 20.62
+      },
+      {
+        "w": "manutenção.",
+        "s": 20.62,
+        "e": 21.3
+      },
+      {
+        "w": "Você",
+        "s": 21.96,
+        "e": 22.52
+      },
+      {
+        "w": "tá",
+        "s": 22.52,
+        "e": 22.76
+      },
+      {
+        "w": "bem?",
+        "s": 22.76,
+        "e": 22.94
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "who": "BIA",
+    "at": 23.8,
+    "rate": "-10%",
+    "volume": -10,
+    "text": "Eu acho que sim… Só quero sair daqui.",
+    "marked": "Eu acho que sim… Só quero sair daqui.",
+    "start": 23.8,
+    "dur": 2.849,
+    "end": 26.649,
+    "wav": "raw/voice/ep03a/b02.wav",
+    "whisper": "Eu acho que sim. Só quero sair daqui.",
+    "words": [
+      {
+        "w": "Eu",
+        "s": 23.8,
+        "e": 23.94
+      },
+      {
+        "w": "acho",
+        "s": 23.94,
+        "e": 24.18
+      },
+      {
+        "w": "que",
+        "s": 24.18,
+        "e": 24.36
+      },
+      {
+        "w": "sim…",
+        "s": 24.36,
+        "e": 24.64
+      },
+      {
+        "w": "Só",
+        "s": 24.98,
+        "e": 25.22
+      },
+      {
+        "w": "quero",
+        "s": 25.22,
+        "e": 25.5
+      },
+      {
+        "w": "sair",
+        "s": 25.5,
+        "e": 25.8
+      },
+      {
+        "w": "daqui.",
+        "s": 25.8,
+        "e": 26.14
+      }
+    ]
+  },
+  {
+    "id": "d03",
+    "who": "DAVI",
+    "at": 27.2,
+    "rate": "-10%",
+    "text": "Vem. Devagar.",
+    "marked": "Vem. Devagar.",
+    "start": 27.2,
+    "dur": 2.054,
+    "end": 29.254,
+    "wav": "raw/voice/ep03a/d03.wav",
+    "whisper": "Vem. Devagar.",
+    "words": [
+      {
+        "w": "Vem.",
+        "s": 27.2,
+        "e": 27.56
+      },
+      {
+        "w": "Devagar.",
+        "s": 28.2,
+        "e": 28.84
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "who": "BIA",
+    "at": 32.0,
+    "text": "Essa mochila é sua, né?",
+    "marked": "Essa mochila é sua, né?",
+    "start": 32.0,
+    "dur": 1.695,
+    "end": 33.695,
+    "wav": "raw/voice/ep03a/b03.wav",
+    "whisper": "Essa mochila é sua, né?",
+    "words": [
+      {
+        "w": "Essa",
+        "s": 32.0,
+        "e": 32.18
+      },
+      {
+        "w": "mochila",
+        "s": 32.18,
+        "e": 32.66
+      },
+      {
+        "w": "é",
+        "s": 32.66,
+        "e": 32.86
+      },
+      {
+        "w": "sua,",
+        "s": 32.86,
+        "e": 33.04
+      },
+      {
+        "w": "né?",
+        "s": 33.2,
+        "e": 33.3
+      }
+    ]
+  },
+  {
+    "id": "d04",
+    "who": "DAVI",
+    "at": 34.4,
+    "rate": "+4%",
+    "text": "É! Onde você achou?",
+    "marked": "É! Onde você achou?",
+    "start": 34.4,
+    "dur": 2.488,
+    "end": 36.888,
+    "wav": "raw/voice/ep03a/d04.wav",
+    "whisper": "É. Onde você achou?",
+    "words": [
+      {
+        "w": "É!",
+        "s": 34.4,
+        "e": 34.56
+      },
+      {
+        "w": "Onde",
+        "s": 35.38,
+        "e": 35.88
+      },
+      {
+        "w": "você",
+        "s": 35.88,
+        "e": 36.14
+      },
+      {
+        "w": "achou?",
+        "s": 36.14,
+        "e": 36.56
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "who": "BIA",
+    "at": 37.4,
+    "text": "Tava lá dentro. E alguém me mandou não tocar nela.",
+    "marked": "Tava lá dentro. E alguém me mandou não tocar nela.",
+    "start": 37.4,
+    "dur": 3.363,
+    "end": 40.763,
+    "wav": "raw/voice/ep03a/b04.wav",
+    "whisper": "Tava lá dentro e alguém me mandou não tocar nela.",
+    "words": [
+      {
+        "w": "Tava",
+        "s": 37.4,
+        "e": 37.56
+      },
+      {
+        "w": "lá",
+        "s": 37.56,
+        "e": 37.74
+      },
+      {
+        "w": "dentro.",
+        "s": 37.74,
+        "e": 38.16
+      },
+      {
+        "w": "E",
+        "s": 38.16,
+        "e": 38.68
+      },
+      {
+        "w": "alguém",
+        "s": 38.68,
+        "e": 38.92
+      },
+      {
+        "w": "me",
+        "s": 38.92,
+        "e": 39.12
+      },
+      {
+        "w": "mandou",
+        "s": 39.12,
+        "e": 39.48
+      },
+      {
+        "w": "não",
+        "s": 39.48,
+        "e": 39.66
+      },
+      {
+        "w": "tocar",
+        "s": 39.66,
+        "e": 39.96
+      },
+      {
+        "w": "nela.",
+        "s": 39.96,
+        "e": 40.4
+      }
+    ]
+  },
+  {
+    "id": "d05",
+    "who": "DAVI",
+    "at": 41.4,
+    "rate": "-8%",
+    "volume": -10,
+    "text": "Alguém falou com você?",
+    "marked": "Alguém falou com você?",
+    "start": 41.4,
+    "dur": 1.583,
+    "end": 42.983,
+    "wav": "raw/voice/ep03a/d05.wav",
+    "whisper": "Alguém falou com você?",
+    "words": [
+      {
+        "w": "Alguém",
+        "s": 41.4,
+        "e": 41.72
+      },
+      {
+        "w": "falou",
+        "s": 41.72,
+        "e": 42.0
+      },
+      {
+        "w": "com",
+        "s": 42.0,
+        "e": 42.26
+      },
+      {
+        "w": "você?",
+        "s": 42.26,
+        "e": 42.56
+      }
+    ]
+  },
+  {
+    "id": "b05",
+    "who": "BIA",
+    "at": 43.8,
+    "rate": "-4%",
+    "text": "Mandaram mensagem. E falaram comigo pelo interfone.",
+    "marked": "Mandaram mensagem. E falaram comigo pelo interfone.",
+    "start": 43.8,
+    "dur": 3.708,
+    "end": 47.508,
+    "wav": "raw/voice/ep03a/b05.wav",
+    "whisper": "Mandaram mensagem e falaram comigo pelo interfone.",
+    "words": [
+      {
+        "w": "Mandaram",
+        "s": 43.8,
+        "e": 44.22
+      },
+      {
+        "w": "mensagem.",
+        "s": 44.22,
+        "e": 44.92
+      },
+      {
+        "w": "E",
+        "s": 44.92,
+        "e": 45.38
+      },
+      {
+        "w": "falaram",
+        "s": 45.38,
+        "e": 45.8
+      },
+      {
+        "w": "comigo",
+        "s": 45.8,
+        "e": 46.16
+      },
+      {
+        "w": "pelo",
+        "s": 46.16,
+        "e": 46.44
+      },
+      {
+        "w": "interfone.",
+        "s": 46.44,
+        "e": 47.14
+      }
+    ]
+  },
+  {
+    "id": "b06",
+    "who": "BIA",
+    "at": 53.0,
+    "rate": "-10%",
+    "volume": -20,
+    "fx": "whisper",
+    "text": "De novo…?",
+    "marked": "De novo…?",
+    "start": 53.0,
+    "dur": 0.878,
+    "end": 53.878,
+    "wav": "raw/voice/ep03a/b06.wav",
+    "whisper": "De novo.",
+    "words": [
+      {
+        "w": "De",
+        "s": 53.0,
+        "e": 53.12
+      },
+      {
+        "w": "novo…?",
+        "s": 53.12,
+        "e": 53.42
+      }
+    ]
+  },
+  {
+    "id": "d06",
+    "who": "DAVI",
+    "at": 54.8,
+    "text": "O que foi?",
+    "marked": "O que foi?",
+    "start": 54.8,
+    "dur": 0.917,
+    "end": 55.717,
+    "wav": "raw/voice/ep03a/d06.wav",
+    "whisper": "O que foi?",
+    "words": [
+      {
+        "w": "O",
+        "s": 54.8,
+        "e": 54.9
+      },
+      {
+        "w": "que",
+        "s": 54.9,
+        "e": 55.04
+      },
+      {
+        "w": "foi?",
+        "s": 55.04,
+        "e": 55.3
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "who": "BIA",
+    "at": 56.4,
+    "text": "Por que tão me mandando não confiar em você?",
+    "marked": "Por que tão me mandando não confiar em você?",
+    "start": 56.4,
+    "dur": 2.64,
+    "end": 59.04,
+    "wav": "raw/voice/ep03a/b07.wav",
+    "whisper": "Por que tão me mandando não confiar em você?",
+    "words": [
+      {
+        "w": "Por",
+        "s": 56.4,
+        "e": 56.5
+      },
+      {
+        "w": "que",
+        "s": 56.5,
+        "e": 56.66
+      },
+      {
+        "w": "tão",
+        "s": 56.66,
+        "e": 56.82
+      },
+      {
+        "w": "me",
+        "s": 56.82,
+        "e": 57.0
+      },
+      {
+        "w": "mandando",
+        "s": 57.0,
+        "e": 57.5
+      },
+      {
+        "w": "não",
+        "s": 57.5,
+        "e": 57.68
+      },
+      {
+        "w": "confiar",
+        "s": 57.68,
+        "e": 58.16
+      },
+      {
+        "w": "em",
+        "s": 58.16,
+        "e": 58.3
+      },
+      {
+        "w": "você?",
+        "s": 58.3,
+        "e": 58.58
+      }
+    ]
+  },
+  {
+    "id": "d07",
+    "who": "DAVI",
+    "at": 60.0,
+    "rate": "-4%",
+    "text": "Eu não sei. Mas alguém bloqueou meu acesso ao prédio.",
+    "marked": "Eu não sei. Mas alguém bloqueou meu acesso ao prédio.",
+    "start": 60.0,
+    "dur": 4.078,
+    "end": 64.078,
+    "wav": "raw/voice/ep03a/d07.wav",
+    "whisper": "Eu não sei, mas alguém bloqueou o meu acesso ao prédio.",
+    "words": [
+      {
+        "w": "Eu",
+        "s": 60.0,
+        "e": 60.14
+      },
+      {
+        "w": "não",
+        "s": 60.14,
+        "e": 60.3
+      },
+      {
+        "w": "sei.",
+        "s": 60.3,
+        "e": 60.64
+      },
+      {
+        "w": "Mas",
+        "s": 61.42,
+        "e": 61.76
+      },
+      {
+        "w": "alguém",
+        "s": 61.76,
+        "e": 62.08
+      },
+      {
+        "w": "bloqueou",
+        "s": 62.08,
+        "e": 62.58
+      },
+      {
+        "w": "meu",
+        "s": 62.72,
+        "e": 62.72
+      },
+      {
+        "w": "acesso",
+        "s": 62.72,
+        "e": 63.08
+      },
+      {
+        "w": "ao",
+        "s": 63.08,
+        "e": 63.34
+      },
+      {
+        "w": "prédio.",
+        "s": 63.34,
+        "e": 63.76
+      }
+    ]
+  },
+  {
+    "id": "d08",
+    "who": "DAVI",
+    "at": 68.4,
+    "rate": "-6%",
+    "volume": -15,
+    "text": "Não… de novo, não.",
+    "marked": "Não… de novo, não.",
+    "start": 68.4,
+    "dur": 2.087,
+    "end": 70.487,
+    "wav": "raw/voice/ep03a/d08.wav",
+    "whisper": "Não, de novo, não.",
+    "words": [
+      {
+        "w": "Não…",
+        "s": 68.4,
+        "e": 68.64
+      },
+      {
+        "w": "de",
+        "s": 68.94,
+        "e": 69.16
+      },
+      {
+        "w": "novo,",
+        "s": 69.16,
+        "e": 69.42
+      },
+      {
+        "w": "não.",
+        "s": 69.88,
+        "e": 70.08
+      }
+    ]
+  },
+  {
+    "id": "b08",
+    "who": "BIA",
+    "at": 70.8,
+    "rate": "-4%",
+    "text": "Você não trabalha aqui?",
+    "marked": "Você não trabalha aqui?",
+    "start": 70.8,
+    "dur": 1.477,
+    "end": 72.277,
+    "wav": "raw/voice/ep03a/b08.wav",
+    "whisper": "Você não trabalha aqui?",
+    "words": [
+      {
+        "w": "Você",
+        "s": 70.8,
+        "e": 71.0
+      },
+      {
+        "w": "não",
+        "s": 71.0,
+        "e": 71.16
+      },
+      {
+        "w": "trabalha",
+        "s": 71.16,
+        "e": 71.64
+      },
+      {
+        "w": "aqui?",
+        "s": 71.64,
+        "e": 71.88
+      }
+    ]
+  },
+  {
+    "id": "d09",
+    "who": "DAVI",
+    "at": 73.0,
+    "rate": "-4%",
+    "text": "Trabalho. Mas desde que isso começou, meu crachá não abre mais nada.",
+    "marked": "Trabalho. Mas desde que isso começou, meu crachá não abre mais nada.",
+    "start": 73.0,
+    "dur": 5.257,
+    "end": 78.257,
+    "wav": "raw/voice/ep03a/d09.wav",
+    "whisper": "Trabalho. Mas desde que isso começou, meu crachá não abre mais nada.",
+    "words": [
+      {
+        "w": "Trabalho.",
+        "s": 73.0,
+        "e": 73.54
+      },
+      {
+        "w": "Mas",
+        "s": 74.26,
+        "e": 74.6
+      },
+      {
+        "w": "desde",
+        "s": 74.6,
+        "e": 74.86
+      },
+      {
+        "w": "que",
+        "s": 74.86,
+        "e": 75.18
+      },
+      {
+        "w": "isso",
+        "s": 75.18,
+        "e": 75.42
+      },
+      {
+        "w": "começou,",
+        "s": 75.42,
+        "e": 75.98
+      },
+      {
+        "w": "meu",
+        "s": 76.36,
+        "e": 76.46
+      },
+      {
+        "w": "crachá",
+        "s": 76.46,
+        "e": 76.9
+      },
+      {
+        "w": "não",
+        "s": 76.9,
+        "e": 76.98
+      },
+      {
+        "w": "abre",
+        "s": 76.98,
+        "e": 77.28
+      },
+      {
+        "w": "mais",
+        "s": 77.28,
+        "e": 77.52
+      },
+      {
+        "w": "nada.",
+        "s": 77.52,
+        "e": 77.84
+      }
+    ]
+  },
+  {
+    "id": "d10",
+    "who": "DAVI",
+    "at": 79.4,
+    "rate": "-8%",
+    "volume": -10,
+    "text": "Alguém tá controlando essas portas.",
+    "marked": "Alguém tá controlando essas portas.",
+    "start": 79.4,
+    "dur": 2.16,
+    "end": 81.56,
+    "wav": "raw/voice/ep03a/d10.wav",
+    "whisper": "Alguém está controlando essas portas.",
+    "words": [
+      {
+        "w": "Alguém",
+        "s": 79.4,
+        "e": 79.74
+      },
+      {
+        "w": "tá",
+        "s": 79.74,
+        "e": 79.82
+      },
+      {
+        "w": "controlando",
+        "s": 79.82,
+        "e": 80.4
+      },
+      {
+        "w": "essas",
+        "s": 80.4,
+        "e": 80.6
+      },
+      {
+        "w": "portas.",
+        "s": 80.6,
+        "e": 81.18
+      }
+    ]
+  },
+  {
+    "id": "r01",
+    "who": "DAVI_REC",
+    "at": 86.0,
+    "text": "Ela já entrou?",
+    "marked": "Ela já entrou?",
+    "start": 86.0,
+    "dur": 1.149,
+    "end": 87.149,
+    "wav": "raw/voice/ep03a/r01.wav",
+    "whisper": "Ela já entrou?",
+    "words": [
+      {
+        "w": "Ela",
+        "s": 86.0,
+        "e": 86.2
+      },
+      {
+        "w": "já",
+        "s": 86.2,
+        "e": 86.44
+      },
+      {
+        "w": "entrou?",
+        "s": 86.44,
+        "e": 86.82
+      }
+    ]
+  },
+  {
+    "id": "b09",
+    "who": "BIA",
+    "at": 89.0,
+    "rate": "-12%",
+    "volume": -20,
+    "fx": "whisper",
+    "text": "Davi… com quem você tava falando?",
+    "marked": "Davi… com quem você tava falando?",
+    "start": 89.0,
+    "dur": 2.322,
+    "end": 91.322,
+    "wav": "raw/voice/ep03a/b09.wav",
+    "whisper": "Davi, com quem você estava falando?",
+    "words": [
+      {
+        "w": "Davi…",
+        "s": 89.0,
+        "e": 89.4
+      },
+      {
+        "w": "com",
+        "s": 89.58,
+        "e": 89.68
+      },
+      {
+        "w": "quem",
+        "s": 89.68,
+        "e": 89.88
+      },
+      {
+        "w": "você",
+        "s": 89.88,
+        "e": 90.12
+      },
+      {
+        "w": "tava",
+        "s": 90.12,
+        "e": 90.4
+      },
+      {
+        "w": "falando?",
+        "s": 90.4,
+        "e": 90.78
+      }
+    ]
+  },
+  {
+    "id": "d11",
+    "who": "DAVI",
+    "at": 92.2,
+    "rate": "-8%",
+    "text": "Eu… não falei isso.",
+    "marked": "Eu… não falei isso.",
+    "start": 92.2,
+    "dur": 1.683,
+    "end": 93.883,
+    "wav": "raw/voice/ep03a/d11.wav",
+    "whisper": "Eu não falei isso.",
+    "words": [
+      {
+        "w": "Eu…",
+        "s": 92.2,
+        "e": 92.38
+      },
+      {
+        "w": "não",
+        "s": 92.38,
+        "e": 92.86
+      },
+      {
+        "w": "falei",
+        "s": 92.86,
+        "e": 93.18
+      },
+      {
+        "w": "isso.",
+        "s": 93.18,
+        "e": 93.54
+      }
+    ]
+  },
+  {
+    "id": "b10",
+    "who": "BIA",
+    "at": 94.6,
+    "rate": "-2%",
+    "text": "Então por que aparece você?",
+    "marked": "Então por que aparece você?",
+    "start": 94.6,
+    "dur": 1.926,
+    "end": 96.526,
+    "wav": "raw/voice/ep03a/b10.wav",
+    "whisper": "Então por que aparece você?",
+    "words": [
+      {
+        "w": "Então",
+        "s": 94.6,
+        "e": 94.86
+      },
+      {
+        "w": "por",
+        "s": 94.86,
+        "e": 95.12
+      },
+      {
+        "w": "que",
+        "s": 95.12,
+        "e": 95.26
+      },
+      {
+        "w": "aparece",
+        "s": 95.26,
+        "e": 95.66
+      },
+      {
+        "w": "você?",
+        "s": 95.66,
+        "e": 96.04
+      }
+    ]
+  },
+  {
+    "id": "d12",
+    "who": "DAVI",
+    "at": 98.2,
+    "rate": "+2%",
+    "text": "Bia, escuta. Isso não aconteceu.",
+    "marked": "Bia, escuta. Isso não aconteceu.",
+    "start": 98.2,
+    "dur": 3.62,
+    "end": 101.82,
+    "wav": "raw/voice/ep03a/d12.wav",
+    "whisper": "Bia, escuta. Isso não aconteceu.",
+    "words": [
+      {
+        "w": "Bia,",
+        "s": 98.2,
+        "e": 98.56
+      },
+      {
+        "w": "escuta.",
+        "s": 98.86,
+        "e": 99.32
+      },
+      {
+        "w": "Isso",
+        "s": 100.18,
+        "e": 100.52
+      },
+      {
+        "w": "não",
+        "s": 100.52,
+        "e": 100.78
+      },
+      {
+        "w": "aconteceu.",
+        "s": 100.78,
+        "e": 101.3
+      }
+    ]
+  },
+  {
+    "id": "b11",
+    "who": "BIA",
+    "at": 102.6,
+    "rate": "-12%",
+    "volume": -12,
+    "text": "Como eu vou saber?",
+    "marked": "Como eu vou saber?",
+    "start": 102.6,
+    "dur": 1.184,
+    "end": 103.784,
+    "wav": "raw/voice/ep03a/b11.wav",
+    "whisper": "Como eu vou saber?",
+    "words": [
+      {
+        "w": "Como",
+        "s": 102.6,
+        "e": 102.78
+      },
+      {
+        "w": "eu",
+        "s": 102.78,
+        "e": 102.92
+      },
+      {
+        "w": "vou",
+        "s": 102.92,
+        "e": 103.02
+      },
+      {
+        "w": "saber?",
+        "s": 103.02,
+        "e": 103.34
+      }
+    ]
+  },
+  {
+    "id": "n02",
+    "who": "NARRADOR",
+    "at": 106.0,
+    "text": "Você confiaria em Davi depois dessa gravação? Ou seguiria sozinha?",
+    "marked": "Você confiaria em Davi depois dessa gravação? Ou seguiria sozinha?",
+    "start": 106.0,
+    "dur": 5.506,
+    "end": 111.506,
+    "wav": "raw/voice/ep03a/n02.wav",
+    "whisper": "Você confiaria em David depois dessa gravação, ou seguiria sozinha?",
+    "words": [
+      {
+        "w": "Você",
+        "s": 106.0,
+        "e": 106.28
+      },
+      {
+        "w": "confiaria",
+        "s": 106.28,
+        "e": 107.02
+      },
+      {
+        "w": "em",
+        "s": 107.02,
+        "e": 107.1
+      },
+      {
+        "w": "Davi",
+        "s": 107.1,
+        "e": 107.36
+      },
+      {
+        "w": "depois",
+        "s": 107.36,
+        "e": 107.84
+      },
+      {
+        "w": "dessa",
+        "s": 107.84,
+        "e": 108.14
+      },
+      {
+        "w": "gravação?",
+        "s": 108.14,
+        "e": 108.76
+      },
+      {
+        "w": "Ou",
+        "s": 109.38,
+        "e": 109.96
+      },
+      {
+        "w": "seguiria",
+        "s": 109.96,
+        "e": 110.54
+      },
+      {
+        "w": "sozinha?",
+        "s": 110.54,
+        "e": 111.12
+      }
+    ]
+  }
+]

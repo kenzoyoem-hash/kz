@@ -174,12 +174,26 @@ export const IntercomClose: React.FC<{led: 'green' | 'red' | 'off'; level?: numb
 );
 
 /** PORTAS VISTAS DE DENTRO, com fresta de luz; shake = batidas do lado de fora; feet = sombra de pés na fresta. */
-export const DoorsInside: React.FC<{shake?: number; t: number; feet?: number; light?: number}> = ({shake = 0, t, feet = 0, light = 1}) => (
+export const DoorsInside: React.FC<{shake?: number; t: number; feet?: number; light?: number; open?: number; outside?: React.ReactNode; tool?: number}> = ({shake = 0, t, feet = 0, light = 1, open = 0.006, outside, tool = 0}) => (
   <g>
     <rect x={-300} y={-300} width={1680} height={2520} fill="#6e7789" />
     <rect x={140} y={200} width={800} height={1400} fill="#59627a" />
-    <rect x={540 - 3} y={220} width={6} height={1360} fill="#ffe9c0" opacity={0.85} />
-    <SlidingDoors x={170} y={220} w={740} h={1360} open={0.006} shake={shake} t={t} />
+    {/* lado de fora (corredor azul-escuro do 6º) visível pela abertura */}
+    <svg x={170} y={220} width={740} height={1360} viewBox="170 220 740 1360" overflow="hidden">
+      <rect x={0} y={0} width={1200} height={2000} fill="#1f2a44" />
+      <rect x={0} y={1480} width={1200} height={400} fill="#141b30" />
+      <rect x={430} y={300} width={220} height={22} rx={8} fill="#dfe7f5" opacity={0.5} />
+      {outside}
+    </svg>
+    <rect x={540 - 3} y={220} width={6} height={1360} fill="#ffe9c0" opacity={open < 0.02 ? 0.85 : 0} />
+    <SlidingDoors x={170} y={220} w={740} h={1360} open={open} shake={shake} t={t} />
+    {tool > 0 && (
+      <g opacity={tool}>
+        {/* alavanca de manutenção encaixada na fresta */}
+        <rect x={540 - 10} y={760} width={20} height={300} rx={6} fill="#d8b44a" />
+        <rect x={540 - 30} y={740} width={60} height={30} rx={8} fill="#b8962f" />
+      </g>
+    )}
     <rect x={140} y={1580} width={800} height={40} fill="#c3cad8" />
     {feet > 0 && <g opacity={feet}><rect x={410} y={1590} width={70} height={20} fill="#05060a" /><rect x={600} y={1590} width={70} height={20} fill="#05060a" /></g>}
     <rect x={-300} y={1620} width={1680} height={700} fill="#4b5468" />
