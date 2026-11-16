@@ -12,7 +12,7 @@ ROOT=..; DONE=$ROOT/done
 CHROME=${CHROME:-/opt/pw-browsers/chromium}
 [ "${SKIP_AUDIO:-0}" = 1 ] || { python3 pipeline/tts.py "$ARG"; python3 pipeline/mix.py "$ARG"; python3 pipeline/captions.py "$ARG"; }
 [ "${SKIP_RENDER:-0}" = 1 ] || npx remotion render remotion/index.ts "$COMP" "$DONE/ep${E}_video_sem_audio.mp4" \
-  --browser-executable="$CHROME" --concurrency=4 --crf=14 --codec=h264
+  --browser-executable="$CHROME" --concurrency=${CONC:-3} --timeout=120000 --crf=14 --codec=h264
 ffmpeg -y -v error -stats -i "$DONE/ep${E}_video_sem_audio.mp4" -i "$ROOT/raw/mix/ep${E}_master.wav" \
   -filter_complex "[0:v]subtitles=filename=$DONE/ep${E}_legendas.ass:fontsdir=public/fonts,format=yuv420p[v]" \
   -map "[v]" -map 1:a -c:v libx264 -preset slow -crf 18 -profile:v high -level 4.1 -r 30 -g 60 \
