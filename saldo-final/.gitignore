@@ -1,0 +1,6 @@
+node_modules/
+.cache/
+out/*
+!out/saldo-final-ep01.mp4
+!out/saldo-final-ep01.srt
+!out/personagens.png

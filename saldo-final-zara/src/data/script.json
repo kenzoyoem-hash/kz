@@ -1,0 +1,278 @@
+{
+ "episode": 1,
+ "title": "Quanto vale sua vida?",
+ "voices": {
+  "ZARA": {
+   "voice": "pt-BR-FranciscaNeural",
+   "rate": 8,
+   "pitch": 3,
+   "fx": "close",
+   "label": "Zara"
+  },
+  "HELENA": {
+   "voice": "pt-BR-ThalitaMultilingualNeural",
+   "rate": -12,
+   "pitch": -8,
+   "fx": "weak",
+   "label": "Helena"
+  },
+  "DANTE": {
+   "voice": "pt-BR-AntonioNeural",
+   "rate": 10,
+   "pitch": 8,
+   "fx": "close",
+   "label": "Dante"
+  },
+  "CIRO": {
+   "voice": "pt-BR-AntonioNeural",
+   "rate": -2,
+   "pitch": -10,
+   "fx": "holo",
+   "label": "Ciro Voss"
+  },
+  "ATENDENTE": {
+   "voice": "pt-BR-ThalitaMultilingualNeural",
+   "rate": 16,
+   "pitch": 8,
+   "fx": "room",
+   "label": "Atendente"
+  },
+  "JOVEM": {
+   "voice": "pt-BR-FranciscaNeural",
+   "rate": -6,
+   "pitch": 14,
+   "fx": "room",
+   "label": "Jovem no guichê"
+  },
+  "RAPAZ": {
+   "voice": "pt-BR-AntonioNeural",
+   "rate": 6,
+   "pitch": 0,
+   "fx": "room",
+   "label": "Rapaz na fila"
+  },
+  "ENFERMEIRA": {
+   "voice": "pt-BR-ThalitaMultilingualNeural",
+   "rate": 6,
+   "pitch": -2,
+   "fx": "phone",
+   "label": "Enfermeira (telefone)"
+  }
+ },
+ "lines": [
+  {
+   "id": "l01",
+   "scene": 1,
+   "who": "ATENDENTE",
+   "at": 0.1,
+   "text": "Próximo! Quantos anos vai vender hoje?"
+  },
+  {
+   "id": "l02",
+   "scene": 1,
+   "who": "JOVEM",
+   "at": 2.3,
+   "text": "Três. Pra pagar o aluguel.",
+   "rate": 4
+  },
+  {
+   "id": "l03",
+   "scene": 1,
+   "who": "ATENDENTE",
+   "at": 4.0,
+   "text": "Três anos, confirmado. Tenha um ótimo dia!"
+  },
+  {
+   "id": "l04",
+   "scene": 1,
+   "who": "RAPAZ",
+   "at": 6.9,
+   "text": "Mano, essa fila não anda…",
+   "rate": 14
+  },
+  {
+   "id": "l05",
+   "scene": 1,
+   "who": "ZARA",
+   "at": 8.6,
+   "text": "Delivery! Quem pediu lanche pra vender a vida dos outros?",
+   "rate": 14
+  },
+  {
+   "id": "l06",
+   "scene": 2,
+   "who": "ENFERMEIRA",
+   "at": 12.8,
+   "text": "Zara Vilar? É do hospital. O saldo da sua mãe tá zerando.",
+   "rate": 14
+  },
+  {
+   "id": "l07",
+   "scene": 2,
+   "who": "ZARA",
+   "at": 16.6,
+   "text": "Zerando?! Ela tinha trinta anos ontem!",
+   "pitch": 8,
+   "rate": 12
+  },
+  {
+   "id": "l08",
+   "scene": 3,
+   "who": "ZARA",
+   "at": 21.8,
+   "text": "Aguenta, mãe. Aguenta…",
+   "rate": 0,
+   "fx": "breath"
+  },
+  {
+   "id": "l09",
+   "scene": 4,
+   "who": "HELENA",
+   "at": 25.4,
+   "text": "Filha… não era pra você me ver assim."
+  },
+  {
+   "id": "l10",
+   "scene": 4,
+   "who": "ZARA",
+   "at": 28.6,
+   "text": "Para, mãe. Eu vou resolver. Eu sempre resolvo.",
+   "rate": 10
+  },
+  {
+   "id": "l11",
+   "scene": 4,
+   "who": "ZARA",
+   "at": 32.4,
+   "text": "Transferência familiar… dez anos meus pra ela.",
+   "rate": -4,
+   "pitch": 0
+  },
+  {
+   "id": "l12",
+   "scene": 4,
+   "who": "ZARA",
+   "at": 35.6,
+   "text": "Fechou. Nem penso duas vezes."
+  },
+  {
+   "id": "l13",
+   "scene": 5,
+   "who": "ZARA",
+   "at": 39.6,
+   "text": "Pera… os anos dela tão indo pra torre da Áurea?!",
+   "pitch": 6
+  },
+  {
+   "id": "l14",
+   "scene": 5,
+   "who": "DANTE",
+   "at": 43.0,
+   "text": "Isso não é doença. É saque.",
+   "rate": 4
+  },
+  {
+   "id": "l15",
+   "scene": 5,
+   "who": "ZARA",
+   "at": 45.6,
+   "text": "Mano, quem é você?! Chega mais perto que eu te furo com o soro!",
+   "rate": 16,
+   "pitch": 6
+  },
+  {
+   "id": "l16",
+   "scene": 5,
+   "who": "DANTE",
+   "at": 49.3,
+   "text": "Justo. Dante. E a sua mãe trabalhou pra eles, sabia?",
+   "rate": 14
+  },
+  {
+   "id": "l17",
+   "scene": 6,
+   "who": "ZARA",
+   "at": 53.5,
+   "text": "Mãe… isso é verdade?",
+   "rate": -6,
+   "pitch": 0
+  },
+  {
+   "id": "l18",
+   "scene": 6,
+   "who": "HELENA",
+   "at": 55.2,
+   "text": "Eu ia te contar… antes deles me acharem.",
+   "rate": -4
+  },
+  {
+   "id": "l19",
+   "scene": 7,
+   "who": "CIRO",
+   "at": 58.6,
+   "text": "Boa noite, Zara. Dez anos… e ela vive. Simples."
+  },
+  {
+   "id": "l20",
+   "scene": 7,
+   "who": "DANTE",
+   "at": 62.6,
+   "text": "Não assina. Se vender pra eles, você vira propriedade deles.",
+   "rate": 16
+  },
+  {
+   "id": "l21",
+   "scene": 7,
+   "who": "CIRO",
+   "at": 66.2,
+   "text": "Vai confiar num rapaz que nem existe no nosso sistema?"
+  },
+  {
+   "id": "l22",
+   "scene": 7,
+   "who": "ZARA",
+   "at": 69.6,
+   "text": "Tá zoando… ele não existe?!",
+   "pitch": 6,
+   "rate": 10
+  },
+  {
+   "id": "l23",
+   "scene": 8,
+   "who": "HELENA",
+   "at": 72.4,
+   "text": "Zara… o Ciro… ele é o seu…",
+   "rate": -6,
+   "fx": "whisper"
+  },
+  {
+   "id": "l24",
+   "scene": 9,
+   "who": "ZARA",
+   "at": 78.0,
+   "text": "Dez anos pela minha mãe… ou eu derrubo quem tá fazendo isso? Comenta A ou B, rápido, véi, que ela não tem tempo!",
+   "rate": 16,
+   "say": "Dez anos pela minha mãe... ou eu derrubo quem tá fazendo isso? Comenta A. Ou B. Rápido, véi, que ela não tem tempo!"
+  }
+ ],
+ "highlight": [
+  "anos",
+  "vender",
+  "três",
+  "zerando",
+  "trinta",
+  "dez",
+  "áurea",
+  "saque",
+  "dante",
+  "verdade",
+  "simples",
+  "propriedade",
+  "existe",
+  "ciro",
+  "a",
+  "b",
+  "tempo",
+  "vida"
+ ]
+}

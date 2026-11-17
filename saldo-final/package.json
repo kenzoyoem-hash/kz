@@ -1,0 +1,25 @@
+{
+  "name": "saldo-final",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SALDO FINAL — minissérie animada 2D (Remotion). Episódio 01: Cinco anos por R$ 80 mil",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "audio": "python3 pipeline/tts.py && python3 pipeline/mix.py",
+    "typecheck": "tsc --noEmit",
+    "still": "remotion still src/index.ts EP01 out/still.png --frame=1600",
+    "render": "remotion render src/index.ts EP01 out/saldo-final-ep01.mp4 --codec=h264 --audio-codec=aac --audio-bitrate=192k --crf=18 --concurrency=4",
+    "render:preview": "remotion render src/index.ts EP01 out/preview.mp4 --scale=0.5 --codec=h264 --crf=28 --concurrency=4",
+    "sheet": "remotion still src/index.ts Personagens out/personagens.png --frame=10"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.543",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.543"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

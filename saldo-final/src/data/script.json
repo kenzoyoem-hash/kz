@@ -1,0 +1,212 @@
+{
+ "episode": 1,
+ "title": "Cinco anos por R$ 80 mil",
+ "voices": {
+  "MAYA": {
+   "voice": "pt-BR-FranciscaNeural",
+   "rate": 6,
+   "pitch": 4,
+   "fx": "maya",
+   "label": "Maya"
+  },
+  "MAYA_NARR": {
+   "voice": "pt-BR-FranciscaNeural",
+   "rate": 2,
+   "pitch": 2,
+   "fx": "narr",
+   "label": "Maya (narração)"
+  },
+  "NOAH": {
+   "voice": "pt-BR-AntonioNeural",
+   "rate": 8,
+   "pitch": 6,
+   "fx": "call",
+   "label": "Noah"
+  },
+  "MAYA_FUTURO": {
+   "voice": "pt-BR-FranciscaNeural",
+   "rate": -8,
+   "pitch": -12,
+   "fx": "future",
+   "label": "Maya do futuro"
+  }
+ },
+ "lines": [
+  {
+   "id": "l01",
+   "scene": 1,
+   "who": "MAYA_NARR",
+   "at": 0.25,
+   "text": "Eu vendi cinco anos… pra alguém impossível.",
+   "rate": 6,
+   "pitch": 0,
+   "say": "Eu vendi cinco anos, pra alguém impossível."
+  },
+  {
+   "id": "l02",
+   "scene": 2,
+   "who": "MAYA_NARR",
+   "at": 3.35,
+   "text": "Aqui, quem precisa de grana vende anos de vida."
+  },
+  {
+   "id": "l03",
+   "scene": 2,
+   "who": "MAYA_NARR",
+   "at": 7.3,
+   "text": "E os ricos compram pra viver mais."
+  },
+  {
+   "id": "l04",
+   "scene": 3,
+   "who": "MAYA",
+   "at": 11.7,
+   "text": "Eu jurei que nunca faria isso.",
+   "rate": -2
+  },
+  {
+   "id": "l05",
+   "scene": 3,
+   "who": "MAYA",
+   "at": 14.9,
+   "text": "Mas olha meus boletos, véi."
+  },
+  {
+   "id": "l06",
+   "scene": 4,
+   "who": "MAYA",
+   "at": 19.4,
+   "text": "Cinco anos por oitenta mil? Caraca, isso resolve minha vida!",
+   "rate": 10,
+   "pitch": 6
+  },
+  {
+   "id": "l07",
+   "scene": 4,
+   "who": "MAYA",
+   "at": 24.0,
+   "text": "Quase, né.",
+   "rate": -8,
+   "pitch": -3
+  },
+  {
+   "id": "l08",
+   "scene": 5,
+   "who": "NOAH",
+   "at": 26.5,
+   "text": "Maya, tu tá maluca?! São CINCO ANOS!",
+   "rate": 10,
+   "pitch": 8,
+   "volume": 10
+  },
+  {
+   "id": "l09",
+   "scene": 5,
+   "who": "MAYA",
+   "at": 30.3,
+   "text": "E o aluguel vai se pagar por telepatia, querido?",
+   "rate": 6
+  },
+  {
+   "id": "l10",
+   "scene": 6,
+   "who": "MAYA",
+   "at": 37.3,
+   "text": "Tá… cinco anos. Eu consigo.",
+   "rate": -10,
+   "pitch": -2,
+   "volume": -6,
+   "fx": "whisper",
+   "say": "Tá. Cinco anos. Eu consigo."
+  },
+  {
+   "id": "l11",
+   "scene": 7,
+   "who": "MAYA",
+   "at": 44.35,
+   "text": "MEU DEUS! Caiu! Eu tô rica!",
+   "rate": 6,
+   "pitch": 10,
+   "volume": 10
+  },
+  {
+   "id": "l12",
+   "scene": 8,
+   "who": "MAYA",
+   "at": 50.5,
+   "text": "Pera… quem comprou meus anos?",
+   "rate": -6,
+   "pitch": -2
+  },
+  {
+   "id": "l13",
+   "scene": 8,
+   "who": "MAYA",
+   "at": 55.0,
+   "text": "Como assim… EU?!",
+   "rate": 0,
+   "pitch": 6
+  },
+  {
+   "id": "l14",
+   "scene": 9,
+   "who": "MAYA_FUTURO",
+   "at": 60.9,
+   "text": "Maya, escuta. Você não devia ter vendido esses anos.",
+   "rate": -6,
+   "pitch": -12
+  },
+  {
+   "id": "l15",
+   "scene": 9,
+   "who": "MAYA",
+   "at": 65.6,
+   "text": "Quem tá falando?!",
+   "rate": 8,
+   "pitch": 6
+  },
+  {
+   "id": "l16",
+   "scene": 9,
+   "who": "MAYA_FUTURO",
+   "at": 66.9,
+   "text": "Você.",
+   "rate": -20
+  },
+  {
+   "id": "l17",
+   "scene": 10,
+   "who": "MAYA_FUTURO",
+   "at": 69.2,
+   "text": "E a gente tem menos tempo do que imagina.",
+   "rate": -4,
+   "fx": "future_close"
+  },
+  {
+   "id": "l18",
+   "scene": 11,
+   "who": "MAYA_NARR",
+   "at": 78.0,
+   "text": "E agora? Comenta A ou B. Você decide o próximo episódio!",
+   "rate": 4,
+   "pitch": 0
+  }
+ ],
+ "highlight": [
+  "cinco",
+  "anos",
+  "impossível",
+  "vida",
+  "oitenta",
+  "mil",
+  "boletos",
+  "rica",
+  "eu?!",
+  "você.",
+  "tempo",
+  "a",
+  "b",
+  "comprou",
+  "maluca?!"
+ ]
+}
