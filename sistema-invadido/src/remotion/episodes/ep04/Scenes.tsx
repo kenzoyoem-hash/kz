@@ -45,11 +45,11 @@ const Tag: React.FC<{text: string; color: string; y: number}> = ({text, color, y
 /** A GRAVAÇÃO FALSA (mesma do EP. 3A): elevador FECHADO. zoom = Bia ampliando a porta; circle destaca a porta. */
 const Recording: React.FC<{T: number; zoom?: number; circle?: number; distort?: number}> = ({T, zoom = 1, circle = 0, distort = 0}) => (
   <CCTV t={T} label="CÂMERA 06 — GRAVAÇÃO" clock={REC_CLOCK + Math.floor(Math.max(0, T - 10.6)) % 4} tint="#4a7dff" glitch={0.1 + distort * 0.8}>
-    <div style={{position: 'absolute', inset: 0, transform: `scale(${zoom})`, transformOrigin: '38% 45%'}}>
+    <div style={{position: 'absolute', inset: 0, transform: `scale(${zoom})`, transformOrigin: '40% 50%'}}>
       <svg viewBox="80 300 900 1600" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" style={{position: 'absolute', inset: 0}}>
         <Hall6 open={0}>
-          <g transform={distort > 0 ? `translate(470,0) skewX(${distort * 18}) scale(${1 + distort * 0.25},1) translate(-470,0)` : undefined}>
-            <Davi t={T} x={470} y={H6.floorY + 2} pose={{...REST, lSh: 0, lEl: 0, lT: {x: 92, y: -700}, lHand: 'grip'}} phone="L" expr="neutral" lookX={0.3} mouth={mouthOf('DAVI_REC', T, 1.2)} />
+          <g transform={distort > 0 ? `translate(860,0) skewX(${distort * 18}) scale(${1 + distort * 0.25},1) translate(-860,0)` : undefined}>
+            <Davi t={T} x={860} y={H6.floorY + 2} pose={{...REST, lSh: 0, lEl: 0, lT: {x: 92, y: -700}, lHand: 'grip'}} phone="L" expr="neutral" lookX={-0.4} mouth={mouthOf('DAVI_REC', T, 1.2)} />
           </g>
           {circle > 0 && <ellipse cx={450} cy={1000} rx={300} ry={520} fill="none" stroke={C.red} strokeWidth={14} opacity={circle} />}
         </Hall6>
@@ -80,7 +80,7 @@ export const S2: React.FC = () => {
   if (t < 5.0) return <PhoneShot T={T}><Recording T={T} /></PhoneShot>;
   if (t < 7.6) {
     // "Olha a porta. Ela tá fechada." — dedo do Davi aponta, Bia amplia e a porta fica destacada
-    const z = tw(T, 14.4, 15.2, 1, 1.4, ease.inOut);
+    const z = tw(T, 14.4, 15.2, 1, 1.15, ease.inOut);
     return (
       <PhoneShot T={T}>
         <Recording T={T} zoom={z} circle={tw(T, 15.1, 15.4, 0, 1)} />
@@ -103,7 +103,7 @@ export const S2: React.FC = () => {
     );
   }
   if (t < 15.2) {
-    return <PhoneShot T={T}><Recording T={T} zoom={1.4} circle={1} /><Tag text="NA GRAVAÇÃO: FECHADA" color={C.red} y={140} /></PhoneShot>;
+    return <PhoneShot T={T}><Recording T={T} zoom={1.15} circle={1} /><Tag text="NA GRAVAÇÃO: FECHADA" color={C.red} y={140} /></PhoneShot>;
   }
   return bg(<Hall T={T} cx={560} cy={1000} z={1.25} />, <Tag text="AGORA: ABERTA" color={C.green} y={250} />);
 };
