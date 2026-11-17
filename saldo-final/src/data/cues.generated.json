@@ -1,0 +1,770 @@
+[
+ {
+  "id": "l01",
+  "scene": 1,
+  "who": "MAYA_NARR",
+  "text": "Eu vendi cinco anos… pra alguém impossível.",
+  "start": 0.25,
+  "end": 2.677,
+  "src": "audio/voices/l01.wav",
+  "words": [
+   {
+    "w": "Eu",
+    "s": 0.25,
+    "e": 0.309
+   },
+   {
+    "w": "vendi",
+    "s": 0.321,
+    "e": 0.616
+   },
+   {
+    "w": "cinco",
+    "s": 0.628,
+    "e": 0.981
+   },
+   {
+    "w": "anos…",
+    "s": 0.993,
+    "e": 1.347
+   },
+   {
+    "w": "pra",
+    "s": 1.441,
+    "e": 1.583
+   },
+   {
+    "w": "alguém",
+    "s": 1.594,
+    "e": 1.913
+   },
+   {
+    "w": "impossível.",
+    "s": 1.925,
+    "e": 2.573
+   }
+  ]
+ },
+ {
+  "id": "l02",
+  "scene": 2,
+  "who": "MAYA_NARR",
+  "text": "Aqui, quem precisa de grana vende anos de vida.",
+  "start": 3.35,
+  "end": 6.15,
+  "src": "audio/voices/l02.wav",
+  "words": [
+   {
+    "w": "Aqui,",
+    "s": 3.35,
+    "e": 3.728
+   },
+   {
+    "w": "quem",
+    "s": 3.899,
+    "e": 4.046
+   },
+   {
+    "w": "precisa",
+    "s": 4.058,
+    "e": 4.512
+   },
+   {
+    "w": "de",
+    "s": 4.524,
+    "e": 4.622
+   },
+   {
+    "w": "grana",
+    "s": 4.634,
+    "e": 4.978
+   },
+   {
+    "w": "vende",
+    "s": 4.99,
+    "e": 5.296
+   },
+   {
+    "w": "anos",
+    "s": 5.308,
+    "e": 5.59
+   },
+   {
+    "w": "de",
+    "s": 5.603,
+    "e": 5.701
+   },
+   {
+    "w": "vida.",
+    "s": 5.713,
+    "e": 6.056
+   }
+  ]
+ },
+ {
+  "id": "l03",
+  "scene": 2,
+  "who": "MAYA_NARR",
+  "text": "E os ricos compram pra viver mais.",
+  "start": 7.3,
+  "end": 9.35,
+  "src": "audio/voices/l03.wav",
+  "words": [
+   {
+    "w": "E",
+    "s": 7.3,
+    "e": 7.371
+   },
+   {
+    "w": "os",
+    "s": 7.383,
+    "e": 7.493
+   },
+   {
+    "w": "ricos",
+    "s": 7.505,
+    "e": 7.861
+   },
+   {
+    "w": "compram",
+    "s": 7.873,
+    "e": 8.277
+   },
+   {
+    "w": "pra",
+    "s": 8.29,
+    "e": 8.437
+   },
+   {
+    "w": "viver",
+    "s": 8.449,
+    "e": 8.768
+   },
+   {
+    "w": "mais.",
+    "s": 8.78,
+    "e": 9.246
+   }
+  ]
+ },
+ {
+  "id": "l04",
+  "scene": 3,
+  "who": "MAYA",
+  "text": "Eu jurei que nunca faria isso.",
+  "start": 11.7,
+  "end": 13.426,
+  "src": "audio/voices/l04.wav",
+  "words": [
+   {
+    "w": "Eu",
+    "s": 11.7,
+    "e": 11.767
+   },
+   {
+    "w": "jurei",
+    "s": 11.78,
+    "e": 12.112
+   },
+   {
+    "w": "que",
+    "s": 12.124,
+    "e": 12.239
+   },
+   {
+    "w": "nunca",
+    "s": 12.252,
+    "e": 12.583
+   },
+   {
+    "w": "faria",
+    "s": 12.596,
+    "e": 12.953
+   },
+   {
+    "w": "isso.",
+    "s": 12.966,
+    "e": 13.323
+   }
+  ]
+ },
+ {
+  "id": "l05",
+  "scene": 3,
+  "who": "MAYA",
+  "text": "Mas olha meus boletos, véi.",
+  "start": 14.9,
+  "end": 16.416,
+  "src": "audio/voices/l05.wav",
+  "words": [
+   {
+    "w": "Mas",
+    "s": 14.9,
+    "e": 14.988
+   },
+   {
+    "w": "olha",
+    "s": 15.0,
+    "e": 15.307
+   },
+   {
+    "w": "meus",
+    "s": 15.319,
+    "e": 15.496
+   },
+   {
+    "w": "boletos,",
+    "s": 15.507,
+    "e": 16.003
+   },
+   {
+    "w": "véi.",
+    "s": 16.026,
+    "e": 16.321
+   }
+  ]
+ },
+ {
+  "id": "l06",
+  "scene": 4,
+  "who": "MAYA",
+  "text": "Cinco anos por oitenta mil? Caraca, isso resolve minha vida!",
+  "start": 19.4,
+  "end": 22.945,
+  "src": "audio/voices/l06.wav",
+  "words": [
+   {
+    "w": "Cinco",
+    "s": 19.4,
+    "e": 19.791
+   },
+   {
+    "w": "anos",
+    "s": 19.802,
+    "e": 20.064
+   },
+   {
+    "w": "por",
+    "s": 20.075,
+    "e": 20.223
+   },
+   {
+    "w": "oitenta",
+    "s": 20.234,
+    "e": 20.62
+   },
+   {
+    "w": "mil?",
+    "s": 20.632,
+    "e": 20.904
+   },
+   {
+    "w": "Caraca,",
+    "s": 21.139,
+    "e": 21.616
+   },
+   {
+    "w": "isso",
+    "s": 21.661,
+    "e": 21.843
+   },
+   {
+    "w": "resolve",
+    "s": 21.854,
+    "e": 22.298
+   },
+   {
+    "w": "minha",
+    "s": 22.309,
+    "e": 22.502
+   },
+   {
+    "w": "vida!",
+    "s": 22.514,
+    "e": 22.843
+   }
+  ]
+ },
+ {
+  "id": "l07",
+  "scene": 4,
+  "who": "MAYA",
+  "text": "Quase, né.",
+  "start": 24.0,
+  "end": 24.773,
+  "src": "audio/voices/l07.wav",
+  "words": [
+   {
+    "w": "Quase,",
+    "s": 24.0,
+    "e": 24.353
+   },
+   {
+    "w": "né.",
+    "s": 24.38,
+    "e": 24.652
+   }
+  ]
+ },
+ {
+  "id": "l08",
+  "scene": 5,
+  "who": "NOAH",
+  "text": "Maya, tu tá maluca?! São CINCO ANOS!",
+  "start": 26.5,
+  "end": 29.884,
+  "src": "audio/voices/l08.wav",
+  "words": [
+   {
+    "w": "Maya,",
+    "s": 26.5,
+    "e": 26.807
+   },
+   {
+    "w": "tu",
+    "s": 27.057,
+    "e": 27.193
+   },
+   {
+    "w": "tá",
+    "s": 27.205,
+    "e": 27.318
+   },
+   {
+    "w": "maluca?!",
+    "s": 27.33,
+    "e": 27.818
+   },
+   {
+    "w": "São",
+    "s": 28.598,
+    "e": 28.916
+   },
+   {
+    "w": "CINCO",
+    "s": 28.927,
+    "e": 29.359
+   },
+   {
+    "w": "ANOS!",
+    "s": 29.371,
+    "e": 29.791
+   }
+  ]
+ },
+ {
+  "id": "l09",
+  "scene": 5,
+  "who": "MAYA",
+  "text": "E o aluguel vai se pagar por telepatia, querido?",
+  "start": 30.3,
+  "end": 32.908,
+  "src": "audio/voices/l09.wav",
+  "words": [
+   {
+    "w": "E",
+    "s": 30.3,
+    "e": 30.37
+   },
+   {
+    "w": "o",
+    "s": 30.382,
+    "e": 30.429
+   },
+   {
+    "w": "aluguel",
+    "s": 30.441,
+    "e": 30.877
+   },
+   {
+    "w": "vai",
+    "s": 30.889,
+    "e": 31.031
+   },
+   {
+    "w": "se",
+    "s": 31.043,
+    "e": 31.137
+   },
+   {
+    "w": "pagar",
+    "s": 31.149,
+    "e": 31.467
+   },
+   {
+    "w": "por",
+    "s": 31.479,
+    "e": 31.609
+   },
+   {
+    "w": "telepatia,",
+    "s": 31.62,
+    "e": 32.293
+   },
+   {
+    "w": "querido?",
+    "s": 32.316,
+    "e": 32.823
+   }
+  ]
+ },
+ {
+  "id": "l10",
+  "scene": 6,
+  "who": "MAYA",
+  "text": "Tá… cinco anos. Eu consigo.",
+  "start": 37.3,
+  "end": 40.2,
+  "src": "audio/voices/l10.wav",
+  "words": [
+   {
+    "w": "Tá…",
+    "s": 37.3,
+    "e": 37.578
+   },
+   {
+    "w": "cinco",
+    "s": 37.889,
+    "e": 38.417
+   },
+   {
+    "w": "anos.",
+    "s": 38.431,
+    "e": 38.945
+   },
+   {
+    "w": "Eu",
+    "s": 39.236,
+    "e": 39.375
+   },
+   {
+    "w": "consigo.",
+    "s": 39.389,
+    "e": 40.083
+   }
+  ]
+ },
+ {
+  "id": "l11",
+  "scene": 7,
+  "who": "MAYA",
+  "text": "MEU DEUS! Caiu! Eu tô rica!",
+  "start": 44.35,
+  "end": 46.778,
+  "src": "audio/voices/l11.wav",
+  "words": [
+   {
+    "w": "MEU",
+    "s": 44.35,
+    "e": 44.542
+   },
+   {
+    "w": "DEUS!",
+    "s": 44.554,
+    "e": 45.014
+   },
+   {
+    "w": "Caiu!",
+    "s": 45.259,
+    "e": 45.707
+   },
+   {
+    "w": "Eu",
+    "s": 45.955,
+    "e": 46.096
+   },
+   {
+    "w": "tô",
+    "s": 46.12,
+    "e": 46.261
+   },
+   {
+    "w": "rica!",
+    "s": 46.273,
+    "e": 46.662
+   }
+  ]
+ },
+ {
+  "id": "l12",
+  "scene": 8,
+  "who": "MAYA",
+  "text": "Pera… quem comprou meus anos?",
+  "start": 50.5,
+  "end": 52.325,
+  "src": "audio/voices/l12.wav",
+  "words": [
+   {
+    "w": "Pera…",
+    "s": 50.5,
+    "e": 50.786
+   },
+   {
+    "w": "quem",
+    "s": 50.879,
+    "e": 51.065
+   },
+   {
+    "w": "comprou",
+    "s": 51.078,
+    "e": 51.437
+   },
+   {
+    "w": "meus",
+    "s": 51.45,
+    "e": 51.623
+   },
+   {
+    "w": "anos?",
+    "s": 51.637,
+    "e": 52.222
+   }
+  ]
+ },
+ {
+  "id": "l13",
+  "scene": 8,
+  "who": "MAYA",
+  "text": "Como assim… EU?!",
+  "start": 55.0,
+  "end": 55.951,
+  "src": "audio/voices/l13.wav",
+  "words": [
+   {
+    "w": "Como",
+    "s": 55.0,
+    "e": 55.149
+   },
+   {
+    "w": "assim…",
+    "s": 55.162,
+    "e": 55.537
+   },
+   {
+    "w": "EU?!",
+    "s": 55.574,
+    "e": 55.849
+   }
+  ]
+ },
+ {
+  "id": "l14",
+  "scene": 9,
+  "who": "MAYA_FUTURO",
+  "text": "Maya, escuta. Você não devia ter vendido esses anos.",
+  "start": 60.9,
+  "end": 64.764,
+  "src": "audio/voices/l14.wav",
+  "words": [
+   {
+    "w": "Maya,",
+    "s": 60.9,
+    "e": 61.337
+   },
+   {
+    "w": "escuta.",
+    "s": 61.39,
+    "e": 62.001
+   },
+   {
+    "w": "Você",
+    "s": 62.284,
+    "e": 62.563
+   },
+   {
+    "w": "não",
+    "s": 62.576,
+    "e": 62.723
+   },
+   {
+    "w": "devia",
+    "s": 62.736,
+    "e": 63.122
+   },
+   {
+    "w": "ter",
+    "s": 63.135,
+    "e": 63.308
+   },
+   {
+    "w": "vendido",
+    "s": 63.321,
+    "e": 63.84
+   },
+   {
+    "w": "esses",
+    "s": 63.853,
+    "e": 64.052
+   },
+   {
+    "w": "anos.",
+    "s": 64.066,
+    "e": 64.638
+   }
+  ]
+ },
+ {
+  "id": "l15",
+  "scene": 9,
+  "who": "MAYA",
+  "text": "Quem tá falando?!",
+  "start": 65.6,
+  "end": 66.529,
+  "src": "audio/voices/l15.wav",
+  "words": [
+   {
+    "w": "Quem",
+    "s": 65.6,
+    "e": 65.749
+   },
+   {
+    "w": "tá",
+    "s": 65.76,
+    "e": 65.876
+   },
+   {
+    "w": "falando?!",
+    "s": 65.888,
+    "e": 66.432
+   }
+  ]
+ },
+ {
+  "id": "l16",
+  "scene": 9,
+  "who": "MAYA_FUTURO",
+  "text": "Você.",
+  "start": 66.9,
+  "end": 67.603,
+  "src": "audio/voices/l16.wav",
+  "words": [
+   {
+    "w": "Você.",
+    "s": 66.9,
+    "e": 67.458
+   }
+  ]
+ },
+ {
+  "id": "l17",
+  "scene": 10,
+  "who": "MAYA_FUTURO",
+  "text": "E a gente tem menos tempo do que imagina.",
+  "start": 69.2,
+  "end": 71.611,
+  "src": "audio/voices/l17.wav",
+  "words": [
+   {
+    "w": "E",
+    "s": 69.2,
+    "e": 69.26
+   },
+   {
+    "w": "a",
+    "s": 69.273,
+    "e": 69.364
+   },
+   {
+    "w": "gente",
+    "s": 69.377,
+    "e": 69.729
+   },
+   {
+    "w": "tem",
+    "s": 69.742,
+    "e": 69.885
+   },
+   {
+    "w": "menos",
+    "s": 69.898,
+    "e": 70.223
+   },
+   {
+    "w": "tempo",
+    "s": 70.236,
+    "e": 70.575
+   },
+   {
+    "w": "do",
+    "s": 70.588,
+    "e": 70.705
+   },
+   {
+    "w": "que",
+    "s": 70.718,
+    "e": 70.796
+   },
+   {
+    "w": "imagina.",
+    "s": 70.809,
+    "e": 71.434
+   }
+  ]
+ },
+ {
+  "id": "l18",
+  "scene": 11,
+  "who": "MAYA_NARR",
+  "text": "E agora? Comenta A ou B. Você decide o próximo episódio!",
+  "start": 78.0,
+  "end": 82.02,
+  "src": "audio/voices/l18.wav",
+  "words": [
+   {
+    "w": "E",
+    "s": 78.0,
+    "e": 78.066
+   },
+   {
+    "w": "agora?",
+    "s": 78.078,
+    "e": 78.547
+   },
+   {
+    "w": "Comenta",
+    "s": 78.798,
+    "e": 79.278
+   },
+   {
+    "w": "A",
+    "s": 79.29,
+    "e": 79.387
+   },
+   {
+    "w": "ou",
+    "s": 79.399,
+    "e": 79.507
+   },
+   {
+    "w": "B.",
+    "s": 79.519,
+    "e": 79.807
+   },
+   {
+    "w": "Você",
+    "s": 80.06,
+    "e": 80.312
+   },
+   {
+    "w": "decide",
+    "s": 80.324,
+    "e": 80.757
+   },
+   {
+    "w": "o",
+    "s": 80.769,
+    "e": 80.817
+   },
+   {
+    "w": "próximo",
+    "s": 80.829,
+    "e": 81.262
+   },
+   {
+    "w": "episódio!",
+    "s": 81.274,
+    "e": 81.923
+   }
+  ]
+ }
+]
