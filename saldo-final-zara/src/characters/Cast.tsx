@@ -2,10 +2,13 @@ import React from 'react';
 import {Look, Pose, Toon, ToonProps} from './Toon';
 import {C} from '../styles/theme';
 
+/** corpo cinza-claro, igual em todo o elenco (estilo SALDO FINAL) */
+export const SKIN = '#C9CDD6', SKIN_SHADE = '#A9AEBB';
+
 /** ELENCO OFICIAL — não alterar aparência entre episódios (ver GUIA_DE_CONTINUIDADE.md). */
 export const ZARA: Look = {
   name: 'Zara Vilar', female: true,
-  skin: '#B9774F', skinShade: '#965A37', blush: '#D9605E', lips: '#5A1F2A',
+  skin: SKIN, skinShade: SKIN_SHADE,
   hair: '#17110E', hairShade: '#0B0807', hairStyle: 'puff', streak: C.magenta, eyeColor: '#4A2A14',
   shirt: '#17151C', shirtShade: '#0C0B10', top: 'puffer', topColor: '#F2B233', topShade: '#C4861A',
   pants: '#4B5A3A', shoe: '#F2F2F5', sole: C.magenta, hoops: C.gold, build: 0.92,
@@ -13,37 +16,37 @@ export const ZARA: Look = {
 export const ZARA_DELIVERY: Look = {...ZARA, bag: true};
 export const DANTE: Look = {
   name: 'Dante Reis',
-  skin: '#D8A57E', skinShade: '#B5845F', hair: '#1D1A22', hairShade: '#0E0C12', hairStyle: 'messy', eyeColor: '#2D6B5E',
+  skin: SKIN, skinShade: SKIN_SHADE, hair: '#1D1A22', hairShade: '#0E0C12', hairStyle: 'messy', eyeColor: '#2D6B5E',
   shirt: '#1B1B22', shirtShade: '#101016', top: 'coat', topColor: '#1F4F4C', topShade: '#163937',
   pants: '#15161D', shoe: '#0E0E12', sole: '#2A2B33', earcuff: true, build: 1.02,
 };
 export const HELENA: Look = {
   name: 'Helena Vilar', female: true,
-  skin: '#A86A47', skinShade: '#88502F', blush: '#C9584F', lips: '#6A2A30',
+  skin: SKIN, skinShade: SKIN_SHADE,
   hair: '#2A1C16', hairShade: '#1A110D', hairStyle: 'wavy', eyeColor: '#4A2A14',
   shirt: '#BFD6EA', shirtShade: '#94B2CC', top: 'gown', pants: '#BFD6EA', shoe: '#E6E6EA', sole: '#C0C0C8', locket: true, build: 0.95,
 };
 export const CIRO: Look = {
   name: 'Ciro Voss',
-  skin: '#EBC9AE', skinShade: '#CFA88A', hair: '#D9D3C4', hairShade: '#A9A293', hairStyle: 'slick', eyeColor: '#5B7A99',
+  skin: SKIN, skinShade: SKIN_SHADE, hair: '#D9D3C4', hairShade: '#A9A293', hairStyle: 'slick', eyeColor: '#5B7A99',
   shirt: '#F2F2F5', shirtShade: '#CFCFD8', top: 'suit', topColor: '#2B2D38', topShade: '#1C1E27', tie: '#A3162A', pin: C.gold,
-  pants: '#2B2D38', shoe: '#0E0E12', sole: '#1A1A20', glasses: true, build: 1.05,
+  pants: '#2B2D38', shoe: '#0E0E12', sole: '#1A1A20', build: 1.05,
 };
 export const ATENDENTE: Look = {
   name: 'Atendente Áurea', female: true,
-  skin: '#E2B08C', skinShade: '#C48F6C', blush: '#E07C70', lips: '#9A3344',
+  skin: SKIN, skinShade: SKIN_SHADE,
   hair: '#5A3420', hairShade: '#3F2315', hairStyle: 'bun',
   shirt: '#F2F2F5', shirtShade: '#D5D5DD', top: 'blazer', topColor: '#ECE3CC', topShade: '#CBBF9F', trim: C.gold,
   pants: '#2A2B36', shoe: '#1A1A20', sole: '#2A2A30', build: 0.92,
 };
 export const JOVEM: Look = {
   name: 'Jovem no guichê', female: true,
-  skin: '#E9C1A0', skinShade: '#CA9F7D', blush: '#E07C70', hair: '#3A2418', hairShade: '#24160F', hairStyle: 'ponytail',
+  skin: SKIN, skinShade: SKIN_SHADE, hair: '#3A2418', hairShade: '#24160F', hairStyle: 'ponytail',
   shirt: '#6A4C9C', shirtShade: '#4E3778', top: 'hoodie', pants: '#22243A', shoe: '#E6E6EA', sole: '#B9BCC8', build: 0.9,
 };
 export const RAPAZ: Look = {
   name: 'Rapaz da fila',
-  skin: '#7A4A30', skinShade: '#5E3620', hair: '#14110F', hairShade: '#0B0908', hairStyle: 'cap', capColor: '#C2402C',
+  skin: SKIN, skinShade: SKIN_SHADE, hair: '#14110F', hairShade: '#0B0908', hairStyle: 'cap', capColor: '#C2402C',
   shirt: '#2F6B4E', shirtShade: '#214D38', top: 'hoodie', pants: '#22243A', shoe: '#F2F2F5', sole: '#2F6B4E',
 };
 

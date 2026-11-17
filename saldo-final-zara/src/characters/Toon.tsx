@@ -129,6 +129,23 @@ const EXPR: Record<Expr, {brow: number; browY: number; eye: number; lid: number;
   cold:       {brow: 6,   browY: 2,   eye: 0.8,  lid: 0.32, pup: 0.9,  mouth: 'smirk'},
 };
 
+/** CABEÇA SEM ROSTO — mesmo estilo da série SALDO FINAL (Maya): cabeça redonda cinza-clara, sem olhos,
+ * nariz ou boca; volume por uma esfera clara deslocada para o lado do rosto + plano do rosto discreto. */
+export const FacelessHead: React.FC<{lookX: number; lookY: number; skin: string; shade: string; side?: boolean}> = ({lookX, lookY, skin, shade, side}) => {
+  const cx = side ? 4 : 0;
+  return (
+    <g>
+      <ellipse cx={cx} cy={-722} rx={92} ry={100} fill={shade} />
+      <ellipse cx={cx + lookX * 12 + 4} cy={-730} rx={83} ry={92} fill={skin} />
+      <ellipse cx={cx + lookX * 34} cy={-712 + lookY * 20} rx={55 - Math.abs(lookX) * 14} ry={62} fill="#FFFFFF" opacity={0.13} />
+    </g>
+  );
+};
+const EXPR_HEAD: Record<Expr, number> = {neutral: 0, smile: -3, smirk: 6, sarcastic: 10, worried: 5, sad: 12, weak: 10, tender: 7,
+  surprised: -7, shock: -10, fear: -4, angry: 5, determined: 3, cold: -3};
+const EXPR_LOOKY: Record<Expr, number> = {neutral: 0, smile: -0.1, smirk: 0, sarcastic: 0.1, worried: 0.2, sad: 0.8, weak: 0.6, tender: 0.3,
+  surprised: -0.4, shock: -0.5, fear: -0.1, angry: 0.2, determined: 0.1, cold: 0.1};
+
 export const blink = (t: number, seed = 0) => {
   const period = 2.9 + (seed % 4) * 0.6;
   const p = (t + seed * 0.37) % period;
@@ -405,7 +422,8 @@ export const Toon: React.FC<ToonProps> = (p) => {
   const bob = run * Math.abs(Math.sin(cyc)) * -18;
   const tr = tremble ? Math.sin(t * 55) * 3 * tremble : 0;
   const fx = lookX * 22;
-  const head = (pose.head ?? 0) + talk * Math.sin(t * 11) * 1.5;
+  const head = (pose.head ?? 0) + EXPR_HEAD[expr] + talk * Math.sin(t * 11) * 2.2 + talk * Math.sin(t * 4.3) * 1.5;
+  const lookYb = lookY + EXPR_LOOKY[expr];
   const sway = Math.sin(t * 2.3) * 5 - lookX * 10;
   let ps = pose;
   if (phone === 'ear' && !pose.lT) ps = {...pose, lT: {x: 96, y: -700}, lHand: 'grip'};
@@ -423,16 +441,12 @@ export const Toon: React.FC<ToonProps> = (p) => {
         <TorsoFront look={look} br={br} />
         <Stroke d="M0,-640 L0,-596" w={36} col={look.skin} />
         <g transform={`rotate(${head}, 0, -620) translate(0, ${br * 0.2})`}>
-          {/* orelhas */}
-          {[-1, 1].map((sd) => <ellipse key={sd} cx={sd * 92 + fx * 0.3} cy={-718} rx={15} ry={21} fill={look.skin} stroke={OL} strokeWidth={OW} />)}
-          {look.hoops && [-1, 1].map((sd) => <circle key={`h${sd}`} cx={sd * 94 + fx * 0.3} cy={-680} r={15} fill="none" stroke={look.hoops} strokeWidth={5} />)}
-          {look.earcuff && <path d={`M${88 + fx * 0.3},-736 a8,10 0 0,1 10,14`} stroke="#C9CED8" strokeWidth={5} fill="none" />}
-          <ellipse cx={0} cy={-722} rx={92} ry={102} fill={look.skin} stroke={OL} strokeWidth={OW} />
-          <path d={`M60,-800 Q96,-760 86,-680 Q70,-640 40,-626 Q74,-690 60,-800 Z`} fill={look.skinShade} opacity={0.45} />
-          {look.stubble && <path d="M-74,-690 Q-66,-620 0,-622 Q66,-620 74,-690 Q60,-646 0,-646 Q-60,-646 -74,-690 Z" fill={look.stubble} opacity={0.45} />}
-          <FaceFront look={look} expr={expr} t={t} lookX={lookX} lookY={lookY} talk={talk} vis={vis} seed={seed} />
+          {look.hoops && [-1, 1].map((sd) => <circle key={`h${sd}`} cx={sd * 86 + fx * 0.2} cy={-676} r={15} fill="none" stroke={look.hoops} strokeWidth={5} />)}
+          {look.earcuff && <path d={`M${84 + fx * 0.2},-736 a8,10 0 0,1 10,14`} stroke="#E6E8EF" strokeWidth={5} fill="none" />}
+          <FacelessHead lookX={lookX} lookY={lookYb} skin={look.skin} shade={look.skinShade} />
           <HairFront look={look} fx={fx} t={t} />
-          {faceLight && <ellipse cx={0} cy={-700} rx={92} ry={96} fill={faceLight} opacity={0.13} />}
+          {faceLight && <ellipse cx={lookX * 30} cy={-712} rx={80} ry={86} fill={faceLight} opacity={0.22} />}
+          {phoneGlow && phone !== 'none' && <ellipse cx={20 + lookX * 20} cy={-700} rx={74} ry={80} fill={phoneGlow} opacity={0.14} />}
         </g>
         <ArmFront side={-1} sh={R[0]} el={R[1]} look={look} hand={ps.rHand ?? (phone === 'R' ? 'grip' : 'relaxed')} handRot={ps.rHandRot} fs={ps.rFs} prop={phone === 'R' ? ph : holdR} t={t} />
         <ArmFront side={1} sh={L[0]} el={L[1]} look={look} hand={ps.lHand ?? (phone === 'L' || phone === 'ear' ? 'grip' : 'relaxed')} handRot={ps.lHandRot} fs={ps.lFs}
@@ -525,17 +539,9 @@ const ToonSide: React.FC<ToonProps> = ({t, look, expr = 'neutral', lookY = 0, ta
         <rect x={-54} y={-372} width={108} height={30} rx={10} fill={look.pants} stroke={OL} strokeWidth={5} />
         <Stroke d="M2,-640 L2,-596" w={36} col={look.skin} />
         <g transform={`rotate(${lookY * 10}, 0, -640)`}>
-          <ellipse cx={4} cy={-722} rx={92} ry={100} fill={look.skin} stroke={OL} strokeWidth={OW} />
-          <path d="M90,-724 Q114,-700 92,-688" fill={look.skin} stroke={OL} strokeWidth={5} />
-          {look.stubble && <path d="M10,-640 Q60,-628 86,-670 L86,-640 Q50,-612 10,-622 Z" fill={look.stubble} opacity={0.45} />}
+          <FacelessHead lookX={0.85} lookY={lookY} skin={look.skin} shade={look.skinShade} side />
           {hairSide()}
-          <ellipse cx={-10} cy={-716} rx={15} ry={21} fill={look.skin} stroke={OL} strokeWidth={OW} />
-          {look.hoops && <circle cx={-10} cy={-680} r={14} fill="none" stroke={look.hoops} strokeWidth={5} />}
-          <line x1={38} y1={-768 + E.browY + E.brow * 0.4} x2={74} y2={-768 + E.browY - E.brow * 0.4} stroke={look.hairShade} strokeWidth={look.brow ?? (look.female ? 7 : 10)} strokeLinecap="round" />
-          <ellipse cx={58} cy={-726} rx={14} ry={Math.max(1.5, eyeH)} fill="#fff" stroke={OL} strokeWidth={4} />
-          {eyeH > 4 && <circle cx={65} cy={-723 + lookY * 5} r={Math.min(8 * E.pup, eyeH)} fill="#0C0A10" />}
-          {look.female && eyeH > 4 && <path d={`M70,${-726 - eyeH * 0.8} l12,-6`} stroke={OL} strokeWidth={4} strokeLinecap="round" />}
-          <Mouth expr={expr} talk={talk} vis={vis} mx={mx} my={my} look={look} s={0.8} />
+          {look.hoops && <circle cx={-6} cy={-676} r={14} fill="none" stroke={look.hoops} strokeWidth={5} />}
         </g>
         {arm(nSh, nEl, true)}
       </g>
@@ -550,7 +556,7 @@ export const extraLook = (seed: number, base: Partial<Look> = {}): Look => {
   const tops = ['#3D4A6B', '#6B3D5A', '#2F6B5E', '#7A5A2E', '#4E4E5E', '#5A3D7A'];
   const styles: Look['hairStyle'][] = ['short', 'bun', 'ponytail', 'cap', 'short'];
   const r = (k: string) => rnd(`${seed}${k}`);
-  const [sk, ss] = skins[Math.floor(r('s') * skins.length)];
+  const [sk, ss] = ['#C9CDD6', '#A9AEBB']; void skins;
   const [hc, hs] = hairs[Math.floor(r('h') * hairs.length)];
   const st = styles[Math.floor(r('st') * styles.length)];
   return {

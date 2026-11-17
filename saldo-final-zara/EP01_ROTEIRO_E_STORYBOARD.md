@@ -1,6 +1,6 @@
 # SALDO FINAL — EP. 1: “QUANTO VALE SUA VIDA?”
 
-Vertical 9:16 · 1080 × 1920 · 30 fps · **89 s** (limite: 90 s) · animação 2D com contorno preto e cores chapadas.
+Vertical 9:16 · 1080 × 1920 · 30 fps · **89 s** (limite: 90 s) · animação 2D com contorno preto e cores chapadas. Rostos no estilo SALDO FINAL: cabeças redondas cinza-claras **sem traços faciais**.
 O público vota **A** ou **B** nos comentários. O EP. 2 só será escrito depois do resultado.
 
 ---
@@ -16,15 +16,17 @@ e o executivo Ciro Voss oferece um acordo bom demais. Entre a vida da mãe e a v
 ## 2. Ficha visual dos personagens
 
 Modelos em `src/characters/Cast.tsx` e folha de modelo em `out/personagens.png`. Regras comuns: contorno
-preto (#120E16), cores chapadas, sombra lateral simples, olhos grandes com brilho, boca sincronizada à fala.
+preto (#120E16) nas roupas e cabelos, cores chapadas e **corpo cinza-claro (#C9CDD6) com cabeça redonda sem olhos, nariz ou boca**
+(mesmo estilo de rosto da outra minissérie SALDO FINAL). A emoção vem da postura, da inclinação da cabeça, dos gestos e da voz.
+Cada personagem se reconhece pelo cabelo, pela roupa e pela silhueta.
 Todo mundo usa no pulso esquerdo a **pulseira de saldo**: 10 segmentos dourados que mostram quanto de vida resta.
 
 | Personagem | Visual fixo | Personalidade e atuação | Voz |
 |---|---|---|---|
-| **ZARA VILAR** (22) | pele marrom, black puff alto e cacheado com **mecha magenta**, argolas douradas, **jaqueta puffer cropped amarela**, top preto, calça cargo verde-oliva, tênis branco com sola magenta. No EP. 1 trabalha de entregadora (alças vermelhas da mochila térmica e sacola). Pulseira cheia (~82 %). | Sarcástica, impulsiva e corajosa. Sobrancelha arqueada, sorriso de canto, gestos grandes. Sob pressão, punhos fechados e queixo para a frente. | Francisca (pt-BR), +8 % de velocidade, tom +3 Hz, sem eco |
-| **DANTE REIS** (24) | pele clara oliva, cabelo preto bagunçado com laterais raspadas e **franja caindo sobre o olho**, sobretudo verde-petróleo comprido, moletom preto com capuz abaixado, olhos verde-água, ear cuff prateado. Pulseira pela metade. | Irônico e misterioso. Encostado no batente, braços cruzados, meio sorriso. Quando fala sério, aponta e se inclina para a frente. | Antonio (pt-BR), +10 %, tom +8 Hz (jovem) |
-| **HELENA VILAR** (46) | mesma família de pele da Zara, cabelo ondulado nos ombros com **mecha grisalha**, camisola hospitalar azul-clara de bolinhas, **pingente dourado com o símbolo da Áurea**. Pulseira quase vazia, piscando. | Amorosa e cansada. Pálpebras pesadas e voz fraca. Toca o pingente quando esconde algo. | Thalita (pt-BR), −12 %, tom −8 Hz, voz fraca |
-| **CIRO VOSS** (38) | pele clara, cabelo loiro-prateado penteado para trás, óculos retangulares, terno grafite, gravata vermelho-escura, **broche dourado da Áurea**. No EP. 1 aparece só como **holograma azul**. | Frio, elegante e manipulador. Mão na lapela, palma aberta oferecendo e sorriso de canto. | Antonio (pt-BR), −2 %, tom −10 Hz, tratamento de holograma |
+| **ZARA VILAR** (22) | black puff alto e cacheado com **mecha magenta**, argolas douradas, **jaqueta puffer cropped amarela**, top preto, calça cargo verde-oliva, tênis branco com sola magenta. No EP. 1 trabalha de entregadora (alças vermelhas da mochila térmica e sacola). Pulseira cheia (~82 %). | Sarcástica, impulsiva e corajosa. Cabeça inclinada de lado (ironia), gestos grandes. Sob pressão, punhos fechados e corpo para a frente. | Francisca (pt-BR), +8 % de velocidade, tom +3 Hz, sem eco |
+| **DANTE REIS** (24) | cabelo preto bagunçado com laterais raspadas e **franja caindo sobre o olho**, sobretudo verde-petróleo comprido, moletom preto com capuz abaixado, ear cuff prateado. Pulseira pela metade. | Irônico e misterioso. Encostado no batente, braços cruzados, cabeça levemente inclinada. Quando fala sério, aponta e se inclina para a frente. | Antonio (pt-BR), +10 %, tom +8 Hz (jovem) |
+| **HELENA VILAR** (46) | cabelo ondulado nos ombros com **mecha grisalha**, camisola hospitalar azul-clara de bolinhas, **pingente dourado com o símbolo da Áurea**. Pulseira quase vazia, piscando. | Amorosa e cansada. Cabeça baixa e voz fraca. Toca o pingente quando esconde algo. | Thalita (pt-BR), −12 %, tom −8 Hz, voz fraca |
+| **CIRO VOSS** (38) | cabelo loiro-prateado penteado para trás, terno grafite, gravata vermelho-escura, **broche dourado da Áurea**. No EP. 1 aparece só como **holograma azul**. | Frio, elegante e manipulador. Postura ereta, mão na lapela e palma aberta oferecendo. | Antonio (pt-BR), −2 %, tom −10 Hz, tratamento de holograma |
 | Atendente da Áurea | coque castanho, blazer creme com debrum dourado | simpática no automático | Thalita, +16 %, tom +8 Hz |
 | Jovem no guichê | rabo de cavalo, moletom roxo | abatida | Francisca, tom +14 Hz |
 | Rapaz da fila | boné vermelho, moletom verde | entediado no celular | Antonio, +14 % |
@@ -83,7 +85,7 @@ até a torre, que se acende.
 - **ZARA** (sem acreditar): Pera… os anos dela tão indo pra torre da Áurea?!
 - **DANTE** (encostado na porta, braços cruzados): Isso não é doença. É saque.
 - **ZARA** (agarra o suporte de soro como arma): Mano, quem é você?! Chega mais perto que eu te furo com o soro!
-- **DANTE** (mãos para o alto, meio sorriso): Justo. Dante. E a sua mãe trabalhou pra eles, sabia?
+- **DANTE** (mãos para o alto, descontraído): Justo. Dante. E a sua mãe trabalhou pra eles, sabia?
 
 **CENA 6 — O SEGREDO** (53,3–58,3 s)
 - **ZARA** (abaixa o soro, vira-se para a mãe): Mãe… isso é verdade?
@@ -94,7 +96,7 @@ até a torre, que se acende.
 O terminal falha e projeta um holograma azul: Ciro, mão na lapela.
 - **CIRO** (calmo, cordial demais): Boa noite, Zara. Dez anos… e ela vive. Simples.
 - **DANTE** (avança e aponta para o holograma): Não assina. Se vender pra eles, você vira propriedade deles.
-- **CIRO** (aponta para Dante, sorriso de canto): Vai confiar num rapaz que nem existe no nosso sistema?
+- **CIRO** (aponta para Dante, cabeça erguida): Vai confiar num rapaz que nem existe no nosso sistema?
 - **ZARA** (mão na boca, encara Dante): Tá zoando… ele não existe?!
   *(Dante não responde e desvia o olhar.)*
 
@@ -130,11 +132,11 @@ Os quadros reais do vídeo, um por plano, estão em `out/storyboard_ep01.png`.
 
 | Plano | Tempo | Enquadramento e câmera | Ação e atuação | Som |
 |---|---|---|---|---|
-| 1A | 0,0–1,5 | close extremo no leitor dourado → recua e sobe rápido (z 3,4 → 2,1) | atendente acena, sorriso profissional | pulso grave, murmúrio da agência |
+| 1A | 0,0–1,5 | close extremo no leitor dourado → recua e sobe rápido (z 3,4 → 2,1) | atendente acena, postura simpática | pulso grave, murmúrio da agência |
 | 1B | 2,3–4,2 | plano médio de dois: atendente + jovem de perfil | jovem triste, ombros caídos | murmúrio |
 | 1C | 4,2–6,8 | plano médio | pulso no leitor; partículas saem do pulso e sobem ao tubo do teto; a pulseira perde um segmento | leitor (bip ascendente) + cintilar dourado |
-| 1D | 6,8–8,4 | travelling lateral pela fila | todos no celular; rapaz revira os olhos | — |
-| 1E | 8,4–12,4 | travelling até a porta → plano médio da Zara | Zara entra caminhando de perfil, vira de frente, ergue a sacola, sobrancelha arqueada | porta, chuva lá fora |
+| 1D | 6,8–8,4 | travelling lateral pela fila | todos no celular; rapaz bufa, entediado | — |
+| 1E | 8,4–12,4 | travelling até a porta → plano médio da Zara | Zara entra caminhando de perfil, vira de frente, ergue a sacola, cabeça inclinada, ironia | porta, chuva lá fora |
 | 2A | 12,4–19,0 | plano médio fechado, câmera se aproximando; tremor em “zerando” | celular vibra; leva ao ouvido; neutra → preocupada → choque → raiva; a mão treme | vibração, atender, drone grave |
 | 2B | 18,4–19,6 | plano médio | a sacola cai; Zara sai correndo de perfil | queda da sacola, whoosh |
 | 3A | 19,6–24,6 | travelling lateral acompanhando a corrida; parallax em 4 camadas; chuva em primeiro plano | corrida (ciclo de 11 passos/s), respingos; expressão de medo → determinação | chuva, passos na água, respiração, trovão (clarão) |
@@ -145,17 +147,17 @@ Os quadros reais do vídeo, um por plano, estão em `out/storyboard_ep01.png`.
 | 5A | 38,6–42,9 | plano geral (o rio dourado vai da cama à janela) | Zara vira para a janela: surpresa → choque; a torre acende | riser + cintilar contínuo |
 | 5B | 42,9–45,5 | chicote para a porta, plano médio do Dante | encostado, braços cruzados, olhar frio | impacto |
 | 5C | 45,5–49,2 | punch-in com tremor na Zara | agarra o soro e aponta para Dante (humor) | metal do suporte |
-| 5D | 49,2–53,3 | plano de dois | Dante ergue as mãos, meio sorriso → frio em “sua mãe”; Zara em choque | braam |
+| 5D | 49,2–53,3 | plano de dois | Dante ergue as mãos, descontraído → sério em “sua mãe”; Zara em choque | braam |
 | 6A | 53,3–54,9 | plano de dois | Zara abaixa o soro e olha para a mãe | batimento |
 | 6B | 54,9–56,0 | insert macro no pingente | o símbolo da Áurea brilha | — |
-| 6C | 56,0–58,3 | close da Helena | olhos baixos, culpa | — |
+| 6C | 56,0–58,3 | close da Helena | cabeça baixa, culpa | — |
 | 7A | 58,3–62,5 | plano médio do terminal | glitch; o holograma do Ciro surge com cintilação | glitch, holograma ligando, zumbido |
 | 7B | 62,5–66,2 | plano de três | Dante avança e aponta, com raiva | — |
-| 7C | 66,2–69,6 | close no holograma | Ciro aponta para Dante, sorriso de canto | pulso grave |
+| 7C | 66,2–69,6 | close no holograma | Ciro aponta para Dante, cabeça erguida | pulso grave |
 | 7D | 69,6–72,0 | close da Zara → close do Dante | mão na boca; Dante desvia o olhar | drone |
 | 8A | 72,0–75,1 | close de dois com zoom lento; luz vermelha piscando | Helena agarra o pulso da filha; tremor | alarme, monitor acelerado |
 | 8B | 75,1–77,4 | preto | — | linha reta e silêncio |
-| 9A | 77,4–89,0 | plano médio frontal com push-in lento | fala para a câmera; aponta para o público; gesto para a esquerda (A, luz dourada no rosto) e para a direita (B); termina com mãos na cintura e olhar sarcástico | impacto, trilha de volta |
+| 9A | 77,4–89,0 | plano médio frontal com push-in lento | fala para a câmera; aponta para o público; gesto para a esquerda (A, luz dourada no rosto) e para a direita (B); termina com mãos na cintura e cabeça inclinada | impacto, trilha de volta |
 
 ## 7. Direção de câmera e transições
 
@@ -177,9 +179,10 @@ Os quadros reais do vídeo, um por plano, estão em `out/storyboard_ep01.png`.
 - **Motor**: React + Remotion (cada quadro é uma função do tempo, o que garante sincronia exata). Personagens em SVG vetorial.
 - **Rig** (`src/characters/Toon.tsx`): esqueleto com IK nos braços (a mão alcança qualquer ponto), poses interpoladas com easing
   (`act.ts → posekf`), respiração, piscadas automáticas, ciclos de caminhada e corrida, tremor e vistas de frente e de perfil.
-- **Sincronia labial**: a abertura da boca vem da intensidade real da voz quadro a quadro (`voice_env.generated.json`). O formato da
-  boca (A, E, I, O, U, M) vem da letra da palavra que está sendo falada naquele instante (marcas de tempo do TTS).
-- **Expressões**: 14 (`neutral`, `smile`, `smirk`, `sarcastic`, `worried`, `sad`, `weak`, `tender`, `surprised`, `shock`, `fear`, `angry`, `determined`, `cold`).
+- **Sem rosto, com atuação**: como as cabeças não têm traços, a fala move a cabeça e o tronco no ritmo da intensidade real da voz,
+  quadro a quadro (`voice_env.generated.json`), e os gestos entram nas palavras exatas (marcas de tempo do TTS).
+- **Emoções** (14 estados: `neutral`, `smile`, `smirk`, `sarcastic`, `worried`, `sad`, `weak`, `tender`, `surprised`, `shock`, `fear`, `angry`,
+  `determined`, `cold`) viram inclinação e direção da cabeça, combinadas com as poses (mãos na cabeça, soro como arma, braços cruzados…).
 - **Consistência**: personagens e cenários são componentes únicos e reutilizados, então nada muda de um plano para outro.
 
 ## 10. Organização, montagem e exportação

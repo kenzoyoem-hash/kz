@@ -1,7 +1,9 @@
 # SALDO FINAL — Guia de continuidade
 
 ## Visual (não mudar)
-- 2D, contorno preto `#120E16` (7 px na escala do rig), cores chapadas, uma sombra lateral no rosto.
+- 2D, contorno preto `#120E16` em roupas e cabelos, cores chapadas.
+- **Rostos no estilo SALDO FINAL (Maya)**: cabeça redonda cinza-clara `#C9CDD6`, **sem olhos, nariz ou boca**, com volume suave
+  e um plano do rosto discreto que indica o olhar. Mãos e braços também em cinza-claro. A emoção vem do corpo e da voz.
 - Proibido: realismo, 3D, texto dentro da animação. Telas e letreiros usam só ícones. Títulos, legendas e
   votação ficam na camada de edição (`components/TextLayer.tsx`, `Subtitles.tsx`).
 - Legendas: 1 a 3 palavras, MAIÚSCULAS, Montserrat Black com contorno grosso. A palavra falada fica em
@@ -11,9 +13,9 @@
 | | Visual | Voz |
 |---|---|---|
 | Zara (22) | black puff com mecha magenta, argolas douradas, puffer cropped amarela, top preto, cargo verde-oliva, tênis branco com sola magenta | Francisca +8 % / +3 Hz |
-| Dante (24) | franja bagunçada sobre o olho, laterais raspadas, sobretudo verde-petróleo, moletom preto, ear cuff, olhos verde-água | Antonio +10 % / +8 Hz |
+| Dante (24) | franja bagunçada sobre o olho, laterais raspadas, sobretudo verde-petróleo, moletom preto, ear cuff | Antonio +10 % / +8 Hz |
 | Helena (46) | ondulado com mecha grisalha, camisola hospitalar azul, pingente da Áurea | Thalita −12 % / −8 Hz |
-| Ciro Voss (38) | loiro-prateado para trás, óculos, terno grafite, gravata vermelho-escura, broche da Áurea | Antonio −2 % / −10 Hz (holograma) |
+| Ciro Voss (38) | loiro-prateado para trás, terno grafite, gravata vermelho-escura, broche da Áurea | Antonio −2 % / −10 Hz (holograma) |
 
 ## Universo
 Pulseira de 10 segmentos no pulso esquerdo · agências da Áurea funcionam como bancos · anos = partículas

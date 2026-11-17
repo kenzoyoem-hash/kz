@@ -1,8 +1,8 @@
 # SALDO FINAL — EP. 1: “Quanto vale sua vida?”
 
 Minissérie animada interativa em 2D, com contorno preto e cores chapadas. Formato vertical 9:16
-(1080 × 1920, 30 fps, 89 s). Tudo é código editável: personagens vetoriais com rosto expressivo e boca
-sincronizada, animados em React/Remotion; vozes neurais em pt-BR; trilha e efeitos originais sintetizados.
+(1080 × 1920, 30 fps, 89 s). Tudo é código editável: personagens vetoriais com cabeças sem rosto (mesmo estilo da série SALDO FINAL da Maya),
+animados em React/Remotion; vozes neurais em pt-BR; trilha e efeitos originais sintetizados.
 
 - **Roteiro, fichas, regras do universo, storyboard e direção**: [`EP01_ROTEIRO_E_STORYBOARD.md`](EP01_ROTEIRO_E_STORYBOARD.md)
 - **Continuidade para os próximos episódios**: [`GUIA_DE_CONTINUIDADE.md`](GUIA_DE_CONTINUIDADE.md)
@@ -36,11 +36,11 @@ dois, o Remotion baixa o próprio navegador. As vozes precisam de acesso a `spee
 
 ## Como funciona
 
-- **`src/characters/Toon.tsx`**: motor dos personagens. Contorno preto, IK nos braços, vistas de frente e de
-  perfil, caminhada e corrida, 14 expressões, piscadas, respiração e a pulseira de saldo de vida.
-- **Sincronia labial**: `pipeline/tts.py` salva o tempo de cada palavra e `pipeline/mix.py` salva a intensidade
-  da voz quadro a quadro. `data/dialogue.ts → mouthAt` combina os dois: a abertura vem do volume real e o
-  formato (A/E/I/O/U/M) vem da letra falada naquele instante.
+- **`src/characters/Toon.tsx`**: motor dos personagens. Cabeça redonda cinza sem traços (`FacelessHead`), roupas e
+  cabelos com contorno, IK nos braços, vistas de frente e de perfil, caminhada e corrida, respiração e a pulseira de saldo.
+  As emoções viram inclinação e direção da cabeça.
+- **Fala sincronizada**: `pipeline/tts.py` salva o tempo de cada palavra e `pipeline/mix.py` salva a intensidade da
+  voz quadro a quadro. Quem fala mexe a cabeça e o tronco no ritmo real da própria voz.
 - **Edição de diálogo automática**: pausas longas da síntese são encurtadas e os tempos das palavras são
   remapeados, para as falas caberem no ritmo das cenas.
 - **Cenas** (`src/scenes/Scene01…09`) usam o tempo global em segundos, sincronizado com o áudio. Reaproveitam
