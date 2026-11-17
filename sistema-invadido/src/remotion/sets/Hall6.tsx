@@ -14,9 +14,13 @@ export const H6 = {
   biaBehind: {x: 1200, y: 1482, s: 1.0},
   reader: {x: 1660, y: 930},
   elev: {x: 200, y: 520, w: 500, h: 960},
+  cam: {x: 1020, y: 230},
+  // fim do EP. 3A
+  daviEnd: {x: 1380, y: 1482, s: 1.0},
+  biaEnd: {x: 1130, y: 1482, s: 1.0},
 };
 
-export const Hall6: React.FC<{open?: number; readerState?: 'idle' | 'denied'; children?: React.ReactNode; light?: number}> = ({open = 0.42, readerState = 'idle', children, light = 1}) => {
+export const Hall6: React.FC<{open?: number; readerState?: 'idle' | 'denied'; children?: React.ReactNode; light?: number; camRot?: number}> = ({open = 0.42, readerState = 'idle', children, light = 1, camRot = 0}) => {
   const {x, y, w, h} = H6.elev;
   const dw = (w / 2) * (1 - open);
   return (
@@ -36,6 +40,21 @@ export const Hall6: React.FC<{open?: number; readerState?: 'idle' | 'denied'; ch
       <text x={x + w / 2} y={y - 102} fontSize={64} textAnchor="middle" fontFamily={FONT.mono} fill={C.red}>6</text>
       <text x={x + w / 2} y={y + h + 110} fontSize={30} textAnchor="middle" fontFamily={FONT.title} fill="#8a94a8">ELEVADOR DE SERVIÇO</text>
       <text x={980} y={560} fontSize={150} textAnchor="middle" fontFamily={FONT.title} fill="#e9eef8" opacity={0.14}>6</text>
+      {/* câmera de segurança no teto (lente gira; luz vermelha acesa) */}
+      <g transform={`translate(${H6.cam.x},${H6.cam.y})`}>
+        <rect x={-34} y={-46} width={68} height={30} rx={6} fill="#c3cad8" />
+        <rect x={-8} y={-18} width={16} height={26} fill="#9aa3b5" />
+        <g transform={`rotate(${camRot})`}>
+          <rect x={-58} y={6} width={116} height={52} rx={20} fill="#e6eaf2" />
+          <rect x={-70} y={14} width={28} height={36} rx={10} fill="#1a1f2a" />
+          <circle cx={-56} cy={32} r={9} fill="#3a5a9a" />
+          <circle cx={38} cy={24} r={6} fill={C.red} />
+        </g>
+      </g>
+      {/* passagem lateral (corredor escuro à direita) */}
+      <rect x={1790} y={520} width={200} height={960} fill="#0a0f1c" />
+      <path d="M1790,520 L1990,520 L1990,1480 L1790,1480 Z" fill="none" stroke="#2c3758" strokeWidth={12} />
+      <path d="M1800,1480 L1980,1480 L1900,1300 L1860,1300 Z" fill="#131a2e" opacity={0.8} />
       {/* porta de manutenção + leitor */}
       <rect x={1270} y={540} width={340} height={940} fill="#0f1526" />
       <rect x={1290} y={560} width={300} height={920} fill="#3d4a66" />
@@ -75,5 +94,43 @@ export const ReaderClose: React.FC<{card: number; denied: boolean; blink?: boole
       <text x={-15} y={170} fontSize={44} textAnchor="middle" fontFamily={FONT.title} fill="#1a1f2e">DAVI</text>
       <rect x={0} y={150} width={60} height={34} rx={17} fill="#c98f6b" />
     </g>
+  </g>
+);
+
+/** CLOSE DA CÂMERA DE SEGURANÇA DO CORREDOR. rot gira a lente (motor). */
+export const CameraClose: React.FC<{rot: number; led?: number}> = ({rot, led = 1}) => (
+  <g>
+    <rect x={-300} y={-300} width={1680} height={2520} fill="#223050" />
+    <rect x={-300} y={-300} width={1680} height={700} fill="#1a2440" />
+    <g transform="translate(540,640)">
+      <rect x={-130} y={-200} width={260} height={110} rx={20} fill="#c3cad8" />
+      <rect x={-30} y={-100} width={60} height={110} fill="#9aa3b5" />
+      <g transform={`rotate(${rot})`}>
+        <rect x={-250} y={0} width={500} height={220} rx={90} fill="#e6eaf2" stroke="#b8c0cf" strokeWidth={8} />
+        <rect x={-300} y={36} width={120} height={150} rx={40} fill="#11151e" />
+        <circle cx={-240} cy={111} r={46} fill="#2a4a8a" />
+        <circle cx={-240} cy={111} r={22} fill="#0a0f1a" />
+        <circle cx={-252} cy={98} r={9} fill="#9fc0ff" opacity={0.8} />
+        <circle cx={160} cy={70} r={24} fill={C.red} opacity={led} />
+        <circle cx={160} cy={70} r={60} fill={C.red} opacity={0.25 * led} />
+      </g>
+    </g>
+  </g>
+);
+
+/** PORTA DO APARTAMENTO 604 (quadro de câmera clandestino). knock 0..1 faz a porta vibrar. */
+export const Door604: React.FC<{knock?: number; t?: number}> = ({knock = 0, t = 0}) => (
+  <g>
+    <rect x={-300} y={-300} width={1680} height={2520} fill="#1c2540" />
+    <rect x={-300} y={1500} width={1680} height={800} fill="#141b30" />
+    <g transform={`translate(${knock ? Math.sin(t * 60) * 3 * knock : 0},0)`}>
+      <rect x={300} y={520} width={480} height={980} fill="#0f1526" />
+      <rect x={320} y={540} width={440} height={960} fill="#2b2a44" />
+      <rect x={360} y={600} width={360} height={360} rx={6} fill="none" stroke="#3a3858" strokeWidth={8} />
+      <rect x={360} y={1010} width={360} height={420} rx={6} fill="none" stroke="#3a3858" strokeWidth={8} />
+      <rect x={690} y={1040} width={60} height={18} rx={9} fill="#c0c7d6" />
+      <circle cx={540} cy={700} r={14} fill="#c0c7d6" />
+    </g>
+    <text x={540} y={470} fontSize={70} textAnchor="middle" fontFamily={FONT.mono} fill="#c9cfdb">604</text>
   </g>
 );

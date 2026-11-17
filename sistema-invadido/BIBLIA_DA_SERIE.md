@@ -88,6 +88,14 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - Vozes a partir do EP. 3A: Davi = pt-BR-AntonioNeural (timbre natural); narrador = Antonio mais grave e mais lento (só na abertura e na votação).
 - Encerramento padrão: "● TRANSMISSÃO INTERROMPIDA / SISTEMA INVADIDO / CONTINUA…"
 
+## Continuidade do EP. 4 — "A PROVA QUE NÃO EXISTE" (após 3A; venceu A, continuar com Davi)
+- A Bia decide confiar em Davi. Eles reveem a CÂMERA 06: na gravação o elevador aparece FECHADO, mas Davi já o tinha aberto à mão quando ela saiu (flash do 3A). Prova de que a gravação foi alterada.
+- Na gravação, o rosto do Davi distorce por um instante.
+- O corredor do 6º tem uma câmera de segurança no teto (`H6.cam`), com luz vermelha, que gira para segui-los. Davi indica a passagem lateral escura à direita.
+- Mensagens: "VOCÊ DESCOBRIU A GRAVAÇÃO." / "MAS AINDA NÃO ENTENDEU O JOGO." Depois, numa transmissão clandestina: "VOCÊ NÃO É A ÚNICA PARTICIPANTE." com o quadro da câmera do APARTAMENTO 604 (porta fechada) e três batidas abafadas.
+- Votação: **A** = investigar o 604; **B** = seguir com Davi. Não mostrar quem está no 604.
+- Ritmo: vozes ~1,10x (taxa +7% a +9% na síntese); duração máxima de 90 s.
+
 ## Ramificações para o EP. 2
 - **A — Escadas**: a Bia desce pela Escada B e descobre que a câmera exibia uma gravação. A escada real mostra por que o loop foi montado (e quem não queria que se visse o que acontece lá).
 - **B — Elevador**: a Bia entra no elevador e precisa descobrir quem deixou a mochila vermelha. O celular que toca dentro dela está ligado ao número dela.

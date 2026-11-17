@@ -1,0 +1,664 @@
+[
+  {
+    "id": "n01",
+    "who": "NARRADOR",
+    "at": 0.3,
+    "text": "Vocês escolheram confiar em Davi. Mas será que a gravação está mentindo?",
+    "marked": "Vocês escolheram confiar em Davi. Mas será que a gravação está mentindo?",
+    "start": 0.3,
+    "dur": 5.14,
+    "end": 5.44,
+    "wav": "raw/voice/ep04/n01.wav",
+    "whisper": "Vocês escolheram confiar em Davi. Mas será que a gravação está mentindo?",
+    "words": [
+      {
+        "w": "Vocês",
+        "s": 0.3,
+        "e": 0.6
+      },
+      {
+        "w": "escolheram",
+        "s": 0.6,
+        "e": 1.26
+      },
+      {
+        "w": "confiar",
+        "s": 1.26,
+        "e": 1.78
+      },
+      {
+        "w": "em",
+        "s": 1.78,
+        "e": 1.9
+      },
+      {
+        "w": "Davi.",
+        "s": 1.9,
+        "e": 2.32
+      },
+      {
+        "w": "Mas",
+        "s": 2.98,
+        "e": 3.38
+      },
+      {
+        "w": "será",
+        "s": 3.38,
+        "e": 3.66
+      },
+      {
+        "w": "que",
+        "s": 3.66,
+        "e": 3.86
+      },
+      {
+        "w": "a",
+        "s": 3.86,
+        "e": 3.94
+      },
+      {
+        "w": "gravação",
+        "s": 3.94,
+        "e": 4.38
+      },
+      {
+        "w": "está",
+        "s": 4.38,
+        "e": 4.58
+      },
+      {
+        "w": "mentindo?",
+        "s": 4.58,
+        "e": 5.08
+      }
+    ]
+  },
+  {
+    "id": "b01",
+    "who": "BIA",
+    "at": 5.4,
+    "rate": "+2%",
+    "text": "Tá… vou confiar em você.",
+    "marked": "Tá… vou confiar em você.",
+    "start": 5.56,
+    "dur": 1.63,
+    "end": 7.19,
+    "wav": "raw/voice/ep04/b01.wav",
+    "whisper": "Tá, vou confiar em você.",
+    "words": [
+      {
+        "w": "Tá…",
+        "s": 5.56,
+        "e": 5.68
+      },
+      {
+        "w": "vou",
+        "s": 5.86,
+        "e": 5.94
+      },
+      {
+        "w": "confiar",
+        "s": 5.94,
+        "e": 6.38
+      },
+      {
+        "w": "em",
+        "s": 6.38,
+        "e": 6.52
+      },
+      {
+        "w": "você.",
+        "s": 6.52,
+        "e": 6.74
+      }
+    ]
+  },
+  {
+    "id": "d01",
+    "who": "DAVI",
+    "at": 8.2,
+    "text": "Espera… volta esse vídeo.",
+    "marked": "Espera… volta esse vídeo.",
+    "start": 8.2,
+    "dur": 1.874,
+    "end": 10.074,
+    "wav": "raw/voice/ep04/d01.wav",
+    "whisper": "Espera. Volta a esse vídeo.",
+    "words": [
+      {
+        "w": "Espera…",
+        "s": 8.2,
+        "e": 8.66
+      },
+      {
+        "w": "volta",
+        "s": 8.84,
+        "e": 9.22
+      },
+      {
+        "w": "esse",
+        "s": 9.28,
+        "e": 9.42
+      },
+      {
+        "w": "vídeo.",
+        "s": 9.42,
+        "e": 9.68
+      }
+    ]
+  },
+  {
+    "id": "r01",
+    "who": "DAVI_REC",
+    "at": 11.0,
+    "text": "Ela já entrou?",
+    "marked": "Ela já entrou?",
+    "start": 11.0,
+    "dur": 1.093,
+    "end": 12.093,
+    "wav": "raw/voice/ep04/r01.wav",
+    "whisper": "Ela já entrou?",
+    "words": [
+      {
+        "w": "Ela",
+        "s": 11.0,
+        "e": 11.18
+      },
+      {
+        "w": "já",
+        "s": 11.18,
+        "e": 11.4
+      },
+      {
+        "w": "entrou?",
+        "s": 11.4,
+        "e": 11.76
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "who": "DAVI",
+    "at": 13.2,
+    "text": "Olha a porta. Ela tá fechada.",
+    "marked": "Olha a porta. Ela tá fechada.",
+    "start": 13.2,
+    "dur": 2.727,
+    "end": 15.927,
+    "wav": "raw/voice/ep04/d02.wav",
+    "whisper": "Olha a porta. Ela está fechada.",
+    "words": [
+      {
+        "w": "Olha",
+        "s": 13.2,
+        "e": 13.4
+      },
+      {
+        "w": "a",
+        "s": 13.4,
+        "e": 13.52
+      },
+      {
+        "w": "porta.",
+        "s": 13.52,
+        "e": 13.78
+      },
+      {
+        "w": "Ela",
+        "s": 14.66,
+        "e": 14.88
+      },
+      {
+        "w": "tá",
+        "s": 14.88,
+        "e": 15.08
+      },
+      {
+        "w": "fechada.",
+        "s": 15.08,
+        "e": 15.56
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "who": "BIA",
+    "at": 15.8,
+    "text": "E daí?",
+    "marked": "E daí?",
+    "start": 16.047,
+    "dur": 0.769,
+    "end": 16.816,
+    "wav": "raw/voice/ep04/b02.wav",
+    "whisper": "E daí?",
+    "words": [
+      {
+        "w": "E",
+        "s": 16.047,
+        "e": 16.167
+      },
+      {
+        "w": "daí?",
+        "s": 16.167,
+        "e": 16.327
+      }
+    ]
+  },
+  {
+    "id": "d03",
+    "who": "DAVI",
+    "at": 17.0,
+    "text": "Eu já tinha aberto quando você saiu.",
+    "marked": "Eu já tinha aberto quando você saiu.",
+    "start": 17.0,
+    "dur": 1.993,
+    "end": 18.993,
+    "wav": "raw/voice/ep04/d03.wav",
+    "whisper": "Eu já tinha aberto quando você saiu.",
+    "words": [
+      {
+        "w": "Eu",
+        "s": 17.0,
+        "e": 17.1
+      },
+      {
+        "w": "já",
+        "s": 17.1,
+        "e": 17.24
+      },
+      {
+        "w": "tinha",
+        "s": 17.24,
+        "e": 17.44
+      },
+      {
+        "w": "aberto",
+        "s": 17.44,
+        "e": 17.82
+      },
+      {
+        "w": "quando",
+        "s": 17.82,
+        "e": 17.98
+      },
+      {
+        "w": "você",
+        "s": 17.98,
+        "e": 18.28
+      },
+      {
+        "w": "saiu.",
+        "s": 18.28,
+        "e": 18.66
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "who": "BIA",
+    "at": 25.2,
+    "rate": "+0%",
+    "text": "Então… esse vídeo é falso?",
+    "marked": "Então… esse vídeo é falso?",
+    "start": 25.2,
+    "dur": 1.922,
+    "end": 27.122,
+    "wav": "raw/voice/ep04/b03.wav",
+    "whisper": "Então, esse vídeo é falso?",
+    "words": [
+      {
+        "w": "Então…",
+        "s": 25.2,
+        "e": 25.5
+      },
+      {
+        "w": "esse",
+        "s": 25.68,
+        "e": 25.86
+      },
+      {
+        "w": "vídeo",
+        "s": 25.86,
+        "e": 26.18
+      },
+      {
+        "w": "é",
+        "s": 26.18,
+        "e": 26.34
+      },
+      {
+        "w": "falso?",
+        "s": 26.34,
+        "e": 26.76
+      }
+    ]
+  },
+  {
+    "id": "d04",
+    "who": "DAVI",
+    "at": 27.4,
+    "text": "Alguém quer que você desconfie de mim.",
+    "marked": "Alguém quer que você desconfie de mim.",
+    "start": 27.4,
+    "dur": 2.04,
+    "end": 29.44,
+    "wav": "raw/voice/ep04/d04.wav",
+    "whisper": "Alguém quer que você desconfie de mim?",
+    "words": [
+      {
+        "w": "Alguém",
+        "s": 27.4,
+        "e": 27.7
+      },
+      {
+        "w": "quer",
+        "s": 27.7,
+        "e": 27.88
+      },
+      {
+        "w": "que",
+        "s": 27.88,
+        "e": 28.06
+      },
+      {
+        "w": "você",
+        "s": 28.06,
+        "e": 28.24
+      },
+      {
+        "w": "desconfie",
+        "s": 28.24,
+        "e": 28.86
+      },
+      {
+        "w": "de",
+        "s": 28.86,
+        "e": 28.94
+      },
+      {
+        "w": "mim.",
+        "s": 28.94,
+        "e": 29.04
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "who": "BIA",
+    "at": 32.2,
+    "rate": "+0%",
+    "volume": -12,
+    "text": "Mas quem faria isso?",
+    "marked": "Mas quem faria isso?",
+    "start": 32.2,
+    "dur": 1.373,
+    "end": 33.573,
+    "wav": "raw/voice/ep04/b04.wav",
+    "whisper": "Mas quem faria isso?",
+    "words": [
+      {
+        "w": "Mas",
+        "s": 32.2,
+        "e": 32.32
+      },
+      {
+        "w": "quem",
+        "s": 32.32,
+        "e": 32.5
+      },
+      {
+        "w": "faria",
+        "s": 32.5,
+        "e": 32.88
+      },
+      {
+        "w": "isso?",
+        "s": 32.88,
+        "e": 33.18
+      }
+    ]
+  },
+  {
+    "id": "b05",
+    "who": "BIA",
+    "at": 40.4,
+    "rate": "+2%",
+    "volume": -18,
+    "fx": "whisper",
+    "text": "Davi… aquela câmera tá seguindo a gente?",
+    "marked": "Davi… aquela câmera tá seguindo a gente?",
+    "start": 40.4,
+    "dur": 2.628,
+    "end": 43.028,
+    "wav": "raw/voice/ep04/b05.wav",
+    "whisper": "Davi, aquela câmera está seguindo a gente?",
+    "words": [
+      {
+        "w": "Davi…",
+        "s": 40.4,
+        "e": 40.76
+      },
+      {
+        "w": "aquela",
+        "s": 40.92,
+        "e": 41.16
+      },
+      {
+        "w": "câmera",
+        "s": 41.16,
+        "e": 41.58
+      },
+      {
+        "w": "tá",
+        "s": 41.58,
+        "e": 41.8
+      },
+      {
+        "w": "seguindo",
+        "s": 41.8,
+        "e": 42.2
+      },
+      {
+        "w": "a",
+        "s": 42.2,
+        "e": 42.3
+      },
+      {
+        "w": "gente?",
+        "s": 42.3,
+        "e": 42.54
+      }
+    ]
+  },
+  {
+    "id": "d05",
+    "who": "DAVI",
+    "at": 44.8,
+    "volume": -8,
+    "text": "Não olha pra ela. Vem comigo.",
+    "marked": "Não olha pra ela. Vem comigo.",
+    "start": 44.8,
+    "dur": 2.816,
+    "end": 47.616,
+    "wav": "raw/voice/ep04/d05.wav",
+    "whisper": "Não olha para ela. Vem comigo.",
+    "words": [
+      {
+        "w": "Não",
+        "s": 44.8,
+        "e": 44.98
+      },
+      {
+        "w": "olha",
+        "s": 44.98,
+        "e": 45.3
+      },
+      {
+        "w": "pra",
+        "s": 45.3,
+        "e": 45.5
+      },
+      {
+        "w": "ela.",
+        "s": 45.5,
+        "e": 45.76
+      },
+      {
+        "w": "Vem",
+        "s": 46.62,
+        "e": 46.9
+      },
+      {
+        "w": "comigo.",
+        "s": 46.9,
+        "e": 47.1
+      }
+    ]
+  },
+  {
+    "id": "b06",
+    "who": "BIA",
+    "at": 60.0,
+    "rate": "+0%",
+    "volume": -12,
+    "text": "Que jogo…?",
+    "marked": "Que jogo…?",
+    "start": 60.0,
+    "dur": 0.851,
+    "end": 60.851,
+    "wav": "raw/voice/ep04/b06.wav",
+    "whisper": "Que jogo!",
+    "words": [
+      {
+        "w": "Que",
+        "s": 60.0,
+        "e": 60.1
+      },
+      {
+        "w": "jogo…?",
+        "s": 60.1,
+        "e": 60.42
+      }
+    ]
+  },
+  {
+    "id": "d06",
+    "who": "DAVI",
+    "at": 61.6,
+    "text": "Que história é essa?",
+    "marked": "Que história é essa?",
+    "start": 61.6,
+    "dur": 1.278,
+    "end": 62.878,
+    "wav": "raw/voice/ep04/d06.wav",
+    "whisper": "Que história é essa?",
+    "words": [
+      {
+        "w": "Que",
+        "s": 61.6,
+        "e": 61.68
+      },
+      {
+        "w": "história",
+        "s": 61.68,
+        "e": 62.06
+      },
+      {
+        "w": "é",
+        "s": 62.06,
+        "e": 62.28
+      },
+      {
+        "w": "essa?",
+        "s": 62.28,
+        "e": 62.5
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "who": "BIA",
+    "at": 70.8,
+    "rate": "-6%",
+    "volume": -18,
+    "fx": "whisper",
+    "text": "Participante…?",
+    "marked": "Participante…?",
+    "start": 70.8,
+    "dur": 1.093,
+    "end": 71.893,
+    "wav": "raw/voice/ep04/b07.wav",
+    "whisper": "Participante…?",
+    "words": [
+      {
+        "w": "Participante…?",
+        "s": 70.8,
+        "e": 71.893
+      }
+    ]
+  },
+  {
+    "id": "n02",
+    "who": "NARRADOR",
+    "at": 77.6,
+    "text": "Bia deve investigar o apartamento 604 ou seguir com Davi?",
+    "marked": "Bia deve investigar o apartamento 604 ou seguir com Davi?",
+    "start": 77.6,
+    "dur": 4.242,
+    "end": 81.842,
+    "wav": "raw/voice/ep04/n02.wav",
+    "whisper": "Bia deve investigar o apartamento 604 ou seguir com Davi.",
+    "words": [
+      {
+        "w": "Bia",
+        "s": 77.6,
+        "e": 77.88
+      },
+      {
+        "w": "deve",
+        "s": 77.88,
+        "e": 78.08
+      },
+      {
+        "w": "investigar",
+        "s": 78.08,
+        "e": 78.72
+      },
+      {
+        "w": "o",
+        "s": 78.72,
+        "e": 78.78
+      },
+      {
+        "w": "apartamento",
+        "s": 78.78,
+        "e": 79.32
+      },
+      {
+        "w": "604",
+        "s": 79.32,
+        "e": 80.36
+      },
+      {
+        "w": "ou",
+        "s": 80.36,
+        "e": 80.68
+      },
+      {
+        "w": "seguir",
+        "s": 80.68,
+        "e": 80.94
+      },
+      {
+        "w": "com",
+        "s": 80.94,
+        "e": 81.16
+      },
+      {
+        "w": "Davi?",
+        "s": 81.16,
+        "e": 81.5
+      }
+    ]
+  }
+]

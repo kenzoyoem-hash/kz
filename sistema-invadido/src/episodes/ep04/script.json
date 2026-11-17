@@ -1,0 +1,30 @@
+{
+  "episode": "4",
+  "title": "A PROVA QUE NÃO EXISTE",
+  "fps": 30,
+  "voices": {
+    "NARRADOR": {"voice": "pt-BR-AntonioNeural",   "rate": "-1%", "pitch": "-13Hz", "fx": "narrator"},
+    "BIA":      {"voice": "pt-BR-FranciscaNeural", "rate": "+7%", "pitch": "+0Hz",  "fx": "bia"},
+    "DAVI":     {"voice": "pt-BR-AntonioNeural",   "rate": "+9%", "pitch": "-2Hz",  "fx": "man"},
+    "DAVI_REC": {"voice": "pt-BR-AntonioNeural",   "rate": "+4%", "pitch": "-2Hz",  "fx": "cctv"}
+  },
+  "lines": [
+    {"id": "n01", "who": "NARRADOR", "at": 0.3,  "text": "Vocês escolheram confiar em Davi. Mas será que a gravação está mentindo?"},
+    {"id": "b01", "who": "BIA",      "at": 5.4,  "rate": "+2%", "text": "Tá… vou confiar em você."},
+    {"id": "d01", "who": "DAVI",     "at": 8.2,  "text": "Espera… volta esse vídeo."},
+    {"id": "r01", "who": "DAVI_REC", "at": 11.0, "text": "Ela já entrou?"},
+    {"id": "d02", "who": "DAVI",     "at": 13.2, "text": "Olha a porta. Ela tá fechada."},
+    {"id": "b02", "who": "BIA",      "at": 15.8, "text": "E daí?"},
+    {"id": "d03", "who": "DAVI",     "at": 17.0, "text": "Eu já tinha aberto quando você saiu."},
+    {"id": "b03", "who": "BIA",      "at": 25.2, "rate": "+0%", "text": "Então… esse vídeo é falso?"},
+    {"id": "d04", "who": "DAVI",     "at": 27.4, "text": "Alguém quer que você desconfie de mim."},
+    {"id": "b04", "who": "BIA",      "at": 32.2, "rate": "+0%", "volume": -12, "text": "Mas quem faria isso?"},
+    {"id": "b05", "who": "BIA",      "at": 40.4, "rate": "+2%", "volume": -18, "fx": "whisper", "text": "Davi… aquela câmera tá seguindo a gente?"},
+    {"id": "d05", "who": "DAVI",     "at": 44.8, "volume": -8, "text": "Não olha pra ela. Vem comigo."},
+    {"id": "b06", "who": "BIA",      "at": 60.0, "rate": "+0%", "volume": -12, "text": "Que jogo…?"},
+    {"id": "d06", "who": "DAVI",     "at": 61.6, "text": "Que história é essa?"},
+    {"id": "b07", "who": "BIA",      "at": 70.8, "rate": "-6%", "volume": -18, "fx": "whisper", "text": "Participante…?"},
+    {"id": "n02", "who": "NARRADOR", "at": 77.6, "text": "Bia deve investigar o apartamento 604 ou seguir com Davi?"}
+  ],
+  "highlight": ["CONFIAR", "DAVI", "MENTINDO", "VÍDEO", "PORTA", "FECHADA", "ABERTO", "FALSO", "DESCONFIE", "QUEM", "CÂMERA", "SEGUINDO", "OLHA", "JOGO", "HISTÓRIA", "PARTICIPANTE", "604"]
+}

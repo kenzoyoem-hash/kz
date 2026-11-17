@@ -308,11 +308,24 @@ def deny():
         t = t_(0.12); b = np.sign(np.sin(2*np.pi*520*t)) * 0.35 * env(len(t), 0.002, 0.01); i = int(st*SR); out[i:i+len(b)] += b
     return norm(lp_fast(out, 3000), 0.55)
 
+def knock3():
+    """três batidas abafadas atrás de uma porta (TOC… TOC… TOC…)"""
+    out = np.zeros(int(2.2 * SR))
+    for st in (0, 0.62, 1.24):
+        t = t_(0.35); s_ = np.sin(2*np.pi*95*t) * expdec(len(t), 16) + np.sin(2*np.pi*240*t) * expdec(len(t), 24) * 0.4
+        i = int(st*SR); out[i:i+len(s_)] += s_
+    return norm(lp_fast(out, 900), 0.85)
+def servo():
+    """motorzinho da câmera girando"""
+    d = 0.9; t = t_(d); f = 420 + 60*np.sin(2*np.pi*1.1*t)
+    s_ = np.sign(np.sin(2*np.pi*np.cumsum(f)/SR)) * 0.25 * np.sin(np.pi*t/d)
+    return norm(lp_fast(s_, 2200), 0.35)
+
 LIB = {k: v for k, v in globals().items() if callable(v) and k in (
     "notif message impact braam whoosh riser glitch static tv_on flicker lock handle bang heartbeat "
     "alarm ticks ding door_slide steps steps_run rewind vibrate ring breath metal_steps call_drop answer unlock "
     "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1 pulse elev_doors button "
-    "elev_motor jolt zipper paper intercom_on knock hum pry deny").split()}
+    "elev_motor jolt zipper paper intercom_on knock hum pry deny knock3 servo").split()}
 
 def music(duration, automation):
     """Trilha de suspense: drone em Lá menor, pulso grave e notas agudas esparsas.
