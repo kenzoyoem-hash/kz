@@ -15,7 +15,7 @@ Vocês escolheram investigar o 604. Mas quem está do outro lado?
 [BIA] Tem alguém aí?
 
 5
-00:00:18,600 --> 00:00:20,820
+00:00:18,600 --> 00:00:20,560
 [CLARA, ATRÁS DA PORTA] Tem! Por favor… me ajuda!
 
 6
@@ -23,19 +23,19 @@ Vocês escolheram investigar o 604. Mas quem está do outro lado?
 [BIA] Você tá presa aí dentro?
 
 7
-00:00:24,000 --> 00:00:26,580
+00:00:24,000 --> 00:00:26,400
 [CLARA, ATRÁS DA PORTA] Tô! A fechadura travou sozinha!
 
 8
-00:00:26,868 --> 00:00:28,708
+00:00:26,600 --> 00:00:28,440
 [DAVI] É o mesmo bloqueio do elevador.
 
 9
-00:00:28,884 --> 00:00:30,384
+00:00:28,800 --> 00:00:30,300
 [BIA] Você sabe quem fez isso?
 
 10
-00:00:31,000 --> 00:00:33,360
+00:00:31,000 --> 00:00:33,520
 [CLARA, ATRÁS DA PORTA] Eu vi um homem entrando na sala de segurança.
 
 11
@@ -43,7 +43,7 @@ Vocês escolheram investigar o 604. Mas quem está do outro lado?
 [BIA] Você viu quem era?
 
 12
-00:00:35,400 --> 00:00:38,220
+00:00:35,400 --> 00:00:38,280
 [CLARA, ATRÁS DA PORTA] Não vi o rosto… mas reconheci o uniforme.
 
 13
@@ -51,7 +51,7 @@ Vocês escolheram investigar o 604. Mas quem está do outro lado?
 [BIA] Que uniforme?
 
 14
-00:00:40,800 --> 00:00:43,240
+00:00:40,800 --> 00:00:43,100
 [CLARA, ATRÁS DA PORTA] Azul… com o símbolo da manutenção.
 
 15
@@ -67,7 +67,7 @@ Vocês escolheram investigar o 604. Mas quem está do outro lado?
 [DAVI] Precisamos sair da frente dessa câmera.
 
 18
-00:01:00,400 --> 00:01:02,200
+00:01:00,400 --> 00:01:02,060
 [CLARA, ATRÁS DA PORTA] Não vão me deixar aqui, né?
 
 19
@@ -79,7 +79,7 @@ Vocês escolheram investigar o 604. Mas quem está do outro lado?
 [DAVI] Pode ser blefe. A gente não sabe.
 
 21
-00:01:13,116 --> 00:01:13,776
+00:01:13,116 --> 00:01:13,816
 [CLARA, ATRÁS DA PORTA] Por favor…
 
 22

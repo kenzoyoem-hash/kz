@@ -194,35 +194,35 @@
     "text": "Tem! Por favor… me ajuda!",
     "marked": "Tem! Por favor… me ajuda!",
     "start": 18.6,
-    "dur": 2.375,
-    "end": 20.975,
+    "dur": 2.139,
+    "end": 20.739,
     "wav": "raw/voice/ep05/c01.wav",
-    "whisper": "Tem. Por favor, me ajuda.",
+    "whisper": "Tem? Por favor me ajuda.",
     "words": [
       {
         "w": "Tem!",
         "s": 18.6,
-        "e": 18.74
+        "e": 18.76
       },
       {
         "w": "Por",
-        "s": 19.14,
-        "e": 19.3
+        "s": 19.18,
+        "e": 19.34
       },
       {
         "w": "favor…",
-        "s": 19.3,
+        "s": 19.34,
         "e": 19.68
       },
       {
         "w": "me",
-        "s": 19.96,
-        "e": 20.14
+        "s": 19.68,
+        "e": 19.9
       },
       {
         "w": "ajuda!",
-        "s": 20.14,
-        "e": 20.52
+        "s": 19.9,
+        "e": 20.26
       }
     ]
   },
@@ -274,35 +274,35 @@
     "text": "Tô! A fechadura travou sozinha!",
     "marked": "Tô! A fechadura travou sozinha!",
     "start": 24.0,
-    "dur": 2.748,
-    "end": 26.748,
+    "dur": 2.473,
+    "end": 26.473,
     "wav": "raw/voice/ep05/c02.wav",
-    "whisper": "A fechadura travoe sozinha.",
+    "whisper": "Tô! A fechadura travou sozinha!",
     "words": [
       {
         "w": "Tô!",
         "s": 24.0,
-        "e": 24.05
+        "e": 24.18
       },
       {
         "w": "A",
-        "s": 24.0,
-        "e": 24.14
+        "s": 24.48,
+        "e": 24.56
       },
       {
         "w": "fechadura",
-        "s": 24.14,
-        "e": 25.22
+        "s": 24.56,
+        "e": 25.1
       },
       {
         "w": "travou",
-        "s": 25.22,
-        "e": 25.84
+        "s": 25.1,
+        "e": 25.56
       },
       {
         "w": "sozinha!",
-        "s": 25.84,
-        "e": 26.28
+        "s": 25.56,
+        "e": 26.1
       }
     ]
   },
@@ -312,41 +312,41 @@
     "at": 26.6,
     "text": "É o mesmo bloqueio do elevador.",
     "marked": "É o mesmo bloqueio do elevador.",
-    "start": 26.868,
+    "start": 26.6,
     "dur": 1.896,
-    "end": 28.764,
+    "end": 28.496,
     "wav": "raw/voice/ep05/d02.wav",
     "whisper": "É o mesmo bloqueio do elevador.",
     "words": [
       {
         "w": "É",
-        "s": 26.868,
-        "e": 26.948
+        "s": 26.6,
+        "e": 26.68
       },
       {
         "w": "o",
-        "s": 26.948,
-        "e": 27.048
+        "s": 26.68,
+        "e": 26.78
       },
       {
         "w": "mesmo",
-        "s": 27.048,
-        "e": 27.288
+        "s": 26.78,
+        "e": 27.02
       },
       {
         "w": "bloqueio",
-        "s": 27.288,
-        "e": 27.828
+        "s": 27.02,
+        "e": 27.56
       },
       {
         "w": "do",
-        "s": 27.828,
-        "e": 27.948
+        "s": 27.56,
+        "e": 27.68
       },
       {
         "w": "elevador.",
-        "s": 27.948,
-        "e": 28.408
+        "s": 27.68,
+        "e": 28.14
       }
     ]
   },
@@ -356,36 +356,36 @@
     "at": 28.8,
     "text": "Você sabe quem fez isso?",
     "marked": "Você sabe quem fez isso?",
-    "start": 28.884,
+    "start": 28.8,
     "dur": 1.588,
-    "end": 30.473,
+    "end": 30.388,
     "wav": "raw/voice/ep05/b04.wav",
     "whisper": "Você sabe quem fez isso?",
     "words": [
       {
         "w": "Você",
-        "s": 28.884,
-        "e": 29.044
+        "s": 28.8,
+        "e": 28.96
       },
       {
         "w": "sabe",
-        "s": 29.044,
-        "e": 29.364
+        "s": 28.96,
+        "e": 29.28
       },
       {
         "w": "quem",
-        "s": 29.364,
-        "e": 29.564
+        "s": 29.28,
+        "e": 29.48
       },
       {
         "w": "fez",
-        "s": 29.564,
-        "e": 29.824
+        "s": 29.48,
+        "e": 29.74
       },
       {
         "w": "isso?",
-        "s": 29.824,
-        "e": 30.084
+        "s": 29.74,
+        "e": 30.0
       }
     ]
   },
@@ -397,55 +397,55 @@
     "text": "Eu vi um homem entrando na sala de segurança.",
     "marked": "Eu vi um homem entrando na sala de segurança.",
     "start": 31.0,
-    "dur": 2.611,
-    "end": 33.611,
+    "dur": 2.825,
+    "end": 33.825,
     "wav": "raw/voice/ep05/c03.wav",
     "whisper": "Eu vi um homem entrando na sala de segurança.",
     "words": [
       {
         "w": "Eu",
         "s": 31.0,
-        "e": 31.14
+        "e": 31.12
       },
       {
         "w": "vi",
-        "s": 31.14,
-        "e": 31.28
+        "s": 31.12,
+        "e": 31.3
       },
       {
         "w": "um",
-        "s": 31.28,
-        "e": 31.4
+        "s": 31.3,
+        "e": 31.44
       },
       {
         "w": "homem",
-        "s": 31.4,
+        "s": 31.44,
         "e": 31.68
       },
       {
         "w": "entrando",
         "s": 31.68,
-        "e": 32.08
+        "e": 32.16
       },
       {
         "w": "na",
-        "s": 32.08,
-        "e": 32.26
+        "s": 32.16,
+        "e": 32.36
       },
       {
         "w": "sala",
-        "s": 32.26,
-        "e": 32.56
+        "s": 32.36,
+        "e": 32.66
       },
       {
         "w": "de",
-        "s": 32.56,
-        "e": 32.7
+        "s": 32.66,
+        "e": 32.84
       },
       {
         "w": "segurança.",
-        "s": 32.7,
-        "e": 33.06
+        "s": 32.84,
+        "e": 33.22
       }
     ]
   },
@@ -491,10 +491,10 @@
     "text": "Não vi o rosto… mas reconheci o uniforme.",
     "marked": "Não vi o rosto… mas reconheci o uniforme.",
     "start": 35.4,
-    "dur": 2.816,
-    "end": 38.216,
+    "dur": 2.891,
+    "end": 38.291,
     "wav": "raw/voice/ep05/c04.wav",
-    "whisper": "Não viu o rosto, mas reconhecia o uniforme.",
+    "whisper": "Não viu o rosto, mas reconhece o uniforme.",
     "words": [
       {
         "w": "Não",
@@ -504,37 +504,37 @@
       {
         "w": "vi",
         "s": 35.56,
-        "e": 35.8
+        "e": 35.76
       },
       {
         "w": "o",
-        "s": 35.8,
-        "e": 35.9
+        "s": 35.76,
+        "e": 35.88
       },
       {
         "w": "rosto…",
-        "s": 35.9,
-        "e": 36.3
+        "s": 35.88,
+        "e": 36.26
       },
       {
         "w": "mas",
-        "s": 36.56,
-        "e": 36.68
+        "s": 36.46,
+        "e": 36.64
       },
       {
         "w": "reconheci",
-        "s": 36.68,
-        "e": 37.24
+        "s": 36.64,
+        "e": 37.2
       },
       {
         "w": "o",
-        "s": 37.24,
-        "e": 37.38
+        "s": 37.2,
+        "e": 37.32
       },
       {
         "w": "uniforme.",
-        "s": 37.38,
-        "e": 37.92
+        "s": 37.32,
+        "e": 37.98
       }
     ]
   },
@@ -570,40 +570,40 @@
     "text": "Azul… com o símbolo da manutenção.",
     "marked": "Azul… com o símbolo da manutenção.",
     "start": 40.8,
-    "dur": 2.545,
-    "end": 43.344,
+    "dur": 2.433,
+    "end": 43.233,
     "wav": "raw/voice/ep05/c05.wav",
     "whisper": "azul com símbolo da manutenção.",
     "words": [
       {
         "w": "Azul…",
         "s": 40.8,
-        "e": 41.22
+        "e": 41.16
       },
       {
         "w": "com",
-        "s": 41.22,
-        "e": 41.62
+        "s": 41.16,
+        "e": 41.5
       },
       {
         "w": "o",
-        "s": 41.62,
-        "e": 41.67
+        "s": 41.5,
+        "e": 41.55
       },
       {
         "w": "símbolo",
-        "s": 41.62,
-        "e": 42.2
+        "s": 41.5,
+        "e": 42.06
       },
       {
         "w": "da",
-        "s": 42.2,
-        "e": 42.28
+        "s": 42.06,
+        "e": 42.16
       },
       {
         "w": "manutenção.",
-        "s": 42.28,
-        "e": 42.94
+        "s": 42.16,
+        "e": 42.8
       }
     ]
   },
@@ -755,10 +755,10 @@
     "text": "Não vão me deixar aqui, né?",
     "marked": "Não vão me deixar aqui, né?",
     "start": 60.4,
-    "dur": 1.883,
-    "end": 62.283,
+    "dur": 1.762,
+    "end": 62.162,
     "wav": "raw/voice/ep05/c06.wav",
-    "whisper": "Não vão me deixar aqui, né?",
+    "whisper": "Não vou me deixar aqui, né?",
     "words": [
       {
         "w": "Não",
@@ -768,27 +768,27 @@
       {
         "w": "vão",
         "s": 60.54,
-        "e": 60.74
+        "e": 60.78
       },
       {
         "w": "me",
-        "s": 60.74,
-        "e": 60.84
+        "s": 60.78,
+        "e": 60.9
       },
       {
         "w": "deixar",
-        "s": 60.84,
-        "e": 61.12
+        "s": 60.9,
+        "e": 61.22
       },
       {
         "w": "aqui,",
-        "s": 61.12,
-        "e": 61.46
+        "s": 61.22,
+        "e": 61.58
       },
       {
         "w": "né?",
-        "s": 61.76,
-        "e": 61.9
+        "s": 61.68,
+        "e": 61.76
       }
     ]
   },
@@ -894,20 +894,20 @@
     "text": "Por favor…",
     "marked": "Por favor…",
     "start": 73.116,
-    "dur": 0.849,
-    "end": 73.964,
+    "dur": 0.878,
+    "end": 73.993,
     "wav": "raw/voice/ep05/c07.wav",
     "whisper": "Por favor.",
     "words": [
       {
         "w": "Por",
         "s": 73.116,
-        "e": 73.236
+        "e": 73.216
       },
       {
         "w": "favor…",
-        "s": 73.236,
-        "e": 73.476
+        "s": 73.216,
+        "e": 73.516
       }
     ]
   },

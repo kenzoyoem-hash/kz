@@ -98,7 +98,7 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 
 ## Continuidade do EP. 5 — "O APARTAMENTO 604" (após o EP. 4; venceu A, investigar o 604)
 - Corredor dos apartamentos do 6º (`AptCorridor`): portas 601–605. A 604 tem leitor eletrônico à esquerda com luz vermelha; há uma câmera no teto. Davi fica à esquerda da porta, Bia à direita.
-- CLARA (voz feminina adulta, cansada; pt-BR-ThalitaMultilingualNeural, abafada) está presa no 604. A fechadura "travou sozinha", com o mesmo bloqueio do elevador. Ela NÃO aparece.
+- CLARA (voz feminina adulta, cansada; pt-BR-FranciscaNeural com pitch −14 Hz e filtro `muffled` — a Thalita foi descartada por não soar brasileira) está presa no 604. A fechadura "travou sozinha", com o mesmo bloqueio do elevador. Ela NÃO aparece.
 - Clara viu um homem entrando na sala de segurança: não viu o rosto, mas reconheceu o uniforme azul com o símbolo da manutenção. Davi: "Tem outros funcionários usando esse uniforme." A dúvida volta, mas sem provas.
 - O crachá do Davi tem um pequeno símbolo de chave inglesa (o "símbolo da manutenção").
 - Mensagens: "VOCÊ ENCONTROU A OUTRA PARTICIPANTE." / "MAS NÃO PODE SALVAR TODO MUNDO." / "SE ABRIR ESSA PORTA, OUTRA SERÁ TRANCADA." (não revelar se é blefe).
