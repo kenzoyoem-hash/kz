@@ -321,11 +321,18 @@ def servo():
     s_ = np.sign(np.sin(2*np.pi*np.cumsum(f)/SR)) * 0.25 * np.sin(np.pi*t/d)
     return norm(lp_fast(s_, 2200), 0.35)
 
+def knock3fast():
+    out = np.zeros(int(1.2 * SR))
+    for st in (0, 0.22, 0.44):
+        t = t_(0.3); s_ = np.sin(2*np.pi*100*t) * expdec(len(t), 18) + np.sin(2*np.pi*260*t) * expdec(len(t), 26) * 0.4
+        i = int(st*SR); out[i:i+len(s_)] += s_
+    return norm(lp_fast(out, 900), 0.9)
+
 LIB = {k: v for k, v in globals().items() if callable(v) and k in (
     "notif message impact braam whoosh riser glitch static tv_on flicker lock handle bang heartbeat "
     "alarm ticks ding door_slide steps steps_run rewind vibrate ring breath metal_steps call_drop answer unlock "
     "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1 pulse elev_doors button "
-    "elev_motor jolt zipper paper intercom_on knock hum pry deny knock3 servo").split()}
+    "elev_motor jolt zipper paper intercom_on knock hum pry deny knock3 servo knock3fast").split()}
 
 def music(duration, automation):
     """Trilha de suspense: drone em Lá menor, pulso grave e notas agudas esparsas.

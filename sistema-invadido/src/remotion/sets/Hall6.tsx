@@ -134,3 +134,82 @@ export const Door604: React.FC<{knock?: number; t?: number}> = ({knock = 0, t = 
     <text x={540} y={470} fontSize={70} textAnchor="middle" fontFamily={FONT.mono} fill="#c9cfdb">604</text>
   </g>
 );
+
+/**
+ * CORREDOR DOS APARTAMENTOS (6º andar). Mundo 3400 x 1920. Portas 601–605 a cada 700 px.
+ * 604: x 2200–2520 | leitor à esquerda (2140, 930) | câmera no teto (1700, 230) | Davi (1990, à esquerda do 604) | Bia (2640, à direita)
+ */
+export const AP = {
+  floorY: 1480,
+  door: (n: number) => ({x: 100 + (n - 601) * 700, w: 320}),
+  reader: {x: 2120, y: 930},
+  cam: {x: 1700, y: 230},
+  bia: {x: 2660}, davi: {x: 1960},
+};
+export const AptCorridor: React.FC<{knock?: number; t?: number; camRot?: number; children?: React.ReactNode}> = ({knock = 0, t = 0, camRot = 0, children}) => (
+  <g>
+    <defs><linearGradient id="apw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#253250" /><stop offset="1" stopColor="#1b2540" /></linearGradient></defs>
+    <rect x={-300} y={-300} width={3900} height={1780} fill="url(#apw)" />
+    <rect x={-300} y={1480} width={3900} height={800} fill="#131a2e" />
+    <rect x={-300} y={1474} width={3900} height={10} fill="#0e1424" />
+    {[300, 1000, 1700, 2400, 3100].map((lx) => <rect key={lx} x={lx} y={150} width={200} height={24} rx={8} fill="#dfe7f5" opacity={0.5} />)}
+    {[601, 602, 603, 604, 605].map((n) => {
+      const {x, w} = AP.door(n);
+      const sh = n === 604 && knock ? Math.sin(t * 60) * 3 * knock : 0;
+      return (
+        <g key={n}>
+          <text x={x + w / 2} y={500} fontSize={64} textAnchor="middle" fontFamily={FONT.mono} fill="#c9cfdb">{n}</text>
+          <rect x={x - 20} y={540} width={w + 40} height={940} fill="#0f1526" />
+          <g transform={`translate(${sh},0)`}>
+            <rect x={x} y={560} width={w} height={920} fill={n === 604 ? '#3a3f4f' : '#2b2a44'} />
+            <rect x={x + 30} y={610} width={w - 60} height={340} rx={6} fill="none" stroke={n === 604 ? '#4b5163' : '#3a3858'} strokeWidth={8} />
+            <rect x={x + 30} y={1000} width={w - 60} height={410} rx={6} fill="none" stroke={n === 604 ? '#4b5163' : '#3a3858'} strokeWidth={8} />
+            <rect x={x + w - 70} y={1020} width={56} height={16} rx={8} fill="#c0c7d6" />
+            <circle cx={x + w / 2} cy={700} r={12} fill="#c0c7d6" />
+          </g>
+        </g>
+      );
+    })}
+    {/* leitor eletrônico do 604 (luz vermelha) */}
+    <rect x={AP.reader.x - 34} y={AP.reader.y - 64} width={68} height={128} rx={12} fill="#11131c" stroke="#3a3f55" strokeWidth={4} />
+    <rect x={AP.reader.x - 22} y={AP.reader.y - 48} width={44} height={30} rx={4} fill="#3a0a10" />
+    <circle cx={AP.reader.x} cy={AP.reader.y + 28} r={10} fill={C.red} />
+    <circle cx={AP.reader.x} cy={AP.reader.y + 28} r={30} fill={C.red} opacity={0.25} />
+    {/* câmera de segurança */}
+    <g transform={`translate(${AP.cam.x},${AP.cam.y})`}>
+      <rect x={-34} y={-46} width={68} height={30} rx={6} fill="#c3cad8" />
+      <rect x={-8} y={-18} width={16} height={26} fill="#9aa3b5" />
+      <g transform={`rotate(${camRot})`}>
+        <rect x={-58} y={6} width={116} height={52} rx={20} fill="#e6eaf2" />
+        <rect x={42} y={14} width={28} height={36} rx={10} fill="#1a1f2a" />
+        <circle cx={56} cy={32} r={9} fill="#3a5a9a" />
+        <circle cx={-36} cy={24} r={6} fill={C.red} opacity={0.5 + 0.5 * Math.sin(t * 2.4)} />
+      </g>
+    </g>
+    {children}
+  </g>
+);
+
+/** CLOSE DA MAÇANETA DO 604 com a mão da Bia hesitando. reach 0..1 */
+export const HandleClose: React.FC<{reach: number; t: number}> = ({reach, t}) => {
+  const hes = Math.sin(t * 3) * 10 * (reach > 0.6 ? 1 : 0);
+  const hx = 820 - reach * 250 + hes, hy = 1180 - reach * 120;
+  return (
+    <g>
+      <rect x={-300} y={-300} width={1680} height={2520} fill="#3a3f4f" />
+      <rect x={-300} y={-300} width={300} height={2520} fill="#0f1526" />
+      <rect x={60} y={300} width={700} height={500} rx={10} fill="none" stroke="#4b5163" strokeWidth={14} />
+      <rect x={60} y={1200} width={700} height={700} rx={10} fill="none" stroke="#4b5163" strokeWidth={14} />
+      {/* maçaneta de alavanca */}
+      <rect x={380} y={940} width={120} height={200} rx={30} fill="#9aa3b5" />
+      <circle cx={440} cy={1000} r={46} fill="#c0c7d6" />
+      <rect x={300} y={980} width={180} height={44} rx={22} fill="#d4dae6" />
+      {/* mão + antebraço + manga branca */}
+      <path d={`M${hx + 40},${hy + 20} L${hx + 700},${hy + 260} L${hx + 700},${hy + 420} L${hx + 10},${hy + 120} Z`} fill={C.skin} />
+      <path d={`M${hx + 520},${hy + 190} L${hx + 900},${hy + 330} L${hx + 900},${hy + 560} L${hx + 470},${hy + 380} Z`} fill={C.shirt} />
+      <ellipse cx={hx} cy={hy + 60} rx={110} ry={90} fill={C.skin} />
+      {[-55, -18, 18, 52].map((dy, i) => <rect key={i} x={hx - 190} y={hy + 20 + dy} width={120} height={34} rx={17} fill={C.skin} />)}
+      <rect x={hx - 80} y={hy + 120} width={90} height={38} rx={19} fill={C.skin} transform={`rotate(-30 ${hx - 40} ${hy + 140})`} />
+    </g>
+  );
+};

@@ -96,6 +96,14 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - Votação: **A** = investigar o 604; **B** = seguir com Davi. Não mostrar quem está no 604.
 - Ritmo: vozes ~1,10x (taxa +7% a +9% na síntese); duração máxima de 90 s.
 
+## Continuidade do EP. 5 — "O APARTAMENTO 604" (após o EP. 4; venceu A, investigar o 604)
+- Corredor dos apartamentos do 6º (`AptCorridor`): portas 601–605. A 604 tem leitor eletrônico à esquerda com luz vermelha; há uma câmera no teto. Davi fica à esquerda da porta, Bia à direita.
+- CLARA (voz feminina adulta, cansada; pt-BR-ThalitaMultilingualNeural, abafada) está presa no 604. A fechadura "travou sozinha", com o mesmo bloqueio do elevador. Ela NÃO aparece.
+- Clara viu um homem entrando na sala de segurança: não viu o rosto, mas reconheceu o uniforme azul com o símbolo da manutenção. Davi: "Tem outros funcionários usando esse uniforme." A dúvida volta, mas sem provas.
+- O crachá do Davi tem um pequeno símbolo de chave inglesa (o "símbolo da manutenção").
+- Mensagens: "VOCÊ ENCONTROU A OUTRA PARTICIPANTE." / "MAS NÃO PODE SALVAR TODO MUNDO." / "SE ABRIR ESSA PORTA, OUTRA SERÁ TRANCADA." (não revelar se é blefe).
+- Termina com a mão da Bia hesitando perto da maçaneta (sem tocar). Votação: **A** = tentar salvar Clara; **B** = ir à sala de segurança.
+
 ## Ramificações para o EP. 2
 - **A — Escadas**: a Bia desce pela Escada B e descobre que a câmera exibia uma gravação. A escada real mostra por que o loop foi montado (e quem não queria que se visse o que acontece lá).
 - **B — Elevador**: a Bia entra no elevador e precisa descobrir quem deixou a mochila vermelha. O celular que toca dentro dela está ligado ao número dela.

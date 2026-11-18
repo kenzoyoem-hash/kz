@@ -1,0 +1,87 @@
+1
+00:00:00,300 --> 00:00:05,760
+Vocês escolheram investigar o 604. Mas quem está do outro lado?
+
+2
+00:00:05,985 --> 00:00:07,285
+[BIA] Vamos ver quem tá lá.
+
+3
+00:00:11,400 --> 00:00:14,260
+[DAVI] Espera. Melhor não abrir de uma vez.
+
+4
+00:00:14,522 --> 00:00:15,402
+[BIA] Tem alguém aí?
+
+5
+00:00:18,600 --> 00:00:20,820
+[CLARA, ATRÁS DA PORTA] Tem! Por favor… me ajuda!
+
+6
+00:00:22,200 --> 00:00:23,560
+[BIA] Você tá presa aí dentro?
+
+7
+00:00:24,000 --> 00:00:26,580
+[CLARA, ATRÁS DA PORTA] Tô! A fechadura travou sozinha!
+
+8
+00:00:26,868 --> 00:00:28,708
+[DAVI] É o mesmo bloqueio do elevador.
+
+9
+00:00:28,884 --> 00:00:30,384
+[BIA] Você sabe quem fez isso?
+
+10
+00:00:31,000 --> 00:00:33,360
+[CLARA, ATRÁS DA PORTA] Eu vi um homem entrando na sala de segurança.
+
+11
+00:00:34,000 --> 00:00:35,180
+[BIA] Você viu quem era?
+
+12
+00:00:35,400 --> 00:00:38,220
+[CLARA, ATRÁS DA PORTA] Não vi o rosto… mas reconheci o uniforme.
+
+13
+00:00:39,600 --> 00:00:40,600
+[BIA] Que uniforme?
+
+14
+00:00:40,800 --> 00:00:43,240
+[CLARA, ATRÁS DA PORTA] Azul… com o símbolo da manutenção.
+
+15
+00:00:44,000 --> 00:00:46,400
+[DAVI] Tem outros funcionários usando esse uniforme.
+
+16
+00:00:55,400 --> 00:00:57,020
+[BIA] Ele sabe que a gente tá aqui…
+
+17
+00:00:57,600 --> 00:00:59,820
+[DAVI] Precisamos sair da frente dessa câmera.
+
+18
+00:01:00,400 --> 00:01:02,200
+[CLARA, ATRÁS DA PORTA] Não vão me deixar aqui, né?
+
+19
+00:01:07,400 --> 00:01:09,460
+[BIA] Ele tá ameaçando trancar outra pessoa…
+
+20
+00:01:10,000 --> 00:01:12,900
+[DAVI] Pode ser blefe. A gente não sabe.
+
+21
+00:01:13,116 --> 00:01:13,776
+[CLARA, ATRÁS DA PORTA] Por favor…
+
+22
+00:01:17,400 --> 00:01:20,780
+Bia deve tentar salvar Clara ou procurar a sala de segurança?

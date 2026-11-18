@@ -1,0 +1,36 @@
+{
+  "episode": "5",
+  "title": "O APARTAMENTO 604",
+  "fps": 30,
+  "voices": {
+    "NARRADOR": {"voice": "pt-BR-AntonioNeural",            "rate": "-1%", "pitch": "-13Hz", "fx": "narrator"},
+    "BIA":      {"voice": "pt-BR-FranciscaNeural",          "rate": "+7%", "pitch": "+0Hz",  "fx": "bia"},
+    "DAVI":     {"voice": "pt-BR-AntonioNeural",            "rate": "+9%", "pitch": "-2Hz",  "fx": "man"},
+    "CLARA":    {"voice": "pt-BR-ThalitaMultilingualNeural", "rate": "+4%", "pitch": "-7Hz", "fx": "muffled"}
+  },
+  "lines": [
+    {"id": "n01", "who": "NARRADOR", "at": 0.3,  "text": "Vocês escolheram investigar o 604. Mas quem está do outro lado?"},
+    {"id": "b01", "who": "BIA",      "at": 5.2,  "text": "Vamos ver quem tá lá."},
+    {"id": "d01", "who": "DAVI",     "at": 11.4, "volume": -8, "text": "Espera. Melhor não abrir de uma vez."},
+    {"id": "b02", "who": "BIA",      "at": 14.4, "rate": "+0%", "text": "Tem alguém aí?"},
+    {"id": "c01", "who": "CLARA",    "at": 18.6, "text": "Tem! Por favor… me ajuda!"},
+    {"id": "b03", "who": "BIA",      "at": 22.2, "rate": "+10%", "text": "Você tá presa aí dentro?"},
+    {"id": "c02", "who": "CLARA",    "at": 24.0, "rate": "+8%", "text": "Tô! A fechadura travou sozinha!"},
+    {"id": "d02", "who": "DAVI",     "at": 26.6, "text": "É o mesmo bloqueio do elevador."},
+    {"id": "b04", "who": "BIA",      "at": 28.8, "text": "Você sabe quem fez isso?"},
+    {"id": "c03", "who": "CLARA",    "at": 31.0, "volume": -8, "text": "Eu vi um homem entrando na sala de segurança."},
+    {"id": "b05", "who": "BIA",      "at": 34.0, "rate": "+10%", "text": "Você viu quem era?"},
+    {"id": "c04", "who": "CLARA",    "at": 35.4, "text": "Não vi o rosto… mas reconheci o uniforme."},
+    {"id": "b06", "who": "BIA",      "at": 39.6, "rate": "+0%", "text": "Que uniforme?"},
+    {"id": "c05", "who": "CLARA",    "at": 40.8, "text": "Azul… com o símbolo da manutenção."},
+    {"id": "d03", "who": "DAVI",     "at": 44.0, "rate": "+12%", "text": "Tem outros funcionários usando esse uniforme."},
+    {"id": "b07", "who": "BIA",      "at": 55.4, "volume": -18, "fx": "whisper", "text": "Ele sabe que a gente tá aqui…"},
+    {"id": "d04", "who": "DAVI",     "at": 57.6, "volume": -8, "text": "Precisamos sair da frente dessa câmera."},
+    {"id": "c06", "who": "CLARA",    "at": 60.4, "text": "Não vão me deixar aqui, né?"},
+    {"id": "b08", "who": "BIA",      "at": 67.4, "text": "Ele tá ameaçando trancar outra pessoa…"},
+    {"id": "d05", "who": "DAVI",     "at": 70.0, "text": "Pode ser blefe. A gente não sabe."},
+    {"id": "c07", "who": "CLARA",    "at": 72.6, "rate": "-8%", "volume": -12, "text": "Por favor…"},
+    {"id": "n02", "who": "NARRADOR", "at": 77.4, "text": "Bia deve tentar salvar Clara ou procurar a sala de segurança?"}
+  ],
+  "highlight": ["604", "QUEM", "ESPERA", "ALGUÉM", "AJUDA", "PRESA", "TRAVOU", "BLOQUEIO", "SEGURANÇA", "ROSTO", "UNIFORME", "MANUTENÇÃO", "OUTROS", "SABE", "CÂMERA", "DEIXAR", "TRANCAR", "BLEFE", "FAVOR", "CLARA"]
+}

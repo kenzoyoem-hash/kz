@@ -204,6 +204,8 @@ export const Person: React.FC<PersonProps> = (p) => {
           <g transform="translate(22,-560)">
             <rect x={0} y={0} width={46} height={62} rx={5} fill="#f4f6fb" stroke="#9aa3b5" strokeWidth={2} />
             <rect x={4} y={4} width={38} height={12} rx={2} fill="#2f6fd6" />
+            {/* símbolo da manutenção (chave inglesa) */}
+            <path d="M13,10 L31,10 M29,6 a3,3 0 1,0 0.1,0 M15,14 a3,3 0 1,0 -0.1,0" stroke="#fff" strokeWidth={2} fill="none" strokeLinecap="round" />
             <circle cx={23} cy={30} r={8} fill="#c9cfdb" />
             <text x={23} y={54} fontSize={11} textAnchor="middle" fontFamily="sans-serif" fontWeight={800} fill="#1a1f2e">{look.badge}</text>
           </g>

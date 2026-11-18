@@ -1,0 +1,983 @@
+[
+  {
+    "id": "n01",
+    "who": "NARRADOR",
+    "at": 0.3,
+    "text": "Vocês escolheram investigar o 604. Mas quem está do outro lado?",
+    "marked": "Vocês escolheram investigar o 604. Mas quem está do outro lado?",
+    "start": 0.3,
+    "dur": 5.565,
+    "end": 5.865,
+    "wav": "raw/voice/ep05/n01.wav",
+    "whisper": "Vocês escolheram investigar o 604. Mas quem está do outro lado?",
+    "words": [
+      {
+        "w": "Vocês",
+        "s": 0.3,
+        "e": 0.56
+      },
+      {
+        "w": "escolheram",
+        "s": 0.56,
+        "e": 1.2
+      },
+      {
+        "w": "investigar",
+        "s": 1.2,
+        "e": 1.88
+      },
+      {
+        "w": "o",
+        "s": 1.88,
+        "e": 1.92
+      },
+      {
+        "w": "604.",
+        "s": 1.92,
+        "e": 2.98
+      },
+      {
+        "w": "Mas",
+        "s": 3.68,
+        "e": 4.22
+      },
+      {
+        "w": "quem",
+        "s": 4.22,
+        "e": 4.44
+      },
+      {
+        "w": "está",
+        "s": 4.44,
+        "e": 4.76
+      },
+      {
+        "w": "do",
+        "s": 4.76,
+        "e": 4.96
+      },
+      {
+        "w": "outro",
+        "s": 4.96,
+        "e": 5.18
+      },
+      {
+        "w": "lado?",
+        "s": 5.18,
+        "e": 5.46
+      }
+    ]
+  },
+  {
+    "id": "b01",
+    "who": "BIA",
+    "at": 5.2,
+    "text": "Vamos ver quem tá lá.",
+    "marked": "Vamos ver quem tá lá.",
+    "start": 5.985,
+    "dur": 1.398,
+    "end": 7.382,
+    "wav": "raw/voice/ep05/b01.wav",
+    "whisper": "Vamos ver quem está lá.",
+    "words": [
+      {
+        "w": "Vamos",
+        "s": 5.985,
+        "e": 6.205
+      },
+      {
+        "w": "ver",
+        "s": 6.205,
+        "e": 6.485
+      },
+      {
+        "w": "quem",
+        "s": 6.485,
+        "e": 6.665
+      },
+      {
+        "w": "tá",
+        "s": 6.665,
+        "e": 6.845
+      },
+      {
+        "w": "lá.",
+        "s": 6.845,
+        "e": 6.985
+      }
+    ]
+  },
+  {
+    "id": "d01",
+    "who": "DAVI",
+    "at": 11.4,
+    "volume": -8,
+    "text": "Espera. Melhor não abrir de uma vez.",
+    "marked": "Espera. Melhor não abrir de uma vez.",
+    "start": 11.4,
+    "dur": 3.002,
+    "end": 14.402,
+    "wav": "raw/voice/ep05/d01.wav",
+    "whisper": "Espera. Melhor não abrir de uma vez.",
+    "words": [
+      {
+        "w": "Espera.",
+        "s": 11.4,
+        "e": 11.9
+      },
+      {
+        "w": "Melhor",
+        "s": 12.6,
+        "e": 13.02
+      },
+      {
+        "w": "não",
+        "s": 13.02,
+        "e": 13.14
+      },
+      {
+        "w": "abrir",
+        "s": 13.14,
+        "e": 13.42
+      },
+      {
+        "w": "de",
+        "s": 13.42,
+        "e": 13.58
+      },
+      {
+        "w": "uma",
+        "s": 13.58,
+        "e": 13.7
+      },
+      {
+        "w": "vez.",
+        "s": 13.7,
+        "e": 13.96
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "who": "BIA",
+    "at": 14.4,
+    "rate": "+0%",
+    "text": "Tem alguém aí?",
+    "marked": "Tem alguém aí?",
+    "start": 14.522,
+    "dur": 1.013,
+    "end": 15.535,
+    "wav": "raw/voice/ep05/b02.wav",
+    "whisper": "Tem alguém aí?",
+    "words": [
+      {
+        "w": "Tem",
+        "s": 14.522,
+        "e": 14.622
+      },
+      {
+        "w": "alguém",
+        "s": 14.622,
+        "e": 14.822
+      },
+      {
+        "w": "aí?",
+        "s": 14.822,
+        "e": 15.102
+      }
+    ]
+  },
+  {
+    "id": "c01",
+    "who": "CLARA",
+    "at": 18.6,
+    "text": "Tem! Por favor… me ajuda!",
+    "marked": "Tem! Por favor… me ajuda!",
+    "start": 18.6,
+    "dur": 2.375,
+    "end": 20.975,
+    "wav": "raw/voice/ep05/c01.wav",
+    "whisper": "Tem. Por favor, me ajuda.",
+    "words": [
+      {
+        "w": "Tem!",
+        "s": 18.6,
+        "e": 18.74
+      },
+      {
+        "w": "Por",
+        "s": 19.14,
+        "e": 19.3
+      },
+      {
+        "w": "favor…",
+        "s": 19.3,
+        "e": 19.68
+      },
+      {
+        "w": "me",
+        "s": 19.96,
+        "e": 20.14
+      },
+      {
+        "w": "ajuda!",
+        "s": 20.14,
+        "e": 20.52
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "who": "BIA",
+    "at": 22.2,
+    "rate": "+10%",
+    "text": "Você tá presa aí dentro?",
+    "marked": "Você tá presa aí dentro?",
+    "start": 22.2,
+    "dur": 1.509,
+    "end": 23.709,
+    "wav": "raw/voice/ep05/b03.wav",
+    "whisper": "Você está presa aí dentro?",
+    "words": [
+      {
+        "w": "Você",
+        "s": 22.2,
+        "e": 22.36
+      },
+      {
+        "w": "tá",
+        "s": 22.36,
+        "e": 22.52
+      },
+      {
+        "w": "presa",
+        "s": 22.52,
+        "e": 22.9
+      },
+      {
+        "w": "aí",
+        "s": 22.9,
+        "e": 23.0
+      },
+      {
+        "w": "dentro?",
+        "s": 23.0,
+        "e": 23.26
+      }
+    ]
+  },
+  {
+    "id": "c02",
+    "who": "CLARA",
+    "at": 24.0,
+    "rate": "+8%",
+    "text": "Tô! A fechadura travou sozinha!",
+    "marked": "Tô! A fechadura travou sozinha!",
+    "start": 24.0,
+    "dur": 2.748,
+    "end": 26.748,
+    "wav": "raw/voice/ep05/c02.wav",
+    "whisper": "A fechadura travoe sozinha.",
+    "words": [
+      {
+        "w": "Tô!",
+        "s": 24.0,
+        "e": 24.05
+      },
+      {
+        "w": "A",
+        "s": 24.0,
+        "e": 24.14
+      },
+      {
+        "w": "fechadura",
+        "s": 24.14,
+        "e": 25.22
+      },
+      {
+        "w": "travou",
+        "s": 25.22,
+        "e": 25.84
+      },
+      {
+        "w": "sozinha!",
+        "s": 25.84,
+        "e": 26.28
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "who": "DAVI",
+    "at": 26.6,
+    "text": "É o mesmo bloqueio do elevador.",
+    "marked": "É o mesmo bloqueio do elevador.",
+    "start": 26.868,
+    "dur": 1.896,
+    "end": 28.764,
+    "wav": "raw/voice/ep05/d02.wav",
+    "whisper": "É o mesmo bloqueio do elevador.",
+    "words": [
+      {
+        "w": "É",
+        "s": 26.868,
+        "e": 26.948
+      },
+      {
+        "w": "o",
+        "s": 26.948,
+        "e": 27.048
+      },
+      {
+        "w": "mesmo",
+        "s": 27.048,
+        "e": 27.288
+      },
+      {
+        "w": "bloqueio",
+        "s": 27.288,
+        "e": 27.828
+      },
+      {
+        "w": "do",
+        "s": 27.828,
+        "e": 27.948
+      },
+      {
+        "w": "elevador.",
+        "s": 27.948,
+        "e": 28.408
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "who": "BIA",
+    "at": 28.8,
+    "text": "Você sabe quem fez isso?",
+    "marked": "Você sabe quem fez isso?",
+    "start": 28.884,
+    "dur": 1.588,
+    "end": 30.473,
+    "wav": "raw/voice/ep05/b04.wav",
+    "whisper": "Você sabe quem fez isso?",
+    "words": [
+      {
+        "w": "Você",
+        "s": 28.884,
+        "e": 29.044
+      },
+      {
+        "w": "sabe",
+        "s": 29.044,
+        "e": 29.364
+      },
+      {
+        "w": "quem",
+        "s": 29.364,
+        "e": 29.564
+      },
+      {
+        "w": "fez",
+        "s": 29.564,
+        "e": 29.824
+      },
+      {
+        "w": "isso?",
+        "s": 29.824,
+        "e": 30.084
+      }
+    ]
+  },
+  {
+    "id": "c03",
+    "who": "CLARA",
+    "at": 31.0,
+    "volume": -8,
+    "text": "Eu vi um homem entrando na sala de segurança.",
+    "marked": "Eu vi um homem entrando na sala de segurança.",
+    "start": 31.0,
+    "dur": 2.611,
+    "end": 33.611,
+    "wav": "raw/voice/ep05/c03.wav",
+    "whisper": "Eu vi um homem entrando na sala de segurança.",
+    "words": [
+      {
+        "w": "Eu",
+        "s": 31.0,
+        "e": 31.14
+      },
+      {
+        "w": "vi",
+        "s": 31.14,
+        "e": 31.28
+      },
+      {
+        "w": "um",
+        "s": 31.28,
+        "e": 31.4
+      },
+      {
+        "w": "homem",
+        "s": 31.4,
+        "e": 31.68
+      },
+      {
+        "w": "entrando",
+        "s": 31.68,
+        "e": 32.08
+      },
+      {
+        "w": "na",
+        "s": 32.08,
+        "e": 32.26
+      },
+      {
+        "w": "sala",
+        "s": 32.26,
+        "e": 32.56
+      },
+      {
+        "w": "de",
+        "s": 32.56,
+        "e": 32.7
+      },
+      {
+        "w": "segurança.",
+        "s": 32.7,
+        "e": 33.06
+      }
+    ]
+  },
+  {
+    "id": "b05",
+    "who": "BIA",
+    "at": 34.0,
+    "rate": "+10%",
+    "text": "Você viu quem era?",
+    "marked": "Você viu quem era?",
+    "start": 34.0,
+    "dur": 1.265,
+    "end": 35.265,
+    "wav": "raw/voice/ep05/b05.wav",
+    "whisper": "Você viu quem era?",
+    "words": [
+      {
+        "w": "Você",
+        "s": 34.0,
+        "e": 34.16
+      },
+      {
+        "w": "viu",
+        "s": 34.16,
+        "e": 34.38
+      },
+      {
+        "w": "quem",
+        "s": 34.38,
+        "e": 34.58
+      },
+      {
+        "w": "era?",
+        "s": 34.58,
+        "e": 34.88
+      }
+    ]
+  },
+  {
+    "id": "c04",
+    "who": "CLARA",
+    "at": 35.4,
+    "text": "Não vi o rosto… mas reconheci o uniforme.",
+    "marked": "Não vi o rosto… mas reconheci o uniforme.",
+    "start": 35.4,
+    "dur": 2.816,
+    "end": 38.216,
+    "wav": "raw/voice/ep05/c04.wav",
+    "whisper": "Não viu o rosto, mas reconhecia o uniforme.",
+    "words": [
+      {
+        "w": "Não",
+        "s": 35.4,
+        "e": 35.56
+      },
+      {
+        "w": "vi",
+        "s": 35.56,
+        "e": 35.8
+      },
+      {
+        "w": "o",
+        "s": 35.8,
+        "e": 35.9
+      },
+      {
+        "w": "rosto…",
+        "s": 35.9,
+        "e": 36.3
+      },
+      {
+        "w": "mas",
+        "s": 36.56,
+        "e": 36.68
+      },
+      {
+        "w": "reconheci",
+        "s": 36.68,
+        "e": 37.24
+      },
+      {
+        "w": "o",
+        "s": 37.24,
+        "e": 37.38
+      },
+      {
+        "w": "uniforme.",
+        "s": 37.38,
+        "e": 37.92
+      }
+    ]
+  },
+  {
+    "id": "b06",
+    "who": "BIA",
+    "at": 39.6,
+    "rate": "+0%",
+    "text": "Que uniforme?",
+    "marked": "Que uniforme?",
+    "start": 39.6,
+    "dur": 1.016,
+    "end": 40.616,
+    "wav": "raw/voice/ep05/b06.wav",
+    "whisper": "Que uniforme!",
+    "words": [
+      {
+        "w": "Que",
+        "s": 39.6,
+        "e": 39.66
+      },
+      {
+        "w": "uniforme?",
+        "s": 39.66,
+        "e": 40.3
+      }
+    ]
+  },
+  {
+    "id": "c05",
+    "who": "CLARA",
+    "at": 40.8,
+    "text": "Azul… com o símbolo da manutenção.",
+    "marked": "Azul… com o símbolo da manutenção.",
+    "start": 40.8,
+    "dur": 2.545,
+    "end": 43.344,
+    "wav": "raw/voice/ep05/c05.wav",
+    "whisper": "azul com símbolo da manutenção.",
+    "words": [
+      {
+        "w": "Azul…",
+        "s": 40.8,
+        "e": 41.22
+      },
+      {
+        "w": "com",
+        "s": 41.22,
+        "e": 41.62
+      },
+      {
+        "w": "o",
+        "s": 41.62,
+        "e": 41.67
+      },
+      {
+        "w": "símbolo",
+        "s": 41.62,
+        "e": 42.2
+      },
+      {
+        "w": "da",
+        "s": 42.2,
+        "e": 42.28
+      },
+      {
+        "w": "manutenção.",
+        "s": 42.28,
+        "e": 42.94
+      }
+    ]
+  },
+  {
+    "id": "d03",
+    "who": "DAVI",
+    "at": 44.0,
+    "rate": "+12%",
+    "text": "Tem outros funcionários usando esse uniforme.",
+    "marked": "Tem outros funcionários usando esse uniforme.",
+    "start": 44.0,
+    "dur": 2.384,
+    "end": 46.384,
+    "wav": "raw/voice/ep05/d03.wav",
+    "whisper": "Tem outros funcionários usando esse uniforme.",
+    "words": [
+      {
+        "w": "Tem",
+        "s": 44.0,
+        "e": 44.1
+      },
+      {
+        "w": "outros",
+        "s": 44.1,
+        "e": 44.34
+      },
+      {
+        "w": "funcionários",
+        "s": 44.34,
+        "e": 44.96
+      },
+      {
+        "w": "usando",
+        "s": 44.96,
+        "e": 45.3
+      },
+      {
+        "w": "esse",
+        "s": 45.3,
+        "e": 45.5
+      },
+      {
+        "w": "uniforme.",
+        "s": 45.5,
+        "e": 46.1
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "who": "BIA",
+    "at": 55.4,
+    "volume": -18,
+    "fx": "whisper",
+    "text": "Ele sabe que a gente tá aqui…",
+    "marked": "Ele sabe que a gente tá aqui…",
+    "start": 55.4,
+    "dur": 1.725,
+    "end": 57.125,
+    "wav": "raw/voice/ep05/b07.wav",
+    "whisper": "Ele sabe que a gente está aqui.",
+    "words": [
+      {
+        "w": "Ele",
+        "s": 55.4,
+        "e": 55.52
+      },
+      {
+        "w": "sabe",
+        "s": 55.52,
+        "e": 55.82
+      },
+      {
+        "w": "que",
+        "s": 55.82,
+        "e": 56.0
+      },
+      {
+        "w": "a",
+        "s": 56.0,
+        "e": 56.08
+      },
+      {
+        "w": "gente",
+        "s": 56.08,
+        "e": 56.24
+      },
+      {
+        "w": "tá",
+        "s": 56.24,
+        "e": 56.48
+      },
+      {
+        "w": "aqui…",
+        "s": 56.48,
+        "e": 56.72
+      }
+    ]
+  },
+  {
+    "id": "d04",
+    "who": "DAVI",
+    "at": 57.6,
+    "volume": -8,
+    "text": "Precisamos sair da frente dessa câmera.",
+    "marked": "Precisamos sair da frente dessa câmera.",
+    "start": 57.6,
+    "dur": 2.343,
+    "end": 59.943,
+    "wav": "raw/voice/ep05/d04.wav",
+    "whisper": "Precisamos sair da frente dessa câmera.",
+    "words": [
+      {
+        "w": "Precisamos",
+        "s": 57.6,
+        "e": 58.12
+      },
+      {
+        "w": "sair",
+        "s": 58.12,
+        "e": 58.38
+      },
+      {
+        "w": "da",
+        "s": 58.38,
+        "e": 58.58
+      },
+      {
+        "w": "frente",
+        "s": 58.58,
+        "e": 58.86
+      },
+      {
+        "w": "dessa",
+        "s": 58.86,
+        "e": 59.14
+      },
+      {
+        "w": "câmera.",
+        "s": 59.14,
+        "e": 59.52
+      }
+    ]
+  },
+  {
+    "id": "c06",
+    "who": "CLARA",
+    "at": 60.4,
+    "text": "Não vão me deixar aqui, né?",
+    "marked": "Não vão me deixar aqui, né?",
+    "start": 60.4,
+    "dur": 1.883,
+    "end": 62.283,
+    "wav": "raw/voice/ep05/c06.wav",
+    "whisper": "Não vão me deixar aqui, né?",
+    "words": [
+      {
+        "w": "Não",
+        "s": 60.4,
+        "e": 60.54
+      },
+      {
+        "w": "vão",
+        "s": 60.54,
+        "e": 60.74
+      },
+      {
+        "w": "me",
+        "s": 60.74,
+        "e": 60.84
+      },
+      {
+        "w": "deixar",
+        "s": 60.84,
+        "e": 61.12
+      },
+      {
+        "w": "aqui,",
+        "s": 61.12,
+        "e": 61.46
+      },
+      {
+        "w": "né?",
+        "s": 61.76,
+        "e": 61.9
+      }
+    ]
+  },
+  {
+    "id": "b08",
+    "who": "BIA",
+    "at": 67.4,
+    "text": "Ele tá ameaçando trancar outra pessoa…",
+    "marked": "Ele tá ameaçando trancar outra pessoa…",
+    "start": 67.4,
+    "dur": 2.28,
+    "end": 69.68,
+    "wav": "raw/voice/ep05/b08.wav",
+    "whisper": "Ele está ameaçando trancar outra pessoa.",
+    "words": [
+      {
+        "w": "Ele",
+        "s": 67.4,
+        "e": 67.52
+      },
+      {
+        "w": "tá",
+        "s": 67.52,
+        "e": 67.7
+      },
+      {
+        "w": "ameaçando",
+        "s": 67.7,
+        "e": 68.22
+      },
+      {
+        "w": "trancar",
+        "s": 68.22,
+        "e": 68.64
+      },
+      {
+        "w": "outra",
+        "s": 68.64,
+        "e": 68.8
+      },
+      {
+        "w": "pessoa…",
+        "s": 68.8,
+        "e": 69.16
+      }
+    ]
+  },
+  {
+    "id": "d05",
+    "who": "DAVI",
+    "at": 70.0,
+    "text": "Pode ser blefe. A gente não sabe.",
+    "marked": "Pode ser blefe. A gente não sabe.",
+    "start": 70.0,
+    "dur": 2.996,
+    "end": 72.996,
+    "wav": "raw/voice/ep05/d05.wav",
+    "whisper": "Pode ser brefi. A gente não sabe.",
+    "words": [
+      {
+        "w": "Pode",
+        "s": 70.0,
+        "e": 70.18
+      },
+      {
+        "w": "ser",
+        "s": 70.18,
+        "e": 70.44
+      },
+      {
+        "w": "blefe.",
+        "s": 70.44,
+        "e": 70.98
+      },
+      {
+        "w": "A",
+        "s": 71.62,
+        "e": 71.86
+      },
+      {
+        "w": "gente",
+        "s": 71.86,
+        "e": 72.04
+      },
+      {
+        "w": "não",
+        "s": 72.04,
+        "e": 72.28
+      },
+      {
+        "w": "sabe.",
+        "s": 72.28,
+        "e": 72.6
+      }
+    ]
+  },
+  {
+    "id": "c07",
+    "who": "CLARA",
+    "at": 72.6,
+    "rate": "-8%",
+    "volume": -12,
+    "text": "Por favor…",
+    "marked": "Por favor…",
+    "start": 73.116,
+    "dur": 0.849,
+    "end": 73.964,
+    "wav": "raw/voice/ep05/c07.wav",
+    "whisper": "Por favor.",
+    "words": [
+      {
+        "w": "Por",
+        "s": 73.116,
+        "e": 73.236
+      },
+      {
+        "w": "favor…",
+        "s": 73.236,
+        "e": 73.476
+      }
+    ]
+  },
+  {
+    "id": "n02",
+    "who": "NARRADOR",
+    "at": 77.4,
+    "text": "Bia deve tentar salvar Clara ou procurar a sala de segurança?",
+    "marked": "Bia deve tentar salvar Clara ou procurar a sala de segurança?",
+    "start": 77.4,
+    "dur": 3.64,
+    "end": 81.04,
+    "wav": "raw/voice/ep05/n02.wav",
+    "whisper": "Bia deve tentar salvar Clara ou procurar a sala de segurança.",
+    "words": [
+      {
+        "w": "Bia",
+        "s": 77.4,
+        "e": 77.66
+      },
+      {
+        "w": "deve",
+        "s": 77.66,
+        "e": 77.86
+      },
+      {
+        "w": "tentar",
+        "s": 77.86,
+        "e": 78.18
+      },
+      {
+        "w": "salvar",
+        "s": 78.18,
+        "e": 78.52
+      },
+      {
+        "w": "Clara",
+        "s": 78.52,
+        "e": 79.02
+      },
+      {
+        "w": "ou",
+        "s": 79.02,
+        "e": 79.2
+      },
+      {
+        "w": "procurar",
+        "s": 79.2,
+        "e": 79.62
+      },
+      {
+        "w": "a",
+        "s": 79.62,
+        "e": 79.7
+      },
+      {
+        "w": "sala",
+        "s": 79.7,
+        "e": 79.96
+      },
+      {
+        "w": "de",
+        "s": 79.96,
+        "e": 80.12
+      },
+      {
+        "w": "segurança?",
+        "s": 80.12,
+        "e": 80.48
+      }
+    ]
+  }
+]

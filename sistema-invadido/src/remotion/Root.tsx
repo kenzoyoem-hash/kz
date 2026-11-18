@@ -6,6 +6,7 @@ import {Ep02a, EP02A_FRAMES} from './episodes/ep02a/Ep02a';
 import {Ep02b, EP02B_FRAMES} from './episodes/ep02b/Ep02b';
 import {Ep03a, EP03A_FRAMES} from './episodes/ep03a/Ep03a';
 import {Ep04, EP04_FRAMES} from './episodes/ep04/Ep04';
+import {Ep05, EP05_FRAMES} from './episodes/ep05/Ep05';
 import './Fonts';
 
 export const Root: React.FC = () => (
@@ -16,6 +17,7 @@ export const Root: React.FC = () => (
       <Composition id="EP02B" component={Ep02b} durationInFrames={EP02B_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="EP03A" component={Ep03a} durationInFrames={EP03A_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="EP04" component={Ep04} durationInFrames={EP04_FRAMES} fps={30} width={1080} height={1920} />
+      <Composition id="EP05" component={Ep05} durationInFrames={EP05_FRAMES} fps={30} width={1080} height={1920} />
     </Folder>
     <Folder name="Modelos">
       <Composition id="CharacterSheet" component={CharacterSheet} durationInFrames={90} fps={30} width={1080} height={1920} />
