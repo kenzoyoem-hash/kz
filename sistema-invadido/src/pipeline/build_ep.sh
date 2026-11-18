@@ -16,6 +16,6 @@ CHROME=${CHROME:-/opt/pw-browsers/chromium}
 ffmpeg -y -v error -stats -i "$DONE/ep${E}_video_sem_audio.mp4" -i "$ROOT/raw/mix/ep${E}_master.wav" \
   -filter_complex "[0:v]subtitles=filename=$DONE/ep${E}_legendas.ass:fontsdir=public/fonts,format=yuv420p[v]" \
   -map "[v]" -map 1:a -c:v libx264 -preset slow -crf 18 -profile:v high -level 4.1 -r 30 -g 60 \
-  -c:a aac -b:a 192k -ar 48000 -movflags +faststart -shortest \
+  -c:a aac -b:a 256k -ar 48000 -movflags +faststart -shortest \
   -metadata title="SISTEMA INVADIDO - EP. $ARG" "$DONE/sistema_invadido_ep${E}.mp4"
 ffprobe -v error -show_entries format=duration,bit_rate:stream=codec_name,width,height,r_frame_rate -of compact "$DONE/sistema_invadido_ep${E}.mp4"
