@@ -1,0 +1,32 @@
+{
+  "episode": "7",
+  "title": "VOCÊ NUNCA ESTEVE NO CONTROLE",
+  "fps": 30,
+  "voices": {
+    "NARRADOR":    {"voice": "pt-BR-AntonioNeural",   "rate": "-1%", "pitch": "-13Hz", "fx": "narrator"},
+    "BIA":         {"voice": "pt-BR-FranciscaNeural", "rate": "+7%", "pitch": "+0Hz",  "fx": "bia"},
+    "DAVI":        {"voice": "pt-BR-AntonioNeural",   "rate": "+9%", "pitch": "-2Hz",  "fx": "man"},
+    "CLARA_LIVRE": {"voice": "pt-BR-FranciscaNeural", "rate": "+5%", "pitch": "-14Hz", "fx": "bia"}
+  },
+  "lines": [
+    {"id": "n01", "who": "NARRADOR",    "at": 0.3,  "text": "Vocês escolheram investigar a segurança. Mas o sistema já estava esperando."},
+    {"id": "b01", "who": "BIA",         "at": 6.0,  "text": "Vamos achar quem tá fazendo isso."},
+    {"id": "d01", "who": "DAVI",        "at": 10.4, "volume": -6, "text": "Essa porta devia estar trancada."},
+    {"id": "b02", "who": "BIA",         "at": 12.6, "text": "Então alguém deixou aberta."},
+    {"id": "c01", "who": "CLARA_LIVRE", "at": 18.2, "volume": -10, "text": "Foi aqui que eu vi aquele homem entrar."},
+    {"id": "b03", "who": "BIA",         "at": 24.6, "text": "São os lugares por onde a gente passou…"},
+    {"id": "d02", "who": "DAVI",        "at": 30.4, "text": "Não foi uma falha. Alguém programou tudo."},
+    {"id": "b04", "who": "BIA",         "at": 34.6, "text": "Até aquele vídeo falso…"},
+    {"id": "c02", "who": "CLARA_LIVRE", "at": 39.4, "text": "Olha isso aqui."},
+    {"id": "b05", "who": "BIA",         "at": 46.0, "text": "Como ele sabe todas as escolhas?"},
+    {"id": "d03", "who": "DAVI",        "at": 48.4, "text": "Porque alguém tá enviando elas pra cá."},
+    {"id": "b06", "who": "BIA",         "at": 56.8, "text": "Tem alguém controlando isso de fora?"},
+    {"id": "d04", "who": "DAVI",        "at": 59.2, "text": "Tem. E ainda tá conectado."},
+    {"id": "c03", "who": "CLARA_LIVRE", "at": 61.4, "volume": -6, "text": "Então essa pessoa sabe que estamos aqui?"},
+    {"id": "b07", "who": "BIA",         "at": 65.0, "rate": "-6%", "volume": -15, "fx": "whisper", "text": "Sabe."},
+    {"id": "d05", "who": "DAVI",        "at": 70.6, "rate": "+11%", "text": "Se desligar, talvez a gente consiga sair."},
+    {"id": "c04", "who": "CLARA_LIVRE", "at": 73.0, "text": "Mas nunca vamos saber quem fez isso."},
+    {"id": "n02", "who": "NARRADOR",    "at": 77.3, "rate": "+3%", "text": "Agora é a última escolha. Desligar o sistema ou descobrir quem controla tudo?"}
+  ],
+  "highlight": ["SEGURANÇA", "ESPERANDO", "ACHAR", "TRANCADA", "ABERTA", "HOMEM", "LUGARES", "FALHA", "PROGRAMOU", "FALSO", "OLHA", "ESCOLHAS", "ENVIANDO", "FORA", "CONECTADO", "SABE", "DESLIGAR", "SAIR", "NUNCA", "ÚLTIMA", "CONTROLA"]
+}

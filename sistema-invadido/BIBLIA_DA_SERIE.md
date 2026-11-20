@@ -114,6 +114,19 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - O corredor tem a passagem "ÁREA TÉCNICA" no extremo direito (lado oposto ao 601). Clara acompanha Bia e Davi a partir daqui.
 - Votação: **A** = ajudar no 601; **B** = investigar a segurança.
 
+## Continuidade do EP. 7 — "VOCÊ NUNCA ESTEVE NO CONTROLE" (após o EP. 6; venceu B, investigar a segurança)
+- Bia, Davi e Clara seguem pela área técnica (placa "SEGURANÇA — ACESSO RESTRITO"). A porta está entreaberta e a sala, vazia (`sets/SecurityRoom.tsx`).
+- A sala tem 4 monitores (ELEVADOR, CORREDOR · 6º, APTO 604, APTO 601), um computador principal, um rack de rede e uma câmera no teto que gira para os três.
+- Registros: ELEVADOR — ROTA ATIVADA / CÂMERA 06 — VÍDEO SUBSTITUÍDO / PORTA 604 — LIBERADA / PORTA 601 — BLOQUEADA.
+- Histórico: DECISÃO 01 ELEVADOR, 02 CONFIAR EM DAVI, 03 INVESTIGAR 604, 04 SALVAR CLARA, 05 INVESTIGAR SEGURANÇA. A origem das escolhas NÃO é revelada.
+- "CONEXÃO EXTERNA ATIVA / CONTROLE REMOTO HABILITADO". Mensagens: "VOCÊ CHEGOU LONGE DEMAIS, BIA." / "AGORA VOCÊ PODE DESCOBRIR QUEM ESTÁ NO CONTROLE." com os botões ENCERRAR CONEXÃO e IDENTIFICAR ORIGEM.
+- A porta 601 continua bloqueada. Votação final: **A** = desligar o sistema; **B** = descobrir quem controla.
+
+## [CONFIDENCIAL — SÓ PARA O EP. 8] Plot twist planejado
+1. As votações dos espectadores eram enviadas ao sistema como comandos: o público controlava os caminhos da Bia.
+2. Um alarme repetitivo vai crescendo, a imagem perde estabilidade e há um corte abrupto para o quarto da Bia, que acorda assustada. Celular: "07:00 — ALARME ADIADO 6 VEZES." Ela acha que foi um sonho, mas chega a notificação "OS ESPECTADORES ESCOLHERAM: ACORDAR." Tela final: "TRANSMISSÃO 02 INICIADA."
+- Nada disso pode aparecer antes do EP. 8.
+
 ## Ramificações para o EP. 2
 - **A — Escadas**: a Bia desce pela Escada B e descobre que a câmera exibia uma gravação. A escada real mostra por que o loop foi montado (e quem não queria que se visse o que acontece lá).
 - **B — Elevador**: a Bia entra no elevador e precisa descobrir quem deixou a mochila vermelha. O celular que toca dentro dela está ligado ao número dela.

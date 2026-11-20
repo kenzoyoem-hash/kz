@@ -1,0 +1,837 @@
+[
+  {
+    "id": "n01",
+    "who": "NARRADOR",
+    "at": 0.3,
+    "text": "Vocês escolheram investigar a segurança. Mas o sistema já estava esperando.",
+    "marked": "Vocês escolheram investigar a segurança. Mas o sistema já estava esperando.",
+    "start": 0.3,
+    "dur": 5.434,
+    "end": 5.734,
+    "wav": "raw/voice/ep07/n01.wav",
+    "whisper": "Vocês escolheram investigar a segurança. Mas o sistema já estava esperando.",
+    "words": [
+      {
+        "w": "Vocês",
+        "s": 0.3,
+        "e": 0.56
+      },
+      {
+        "w": "escolheram",
+        "s": 0.56,
+        "e": 1.26
+      },
+      {
+        "w": "investigar",
+        "s": 1.26,
+        "e": 1.88
+      },
+      {
+        "w": "a",
+        "s": 1.88,
+        "e": 1.92
+      },
+      {
+        "w": "segurança.",
+        "s": 1.92,
+        "e": 2.48
+      },
+      {
+        "w": "Mas",
+        "s": 3.22,
+        "e": 3.7
+      },
+      {
+        "w": "o",
+        "s": 3.7,
+        "e": 3.84
+      },
+      {
+        "w": "sistema",
+        "s": 3.84,
+        "e": 4.22
+      },
+      {
+        "w": "já",
+        "s": 4.22,
+        "e": 4.5
+      },
+      {
+        "w": "estava",
+        "s": 4.5,
+        "e": 4.8
+      },
+      {
+        "w": "esperando.",
+        "s": 4.8,
+        "e": 5.18
+      }
+    ]
+  },
+  {
+    "id": "b01",
+    "who": "BIA",
+    "at": 6.0,
+    "text": "Vamos achar quem tá fazendo isso.",
+    "marked": "Vamos achar quem tá fazendo isso.",
+    "start": 6.0,
+    "dur": 2.013,
+    "end": 8.013,
+    "wav": "raw/voice/ep07/b01.wav",
+    "whisper": "Vamos achar quem está fazendo isso.",
+    "words": [
+      {
+        "w": "Vamos",
+        "s": 6.0,
+        "e": 6.18
+      },
+      {
+        "w": "achar",
+        "s": 6.18,
+        "e": 6.62
+      },
+      {
+        "w": "quem",
+        "s": 6.62,
+        "e": 6.78
+      },
+      {
+        "w": "tá",
+        "s": 6.78,
+        "e": 6.94
+      },
+      {
+        "w": "fazendo",
+        "s": 6.94,
+        "e": 7.28
+      },
+      {
+        "w": "isso.",
+        "s": 7.28,
+        "e": 7.64
+      }
+    ]
+  },
+  {
+    "id": "d01",
+    "who": "DAVI",
+    "at": 10.4,
+    "volume": -6,
+    "text": "Essa porta devia estar trancada.",
+    "marked": "Essa porta devia estar trancada.",
+    "start": 10.4,
+    "dur": 1.927,
+    "end": 12.327,
+    "wav": "raw/voice/ep07/d01.wav",
+    "whisper": "Essa porta devia estar trancada.",
+    "words": [
+      {
+        "w": "Essa",
+        "s": 10.4,
+        "e": 10.56
+      },
+      {
+        "w": "porta",
+        "s": 10.56,
+        "e": 10.92
+      },
+      {
+        "w": "devia",
+        "s": 10.92,
+        "e": 11.28
+      },
+      {
+        "w": "estar",
+        "s": 11.28,
+        "e": 11.46
+      },
+      {
+        "w": "trancada.",
+        "s": 11.46,
+        "e": 11.98
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "who": "BIA",
+    "at": 12.6,
+    "text": "Então alguém deixou aberta.",
+    "marked": "Então alguém deixou aberta.",
+    "start": 12.6,
+    "dur": 1.732,
+    "end": 14.332,
+    "wav": "raw/voice/ep07/b02.wav",
+    "whisper": "Então alguém deixou aberta.",
+    "words": [
+      {
+        "w": "Então",
+        "s": 12.6,
+        "e": 12.82
+      },
+      {
+        "w": "alguém",
+        "s": 12.82,
+        "e": 13.12
+      },
+      {
+        "w": "deixou",
+        "s": 13.12,
+        "e": 13.52
+      },
+      {
+        "w": "aberta.",
+        "s": 13.52,
+        "e": 13.94
+      }
+    ]
+  },
+  {
+    "id": "c01",
+    "who": "CLARA_LIVRE",
+    "at": 18.2,
+    "volume": -10,
+    "text": "Foi aqui que eu vi aquele homem entrar.",
+    "marked": "Foi aqui que eu vi aquele homem entrar.",
+    "start": 18.2,
+    "dur": 2.067,
+    "end": 20.267,
+    "wav": "raw/voice/ep07/c01.wav",
+    "whisper": "Foi aqui que eu vi aquele homem entrar.",
+    "words": [
+      {
+        "w": "Foi",
+        "s": 18.2,
+        "e": 18.28
+      },
+      {
+        "w": "aqui",
+        "s": 18.28,
+        "e": 18.5
+      },
+      {
+        "w": "que",
+        "s": 18.5,
+        "e": 18.66
+      },
+      {
+        "w": "eu",
+        "s": 18.66,
+        "e": 18.8
+      },
+      {
+        "w": "vi",
+        "s": 18.8,
+        "e": 18.94
+      },
+      {
+        "w": "aquele",
+        "s": 18.94,
+        "e": 19.16
+      },
+      {
+        "w": "homem",
+        "s": 19.16,
+        "e": 19.48
+      },
+      {
+        "w": "entrar.",
+        "s": 19.48,
+        "e": 19.84
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "who": "BIA",
+    "at": 24.6,
+    "text": "São os lugares por onde a gente passou…",
+    "marked": "São os lugares por onde a gente passou…",
+    "start": 24.6,
+    "dur": 2.331,
+    "end": 26.931,
+    "wav": "raw/voice/ep07/b03.wav",
+    "whisper": "São os lugares por onde a gente passou.",
+    "words": [
+      {
+        "w": "São",
+        "s": 24.6,
+        "e": 24.78
+      },
+      {
+        "w": "os",
+        "s": 24.78,
+        "e": 24.94
+      },
+      {
+        "w": "lugares",
+        "s": 24.94,
+        "e": 25.24
+      },
+      {
+        "w": "por",
+        "s": 25.24,
+        "e": 25.62
+      },
+      {
+        "w": "onde",
+        "s": 25.62,
+        "e": 25.84
+      },
+      {
+        "w": "a",
+        "s": 25.84,
+        "e": 25.92
+      },
+      {
+        "w": "gente",
+        "s": 25.92,
+        "e": 26.1
+      },
+      {
+        "w": "passou…",
+        "s": 26.1,
+        "e": 26.46
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "who": "DAVI",
+    "at": 30.4,
+    "text": "Não foi uma falha. Alguém programou tudo.",
+    "marked": "Não foi uma falha. Alguém programou tudo.",
+    "start": 30.4,
+    "dur": 3.277,
+    "end": 33.677,
+    "wav": "raw/voice/ep07/d02.wav",
+    "whisper": "Não foi uma faria. Alguém programou tudo.",
+    "words": [
+      {
+        "w": "Não",
+        "s": 30.4,
+        "e": 30.56
+      },
+      {
+        "w": "foi",
+        "s": 30.56,
+        "e": 30.82
+      },
+      {
+        "w": "uma",
+        "s": 30.82,
+        "e": 30.98
+      },
+      {
+        "w": "falha.",
+        "s": 30.98,
+        "e": 31.42
+      },
+      {
+        "w": "Alguém",
+        "s": 32.14,
+        "e": 32.5
+      },
+      {
+        "w": "programou",
+        "s": 32.5,
+        "e": 33.0
+      },
+      {
+        "w": "tudo.",
+        "s": 33.0,
+        "e": 33.22
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "who": "BIA",
+    "at": 34.6,
+    "text": "Até aquele vídeo falso…",
+    "marked": "Até aquele vídeo falso…",
+    "start": 34.6,
+    "dur": 1.584,
+    "end": 36.184,
+    "wav": "raw/voice/ep07/b04.wav",
+    "whisper": "Até aquele vídeo falso.",
+    "words": [
+      {
+        "w": "Até",
+        "s": 34.6,
+        "e": 34.8
+      },
+      {
+        "w": "aquele",
+        "s": 34.8,
+        "e": 35.06
+      },
+      {
+        "w": "vídeo",
+        "s": 35.06,
+        "e": 35.34
+      },
+      {
+        "w": "falso…",
+        "s": 35.34,
+        "e": 35.84
+      }
+    ]
+  },
+  {
+    "id": "c02",
+    "who": "CLARA_LIVRE",
+    "at": 39.4,
+    "text": "Olha isso aqui.",
+    "marked": "Olha isso aqui.",
+    "start": 39.4,
+    "dur": 1.121,
+    "end": 40.521,
+    "wav": "raw/voice/ep07/c02.wav",
+    "whisper": "Olha isso aqui.",
+    "words": [
+      {
+        "w": "Olha",
+        "s": 39.4,
+        "e": 39.58
+      },
+      {
+        "w": "isso",
+        "s": 39.58,
+        "e": 39.84
+      },
+      {
+        "w": "aqui.",
+        "s": 39.84,
+        "e": 40.1
+      }
+    ]
+  },
+  {
+    "id": "b05",
+    "who": "BIA",
+    "at": 46.0,
+    "text": "Como ele sabe todas as escolhas?",
+    "marked": "Como ele sabe todas as escolhas?",
+    "start": 46.0,
+    "dur": 1.989,
+    "end": 47.989,
+    "wav": "raw/voice/ep07/b05.wav",
+    "whisper": "Como ele sabe todas as escolhas?",
+    "words": [
+      {
+        "w": "Como",
+        "s": 46.0,
+        "e": 46.14
+      },
+      {
+        "w": "ele",
+        "s": 46.14,
+        "e": 46.28
+      },
+      {
+        "w": "sabe",
+        "s": 46.28,
+        "e": 46.52
+      },
+      {
+        "w": "todas",
+        "s": 46.52,
+        "e": 46.8
+      },
+      {
+        "w": "as",
+        "s": 46.8,
+        "e": 47.06
+      },
+      {
+        "w": "escolhas?",
+        "s": 47.06,
+        "e": 47.56
+      }
+    ]
+  },
+  {
+    "id": "d03",
+    "who": "DAVI",
+    "at": 48.4,
+    "text": "Porque alguém tá enviando elas pra cá.",
+    "marked": "Porque alguém tá enviando elas pra cá.",
+    "start": 48.4,
+    "dur": 1.99,
+    "end": 50.39,
+    "wav": "raw/voice/ep07/d03.wav",
+    "whisper": "Porque alguém tá enviando elas pra cá.",
+    "words": [
+      {
+        "w": "Porque",
+        "s": 48.4,
+        "e": 48.58
+      },
+      {
+        "w": "alguém",
+        "s": 48.58,
+        "e": 48.86
+      },
+      {
+        "w": "tá",
+        "s": 48.86,
+        "e": 49.02
+      },
+      {
+        "w": "enviando",
+        "s": 49.02,
+        "e": 49.48
+      },
+      {
+        "w": "elas",
+        "s": 49.48,
+        "e": 49.62
+      },
+      {
+        "w": "pra",
+        "s": 49.62,
+        "e": 49.82
+      },
+      {
+        "w": "cá.",
+        "s": 49.82,
+        "e": 50.0
+      }
+    ]
+  },
+  {
+    "id": "b06",
+    "who": "BIA",
+    "at": 56.8,
+    "text": "Tem alguém controlando isso de fora?",
+    "marked": "Tem alguém controlando isso de fora?",
+    "start": 56.8,
+    "dur": 1.937,
+    "end": 58.737,
+    "wav": "raw/voice/ep07/b06.wav",
+    "whisper": "Tem alguém controlando isso de fora?",
+    "words": [
+      {
+        "w": "Tem",
+        "s": 56.8,
+        "e": 56.88
+      },
+      {
+        "w": "alguém",
+        "s": 56.88,
+        "e": 57.06
+      },
+      {
+        "w": "controlando",
+        "s": 57.06,
+        "e": 57.66
+      },
+      {
+        "w": "isso",
+        "s": 57.66,
+        "e": 57.88
+      },
+      {
+        "w": "de",
+        "s": 57.88,
+        "e": 58.04
+      },
+      {
+        "w": "fora?",
+        "s": 58.04,
+        "e": 58.3
+      }
+    ]
+  },
+  {
+    "id": "d04",
+    "who": "DAVI",
+    "at": 59.2,
+    "text": "Tem. E ainda tá conectado.",
+    "marked": "Tem. E ainda tá conectado.",
+    "start": 59.2,
+    "dur": 2.558,
+    "end": 61.758,
+    "wav": "raw/voice/ep07/d04.wav",
+    "whisper": "Tem. E ainda está conectado.",
+    "words": [
+      {
+        "w": "Tem.",
+        "s": 59.2,
+        "e": 59.34
+      },
+      {
+        "w": "E",
+        "s": 60.06,
+        "e": 60.36
+      },
+      {
+        "w": "ainda",
+        "s": 60.36,
+        "e": 60.62
+      },
+      {
+        "w": "tá",
+        "s": 60.62,
+        "e": 60.82
+      },
+      {
+        "w": "conectado.",
+        "s": 60.82,
+        "e": 61.42
+      }
+    ]
+  },
+  {
+    "id": "c03",
+    "who": "CLARA_LIVRE",
+    "at": 61.4,
+    "volume": -6,
+    "text": "Então essa pessoa sabe que estamos aqui?",
+    "marked": "Então essa pessoa sabe que estamos aqui?",
+    "start": 61.878,
+    "dur": 2.348,
+    "end": 64.226,
+    "wav": "raw/voice/ep07/c03.wav",
+    "whisper": "Então essa pessoa sabe que estamos aqui?",
+    "words": [
+      {
+        "w": "Então",
+        "s": 61.878,
+        "e": 62.118
+      },
+      {
+        "w": "essa",
+        "s": 62.118,
+        "e": 62.318
+      },
+      {
+        "w": "pessoa",
+        "s": 62.318,
+        "e": 62.658
+      },
+      {
+        "w": "sabe",
+        "s": 62.658,
+        "e": 63.018
+      },
+      {
+        "w": "que",
+        "s": 63.018,
+        "e": 63.198
+      },
+      {
+        "w": "estamos",
+        "s": 63.198,
+        "e": 63.458
+      },
+      {
+        "w": "aqui?",
+        "s": 63.458,
+        "e": 63.798
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "who": "BIA",
+    "at": 65.0,
+    "rate": "-6%",
+    "volume": -15,
+    "fx": "whisper",
+    "text": "Sabe.",
+    "marked": "Sabe.",
+    "start": 65.0,
+    "dur": 0.783,
+    "end": 65.783,
+    "wav": "raw/voice/ep07/b07.wav",
+    "whisper": "Sabe.",
+    "words": [
+      {
+        "w": "Sabe.",
+        "s": 65.0,
+        "e": 65.783
+      }
+    ]
+  },
+  {
+    "id": "d05",
+    "who": "DAVI",
+    "at": 70.6,
+    "rate": "+11%",
+    "text": "Se desligar, talvez a gente consiga sair.",
+    "marked": "Se desligar, talvez a gente consiga sair.",
+    "start": 70.6,
+    "dur": 2.869,
+    "end": 73.469,
+    "wav": "raw/voice/ep07/d05.wav",
+    "whisper": "Se desligar, talvez a gente consiga sair.",
+    "words": [
+      {
+        "w": "Se",
+        "s": 70.6,
+        "e": 70.72
+      },
+      {
+        "w": "desligar,",
+        "s": 70.72,
+        "e": 71.32
+      },
+      {
+        "w": "talvez",
+        "s": 71.54,
+        "e": 71.86
+      },
+      {
+        "w": "a",
+        "s": 71.86,
+        "e": 72.1
+      },
+      {
+        "w": "gente",
+        "s": 72.1,
+        "e": 72.24
+      },
+      {
+        "w": "consiga",
+        "s": 72.24,
+        "e": 72.76
+      },
+      {
+        "w": "sair.",
+        "s": 72.76,
+        "e": 73.02
+      }
+    ]
+  },
+  {
+    "id": "c04",
+    "who": "CLARA_LIVRE",
+    "at": 73.0,
+    "text": "Mas nunca vamos saber quem fez isso.",
+    "marked": "Mas nunca vamos saber quem fez isso.",
+    "start": 73.589,
+    "dur": 2.128,
+    "end": 75.717,
+    "wav": "raw/voice/ep07/c04.wav",
+    "whisper": "Mas nunca vamos saber quem fez isso.",
+    "words": [
+      {
+        "w": "Mas",
+        "s": 73.589,
+        "e": 73.749
+      },
+      {
+        "w": "nunca",
+        "s": 73.749,
+        "e": 73.989
+      },
+      {
+        "w": "vamos",
+        "s": 73.989,
+        "e": 74.249
+      },
+      {
+        "w": "saber",
+        "s": 74.249,
+        "e": 74.549
+      },
+      {
+        "w": "quem",
+        "s": 74.549,
+        "e": 74.789
+      },
+      {
+        "w": "fez",
+        "s": 74.789,
+        "e": 75.049
+      },
+      {
+        "w": "isso.",
+        "s": 75.049,
+        "e": 75.369
+      }
+    ]
+  },
+  {
+    "id": "n02",
+    "who": "NARRADOR",
+    "at": 77.3,
+    "rate": "+3%",
+    "text": "Agora é a última escolha. Desligar o sistema ou descobrir quem controla tudo?",
+    "marked": "Agora é a última escolha. Desligar o sistema ou descobrir quem controla tudo?",
+    "start": 77.3,
+    "dur": 5.522,
+    "end": 82.822,
+    "wav": "raw/voice/ep07/n02.wav",
+    "whisper": "Agora é a última escolha. Desligar o sistema ou descobrir quem controla tudo.",
+    "words": [
+      {
+        "w": "Agora",
+        "s": 77.3,
+        "e": 77.58
+      },
+      {
+        "w": "é",
+        "s": 77.58,
+        "e": 77.86
+      },
+      {
+        "w": "a",
+        "s": 77.86,
+        "e": 77.94
+      },
+      {
+        "w": "última",
+        "s": 77.94,
+        "e": 78.24
+      },
+      {
+        "w": "escolha.",
+        "s": 78.24,
+        "e": 78.8
+      },
+      {
+        "w": "Desligar",
+        "s": 79.64,
+        "e": 80.24
+      },
+      {
+        "w": "o",
+        "s": 80.24,
+        "e": 80.3
+      },
+      {
+        "w": "sistema",
+        "s": 80.3,
+        "e": 80.72
+      },
+      {
+        "w": "ou",
+        "s": 80.72,
+        "e": 80.96
+      },
+      {
+        "w": "descobrir",
+        "s": 80.96,
+        "e": 81.36
+      },
+      {
+        "w": "quem",
+        "s": 81.36,
+        "e": 81.64
+      },
+      {
+        "w": "controla",
+        "s": 81.64,
+        "e": 82.14
+      },
+      {
+        "w": "tudo?",
+        "s": 82.14,
+        "e": 82.4
+      }
+    ]
+  }
+]

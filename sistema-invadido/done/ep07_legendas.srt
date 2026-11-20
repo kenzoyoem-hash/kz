@@ -1,0 +1,71 @@
+1
+00:00:00,300 --> 00:00:05,480
+Vocês escolheram investigar a segurança. Mas o sistema já estava esperando.
+
+2
+00:00:06,000 --> 00:00:07,940
+[BIA] Vamos achar quem tá fazendo isso.
+
+3
+00:00:10,400 --> 00:00:12,280
+[DAVI] Essa porta devia estar trancada.
+
+4
+00:00:12,600 --> 00:00:14,240
+[BIA] Então alguém deixou aberta.
+
+5
+00:00:18,200 --> 00:00:20,140
+[CLARA] Foi aqui que eu vi aquele homem entrar.
+
+6
+00:00:24,600 --> 00:00:26,760
+[BIA] São os lugares por onde a gente passou…
+
+7
+00:00:30,400 --> 00:00:33,520
+[DAVI] Não foi uma falha. Alguém programou tudo.
+
+8
+00:00:34,600 --> 00:00:36,140
+[BIA] Até aquele vídeo falso…
+
+9
+00:00:39,400 --> 00:00:40,400
+[CLARA] Olha isso aqui.
+
+10
+00:00:46,000 --> 00:00:47,860
+[BIA] Como ele sabe todas as escolhas?
+
+11
+00:00:48,400 --> 00:00:50,300
+[DAVI] Porque alguém tá enviando elas pra cá.
+
+12
+00:00:56,800 --> 00:00:58,600
+[BIA] Tem alguém controlando isso de fora?
+
+13
+00:00:59,200 --> 00:01:01,720
+[DAVI] Tem. E ainda tá conectado.
+
+14
+00:01:01,878 --> 00:01:04,098
+[CLARA] Então essa pessoa sabe que estamos aqui?
+
+15
+00:01:05,000 --> 00:01:06,083
+[BIA] Sabe.
+
+16
+00:01:10,600 --> 00:01:13,320
+[DAVI] Se desligar, talvez a gente consiga sair.
+
+17
+00:01:13,589 --> 00:01:15,669
+[CLARA] Mas nunca vamos saber quem fez isso.
+
+18
+00:01:17,300 --> 00:01:22,700
+Agora é a última escolha. Desligar o sistema ou descobrir quem controla tudo?
