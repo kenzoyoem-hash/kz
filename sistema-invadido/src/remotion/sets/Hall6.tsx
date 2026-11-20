@@ -145,8 +145,23 @@ export const AP = {
   reader: {x: 2120, y: 930},
   cam: {x: 1700, y: 230},
   bia: {x: 2660}, davi: {x: 1960},
+  clara: {x: 2360}, passage: {x: 3460},
 };
-export const AptCorridor: React.FC<{knock?: number; t?: number; camRot?: number; children?: React.ReactNode}> = ({knock = 0, t = 0, camRot = 0, children}) => (
+/** interior simples do 604 (sala): parede, janela com cortina, abajur, sofá */
+const AptInside: React.FC<{x: number; w: number}> = ({x, w}) => (
+  <g>
+    <rect x={x} y={560} width={w} height={920} fill="#2e3a5c" />
+    <rect x={x} y={1280} width={w} height={200} fill="#232c46" />
+    <rect x={x + 40} y={660} width={150} height={260} fill="#14203f" stroke="#0e1424" strokeWidth={8} />
+    <rect x={x + 30} y={640} width={50} height={300} fill="#5a3f4f" />
+    <rect x={x + 210} y={980} width={14} height={300} fill="#1a1f2a" />
+    <path d={`M${x + 180},${980} L${x + 254},${980} L${x + 240},${920} L${x + 194},${920} Z`} fill="#e8d6a8" />
+    <circle cx={x + 217} cy={990} r={70} fill="#ffe7b0" opacity={0.15} />
+    <rect x={x + 10} y={1200} width={w - 20} height={120} rx={20} fill="#4a4060" />
+  </g>
+);
+
+export const AptCorridor: React.FC<{knock?: number; t?: number; camRot?: number; children?: React.ReactNode; open604?: number; inDoor?: React.ReactNode; knock601?: number}> = ({knock = 0, t = 0, camRot = 0, children, open604 = 0, inDoor, knock601 = 0}) => (
   <g>
     <defs><linearGradient id="apw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#253250" /><stop offset="1" stopColor="#1b2540" /></linearGradient></defs>
     <rect x={-300} y={-300} width={3900} height={1780} fill="url(#apw)" />
@@ -155,12 +170,16 @@ export const AptCorridor: React.FC<{knock?: number; t?: number; camRot?: number;
     {[300, 1000, 1700, 2400, 3100].map((lx) => <rect key={lx} x={lx} y={150} width={200} height={24} rx={8} fill="#dfe7f5" opacity={0.5} />)}
     {[601, 602, 603, 604, 605].map((n) => {
       const {x, w} = AP.door(n);
-      const sh = n === 604 && knock ? Math.sin(t * 60) * 3 * knock : 0;
+      const sh = (n === 604 && knock ? Math.sin(t * 60) * 3 * knock : 0) + (n === 601 && knock601 ? Math.sin(t * 60) * 5 * knock601 : 0);
+      const op = n === 604 ? open604 : 0;
       return (
         <g key={n}>
           <text x={x + w / 2} y={500} fontSize={64} textAnchor="middle" fontFamily={FONT.mono} fill="#c9cfdb">{n}</text>
           <rect x={x - 20} y={540} width={w + 40} height={940} fill="#0f1526" />
-          <g transform={`translate(${sh},0)`}>
+          {op > 0 && <AptInside x={x} w={w} />}
+          {op > 0 && inDoor}
+          {/* a porta abre para DENTRO (dobradiça à esquerda): a folha estreita e escurece */}
+          <g transform={`translate(${sh},0) translate(${x},0) scale(${1 - op * 0.82},1) translate(${-x},0)`} opacity={1 - op * 0.15}>
             <rect x={x} y={560} width={w} height={920} fill={n === 604 ? '#3a3f4f' : '#2b2a44'} />
             <rect x={x + 30} y={610} width={w - 60} height={340} rx={6} fill="none" stroke={n === 604 ? '#4b5163' : '#3a3858'} strokeWidth={8} />
             <rect x={x + 30} y={1000} width={w - 60} height={410} rx={6} fill="none" stroke={n === 604 ? '#4b5163' : '#3a3858'} strokeWidth={8} />
@@ -170,11 +189,18 @@ export const AptCorridor: React.FC<{knock?: number; t?: number; camRot?: number;
         </g>
       );
     })}
+    {/* passagem para a área técnica (outro lado do corredor) */}
+    <rect x={3360} y={520} width={200} height={960} fill="#0a0f1c" />
+    <path d="M3360,520 L3560,520 L3560,1480 L3360,1480 Z" fill="none" stroke="#2c3758" strokeWidth={12} />
+    <rect x={3340} y={430} width={240} height={56} rx={6} fill="#d8b44a" />
+    <text x={3460} y={468} fontSize={28} textAnchor="middle" fontFamily={FONT.title} fill="#111">ÁREA TÉCNICA</text>
     {/* leitor eletrônico do 604 (luz vermelha) */}
     <rect x={AP.reader.x - 34} y={AP.reader.y - 64} width={68} height={128} rx={12} fill="#11131c" stroke="#3a3f55" strokeWidth={4} />
     <rect x={AP.reader.x - 22} y={AP.reader.y - 48} width={44} height={30} rx={4} fill="#3a0a10" />
-    <circle cx={AP.reader.x} cy={AP.reader.y + 28} r={10} fill={C.red} />
-    <circle cx={AP.reader.x} cy={AP.reader.y + 28} r={30} fill={C.red} opacity={0.25} />
+    {open604 === 0 && <>
+      <circle cx={AP.reader.x} cy={AP.reader.y + 28} r={10} fill={C.red} />
+      <circle cx={AP.reader.x} cy={AP.reader.y + 28} r={30} fill={C.red} opacity={0.25} />
+    </>}
     {/* câmera de segurança */}
     <g transform={`translate(${AP.cam.x},${AP.cam.y})`}>
       <rect x={-34} y={-46} width={68} height={30} rx={6} fill="#c3cad8" />
@@ -213,3 +239,31 @@ export const HandleClose: React.FC<{reach: number; t: number}> = ({reach, t}) =>
     </g>
   );
 };
+
+/** CLOSE DO LEITOR COM A TAMPA SENDO SOLTA (EP. 6). k 0..1 = tampa solta; off = leitor desligado */
+export const ReaderOpen: React.FC<{k: number; off: boolean; t: number}> = ({k, off, t}) => (
+  <g>
+    <rect x={-300} y={-300} width={1680} height={2520} fill="#223050" />
+    <rect x={330} y={420} width={420} height={820} rx={50} fill="#11131c" stroke="#3a3f55" strokeWidth={10} />
+    {/* interior (fios) aparece quando a tampa sai */}
+    <g opacity={k}>
+      <rect x={370} y={480} width={340} height={700} rx={20} fill="#1d2230" />
+      {[0, 1, 2, 3].map((i) => <path key={i} d={`M${400 + i * 80},520 Q${430 + i * 70},800 ${410 + i * 80},1140`} stroke={['#ff2d3d', '#3d8bff', '#ffd23f', '#2fd27a'][i]} strokeWidth={10} fill="none" />)}
+      <rect x={470} y={760} width={140} height={90} rx={8} fill="#2a3a2a" />
+    </g>
+    {/* tampa */}
+    <g transform={`translate(${k * 340},${k * 120}) rotate(${k * 18} 540 830)`} opacity={1 - k * 0.25}>
+      <rect x={350} y={440} width={380} height={780} rx={40} fill="#181b25" stroke="#3a3f55" strokeWidth={8} />
+      <circle cx={540} cy={1020} r={36} fill={off ? '#2a0a0e' : (Math.sin(t * 5) > 0 ? C.red : '#6a1018')} />
+      {!off && Math.sin(t * 5) > 0 && <circle cx={540} cy={1020} r={100} fill={C.red} opacity={0.2} />}
+      <circle cx={380} cy={470} r={10} fill="#5a6070" /><circle cx={700} cy={1190} r={10} fill="#5a6070" />
+    </g>
+    {/* mão do Davi com a ferramenta (chave de fenda) */}
+    <g transform={`translate(${720 + k * 150},${1160 + k * 60}) rotate(-35)`}>
+      <rect x={-180} y={-14} width={200} height={28} rx={6} fill="#c3cad8" />
+      <rect x={10} y={-34} width={150} height={68} rx={22} fill="#d8b44a" />
+      <ellipse cx={170} cy={0} rx={90} ry={75} fill="#c98f6b" />
+      <rect x={220} y={-80} width={500} height={160} rx={60} fill="#5f7690" />
+    </g>
+  </g>
+);

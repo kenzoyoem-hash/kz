@@ -1,0 +1,36 @@
+{
+  "episode": "6",
+  "title": "A PORTA QUE NÃO DEVERIA ABRIR",
+  "fps": 30,
+  "voices": {
+    "NARRADOR":    {"voice": "pt-BR-AntonioNeural",   "rate": "-1%", "pitch": "-13Hz", "fx": "narrator"},
+    "BIA":         {"voice": "pt-BR-FranciscaNeural", "rate": "+7%", "pitch": "+0Hz",  "fx": "bia"},
+    "DAVI":        {"voice": "pt-BR-AntonioNeural",   "rate": "+9%", "pitch": "-2Hz",  "fx": "man"},
+    "CLARA_LIVRE": {"voice": "pt-BR-FranciscaNeural", "rate": "+5%", "pitch": "-14Hz", "fx": "bia"}
+  },
+  "lines": [
+    {"id": "n01", "who": "NARRADOR",    "at": 0.3,  "text": "Vocês escolheram salvar Clara. Mas toda escolha tem um preço."},
+    {"id": "b01", "who": "BIA",         "at": 5.0,  "text": "Não vou deixar ela aí."},
+    {"id": "d01", "who": "DAVI",        "at": 9.6,  "text": "Se eu desligar o leitor, talvez a trava solte."},
+    {"id": "b02", "who": "BIA",         "at": 13.2, "text": "Faz rápido."},
+    {"id": "d02", "who": "DAVI",        "at": 18.0, "rate": "+0%", "text": "Consegui."},
+    {"id": "c01", "who": "CLARA_LIVRE", "at": 24.4, "text": "Meu Deus… vocês conseguiram!"},
+    {"id": "b03", "who": "BIA",         "at": 27.0, "text": "Você tá bem?"},
+    {"id": "c02", "who": "CLARA_LIVRE", "at": 28.4, "text": "Tô… mas ele tava falando comigo pelo interfone."},
+    {"id": "d03", "who": "DAVI",        "at": 31.8, "text": "Ele quem?"},
+    {"id": "c03", "who": "CLARA_LIVRE", "at": 33.4, "volume": -10, "text": "A mesma voz que mandou eu não abrir a porta."},
+    {"id": "b04", "who": "BIA",         "at": 43.6, "text": "Ele trancou outra porta…"},
+    {"id": "d04", "who": "DAVI",        "at": 45.6, "text": "Então a ameaça era real."},
+    {"id": "c04", "who": "CLARA_LIVRE", "at": 47.8, "volume": -10, "text": "Tem alguém no 601?"},
+    {"id": "c05", "who": "CLARA_LIVRE", "at": 53.2, "rate": "+9%", "text": "Espera. Eu ouvi uma coisa antes de vocês chegarem."},
+    {"id": "b05", "who": "BIA",         "at": 56.6, "text": "O quê?"},
+    {"id": "c06", "who": "CLARA_LIVRE", "at": 57.6, "text": "Uma voz disse que vocês iam escolher me salvar."},
+    {"id": "d05", "who": "DAVI",        "at": 60.6, "text": "Antes da gente chegar?"},
+    {"id": "c07", "who": "CLARA_LIVRE", "at": 62.2, "text": "Disse que era a opção mais provável."},
+    {"id": "b06", "who": "BIA",         "at": 64.4, "volume": -8, "text": "Então ele tá estudando nossas escolhas…"},
+    {"id": "b07", "who": "BIA",         "at": 71.0, "rate": "+10%", "text": "Tem alguém lá dentro!"},
+    {"id": "c08", "who": "CLARA_LIVRE", "at": 73.0, "rate": "+9%", "text": "A sala de segurança fica por ali!"},
+    {"id": "n02", "who": "NARRADOR",    "at": 77.4, "rate": "+3%", "text": "Bia deve ajudar quem está no 601 ou investigar a sala de segurança?"}
+  ],
+  "highlight": ["CLARA", "PREÇO", "DEIXAR", "LEITOR", "TRAVA", "RÁPIDO", "CONSEGUI", "CONSEGUIRAM", "INTERFONE", "QUEM", "VOZ", "PORTA", "TRANCOU", "REAL", "601", "ESPERA", "SALVAR", "PROVÁVEL", "ESTUDANDO", "ESCOLHAS", "DENTRO", "SEGURANÇA"]
+}

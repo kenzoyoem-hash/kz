@@ -95,7 +95,7 @@ def main(ep):
         start = ws[0]["s"] - 0.05
         nxt = chunks[k+1][1][0]["s"] - 0.05 if k + 1 < len(chunks) else 1e9
         end = min(ws[-1]["e"] + 0.35, nxt)
-        style = {"HACKER": "Hacker", "BIA": "Bia", "BIA_CLONE": "Clone", "BIA_TEL": "Clone", "HOMEM": "Homem", "HOMEM_LONGE": "Homem", "DAVI": "Homem", "VOZ": "Homem", "INTERFONE": "Hacker", "DAVI_FORA": "Homem", "DAVI_REC": "Homem", "CLARA": "Clone"}.get(c["who"], "Narr")
+        style = {"HACKER": "Hacker", "BIA": "Bia", "BIA_CLONE": "Clone", "BIA_TEL": "Clone", "HOMEM": "Homem", "HOMEM_LONGE": "Homem", "DAVI": "Homem", "VOZ": "Homem", "INTERFONE": "Hacker", "DAVI_FORA": "Homem", "DAVI_REC": "Homem", "CLARA": "Clone", "CLARA_LIVRE": "Clone"}.get(c["who"], "Narr")
         y = cap_y(start)
         # um evento por palavra ativa (palavra falada em destaque)
         for j, w in enumerate(ws):
@@ -141,7 +141,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     (DONE / f"{eid(ep)}_legendas.ass").write_text(header + "\n".join(ev) + "\n", encoding="utf-8")
     srt = []
     for i, c in enumerate(cues, 1):
-        who = {"NARRADOR": "", "BIA_CLONE": "[VOZ DA BIA NO CELULAR] ", "BIA_TEL": "[VOZ DA BIA NO TELEFONE] ", "HOMEM_LONGE": "[HOMEM] ", "VOZ": "[VOZ LÁ FORA] ", "INTERFONE": "[INTERFONE] ", "DAVI_FORA": "[DAVI, LÁ FORA] ", "DAVI": "[DAVI] ", "DAVI_REC": "[DAVI NA GRAVAÇÃO] ", "CLARA": "[CLARA, ATRÁS DA PORTA] "}.get(c["who"], f"[{c['who']}] ")
+        who = {"NARRADOR": "", "BIA_CLONE": "[VOZ DA BIA NO CELULAR] ", "BIA_TEL": "[VOZ DA BIA NO TELEFONE] ", "HOMEM_LONGE": "[HOMEM] ", "VOZ": "[VOZ LÁ FORA] ", "INTERFONE": "[INTERFONE] ", "DAVI_FORA": "[DAVI, LÁ FORA] ", "DAVI": "[DAVI] ", "DAVI_REC": "[DAVI NA GRAVAÇÃO] ", "CLARA": "[CLARA, ATRÁS DA PORTA] ", "CLARA_LIVRE": "[CLARA] "}.get(c["who"], f"[{c['who']}] ")
         srt.append(f"{i}\n{srt_time(c['words'][0]['s'])} --> {srt_time(c['words'][-1]['e'] + 0.3)}\n{who}{c['text']}\n")
     (DONE / f"{eid(ep)}_legendas.srt").write_text("\n".join(srt), encoding="utf-8")
     print(f"{len(ev)} eventos ASS, {len(cues)} legendas SRT")

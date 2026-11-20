@@ -1,0 +1,87 @@
+1
+00:00:00,300 --> 00:00:05,000
+Vocês escolheram salvar Clara. Mas toda escolha tem um preço.
+
+2
+00:00:05,317 --> 00:00:06,737
+[BIA] Não vou deixar ela aí.
+
+3
+00:00:09,600 --> 00:00:12,440
+[DAVI] Se eu desligar o leitor, talvez a trava solte.
+
+4
+00:00:13,200 --> 00:00:14,060
+[BIA] Faz rápido.
+
+5
+00:00:18,000 --> 00:00:19,136
+[DAVI] Consegui.
+
+6
+00:00:24,400 --> 00:00:26,220
+[CLARA] Meu Deus… vocês conseguiram!
+
+7
+00:00:27,000 --> 00:00:27,820
+[BIA] Você tá bem?
+
+8
+00:00:28,400 --> 00:00:31,300
+[CLARA] Tô… mas ele tava falando comigo pelo interfone.
+
+9
+00:00:31,800 --> 00:00:32,480
+[DAVI] Ele quem?
+
+10
+00:00:33,400 --> 00:00:35,820
+[CLARA] A mesma voz que mandou eu não abrir a porta.
+
+11
+00:00:43,600 --> 00:00:45,020
+[BIA] Ele trancou outra porta…
+
+12
+00:00:45,600 --> 00:00:47,260
+[DAVI] Então a ameaça era real.
+
+13
+00:00:47,800 --> 00:00:49,360
+[CLARA] Tem alguém no 601?
+
+14
+00:00:53,200 --> 00:00:56,340
+[CLARA] Espera. Eu ouvi uma coisa antes de vocês chegarem.
+
+15
+00:00:56,600 --> 00:00:57,570
+[BIA] O quê?
+
+16
+00:00:57,600 --> 00:01:00,240
+[CLARA] Uma voz disse que vocês iam escolher me salvar.
+
+17
+00:01:00,600 --> 00:01:02,080
+[DAVI] Antes da gente chegar?
+
+18
+00:01:02,200 --> 00:01:04,260
+[CLARA] Disse que era a opção mais provável.
+
+19
+00:01:04,437 --> 00:01:06,637
+[BIA] Então ele tá estudando nossas escolhas…
+
+20
+00:01:11,000 --> 00:01:12,140
+[BIA] Tem alguém lá dentro!
+
+21
+00:01:13,000 --> 00:01:15,000
+[CLARA] A sala de segurança fica por ali!
+
+22
+00:01:17,400 --> 00:01:21,860
+Bia deve ajudar quem está no 601 ou investigar a sala de segurança?

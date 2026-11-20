@@ -328,11 +328,22 @@ def knock3fast():
         i = int(st*SR); out[i:i+len(s_)] += s_
     return norm(lp_fast(out, 900), 0.9)
 
+def thud1():
+    """uma batida forte e abafada atrás de uma porta"""
+    t = t_(0.7); s_ = np.sin(2*np.pi*70*t) * expdec(len(t), 9) + np.sin(2*np.pi*180*t) * expdec(len(t), 16) * 0.5
+    return norm(lp_fast(s_, 700), 0.95)
+def alarm2():
+    """BIP… BIP… curto ecoando no corredor"""
+    out = np.zeros(int(1.0 * SR))
+    for st in (0, 0.5):
+        t = t_(0.18); b = (np.sin(2*np.pi*1760*t) + 0.4*np.sin(2*np.pi*3520*t)) * env(len(t), 0.004, 0.04) * 0.5; i = int(st*SR); out[i:i+len(b)] += b
+    return norm(out, 0.5)
+
 LIB = {k: v for k, v in globals().items() if callable(v) and k in (
     "notif message impact braam whoosh riser glitch static tv_on flicker lock handle bang heartbeat "
     "alarm ticks ding door_slide steps steps_run rewind vibrate ring breath metal_steps call_drop answer unlock "
     "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1 pulse elev_doors button "
-    "elev_motor jolt zipper paper intercom_on knock hum pry deny knock3 servo knock3fast").split()}
+    "elev_motor jolt zipper paper intercom_on knock hum pry deny knock3 servo knock3fast thud1 alarm2").split()}
 
 def music(duration, automation):
     """Trilha de suspense: drone em Lá menor, pulso grave e notas agudas esparsas.

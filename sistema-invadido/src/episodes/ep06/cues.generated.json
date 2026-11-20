@@ -1,0 +1,958 @@
+[
+  {
+    "id": "n01",
+    "who": "NARRADOR",
+    "at": 0.3,
+    "text": "Vocês escolheram salvar Clara. Mas toda escolha tem um preço.",
+    "marked": "Vocês escolheram salvar Clara. Mas toda escolha tem um preço.",
+    "start": 0.3,
+    "dur": 4.897,
+    "end": 5.197,
+    "wav": "raw/voice/ep06/n01.wav",
+    "whisper": "Vocês escolheram salvar Clara, mas toda escolha tem um preço.",
+    "words": [
+      {
+        "w": "Vocês",
+        "s": 0.3,
+        "e": 0.64
+      },
+      {
+        "w": "escolheram",
+        "s": 0.64,
+        "e": 1.34
+      },
+      {
+        "w": "salvar",
+        "s": 1.34,
+        "e": 1.62
+      },
+      {
+        "w": "Clara.",
+        "s": 1.62,
+        "e": 2.2
+      },
+      {
+        "w": "Mas",
+        "s": 2.86,
+        "e": 3.34
+      },
+      {
+        "w": "toda",
+        "s": 3.34,
+        "e": 3.66
+      },
+      {
+        "w": "escolha",
+        "s": 3.66,
+        "e": 4.18
+      },
+      {
+        "w": "tem",
+        "s": 4.18,
+        "e": 4.34
+      },
+      {
+        "w": "um",
+        "s": 4.34,
+        "e": 4.46
+      },
+      {
+        "w": "preço.",
+        "s": 4.46,
+        "e": 4.7
+      }
+    ]
+  },
+  {
+    "id": "b01",
+    "who": "BIA",
+    "at": 5.0,
+    "text": "Não vou deixar ela aí.",
+    "marked": "Não vou deixar ela aí.",
+    "start": 5.317,
+    "dur": 1.485,
+    "end": 6.802,
+    "wav": "raw/voice/ep06/b01.wav",
+    "whisper": "Não vou deixar ela aí.",
+    "words": [
+      {
+        "w": "Não",
+        "s": 5.317,
+        "e": 5.457
+      },
+      {
+        "w": "vou",
+        "s": 5.457,
+        "e": 5.697
+      },
+      {
+        "w": "deixar",
+        "s": 5.697,
+        "e": 5.977
+      },
+      {
+        "w": "ela",
+        "s": 5.977,
+        "e": 6.237
+      },
+      {
+        "w": "aí.",
+        "s": 6.237,
+        "e": 6.437
+      }
+    ]
+  },
+  {
+    "id": "d01",
+    "who": "DAVI",
+    "at": 9.6,
+    "text": "Se eu desligar o leitor, talvez a trava solte.",
+    "marked": "Se eu desligar o leitor, talvez a trava solte.",
+    "start": 9.6,
+    "dur": 2.868,
+    "end": 12.468,
+    "wav": "raw/voice/ep06/d01.wav",
+    "whisper": "Se eu desligar o leitor, talvez atravassalte.",
+    "words": [
+      {
+        "w": "Se",
+        "s": 9.6,
+        "e": 9.72
+      },
+      {
+        "w": "eu",
+        "s": 9.72,
+        "e": 9.8
+      },
+      {
+        "w": "desligar",
+        "s": 9.8,
+        "e": 10.28
+      },
+      {
+        "w": "o",
+        "s": 10.28,
+        "e": 10.34
+      },
+      {
+        "w": "leitor,",
+        "s": 10.34,
+        "e": 10.68
+      },
+      {
+        "w": "talvez",
+        "s": 10.98,
+        "e": 11.28
+      },
+      {
+        "w": "a",
+        "s": 11.28,
+        "e": 11.567
+      },
+      {
+        "w": "trava",
+        "s": 11.567,
+        "e": 11.853
+      },
+      {
+        "w": "solte.",
+        "s": 11.853,
+        "e": 12.14
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "who": "BIA",
+    "at": 13.2,
+    "text": "Faz rápido.",
+    "marked": "Faz rápido.",
+    "start": 13.2,
+    "dur": 0.975,
+    "end": 14.175,
+    "wav": "raw/voice/ep06/b02.wav",
+    "whisper": "Faz rápido.",
+    "words": [
+      {
+        "w": "Faz",
+        "s": 13.2,
+        "e": 13.38
+      },
+      {
+        "w": "rápido.",
+        "s": 13.38,
+        "e": 13.76
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "who": "DAVI",
+    "at": 18.0,
+    "rate": "+0%",
+    "text": "Consegui.",
+    "marked": "Consegui.",
+    "start": 18.0,
+    "dur": 0.836,
+    "end": 18.836,
+    "wav": "raw/voice/ep06/d02.wav",
+    "whisper": "Consegui.",
+    "words": [
+      {
+        "w": "Consegui.",
+        "s": 18.0,
+        "e": 18.836
+      }
+    ]
+  },
+  {
+    "id": "c01",
+    "who": "CLARA_LIVRE",
+    "at": 24.4,
+    "text": "Meu Deus… vocês conseguiram!",
+    "marked": "Meu Deus… vocês conseguiram!",
+    "start": 24.4,
+    "dur": 1.857,
+    "end": 26.257,
+    "wav": "raw/voice/ep06/c01.wav",
+    "whisper": "Meu Deus, vocês conseguiram!",
+    "words": [
+      {
+        "w": "Meu",
+        "s": 24.4,
+        "e": 24.52
+      },
+      {
+        "w": "Deus…",
+        "s": 24.52,
+        "e": 24.76
+      },
+      {
+        "w": "vocês",
+        "s": 24.98,
+        "e": 25.22
+      },
+      {
+        "w": "conseguiram!",
+        "s": 25.22,
+        "e": 25.92
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "who": "BIA",
+    "at": 27.0,
+    "text": "Você tá bem?",
+    "marked": "Você tá bem?",
+    "start": 27.0,
+    "dur": 0.933,
+    "end": 27.933,
+    "wav": "raw/voice/ep06/b03.wav",
+    "whisper": "Você está bem?",
+    "words": [
+      {
+        "w": "Você",
+        "s": 27.0,
+        "e": 27.16
+      },
+      {
+        "w": "tá",
+        "s": 27.16,
+        "e": 27.38
+      },
+      {
+        "w": "bem?",
+        "s": 27.38,
+        "e": 27.52
+      }
+    ]
+  },
+  {
+    "id": "c02",
+    "who": "CLARA_LIVRE",
+    "at": 28.4,
+    "text": "Tô… mas ele tava falando comigo pelo interfone.",
+    "marked": "Tô… mas ele tava falando comigo pelo interfone.",
+    "start": 28.4,
+    "dur": 2.973,
+    "end": 31.373,
+    "wav": "raw/voice/ep06/c02.wav",
+    "whisper": "Tô, mas ele tava falando comigo pelo interfone.",
+    "words": [
+      {
+        "w": "Tô…",
+        "s": 28.4,
+        "e": 28.54
+      },
+      {
+        "w": "mas",
+        "s": 28.82,
+        "e": 28.98
+      },
+      {
+        "w": "ele",
+        "s": 28.98,
+        "e": 29.16
+      },
+      {
+        "w": "tava",
+        "s": 29.16,
+        "e": 29.4
+      },
+      {
+        "w": "falando",
+        "s": 29.4,
+        "e": 29.78
+      },
+      {
+        "w": "comigo",
+        "s": 29.78,
+        "e": 30.14
+      },
+      {
+        "w": "pelo",
+        "s": 30.14,
+        "e": 30.4
+      },
+      {
+        "w": "interfone.",
+        "s": 30.4,
+        "e": 31.0
+      }
+    ]
+  },
+  {
+    "id": "d03",
+    "who": "DAVI",
+    "at": 31.8,
+    "text": "Ele quem?",
+    "marked": "Ele quem?",
+    "start": 31.8,
+    "dur": 0.785,
+    "end": 32.585,
+    "wav": "raw/voice/ep06/d03.wav",
+    "whisper": "Ele quem?",
+    "words": [
+      {
+        "w": "Ele",
+        "s": 31.8,
+        "e": 31.96
+      },
+      {
+        "w": "quem?",
+        "s": 31.96,
+        "e": 32.18
+      }
+    ]
+  },
+  {
+    "id": "c03",
+    "who": "CLARA_LIVRE",
+    "at": 33.4,
+    "volume": -10,
+    "text": "A mesma voz que mandou eu não abrir a porta.",
+    "marked": "A mesma voz que mandou eu não abrir a porta.",
+    "start": 33.4,
+    "dur": 2.57,
+    "end": 35.97,
+    "wav": "raw/voice/ep06/c03.wav",
+    "whisper": "A mesma voz que mandou eu não abrir a porta.",
+    "words": [
+      {
+        "w": "A",
+        "s": 33.4,
+        "e": 33.48
+      },
+      {
+        "w": "mesma",
+        "s": 33.48,
+        "e": 33.74
+      },
+      {
+        "w": "voz",
+        "s": 33.74,
+        "e": 34.04
+      },
+      {
+        "w": "que",
+        "s": 34.04,
+        "e": 34.24
+      },
+      {
+        "w": "mandou",
+        "s": 34.24,
+        "e": 34.56
+      },
+      {
+        "w": "eu",
+        "s": 34.56,
+        "e": 34.68
+      },
+      {
+        "w": "não",
+        "s": 34.68,
+        "e": 34.82
+      },
+      {
+        "w": "abrir",
+        "s": 34.82,
+        "e": 35.1
+      },
+      {
+        "w": "a",
+        "s": 35.1,
+        "e": 35.24
+      },
+      {
+        "w": "porta.",
+        "s": 35.24,
+        "e": 35.52
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "who": "BIA",
+    "at": 43.6,
+    "text": "Ele trancou outra porta…",
+    "marked": "Ele trancou outra porta…",
+    "start": 43.6,
+    "dur": 1.561,
+    "end": 45.161,
+    "wav": "raw/voice/ep06/b04.wav",
+    "whisper": "Ele trancou outra porta.",
+    "words": [
+      {
+        "w": "Ele",
+        "s": 43.6,
+        "e": 43.74
+      },
+      {
+        "w": "trancou",
+        "s": 43.74,
+        "e": 44.12
+      },
+      {
+        "w": "outra",
+        "s": 44.12,
+        "e": 44.36
+      },
+      {
+        "w": "porta…",
+        "s": 44.36,
+        "e": 44.72
+      }
+    ]
+  },
+  {
+    "id": "d04",
+    "who": "DAVI",
+    "at": 45.6,
+    "text": "Então a ameaça era real.",
+    "marked": "Então a ameaça era real.",
+    "start": 45.6,
+    "dur": 1.758,
+    "end": 47.358,
+    "wav": "raw/voice/ep06/d04.wav",
+    "whisper": "Então a minha aça era real.",
+    "words": [
+      {
+        "w": "Então",
+        "s": 45.6,
+        "e": 45.9
+      },
+      {
+        "w": "a",
+        "s": 45.9,
+        "e": 46.12
+      },
+      {
+        "w": "ameaça",
+        "s": 46.12,
+        "e": 46.52
+      },
+      {
+        "w": "era",
+        "s": 46.52,
+        "e": 46.7
+      },
+      {
+        "w": "real.",
+        "s": 46.7,
+        "e": 46.96
+      }
+    ]
+  },
+  {
+    "id": "c04",
+    "who": "CLARA_LIVRE",
+    "at": 47.8,
+    "volume": -10,
+    "text": "Tem alguém no 601?",
+    "marked": "Tem alguém no 601?",
+    "start": 47.8,
+    "dur": 1.654,
+    "end": 49.454,
+    "wav": "raw/voice/ep06/c04.wav",
+    "whisper": "Tem alguém nos 601?",
+    "words": [
+      {
+        "w": "Tem",
+        "s": 47.8,
+        "e": 47.88
+      },
+      {
+        "w": "alguém",
+        "s": 47.88,
+        "e": 48.14
+      },
+      {
+        "w": "no",
+        "s": 48.14,
+        "e": 48.32
+      },
+      {
+        "w": "601?",
+        "s": 48.32,
+        "e": 49.06
+      }
+    ]
+  },
+  {
+    "id": "c05",
+    "who": "CLARA_LIVRE",
+    "at": 53.2,
+    "rate": "+9%",
+    "text": "Espera. Eu ouvi uma coisa antes de vocês chegarem.",
+    "marked": "Espera. Eu ouvi uma coisa antes de vocês chegarem.",
+    "start": 53.2,
+    "dur": 3.224,
+    "end": 56.424,
+    "wav": "raw/voice/ep06/c05.wav",
+    "whisper": "Espera, eu ouvi uma coisa antes de vocês chegarem.",
+    "words": [
+      {
+        "w": "Espera.",
+        "s": 53.2,
+        "e": 53.74
+      },
+      {
+        "w": "Eu",
+        "s": 53.92,
+        "e": 54.08
+      },
+      {
+        "w": "ouvi",
+        "s": 54.08,
+        "e": 54.32
+      },
+      {
+        "w": "uma",
+        "s": 54.32,
+        "e": 54.46
+      },
+      {
+        "w": "coisa",
+        "s": 54.46,
+        "e": 54.76
+      },
+      {
+        "w": "antes",
+        "s": 54.76,
+        "e": 55.1
+      },
+      {
+        "w": "de",
+        "s": 55.1,
+        "e": 55.28
+      },
+      {
+        "w": "vocês",
+        "s": 55.28,
+        "e": 55.5
+      },
+      {
+        "w": "chegarem.",
+        "s": 55.5,
+        "e": 56.04
+      }
+    ]
+  },
+  {
+    "id": "b05",
+    "who": "BIA",
+    "at": 56.6,
+    "text": "O quê?",
+    "marked": "O quê?",
+    "start": 56.6,
+    "dur": 0.67,
+    "end": 57.27,
+    "wav": "raw/voice/ep06/b05.wav",
+    "whisper": "O quê?",
+    "words": [
+      {
+        "w": "O",
+        "s": 56.6,
+        "e": 56.791
+      },
+      {
+        "w": "quê?",
+        "s": 56.791,
+        "e": 57.27
+      }
+    ]
+  },
+  {
+    "id": "c06",
+    "who": "CLARA_LIVRE",
+    "at": 57.6,
+    "text": "Uma voz disse que vocês iam escolher me salvar.",
+    "marked": "Uma voz disse que vocês iam escolher me salvar.",
+    "start": 57.6,
+    "dur": 2.877,
+    "end": 60.477,
+    "wav": "raw/voice/ep06/c06.wav",
+    "whisper": "Uma voz disse que vocês iam escolher me salvar.",
+    "words": [
+      {
+        "w": "Uma",
+        "s": 57.6,
+        "e": 57.74
+      },
+      {
+        "w": "voz",
+        "s": 57.74,
+        "e": 58.0
+      },
+      {
+        "w": "disse",
+        "s": 58.0,
+        "e": 58.3
+      },
+      {
+        "w": "que",
+        "s": 58.3,
+        "e": 58.48
+      },
+      {
+        "w": "vocês",
+        "s": 58.48,
+        "e": 58.8
+      },
+      {
+        "w": "iam",
+        "s": 58.8,
+        "e": 59.12
+      },
+      {
+        "w": "escolher",
+        "s": 59.12,
+        "e": 59.56
+      },
+      {
+        "w": "me",
+        "s": 59.56,
+        "e": 59.66
+      },
+      {
+        "w": "salvar.",
+        "s": 59.66,
+        "e": 59.94
+      }
+    ]
+  },
+  {
+    "id": "d05",
+    "who": "DAVI",
+    "at": 60.6,
+    "text": "Antes da gente chegar?",
+    "marked": "Antes da gente chegar?",
+    "start": 60.6,
+    "dur": 1.364,
+    "end": 61.964,
+    "wav": "raw/voice/ep06/d05.wav",
+    "whisper": "Antes da gente chegar...",
+    "words": [
+      {
+        "w": "Antes",
+        "s": 60.6,
+        "e": 60.84
+      },
+      {
+        "w": "da",
+        "s": 60.84,
+        "e": 61.02
+      },
+      {
+        "w": "gente",
+        "s": 61.02,
+        "e": 61.16
+      },
+      {
+        "w": "chegar?",
+        "s": 61.16,
+        "e": 61.78
+      }
+    ]
+  },
+  {
+    "id": "c07",
+    "who": "CLARA_LIVRE",
+    "at": 62.2,
+    "text": "Disse que era a opção mais provável.",
+    "marked": "Disse que era a opção mais provável.",
+    "start": 62.2,
+    "dur": 2.117,
+    "end": 64.317,
+    "wav": "raw/voice/ep06/c07.wav",
+    "whisper": "Disse que era a opção mais provável.",
+    "words": [
+      {
+        "w": "Disse",
+        "s": 62.2,
+        "e": 62.52
+      },
+      {
+        "w": "que",
+        "s": 62.52,
+        "e": 62.64
+      },
+      {
+        "w": "era",
+        "s": 62.64,
+        "e": 62.78
+      },
+      {
+        "w": "a",
+        "s": 62.78,
+        "e": 62.86
+      },
+      {
+        "w": "opção",
+        "s": 62.86,
+        "e": 63.16
+      },
+      {
+        "w": "mais",
+        "s": 63.16,
+        "e": 63.38
+      },
+      {
+        "w": "provável.",
+        "s": 63.38,
+        "e": 63.96
+      }
+    ]
+  },
+  {
+    "id": "b06",
+    "who": "BIA",
+    "at": 64.4,
+    "volume": -8,
+    "text": "Então ele tá estudando nossas escolhas…",
+    "marked": "Então ele tá estudando nossas escolhas…",
+    "start": 64.437,
+    "dur": 2.293,
+    "end": 66.73,
+    "wav": "raw/voice/ep06/b06.wav",
+    "whisper": "Então ele está estudando nossas escolhas.",
+    "words": [
+      {
+        "w": "Então",
+        "s": 64.437,
+        "e": 64.657
+      },
+      {
+        "w": "ele",
+        "s": 64.657,
+        "e": 64.837
+      },
+      {
+        "w": "tá",
+        "s": 64.837,
+        "e": 64.997
+      },
+      {
+        "w": "estudando",
+        "s": 64.997,
+        "e": 65.477
+      },
+      {
+        "w": "nossas",
+        "s": 65.477,
+        "e": 65.737
+      },
+      {
+        "w": "escolhas…",
+        "s": 65.737,
+        "e": 66.337
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "who": "BIA",
+    "at": 71.0,
+    "rate": "+10%",
+    "text": "Tem alguém lá dentro!",
+    "marked": "Tem alguém lá dentro!",
+    "start": 71.0,
+    "dur": 1.252,
+    "end": 72.252,
+    "wav": "raw/voice/ep06/b07.wav",
+    "whisper": "Tem alguém lá dentro.",
+    "words": [
+      {
+        "w": "Tem",
+        "s": 71.0,
+        "e": 71.1
+      },
+      {
+        "w": "alguém",
+        "s": 71.1,
+        "e": 71.34
+      },
+      {
+        "w": "lá",
+        "s": 71.34,
+        "e": 71.52
+      },
+      {
+        "w": "dentro!",
+        "s": 71.52,
+        "e": 71.84
+      }
+    ]
+  },
+  {
+    "id": "c08",
+    "who": "CLARA_LIVRE",
+    "at": 73.0,
+    "rate": "+9%",
+    "text": "A sala de segurança fica por ali!",
+    "marked": "A sala de segurança fica por ali!",
+    "start": 73.0,
+    "dur": 2.061,
+    "end": 75.061,
+    "wav": "raw/voice/ep06/c08.wav",
+    "whisper": "A sala de segurança fica por ali.",
+    "words": [
+      {
+        "w": "A",
+        "s": 73.0,
+        "e": 73.1
+      },
+      {
+        "w": "sala",
+        "s": 73.1,
+        "e": 73.34
+      },
+      {
+        "w": "de",
+        "s": 73.34,
+        "e": 73.52
+      },
+      {
+        "w": "segurança",
+        "s": 73.52,
+        "e": 73.96
+      },
+      {
+        "w": "fica",
+        "s": 73.96,
+        "e": 74.28
+      },
+      {
+        "w": "por",
+        "s": 74.28,
+        "e": 74.5
+      },
+      {
+        "w": "ali!",
+        "s": 74.5,
+        "e": 74.7
+      }
+    ]
+  },
+  {
+    "id": "n02",
+    "who": "NARRADOR",
+    "at": 77.4,
+    "rate": "+3%",
+    "text": "Bia deve ajudar quem está no 601 ou investigar a sala de segurança?",
+    "marked": "Bia deve ajudar quem está no 601 ou investigar a sala de segurança?",
+    "start": 77.4,
+    "dur": 4.704,
+    "end": 82.104,
+    "wav": "raw/voice/ep06/n02.wav",
+    "whisper": "Bia deve ajudar quem está no 601 ou investigar a sala de segurança.",
+    "words": [
+      {
+        "w": "Bia",
+        "s": 77.4,
+        "e": 77.68
+      },
+      {
+        "w": "deve",
+        "s": 77.68,
+        "e": 77.86
+      },
+      {
+        "w": "ajudar",
+        "s": 77.86,
+        "e": 78.26
+      },
+      {
+        "w": "quem",
+        "s": 78.26,
+        "e": 78.54
+      },
+      {
+        "w": "está",
+        "s": 78.54,
+        "e": 78.84
+      },
+      {
+        "w": "no",
+        "s": 78.84,
+        "e": 78.96
+      },
+      {
+        "w": "601",
+        "s": 78.96,
+        "e": 79.9
+      },
+      {
+        "w": "ou",
+        "s": 79.9,
+        "e": 80.08
+      },
+      {
+        "w": "investigar",
+        "s": 80.08,
+        "e": 80.68
+      },
+      {
+        "w": "a",
+        "s": 80.68,
+        "e": 80.74
+      },
+      {
+        "w": "sala",
+        "s": 80.74,
+        "e": 81.0
+      },
+      {
+        "w": "de",
+        "s": 81.0,
+        "e": 81.16
+      },
+      {
+        "w": "segurança?",
+        "s": 81.16,
+        "e": 81.56
+      }
+    ]
+  }
+]

@@ -24,7 +24,7 @@ export type Pose = {
 };
 
 export type Look = {
-  skin: string; skinShade: string; hair: string; hairStyle: 'ponytail' | 'short';
+  skin: string; skinShade: string; hair: string; hairStyle: 'ponytail' | 'short' | 'wavy';
   shirt: string; shirtShade: string; stripe?: string; longSleeves?: boolean;
   pants: string; shoe: string; sole: string; brow?: number; stubble?: string;
   badge?: string; // crachá no peito (texto)
@@ -215,12 +215,16 @@ export const Person: React.FC<PersonProps> = (p) => {
         {!back && <path d="M-26,-604 Q0,-588 26,-604" stroke={look.shirtShade} strokeWidth={6} fill="none" />}
         <g transform={`translate(0, ${breathe * 0.2})`}>
           {!back && ponytail}
+          {!back && look.hairStyle === 'wavy' && (
+            <path d="M-120,-700 Q-134,-640 -110,-596 Q-92,-612 -76,-594 Q-60,-610 -44,-600 L44,-600 Q60,-610 76,-594 Q92,-612 110,-596 Q134,-640 120,-700 Q114,-850 0,-850 Q-114,-850 -120,-700 Z" fill={look.hair} />
+          )}
           <ellipse cx={-96 + fx * 0.3} cy={-718} rx={14} ry={20} fill={look.skinShade} />
           <ellipse cx={96 + fx * 0.3} cy={-718} rx={14} ry={20} fill={look.skinShade} />
           <ellipse cx={0} cy={-722} rx={96} ry={104} fill={back ? look.hair : look.skin} />
           {back ? (
             <>
-              {ponytailOn ? <path d="M-96,-722 Q-90,-640 -60,-628 L60,-628 Q90,-640 96,-722 Z" fill={look.hair} /> : <path d="M-96,-722 Q-90,-660 -60,-650 L60,-650 Q90,-660 96,-722 Z" fill={look.hair} />}
+              {look.hairStyle === 'wavy' ? <path d="M-120,-700 Q-134,-640 -110,-596 Q-92,-612 -76,-594 Q-60,-610 -44,-600 Q0,-590 44,-600 Q60,-610 76,-594 Q92,-612 110,-596 Q134,-640 120,-700 Q114,-850 0,-850 Q-114,-850 -120,-700 Z" fill={look.hair} />
+                : ponytailOn ? <path d="M-96,-722 Q-90,-640 -60,-628 L60,-628 Q90,-640 96,-722 Z" fill={look.hair} /> : <path d="M-96,-722 Q-90,-660 -60,-650 L60,-650 Q90,-660 96,-722 Z" fill={look.hair} />}
               {ponytail}
             </>
           ) : (
@@ -230,6 +234,11 @@ export const Person: React.FC<PersonProps> = (p) => {
                 <>
                   <path d={`M-100,-700 Q-108,-836 0,-830 Q104,-834 100,-706 Q94,-770 66,-790 Q${10 + fx},-800 ${-40 + fx * 0.6},-800 Q-84,-786 -100,-700 Z`} fill={look.hair} />
                   <path d={`M-62,-808 Q${-10 + fx},-822 ${50 + fx * 0.5},-806`} stroke="#2a2a33" strokeWidth={5} fill="none" opacity={0.6} />
+                </>
+              ) : look.hairStyle === 'wavy' ? (
+                <>
+                  <path d={`M-102,-700 Q-108,-846 0,-840 Q106,-844 102,-700 Q96,-776 50,-794 Q${-10 + fx},-806 ${-60 + fx * 0.5},-780 Q-94,-752 -102,-700 Z`} fill={look.hair} />
+                  <path d="M-100,-712 Q-114,-660 -98,-620 M100,-712 Q114,-660 98,-620" stroke={look.hair} strokeWidth={16} fill="none" strokeLinecap="round" />
                 </>
               ) : (
                 <path d={`M-98,-712 Q-104,-840 0,-832 Q104,-838 98,-712 Q92,-770 70,-786 Q${20 + fx},-778 ${-20 + fx},-790 Q-70,-784 -98,-712 Z`} fill={look.hair} />
@@ -320,6 +329,7 @@ const PersonSide: React.FC<PersonProps> = ({t, look, pose, expr = 'neutral', loo
         <rect x={-54} y={-372} width={108} height={30} rx={10} fill={look.pants} />
         <rect x={-18} y={-634} width={38} height={42} rx={12} fill={look.skin} />
         <g transform={`rotate(${lookY * 10}, 0, -640)`}>
+          {look.hairStyle === 'wavy' && <path d="M-40,-840 Q-130,-820 -124,-680 Q-122,-606 -84,-598 Q-50,-612 -26,-640 L10,-720 Z" fill={look.hair} />}
           {look.hairStyle === 'ponytail' && (
             <g transform={`rotate(${-(sway - 18) * 0.7 - 4}, -70, -790)`}>
               <path d="M-74,-800 C-150,-790 -176,-700 -150,-610 C-140,-680 -112,-740 -64,-764 Z" fill={look.hair} />

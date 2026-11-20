@@ -104,6 +104,16 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - Mensagens: "VOCÊ ENCONTROU A OUTRA PARTICIPANTE." / "MAS NÃO PODE SALVAR TODO MUNDO." / "SE ABRIR ESSA PORTA, OUTRA SERÁ TRANCADA." (não revelar se é blefe).
 - Termina com a mão da Bia hesitando perto da maçaneta (sem tocar). Votação: **A** = tentar salvar Clara; **B** = ir à sala de segurança.
 
+## Continuidade do EP. 6 — "A PORTA QUE NÃO DEVERIA ABRIR" (após o EP. 5; venceu A, tentar salvar Clara)
+- Davi solta a tampa do leitor do 604 com uma ferramenta (chave de fenda) e o leitor desliga; a trava solta. A Bia gira a maçaneta e a porta abre para DENTRO.
+- CLARA aparece pela primeira vez (`characters/Clara.tsx`, aparência fixa): pele morena clara, cabelo castanho-escuro ondulado na altura dos ombros, blusa verde-oliva, jeans azul-escuro, tênis cinza. Voz: Francisca grave (−14 Hz), limpa depois de a porta abrir.
+- Clara: o "ele" falava pelo interfone, a mesma voz que mandou não abrir a porta (ligação sugerida com a "central de segurança", sem confirmação).
+- Consequência: "PORTA 604: LIBERADA" / "PORTA 601: BLOQUEADA". A ameaça era real.
+- Clara ouviu antes que "vocês iam escolher me salvar… era a opção mais provável": o hacker estuda as escolhas e usa probabilidades (nada sobrenatural).
+- Mensagens: "VOCÊ SALVOU UMA PARTICIPANTE." / "MAS ACABOU DE CRIAR OUTRA PRISIONEIRA." Uma batida forte vem do 601 (ninguém é mostrado).
+- O corredor tem a passagem "ÁREA TÉCNICA" no extremo direito (lado oposto ao 601). Clara acompanha Bia e Davi a partir daqui.
+- Votação: **A** = ajudar no 601; **B** = investigar a segurança.
+
 ## Ramificações para o EP. 2
 - **A — Escadas**: a Bia desce pela Escada B e descobre que a câmera exibia uma gravação. A escada real mostra por que o loop foi montado (e quem não queria que se visse o que acontece lá).
 - **B — Elevador**: a Bia entra no elevador e precisa descobrir quem deixou a mochila vermelha. O celular que toca dentro dela está ligado ao número dela.
