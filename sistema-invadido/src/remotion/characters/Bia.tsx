@@ -59,3 +59,7 @@ export const mixPose = (a: Pose, b: Pose, k: number): Pose => {
 void mixT;
 
 export const Bia: React.FC<Omit<PersonProps, 'look'>> = (p) => <Person look={BIA_LOOK} {...p} />;
+
+/** Bia em casa, de manhã: MESMO rosto e cabelo; só a camiseta de dormir muda */
+export const BIA_SLEEP_LOOK: Look = {...BIA_LOOK, shirt: '#d6deec', shirtShade: '#bcc7da', stripe: undefined, pants: '#8792ad'};
+export const BiaHome: React.FC<Omit<PersonProps, 'look'>> = (p) => <Person look={BIA_SLEEP_LOOK} {...p} />;

@@ -1,0 +1,513 @@
+[
+  {
+    "id": "d01",
+    "who": "DAVI",
+    "at": 1.4,
+    "text": "Tem certeza? A gente pode desligar tudo.",
+    "marked": "Tem certeza? A gente pode desligar tudo.",
+    "start": 1.4,
+    "dur": 3.31,
+    "end": 4.71,
+    "wav": "raw/voice/ep08/d01.wav",
+    "whisper": "Tem certeza? A gente pode desligar tudo.",
+    "words": [
+      {
+        "w": "Tem",
+        "s": 1.4,
+        "e": 1.48
+      },
+      {
+        "w": "certeza?",
+        "s": 1.48,
+        "e": 1.92
+      },
+      {
+        "w": "A",
+        "s": 2.8,
+        "e": 3.0
+      },
+      {
+        "w": "gente",
+        "s": 3.0,
+        "e": 3.2
+      },
+      {
+        "w": "pode",
+        "s": 3.2,
+        "e": 3.52
+      },
+      {
+        "w": "desligar",
+        "s": 3.52,
+        "e": 4.06
+      },
+      {
+        "w": "tudo.",
+        "s": 4.06,
+        "e": 4.28
+      }
+    ]
+  },
+  {
+    "id": "b01",
+    "who": "BIA",
+    "at": 4.1,
+    "text": "Não. Eu quero saber quem fez isso.",
+    "marked": "Não. Eu quero saber quem fez isso.",
+    "start": 4.83,
+    "dur": 2.365,
+    "end": 7.195,
+    "wav": "raw/voice/ep08/b01.wav",
+    "whisper": "Não, eu quero saber quem fez isso.",
+    "words": [
+      {
+        "w": "Não.",
+        "s": 4.83,
+        "e": 5.05
+      },
+      {
+        "w": "Eu",
+        "s": 5.41,
+        "e": 5.49
+      },
+      {
+        "w": "quero",
+        "s": 5.49,
+        "e": 5.71
+      },
+      {
+        "w": "saber",
+        "s": 5.71,
+        "e": 6.01
+      },
+      {
+        "w": "quem",
+        "s": 6.01,
+        "e": 6.25
+      },
+      {
+        "w": "fez",
+        "s": 6.25,
+        "e": 6.55
+      },
+      {
+        "w": "isso.",
+        "s": 6.55,
+        "e": 6.83
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "who": "BIA",
+    "at": 12.8,
+    "text": "Distribuído? Como assim?",
+    "marked": "Distribuído? Como assim?",
+    "start": 12.8,
+    "dur": 1.878,
+    "end": 14.678,
+    "wav": "raw/voice/ep08/b02.wav",
+    "whisper": "Distribuído, como assim?",
+    "words": [
+      {
+        "w": "Distribuído?",
+        "s": 13.02,
+        "e": 13.5
+      },
+      {
+        "w": "Como",
+        "s": 13.74,
+        "e": 13.98
+      },
+      {
+        "w": "assim?",
+        "s": 13.98,
+        "e": 14.22
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "who": "DAVI",
+    "at": 14.8,
+    "volume": -6,
+    "text": "Não é uma pessoa só…",
+    "marked": "Não é uma pessoa só…",
+    "start": 14.8,
+    "dur": 1.553,
+    "end": 16.353,
+    "wav": "raw/voice/ep08/d02.wav",
+    "whisper": "Não é uma pessoa só!",
+    "words": [
+      {
+        "w": "Não",
+        "s": 14.8,
+        "e": 15.0
+      },
+      {
+        "w": "é",
+        "s": 15.0,
+        "e": 15.24
+      },
+      {
+        "w": "uma",
+        "s": 15.24,
+        "e": 15.36
+      },
+      {
+        "w": "pessoa",
+        "s": 15.36,
+        "e": 15.7
+      },
+      {
+        "w": "só…",
+        "s": 15.7,
+        "e": 15.98
+      }
+    ]
+  },
+  {
+    "id": "c01",
+    "who": "CLARA_LIVRE",
+    "at": 16.8,
+    "text": "Então quem tá controlando?",
+    "marked": "Então quem tá controlando?",
+    "start": 16.8,
+    "dur": 1.66,
+    "end": 18.46,
+    "wav": "raw/voice/ep08/c01.wav",
+    "whisper": "Então, quem está controlando?",
+    "words": [
+      {
+        "w": "Então",
+        "s": 16.8,
+        "e": 17.06
+      },
+      {
+        "w": "quem",
+        "s": 17.18,
+        "e": 17.26
+      },
+      {
+        "w": "tá",
+        "s": 17.26,
+        "e": 17.44
+      },
+      {
+        "w": "controlando?",
+        "s": 17.44,
+        "e": 18.06
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "who": "BIA",
+    "at": 29.2,
+    "text": "Essas são todas as escolhas que eu fiz…",
+    "marked": "Essas são todas as escolhas que eu fiz…",
+    "start": 29.2,
+    "dur": 2.243,
+    "end": 31.443,
+    "wav": "raw/voice/ep08/b03.wav",
+    "whisper": "Essas são todas as escolhas que eu fiz.",
+    "words": [
+      {
+        "w": "Essas",
+        "s": 29.2,
+        "e": 29.48
+      },
+      {
+        "w": "são",
+        "s": 29.48,
+        "e": 29.6
+      },
+      {
+        "w": "todas",
+        "s": 29.6,
+        "e": 29.86
+      },
+      {
+        "w": "as",
+        "s": 29.86,
+        "e": 30.12
+      },
+      {
+        "w": "escolhas",
+        "s": 30.12,
+        "e": 30.54
+      },
+      {
+        "w": "que",
+        "s": 30.54,
+        "e": 30.68
+      },
+      {
+        "w": "eu",
+        "s": 30.68,
+        "e": 30.78
+      },
+      {
+        "w": "fiz…",
+        "s": 30.78,
+        "e": 30.98
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "who": "BIA",
+    "at": 33.9,
+    "rate": "-6%",
+    "volume": -14,
+    "text": "Eu… não escolhi nada?",
+    "marked": "Eu… não escolhi nada?",
+    "start": 33.9,
+    "dur": 1.619,
+    "end": 35.519,
+    "wav": "raw/voice/ep08/b04.wav",
+    "whisper": "Eu, não escolhi nada!",
+    "words": [
+      {
+        "w": "Eu…",
+        "s": 33.9,
+        "e": 34.08
+      },
+      {
+        "w": "não",
+        "s": 34.3,
+        "e": 34.46
+      },
+      {
+        "w": "escolhi",
+        "s": 34.46,
+        "e": 34.84
+      },
+      {
+        "w": "nada?",
+        "s": 34.84,
+        "e": 35.04
+      }
+    ]
+  },
+  {
+    "id": "d03",
+    "who": "DAVI",
+    "at": 35.9,
+    "volume": -4,
+    "text": "Alguém escolheu por você.",
+    "marked": "Alguém escolheu por você.",
+    "start": 35.9,
+    "dur": 1.572,
+    "end": 37.472,
+    "wav": "raw/voice/ep08/d03.wav",
+    "whisper": "Alguém escolheu por você.",
+    "words": [
+      {
+        "w": "Alguém",
+        "s": 35.9,
+        "e": 36.2
+      },
+      {
+        "w": "escolheu",
+        "s": 36.2,
+        "e": 36.62
+      },
+      {
+        "w": "por",
+        "s": 36.62,
+        "e": 36.76
+      },
+      {
+        "w": "você.",
+        "s": 36.76,
+        "e": 37.06
+      }
+    ]
+  },
+  {
+    "id": "b05",
+    "who": "BIA",
+    "at": 42.6,
+    "text": "Espera… tinha gente assistindo?",
+    "marked": "Espera… tinha gente assistindo?",
+    "start": 42.6,
+    "dur": 2.107,
+    "end": 44.707,
+    "wav": "raw/voice/ep08/b05.wav",
+    "whisper": "Espera, tinha gente assistindo?",
+    "words": [
+      {
+        "w": "Espera…",
+        "s": 42.6,
+        "e": 43.08
+      },
+      {
+        "w": "tinha",
+        "s": 43.24,
+        "e": 43.46
+      },
+      {
+        "w": "gente",
+        "s": 43.46,
+        "e": 43.74
+      },
+      {
+        "w": "assistindo?",
+        "s": 43.74,
+        "e": 44.3
+      }
+    ]
+  },
+  {
+    "id": "s01",
+    "who": "SISTEMA",
+    "at": 45.2,
+    "text": "Os espectadores determinaram suas decisões.",
+    "marked": "Os espectadores determinaram suas decisões.",
+    "start": 45.2,
+    "dur": 3.13,
+    "end": 48.33,
+    "wav": "raw/voice/ep08/s01.wav",
+    "whisper": "Os espectadores determinaram suas decisões.",
+    "words": [
+      {
+        "w": "Os",
+        "s": 45.2,
+        "e": 45.36
+      },
+      {
+        "w": "espectadores",
+        "s": 45.36,
+        "e": 46.1
+      },
+      {
+        "w": "determinaram",
+        "s": 46.1,
+        "e": 46.92
+      },
+      {
+        "w": "suas",
+        "s": 46.92,
+        "e": 47.18
+      },
+      {
+        "w": "decisões.",
+        "s": 47.18,
+        "e": 47.88
+      }
+    ]
+  },
+  {
+    "id": "b06",
+    "who": "BIA",
+    "at": 49.6,
+    "rate": "-6%",
+    "volume": -16,
+    "fx": "whisper",
+    "text": "Então… foram vocês?",
+    "marked": "Então… foram vocês?",
+    "start": 49.6,
+    "dur": 1.465,
+    "end": 51.065,
+    "wav": "raw/voice/ep08/b06.wav",
+    "whisper": "Então, foram vocês?",
+    "words": [
+      {
+        "w": "Então…",
+        "s": 49.6,
+        "e": 49.88
+      },
+      {
+        "w": "foram",
+        "s": 50.02,
+        "e": 50.18
+      },
+      {
+        "w": "vocês?",
+        "s": 50.18,
+        "e": 50.56
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "who": "BIA",
+    "at": 55.0,
+    "text": "Que barulho é esse?",
+    "marked": "Que barulho é esse?",
+    "start": 55.0,
+    "dur": 1.285,
+    "end": 56.285,
+    "wav": "raw/voice/ep08/b07.wav",
+    "whisper": "Que barulho é esse?",
+    "words": [
+      {
+        "w": "Que",
+        "s": 55.0,
+        "e": 55.06
+      },
+      {
+        "w": "barulho",
+        "s": 55.06,
+        "e": 55.5
+      },
+      {
+        "w": "é",
+        "s": 55.5,
+        "e": 55.62
+      },
+      {
+        "w": "esse?",
+        "s": 55.62,
+        "e": 55.9
+      }
+    ]
+  },
+  {
+    "id": "b08",
+    "who": "BIA",
+    "at": 70.2,
+    "rate": "-6%",
+    "volume": -14,
+    "text": "Meu Deus… foi só um sonho.",
+    "marked": "Meu Deus… foi só um sonho.",
+    "start": 70.2,
+    "dur": 1.798,
+    "end": 71.998,
+    "wav": "raw/voice/ep08/b08.wav",
+    "whisper": "Meu Deus, e foi só um sonho!",
+    "words": [
+      {
+        "w": "Meu",
+        "s": 70.2,
+        "e": 70.32
+      },
+      {
+        "w": "Deus…",
+        "s": 70.32,
+        "e": 70.58
+      },
+      {
+        "w": "foi",
+        "s": 70.82,
+        "e": 70.96
+      },
+      {
+        "w": "só",
+        "s": 70.96,
+        "e": 71.18
+      },
+      {
+        "w": "um",
+        "s": 71.18,
+        "e": 71.26
+      },
+      {
+        "w": "sonho.",
+        "s": 71.26,
+        "e": 71.68
+      }
+    ]
+  }
+]

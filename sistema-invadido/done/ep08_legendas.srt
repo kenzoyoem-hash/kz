@@ -1,0 +1,51 @@
+1
+00:00:01,400 --> 00:00:04,580
+[DAVI] Tem certeza? A gente pode desligar tudo.
+
+2
+00:00:04,830 --> 00:00:07,130
+[BIA] Não. Eu quero saber quem fez isso.
+
+3
+00:00:13,020 --> 00:00:14,520
+[BIA] Distribuído? Como assim?
+
+4
+00:00:14,800 --> 00:00:16,280
+[DAVI] Não é uma pessoa só…
+
+5
+00:00:16,800 --> 00:00:18,360
+[CLARA] Então quem tá controlando?
+
+6
+00:00:29,200 --> 00:00:31,280
+[BIA] Essas são todas as escolhas que eu fiz…
+
+7
+00:00:33,900 --> 00:00:35,340
+[BIA] Eu… não escolhi nada?
+
+8
+00:00:35,900 --> 00:00:37,360
+[DAVI] Alguém escolheu por você.
+
+9
+00:00:42,600 --> 00:00:44,600
+[BIA] Espera… tinha gente assistindo?
+
+10
+00:00:45,200 --> 00:00:48,180
+[SISTEMA] Os espectadores determinaram suas decisões.
+
+11
+00:00:49,600 --> 00:00:50,860
+[BIA] Então… foram vocês?
+
+12
+00:00:55,000 --> 00:00:56,200
+[BIA] Que barulho é esse?
+
+13
+00:01:10,200 --> 00:01:11,980
+[BIA] Meu Deus… foi só um sonho.

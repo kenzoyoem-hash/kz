@@ -122,6 +122,7 @@ export type PersonProps = {
   phone?: 'none' | 'L' | 'R' | 'both'; phoneLit?: boolean; pupil?: number; tremble?: number;
   x?: number; y?: number; scale?: number; seed?: number;
   holdR?: React.ReactNode; holdL?: React.ReactNode; // objeto preso à mão (chaveiro, chave…)
+  sleep?: boolean; // olhos fechados (dormindo)
 };
 
 const EXPR: Record<Expr, {brow: number; browY: number; eye: number; pup: number}> = {
@@ -148,7 +149,7 @@ export const Person: React.FC<PersonProps> = (p) => {
   const tr = tremble ? Math.sin(t * 55) * 3 * tremble : 0;
   const sway = 22 + Math.sin(t * 2.3) * 5 + run * Math.sin(cyc * 2) * 14 - lookX * 10;
   const E = EXPR[expr];
-  const bl = Math.max(blink(t, seed), expr === 'suspicious' ? 0.35 : 0);
+  const bl = p.sleep ? 1 : Math.max(blink(t, seed), expr === 'suspicious' ? 0.35 : 0);
   const fx = lookX * 24, fy = lookY * 12;
   const eyeH = 19 * E.eye * (1 - bl * 0.92);
   const pr = 9 * E.pup * pupil;

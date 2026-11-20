@@ -122,7 +122,16 @@ O público decide o rumo da história comentando **A** ou **B** no fim de cada e
 - "CONEXÃO EXTERNA ATIVA / CONTROLE REMOTO HABILITADO". Mensagens: "VOCÊ CHEGOU LONGE DEMAIS, BIA." / "AGORA VOCÊ PODE DESCOBRIR QUEM ESTÁ NO CONTROLE." com os botões ENCERRAR CONEXÃO e IDENTIFICAR ORIGEM.
 - A porta 601 continua bloqueada. Votação final: **A** = desligar o sistema; **B** = descobrir quem controla.
 
-## [CONFIDENCIAL — SÓ PARA O EP. 8] Plot twist planejado
+## Continuidade do EP. 8 — "VOCÊ ERA O SISTEMA" (GRANDE FINAL; venceu B, descobrir quem controla)
+- A Bia seleciona IDENTIFICAR ORIGEM e a tela mostra "RASTREANDO CONEXÃO…". Mapa abstrato de rede: "ORIGEM IDENTIFICADA / CONTROLE DISTRIBUÍDO / MÚLTIPLOS OPERADORES CONECTADOS".
+- Histórico das ESCOLHAS 01–06 com símbolo de voto, mais o banner "DECISÕES RECEBIDAS EXTERNAMENTE". Tela de comentários/votos simulados, sem nomes nem interfaces reais.
+- SISTEMA (voz da "central": Antonio grave com filtro de interfone): "Os espectadores determinaram suas decisões." A Bia olha direto para a lente: "Então… foram vocês?"
+- O despertador (BIP-BIP-BIP) começa na sala de segurança. O corte seco cai num BIP (62,0 s) e leva ao quarto: "07:00 / DESPERTADOR / ADIADO 6 VEZES".
+- Quarto da Bia (`sets/Bedroom.tsx`): seguro e normal. A Bia usa camiseta de dormir (`BiaHome`), com o mesmo rosto e cabelo. Ela desliga o alarme e diz "Meu Deus… foi só um sonho."
+- Notificações: "SISTEMA INVADIDO — OBRIGADO POR PARTICIPAR, BIA." / "OS ESPECTADORES ESCOLHERAM: ACORDAR." Horror silencioso, preto absoluto e depois "TRANSMISSÃO 02 INICIADA.". Silêncio. FIM da 1ª temporada.
+- Sem música depois do corte para o quarto; sem votação; sem "CONTINUA…".
+
+## [Revelado no EP. 8] Plot twist
 1. As votações dos espectadores eram enviadas ao sistema como comandos: o público controlava os caminhos da Bia.
 2. Um alarme repetitivo vai crescendo, a imagem perde estabilidade e há um corte abrupto para o quarto da Bia, que acorda assustada. Celular: "07:00 — ALARME ADIADO 6 VEZES." Ela acha que foi um sonho, mas chega a notificação "OS ESPECTADORES ESCOLHERAM: ACORDAR." Tela final: "TRANSMISSÃO 02 INICIADA."
 - Nada disso pode aparecer antes do EP. 8.

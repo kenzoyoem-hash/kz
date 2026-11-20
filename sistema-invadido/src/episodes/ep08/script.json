@@ -1,0 +1,27 @@
+{
+  "episode": "8",
+  "title": "VOCÊ ERA O SISTEMA",
+  "fps": 30,
+  "voices": {
+    "BIA":         {"voice": "pt-BR-FranciscaNeural", "rate": "+7%", "pitch": "+0Hz",  "fx": "bia"},
+    "DAVI":        {"voice": "pt-BR-AntonioNeural",   "rate": "+9%", "pitch": "-2Hz",  "fx": "man"},
+    "CLARA_LIVRE": {"voice": "pt-BR-FranciscaNeural", "rate": "+5%", "pitch": "-14Hz", "fx": "bia"},
+    "SISTEMA":     {"voice": "pt-BR-AntonioNeural",   "rate": "-2%", "pitch": "-16Hz", "fx": "intercom"}
+  },
+  "lines": [
+    {"id": "d01", "who": "DAVI",        "at": 1.4,  "text": "Tem certeza? A gente pode desligar tudo."},
+    {"id": "b01", "who": "BIA",         "at": 4.1,  "text": "Não. Eu quero saber quem fez isso."},
+    {"id": "b02", "who": "BIA",         "at": 12.8, "text": "Distribuído? Como assim?"},
+    {"id": "d02", "who": "DAVI",        "at": 14.8, "volume": -6, "text": "Não é uma pessoa só…"},
+    {"id": "c01", "who": "CLARA_LIVRE", "at": 16.8, "text": "Então quem tá controlando?"},
+    {"id": "b03", "who": "BIA",         "at": 29.2, "text": "Essas são todas as escolhas que eu fiz…"},
+    {"id": "b04", "who": "BIA",         "at": 33.9, "rate": "-6%", "volume": -14, "text": "Eu… não escolhi nada?"},
+    {"id": "d03", "who": "DAVI",        "at": 35.9, "volume": -4, "text": "Alguém escolheu por você."},
+    {"id": "b05", "who": "BIA",         "at": 42.6, "text": "Espera… tinha gente assistindo?"},
+    {"id": "s01", "who": "SISTEMA",     "at": 45.2, "text": "Os espectadores determinaram suas decisões."},
+    {"id": "b06", "who": "BIA",         "at": 49.6, "rate": "-6%", "volume": -16, "fx": "whisper", "text": "Então… foram vocês?"},
+    {"id": "b07", "who": "BIA",         "at": 55.0, "text": "Que barulho é esse?"},
+    {"id": "b08", "who": "BIA",         "at": 70.2, "rate": "-6%", "volume": -14, "text": "Meu Deus… foi só um sonho."}
+  ],
+  "highlight": ["DESLIGAR", "SABER", "DISTRIBUÍDO", "SÓ", "CONTROLANDO", "ESCOLHAS", "NADA", "VOCÊ", "ASSISTINDO", "ESPECTADORES", "VOCÊS", "BARULHO", "SONHO"]
+}

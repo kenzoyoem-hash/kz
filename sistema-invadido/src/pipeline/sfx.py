@@ -339,11 +339,30 @@ def alarm2():
         t = t_(0.18); b = (np.sin(2*np.pi*1760*t) + 0.4*np.sin(2*np.pi*3520*t)) * env(len(t), 0.004, 0.04) * 0.5; i = int(st*SR); out[i:i+len(b)] += b
     return norm(out, 0.5)
 
+def alarm_clock():
+    """despertador digital: BIP-BIP-BIP em grupos; cresce por 8,6 s e depois fica constante (14,6 s no total)"""
+    d = 14.6; n = int(d * SR); out = np.zeros(n)
+    k = 0; t0 = 0.0
+    while t0 < d:
+        for j in range(3):
+            st = t0 + j * 0.16
+            if st >= d - 0.1: break
+            t = t_(0.09); b = np.sign(np.sin(2*np.pi*2000*t)) * 0.6 + np.sin(2*np.pi*4000*t) * 0.2
+            b *= env(len(t), 0.002, 0.01)
+            g = 0.18 + 0.82 * min(1.0, st / 8.6)
+            i = int(st * SR); out[i:i+len(b)] += b[:max(0, n-i)] * g
+        t0 += 0.8
+    return norm(lp_fast(out, 7000), 0.75)
+def bzz():
+    """vibração curta e discreta do celular"""
+    t = t_(0.35); s_ = np.sign(np.sin(2*np.pi*170*t)) * np.minimum(1, t / 0.02) * np.minimum(1, (0.35 - t) / 0.03)
+    return norm(lp_fast(s_, 500), 0.35)
+
 LIB = {k: v for k, v in globals().items() if callable(v) and k in (
     "notif message impact braam whoosh riser glitch static tv_on flicker lock handle bang heartbeat "
     "alarm ticks ding door_slide steps steps_run rewind vibrate ring breath metal_steps call_drop answer unlock "
     "door_creak push_bar drone_hit blip door_open door_close key_turn key_jingle footstep1 pulse elev_doors button "
-    "elev_motor jolt zipper paper intercom_on knock hum pry deny knock3 servo knock3fast thud1 alarm2").split()}
+    "elev_motor jolt zipper paper intercom_on knock hum pry deny knock3 servo knock3fast thud1 alarm2 alarm_clock bzz").split()}
 
 def music(duration, automation):
     """Trilha de suspense: drone em Lá menor, pulso grave e notas agudas esparsas.
